@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+<title>homesonview.co.uk | Show Property</title>
+<link type="text/css" rel="stylesheet" href="../css/hovprop.css" />
+
+<link type="text/css" rel="stylesheet" href="../css/hovcolour.css" />
+
+<link type="text/css" rel="stylesheet" href="../css/hovonly.css" />
+
+<script type="text/javascript" language="JavaScript">
+   var currentPanel;
+   
+      function showPanel(panelNum) {
+      //hide visible panel, show selected panel, 
+      //set tab
+      if (currentPanel != null) {
+         hidePanel();
+      }
+      document.getElementById 
+         ('panel'+panelNum).style.display = 'inline';
+         currentPanel = panelNum;
+   }
+   
+   function hidePanel() {
+      //hide visible panel, unhilite tab
+      document.getElementById
+        ('panel'+currentPanel).style.display = 'none';
+   }
+   
+ 
+</script>
+<script type="text/javascript" language="JavaScript">
+&lt;!--
+function ShowPicture (cid,pid,width,height,pic) { 
+
+	{newwindow = window.open("ShowPhotos.asp?CompanyID=" + cid + "&amp;ID=" + pid + "&amp;pic=" + pic, "photo" ,"resizable=no,width=" + width + ",height=" + height + ",toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+
+	newwindow.focus();	
+}
+
+function ShowFloorplans (cid,pid,width,height,pic) { 
+
+	{newwindow = window.open("ShowFloors.asp?CompanyID=" + cid + "&amp;ID=" + pid + "&amp;pic=" + pic, "floor", "resizable=yes,width=" + width + ",height=" + height + ",toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+
+	newwindow.focus();	
+}
+
+function ShowEPC (cid,pid,width,height) { 
+
+	{newwindow = window.open("ShowEPC.asp?CompanyID=" + cid + "&amp;ID=" + pid, "epc", "resizable=Yes,width=" + width + ",height=" + height + ",toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	newwindow.focus();	
+}
+
+function Open (sZero,sOne,sTwo,sThree,i) { 
+	
+	if (i==1)
+		{newwindow = window.open(sZero , "winHip", "resizable=yes,width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+	
+	if (i==2)
+		{newwindow = window.open("FullDetails.aspx?CID=" + sZero + "&amp;AID=" + sOne + "&amp;PID=" + sTwo , "winDet", "resizable=no,width=680,height=500,toolbar=yes,location=no,directories=no,status=no,menubar=yes,scrollbars=yes,copyhistory=no");}
+
+	if (i==3)
+		{newwindow = window.open("GetViewing.asp?CompanyID=" + sZero + "&amp;AgencyID=" + sOne + "&amp;PropID=" + sTwo + "&amp;css=" + sThree , "winView", "resizable=no,width=360,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	if (i==5)
+		{newwindow = window.open("GetValuation.asp?CompanyID=" + sZero + "&amp;AgencyID=" + sOne + "&amp;Email=" + sTwo + "&amp;css=" + sThree , "winVal", "resizable=no,width=350,height=500,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+		
+	if (i==6)
+		{newwindow = window.open("GetMailing.asp?CompanyID=" + sZero + "&amp;AgencyID=" + sOne + "&amp;AgentEmail=" + sTwo + "&amp;css=" + sThree , "winMail", "resizable=no,width=650,height=410,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	if (i==9)
+		{newwindow = window.open(sOne , "winVirt", "resizable=yes,width=435,height=387,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no");}
+
+	if (i==7)
+		{newwindow = window.open("showmap.asp?lat=" + sZero + "&amp;long=" + sOne + "&amp;type=" + sTwo , "winMap", "resizable=no,width=760,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	if (i==10)
+		{newwindow = window.open("http://uk.multimap.com/p/browse.cgi?pc=" + sOne + " &amp;title=Property+Location" , "winMap", "resizable=yes,width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+		
+	newwindow.focus();
+}
+function OpenFull (aid,pid) { 
+	newwindow = window.open("FullDetails.asp?AgencyID=" + aid + "&amp;PropID=" + pid , "winDet", "resizable=no,width=680,height=500,toolbar=yes,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");
+}
+
+//--&gt;
+</script>
+<script>
+&lt;!--
+function MM_displayStatusMsg(msgStr) { //v1.0
+  status=msgStr;
+  document.MM_returnValue = true;
+}
+//--&gt;
+</script>
+
+
+<style type="text/css">
+
+#flashcontainer {	
+width:614px;	
+height:342px;
+}
+
+p.noflash {
+	background:#ff9;
+	margin:10px auto;
+	padding:10px;	
+}
+p.noflash a {
+	float:left;
+}
+p.noflash span{
+	font-size:8pt;
+	text-align:left;
+}
+
+</style>
+</head>
+<body onload="showPanel(1)">
+<div id="wrapper">
+  <div id="Header" class="colour1">
+    <div id="agentlogo">
+      <table height="70" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr><td valign="center"><img alt="Agent Logo" src="../scripts/thumb.ashx?type=logo&amp;img=JFMHSLES.jpg&amp;w=90&amp;h=70" />
+          </td>
+      </tr></tbody></table>
+    </div>
+    <h3>Bankhall Lane, Hale, Cheshire, WA15 0LN</h3>
+    <p><b>Offers in the region of £4,000,000</b> | Bedrooms 6 | Receptions 7 | Bathrooms 6 </p>
+  </div>
+  <div id="Top">
+    <table width="100%" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="200" valign="top" align="center"><div id="Photo"><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JFMHSLES','JSP16485',440,480,1) "><img alt="Main Photograph" src="../scripts/thumb.ashx?cid=JFMHSLES&amp;img=lJSP1648501.jpg&amp;w=200&amp;h=150" class="colour1" /></a></div></td>
+        <td valign="top"><div class="platinum" id="Agent">
+            <div id="SSTC">
+              <img title="Sold Subject To Contract" alt="Sold Subject to Contract" src="../img/SSTC/SoldSTC.gif" />
+            </div>
+            <h2 class="colour2">Jordan Fishwick (Hale - Sales)                    </h2>
+            <div id="AgentAddress">
+              <p> 172 Ashley Road, Hale, Cheshire, WA15 9SF <br />
+                Tel: 0161 929 9797        <br /><a onmouseover="MM_displayStatusMsg('Email Agent');return document.MM_returnValue" href="mailto:hale@jordanfishwick.co.uk">hale@jordanfishwick.co.uk</a><br /><a onmouseover="MM_displayStatusMsg('View the agents website');return document.MM_returnValue" target="blank" href="http://www.jordanfishwick.co.uk">www.jordanfishwick.co.uk</a><br />
+              </p>
+            </div>
+            <div id="AgentOptions">
+              <ul id="subMenu"><li><a onmouseover="MM_displayStatusMsg('Email Agent');return document.MM_returnValue" href="mailto:hale@jordanfishwick.co.uk">Email</a></li><li><a onmouseover="MM_displayStatusMsg('View the agents website');return document.MM_returnValue" target="blank" href="http://www.jordanfishwick.co.uk">Website</a></li><li><a onmouseover="MM_displayStatusMsg('Request a valuation of your property');return document.MM_returnValue" href="javascript:Open('JFMHSLES','JFMHSLES','hale@jordanfishwick.co.uk','hov',5) ">Valuation</a> </li><li><a onmouseover="MM_displayStatusMsg('Join the mailing list to receive property updates');return document.MM_returnValue" href="javascript:Open('JFMHSLES','JFMHSLES','JFMHSLES','hov',6) ">Mailing List</a></li><li><a onmouseover="MM_displayStatusMsg('Book a Viewing at this Property');return document.MM_returnValue" href="javascript:Open('JFMHSLES','JFMHSLES','JSP16485','hov',3) ">Book Viewing</a></li></ul>
+            </div>
+          </div></td>
+      </tr>
+    </tbody></table>
+  </div>
+  <div id="Middle">
+    <div id="subWrapper"> <a id="tabs" name="tabs"></a>
+      <ul id="subNav">
+        <li><a onmouseover="MM_displayStatusMsg('EPC unavailable');return document.MM_returnValue" href="#" class="basic">EPC</a></li><li><a onmouseover="MM_displayStatusMsg('View an Aerial Photo of this Property');return document.MM_returnValue" href="javascript:Open('53.3687066666667','-2.33441083333333','hyb','',7) ">Aerial Photo</a></li><li><a onmouseover="MM_displayStatusMsg('View a Map of this Property');return document.MM_returnValue" href="javascript:Open('53.3687066666667','-2.33441083333333','map','',7) ">View Map</a></li><li><a onmouseover="MM_displayStatusMsg('View Full Details');return document.MM_returnValue" href="javascript:Open('JFMHSLES','JFMHSLES','JSP16485','hov',2) ">Full Details</a></li>
+        <li> <a onmouseover="MM_displayStatusMsg('There are no virtual tours for this property');return document.MM_returnValue" href="#tabs" class="basic">Virtual Tours</a> </li>
+        
+        <li> <a onmouseover="MM_displayStatusMsg('There are no floorplans for this property');return document.MM_returnValue" href="#tabs" class="basic">Floorplans</a> </li>
+        
+        <li> <a onmouseover="MM_displayStatusMsg('There are no room details for this property');return document.MM_returnValue" href="#tabs" class="basic">Rooms</a> </li>
+        
+        <li onclick="showPanel(1);" class="tab" id="tab1"> <a onmouseover="MM_displayStatusMsg('View Property Summary');return document.MM_returnValue" href="#tabs">Summary</a> </li>
+      </ul>
+    </div>
+    <div id="Container">
+      <div id="panel1" style="display: inline;">
+        <div id="Description">
+          <div id="back">
+            <table width="65" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="15" valign="middle"><a href="javascript:history.back(1)"><img title="Go back" alt="Back to results icon" src="../img/nav/back.gif" /></a></td>
+                <td valign="middle"><a href="javascript:history.back(1)">go back</a></td>
+              </tr>
+            </tbody></table>
+          </div>
+          <h2 class="colour1">Description</h2>
+          <div id="Internals">
+            <a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JFMHSLES','JSP16485',440,480,02)"><img alt="Property Image 1" src="../scripts/thumb.ashx?cid=JFMHSLES&amp;img=lJSP1648502.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JFMHSLES','JSP16485',440,480,03)"><img alt="Property Image 2" src="../scripts/thumb.ashx?cid=JFMHSLES&amp;img=lJSP1648503.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JFMHSLES','JSP16485',440,480,04)"><img alt="Property Image 3" src="../scripts/thumb.ashx?cid=JFMHSLES&amp;img=lJSP1648504.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JFMHSLES','JSP16485',440,480,05)"><img alt="Property Image 4" src="../scripts/thumb.ashx?cid=JFMHSLES&amp;img=lJSP1648505.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JFMHSLES','JSP16485',440,480,06)"><img alt="Property Image 5" src="../scripts/thumb.ashx?cid=JFMHSLES&amp;img=lJSP1648506.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JFMHSLES','JSP16485',440,480,07)"><img alt="Property Image 6" src="../scripts/thumb.ashx?cid=JFMHSLES&amp;img=lJSP1648507.jpg&amp;w=80&amp;h=60" /></a>
+          </div>
+          <p>This magnificent Arts &amp; Crafts home offers everything needed to provide the purchaser with state of the art, high quality living including a relaxing spa area with some lovely unique features along with stunning swimming pool and media room.  The 8500 square feet of accommodation is spaciously laid out over four floors and provides a wonderful arrangement of rooms that flow effortlessly including, striking reception hall, open plan  kitchen, snug/family room, formal drawing and dining rooms. There two upper floors offering five double bedroom suites, the master having both dressing room, generous bathroom along with a further study/office area.  Above the double garage there is further bedroom space or games room facility.  White Haven sits in an established, mature plot of just over three quarters of an acre and is ideally placed for strolling in to Hale village while offering the benefit of privacy from a mature plot.  Completion due summer 2013.</p>
+          <p>
+            <a onmouseover="MM_displayStatusMsg('View Full Details');return document.MM_returnValue" href="javascript:Open('JFMHSLES','JFMHSLES','JSP16485','hov',2) ">Full Details</a>
+          </p>
+          <div id="Message">
+            <p>For a closer look click on any of the floorplans or photos to enlarge</p>
+          </div>
+          <div id="EPC">
+            
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel2">
+        <div id="Rooms">
+          <div id="back">
+            <table width="65" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="15" valign="middle"><a href="javascript:history.back(1)"><img title="Go back" alt="Back to results icon" src="../img/nav/back.gif" /></a></td>
+                <td valign="middle"><a href="javascript:history.back(1)">go back</a></td>
+              </tr>
+            </tbody></table>
+          </div>
+          <h2 class="colour1">Room Details</h2>
+          <div id="RoomsTable">
+            <table width="90%">
+              
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel3">
+        <div id="Floorplans">
+          <h2 class="colour1">Floorplans</h2>
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td></td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div class="panel" id="panel4">
+        <div id="Virtual">
+          <h2 class="colour1">Virtual Tours / External Links</h2>
+          <p>
+            There are no virtual tours or external links for this property
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="brochures">
+      <h2 class="colour1">Brochure</h2>
+      <div id="pdfFiles">
+        <span style="font-size:9px;">No brochure found</span>
+      </div>
+    </div>
+    
+    <div id="ref"> ref JSP16485 </div>
+  </div>
+  <div id="Footer"><a onmouseover="MM_displayStatusMsg('View the website disclaimer');return document.MM_returnValue" href="../legal/disclaimer.htm">Legal Disclaimer</a></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8308170-7");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body></html>

@@ -1,0 +1,388 @@
+<html style="display: block;" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta name="viewport" content="width=device-width"> 
+  <title>USAJOBS - Explore Opportunities</title> 
+  <link href="/Content/usaj-design-system/css/bundle?v=DMDgka_GIAs2h2qZ7RvddLGurry9uFdQQ-TzmzHhHVM1" rel="stylesheet"> 
+  <link href="/Content/theme-usaj/bundle?v=HuomN1UfGPCQz5F2-W7lAn3gKYcf_7JD5yrTqyBgQEM1" rel="stylesheet"> 
+  <link href="/Content/usaj-design-system/css/opportunities?v=2ZwsPigwZz4Qyn2ajcuy-IX-t7v8Sr_TW3gDhdmc7uY1" rel="stylesheet"> 
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&amp;s=1"></script>
+  <script src="https://ecn.dev.virtualearth.net/mapcontrol/v7.0/7.0.20160525132934.57/js/en-us/veapicore.js" type="text/javascript"></script> 
+  <style>
+        html {
+            display: none;
+        }
+    </style> 
+  <script type="text/javascript"> if (self == top) { document.documentElement.style.display = 'block'; } else { top.location = self.location; } </script> 
+  <script src="//gateway.answerscloud.com/usajobs-gov/production/gateway.min.js" type="text/javascript" async="true" data-vendor="acs" data-role="gateway"></script>
+  <script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="//gateway.answerscloud.com/code/19.3.2-v.3/fs.utils.js" src="//gateway.answerscloud.com/code/19.3.2-v.3/fs.utils.js"></script>
+  <script type="text/javascript" charset="utf-8" async data-requirecontext="_" data-requiremodule="//gateway.answerscloud.com/code/19.3.2-v.3/fs.trigger.js" src="//gateway.answerscloud.com/code/19.3.2-v.3/fs.trigger.js"></script>
+ </head> 
+ <body> 
+  <header class="usajobs-site-header" aria-label="header"> 
+   <div class="usa-banner"> 
+    <div class="usa-accordion"> 
+     <div class="usa-banner-header usajobs-nav--vTest__banner-header"> 
+      <div class="usa-grid usa-banner-inner usajobs-nav__banner-inner usajobs-nav--vTest__banner-inner"> 
+       <img alt="U.S. flag" src="/Content/images/png/us_flag_small.png"> 
+       <p>An official website of the United States government</p> 
+      </div> 
+      <div class="usa-grid usa-banner-inner usajobs-nav__banner-inner usajobs-nav--vTest__banner-warning"> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <nav class="usajobs-nav " aria-label="main navigation" data-object="nav"> 
+    <div class="usajobs-nav__body"> 
+     <div class="usajobs-nav__header-container"> 
+      <div class="usajobs-nav__header"> 
+       <div class="usajobs-nav__brand-container"> 
+        <a class="usajobs-nav__brand " href="https://www.usajobs.gov/" title="USAJOBS Home"> <span class="logo" title="USAJOBS logo"></span> </a> 
+       </div> 
+       <div class="usajobs-nav__menu" id="usajobs-menu"> 
+        <ul role="menubar"> 
+         <li class="usajobs-nav__menu-container usajobs-nav__account" data-state="is-closed"> <a class="usajobs-nav__section-link menu-toggle   user-logged-in usaj-hidden" data-behavior="nav.menu.toggle" aria-haspopup="true" href="#account" title="Account"> <span class="fa fa-user"></span> <span class="usajobs-nav__account_name"></span> <span class="usajobs-nav__first_name"></span> </a> <a class="usajobs-nav__section-link menu-toggle user-logged-out" href="/Applicant/ProfileDashboard/Home" title="Account-Logged Out"> <span class="fa fa-user"></span> <span class="usajobs-nav__account_name">Sign In</span> <span class="usajobs-nav__first_name">Sign In</span> </a> 
+          <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu" aria-label="submenu"> 
+           <li role="menuitem"><a class="clearcriteria" href="/Applicant/ProfileDashboard/Home/">Home</a></li> 
+           <li role="menuitem"><a href="https://login.usajobs.gov/Account/Contact">Profile</a></li> 
+           <li role="menuitem"><a href="/Applicant/ProfileDashboard/Resumes/">Documents</a></li> 
+           <li role="menuitem"><a href="https://login.usajobs.gov/Account/Username">Username &amp; Password</a></li> 
+           <li role="menuitem"><a href="/Account/LogOff/" class="usaj-sign-out">Sign Out</a></li> 
+          </ul> </li> 
+         <li class="usajobs-nav__menu-container usajobs-nav__help"> <a class="usajobs-nav__section-link " href="/Help/" title="Help"> <span class="fa fa-question-circle"></span> Help </a> </li> 
+         <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed"> <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form" class="usajobs-nav__section-link" href="/" title="Job Search"> <span class="fa fa-search"></span> Search </a> </li> 
+        </ul> 
+       </div> 
+      </div> 
+      <div id="usajobs-search-form" class="usajobs-nav__search" aria-expanded="false" role="menu"> 
+       <form action="/Search/" method="get"> 
+        <fieldset> 
+         <div class="usajobs-nav__search-keywords-container"> 
+          <label for="nav-keyword" id="nav-keyword-label"> <span class="usajobs-nav__search-keywords-icon fa fa-search"></span> Keywords </label> 
+          <input id="nav-keyword" name="k" aria-labelledby="nav-keyword-label" class="usajobs-nav__search-keywords-input" placeholder="Job title, department &amp; agency, series" type="text"> 
+         </div> 
+         <div class="usajobs-nav__search-location-container"> 
+          <label for="nav-location" id="nav-location-label"> <span class="usajobs-nav__search-location-icon fa fa-map-marker"></span> Location </label> 
+          <input id="nav-location" name="l" aria-labelledby="nav-location-label" class="usajobs-nav__search-location-input ui-autocomplete-input usaj-autocomplete-default" placeholder="City, State, ZIP, or Country" autocomplete="off" type="text">
+          <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span> 
+         </div> 
+         <div class="usajobs-nav__search-button-container"> 
+          <button class="clearcriteria usa-button usa-button-primary-alt usajobs-nav__search-button"> Search </button> 
+         </div> 
+        </fieldset> 
+       </form> 
+      </div> 
+      <div class="usajobs-nav__create-account"> 
+       <a href="https://login.usajobs.gov/Account/Create" class="usajobs-nav__create-account-link">Create an account</a> to get started — build your profile, create or upload resumes and apply for jobs. 
+      </div> 
+     </div> 
+    </div> 
+   </nav> 
+  </header> 
+  <div class="usajobs-opportunity-header"> 
+   <div class="usajobs-opportunity-header__body"> 
+    <h1 class="usajobs-opportunity-header__title"> <i class="fa fa-calculator"></i> Computer Science </h1> 
+    <p class="usajobs-opportunity-header__desc"> Research, design, develop, and test operating systems-level software, compilers, and network distribution software for medical, industrial, military, communications, aerospace, business, scientific, and general computing applications. Set operational specifications and formulate and analyze software requirements. May design embedded systems software. Apply principles and techniques of computer science, engineering, and mathematical analysis. </p> 
+    <h4 class="usajobs-opportunity-header__series-number">Series 1550</h4> 
+   </div> 
+  </div> 
+  <section class="usajobs-shell"> 
+   <section class="usajobs-canvas usajobs-opportunity"> 
+    <main class="usajobs-content-well" id="main-content" role="main"> 
+     <div class="usajobs-opportunity__body"> 
+      <div class="usajobs-grid usajobs-search-controls"> 
+       <div class="usajobs-search-controls__results-count"> 
+        <h3>52 jobs</h3> 
+       </div> 
+       <div class="usajobs-search-controls__sort-container"> 
+        <label class="usajobs-search-controls__sort-label" for="search_sort"> Sort by </label> 
+        <select class="usajobs-search-controls__sort-control" id="search_sort" name="SelectedSortOption"><option value="enddate">Close Date</option> <option value="agency">Agency</option> <option value="title">Job Title</option> <option value="salary">Salary Minimum</option> </select> 
+        <input id="Series" name="Series" value="1550" type="hidden"> 
+       </div> 
+      </div> 
+      <div id="usajobs-opportunity__search-results-container"> 
+       <div class="usajobs-opportunity__search-results"> 
+        <div class="usajobs-search-result--card"> 
+         <a href="https://www.usajobs.gov:443/GetJob/ViewDetails/470745400" class="usajobs-search-result--card__body"> <h3 class="usajobs-search-result__title" itemprop="title"> Computer Scientist </h3> 
+          <div class="usajobs-search-result__summary"> 
+           <div class="usajobs-search-result__summary-body--single-col"> 
+            <h4 class="usajobs-search-result__department"> Department of the Army </h4> 
+            <h5 class="usajobs-search-result__agency"> U.S. Army Military Surface Deployment and Distribution Command </h5> 
+            <h4 class="usajobs-search-result__location" itemprop="addressLocality"> <span onclick="window.location.href = '#modal-trigger'; return false;" class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Scott AFB, Illinois" data-coord-lat="38.5483" data-coord-long="-89.8714" itemprop="addressLocality" data-jobtitle="Computer Scientist"> <i class="fa fa-map-marker"></i> Scott AFB, Illinois </span> </h4> 
+            <p class="usajobs-search-result__multi-line"> Permanent • Full Time • Starting at $86,391 • GS13 </p> 
+            <p class="usajobs-search-result__closing-date"> <i class="fa fa-clock-o is-near-closing"></i> Closes 06/20/2017 <span class="usajobs-search-result__relocation"> <i class="fa fa-plane"></i> Relocation assistance </span> </p> 
+           </div> 
+          </div> </a> 
+        </div> 
+        <div class="usajobs-search-result--card"> 
+         <a href="https://www.usajobs.gov:443/GetJob/ViewDetails/470757400" class="usajobs-search-result--card__body"> <h3 class="usajobs-search-result__title" itemprop="title"> Computer Scientist </h3> 
+          <div class="usajobs-search-result__summary"> 
+           <div class="usajobs-search-result__summary-body--single-col"> 
+            <h4 class="usajobs-search-result__department"> Department of the Army </h4> 
+            <h5 class="usajobs-search-result__agency"> U.S. Army Military Surface Deployment and Distribution Command </h5> 
+            <h4 class="usajobs-search-result__location" itemprop="addressLocality"> <span onclick="window.location.href = '#modal-trigger'; return false;" class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Scott AFB, Illinois" data-coord-lat="38.5483" data-coord-long="-89.8714" itemprop="addressLocality" data-jobtitle="Computer Scientist"> <i class="fa fa-map-marker"></i> Scott AFB, Illinois </span> </h4> 
+            <p class="usajobs-search-result__multi-line"> Permanent • Full Time • Starting at $86,391 • GS13 </p> 
+            <p class="usajobs-search-result__closing-date"> <i class="fa fa-clock-o is-near-closing"></i> Closes 06/20/2017 <span class="usajobs-search-result__relocation"> <i class="fa fa-plane"></i> Relocation assistance </span> </p> 
+           </div> 
+          </div> </a> 
+        </div> 
+        <div class="usajobs-search-result--card"> 
+         <a href="https://www.usajobs.gov:443/GetJob/ViewDetails/470863700" class="usajobs-search-result--card__body"> <h3 class="usajobs-search-result__title" itemprop="title"> Computer Scientist (AST, Data Analysis) </h3> 
+          <div class="usajobs-search-result__summary"> 
+           <div class="usajobs-search-result__summary-body--single-col"> 
+            <h4 class="usajobs-search-result__department"> National Aeronautics and Space Administration </h4> 
+            <h5 class="usajobs-search-result__agency"> John Glenn Research Center at Lewis Field </h5> 
+            <h4 class="usajobs-search-result__location" itemprop="addressLocality"> <span onclick="window.location.href = '#modal-trigger'; return false;" class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Cleveland, Ohio" data-coord-lat="41.50449" data-coord-long="-81.69057" itemprop="addressLocality" data-jobtitle="Computer Scientist (AST, Data Analysis)"> <i class="fa fa-map-marker"></i> Cleveland, Ohio </span> </h4> 
+            <p class="usajobs-search-result__multi-line"> Permanent • Full Time • Starting at $105,508 • GS14 </p> 
+            <p class="usajobs-search-result__closing-date"> <i class="fa fa-clock-o is-near-closing"></i> Closes 06/20/2017 </p> 
+           </div> 
+          </div> </a> 
+        </div> 
+        <div class="usajobs-search-result--card"> 
+         <a href="https://www.usajobs.gov:443/GetJob/ViewDetails/471082100" class="usajobs-search-result--card__body"> <h3 class="usajobs-search-result__title" itemprop="title"> DISTINGUISHED SCIENTIST/ENGINEER FOR NAVAL INTEGRATED FIRE CONTROL (SSTM) </h3> 
+          <div class="usajobs-search-result__summary"> 
+           <div class="usajobs-search-result__summary-body--single-col"> 
+            <h4 class="usajobs-search-result__department"> Department of the Navy </h4> 
+            <h5 class="usajobs-search-result__agency"> Naval Sea Systems Command </h5> 
+            <h4 class="usajobs-search-result__location" itemprop="addressLocality"> <span onclick="window.location.href = '#modal-trigger'; return false;" class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Dahlgren, Virginia" data-coord-lat="38.331" data-coord-long="-77.0468" itemprop="addressLocality" data-jobtitle="DISTINGUISHED SCIENTIST/ENGINEER FOR NAVAL INTEGRATED FIRE CONTROL (SSTM)"> <i class="fa fa-map-marker"></i> Dahlgren, Virginia </span> </h4> 
+            <p class="usajobs-search-result__multi-line"> Permanent • Full Time • Starting at $158,121 • ND06 </p> 
+            <p class="usajobs-search-result__closing-date"> <i class="fa fa-clock-o is-near-closing"></i> Closes 06/20/2017 <span class="usajobs-search-result__relocation"> <i class="fa fa-plane"></i> Relocation assistance </span> </p> 
+           </div> 
+          </div> </a> 
+        </div> 
+        <div class="usajobs-search-result--card"> 
+         <a href="https://www.usajobs.gov:443/GetJob/ViewDetails/471083600" class="usajobs-search-result--card__body"> <h3 class="usajobs-search-result__title" itemprop="title"> SCIENTIST </h3> 
+          <div class="usajobs-search-result__summary"> 
+           <div class="usajobs-search-result__summary-body--single-col"> 
+            <h4 class="usajobs-search-result__department"> Department of the Navy </h4> 
+            <h5 class="usajobs-search-result__agency"> Naval Sea Systems Command </h5> 
+            <h4 class="usajobs-search-result__location" itemprop="addressLocality"> <span onclick="window.location.href = '#modal-trigger'; return false;" class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Panama City Naval Surface Warfare Center, Florida" data-coord-lat="30.15881" data-coord-long="-85.6602" itemprop="addressLocality" data-jobtitle="SCIENTIST"> <i class="fa fa-map-marker"></i> Panama City Naval Surface Warfare Center, Florida </span> </h4> 
+            <p class="usajobs-search-result__multi-line"> Permanent • Full Time • Starting at $60,210 • ND04 </p> 
+            <p class="usajobs-search-result__closing-date"> <i class="fa fa-clock-o is-near-closing"></i> Closes 06/20/2017 <span class="usajobs-search-result__relocation"> <i class="fa fa-plane"></i> Relocation assistance </span> </p> 
+           </div> 
+          </div> </a> 
+        </div> 
+        <div class="usajobs-search-result--card"> 
+         <a href="https://www.usajobs.gov:443/GetJob/ViewDetails/471256800" class="usajobs-search-result--card__body"> <h3 class="usajobs-search-result__title" itemprop="title"> Interdisciplinary Team Lead </h3> 
+          <div class="usajobs-search-result__summary"> 
+           <div class="usajobs-search-result__summary-body--single-col"> 
+            <h4 class="usajobs-search-result__department"> Department of the Army </h4> 
+            <h5 class="usajobs-search-result__agency"> U.S. Army Research, Development and Engineering Command </h5> 
+            <h4 class="usajobs-search-result__location" itemprop="addressLocality"> <span onclick="window.location.href = '#modal-trigger'; return false;" class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Adelphi, Maryland" data-coord-lat="39.00365" data-coord-long="-76.96709" itemprop="addressLocality" data-jobtitle="Interdisciplinary Team Lead"> <i class="fa fa-map-marker"></i> Adelphi, Maryland </span> </h4> 
+            <p class="usajobs-search-result__multi-line"> Permanent • Full-Time • Starting at $112,021 • DB4 </p> 
+            <p class="usajobs-search-result__closing-date"> <i class="fa fa-clock-o is-near-closing"></i> Closes 06/20/2017 </p> 
+           </div> 
+          </div> </a> 
+        </div> 
+        <div class="usajobs-search-result--card"> 
+         <a href="https://www.usajobs.gov:443/GetJob/ViewDetails/471382100" class="usajobs-search-result--card__body"> <h3 class="usajobs-search-result__title" itemprop="title"> Computer Scientist </h3> 
+          <div class="usajobs-search-result__summary"> 
+           <div class="usajobs-search-result__summary-body--single-col"> 
+            <h4 class="usajobs-search-result__department"> Department of Defense </h4> 
+            <h5 class="usajobs-search-result__agency"> Defense Information Systems Agency </h5> 
+            <h4 class="usajobs-search-result__location" itemprop="addressLocality"> <span onclick="window.location.href = '#modal-trigger'; return false;" class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Fort Meade, Maryland" data-coord-lat="39.1014" data-coord-long="-76.7419" itemprop="addressLocality" data-jobtitle="Computer Scientist"> <i class="fa fa-map-marker"></i> Fort Meade, Maryland </span> </h4> 
+            <p class="usajobs-search-result__multi-line"> Recent Graduates • Full-Time • Starting at $47,735 • GS7 - 9 </p> 
+            <p class="usajobs-search-result__closing-date"> <i class="fa fa-clock-o is-near-closing"></i> Closes 06/20/2017 </p> 
+           </div> 
+          </div> </a> 
+        </div> 
+        <div class="usajobs-search-result--card"> 
+         <a href="https://www.usajobs.gov:443/GetJob/ViewDetails/471624500" class="usajobs-search-result--card__body"> <h3 class="usajobs-search-result__title" itemprop="title"> MANAGER </h3> 
+          <div class="usajobs-search-result__summary"> 
+           <div class="usajobs-search-result__summary-body--single-col"> 
+            <h4 class="usajobs-search-result__department"> Department of the Navy </h4> 
+            <h5 class="usajobs-search-result__agency"> Naval Sea Systems Command </h5> 
+            <h4 class="usajobs-search-result__location" itemprop="addressLocality"> <span onclick="window.location.href = '#modal-trigger'; return false;" class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Dahlgren, Virginia" data-coord-lat="38.331" data-coord-long="-77.0468" itemprop="addressLocality" data-jobtitle="MANAGER"> <i class="fa fa-map-marker"></i> Dahlgren, Virginia </span> </h4> 
+            <p class="usajobs-search-result__multi-line"> Permanent • Full-Time • Starting at $94,796 • ND5 </p> 
+            <p class="usajobs-search-result__closing-date"> <i class="fa fa-clock-o is-near-closing"></i> Closes 06/20/2017 </p> 
+           </div> 
+          </div> </a> 
+        </div> 
+        <div class="usajobs-search-result--card"> 
+         <a href="https://www.usajobs.gov:443/GetJob/ViewDetails/471720800" class="usajobs-search-result--card__body"> <h3 class="usajobs-search-result__title" itemprop="title"> MANAGER </h3> 
+          <div class="usajobs-search-result__summary"> 
+           <div class="usajobs-search-result__summary-body--single-col"> 
+            <h4 class="usajobs-search-result__department"> Department of the Navy </h4> 
+            <h5 class="usajobs-search-result__agency"> Naval Sea Systems Command </h5> 
+            <h4 class="usajobs-search-result__location" itemprop="addressLocality"> <span onclick="window.location.href = '#modal-trigger'; return false;" class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Dahlgren, Virginia" data-coord-lat="38.331" data-coord-long="-77.0468" itemprop="addressLocality" data-jobtitle="MANAGER"> <i class="fa fa-map-marker"></i> Dahlgren, Virginia </span> </h4> 
+            <p class="usajobs-search-result__multi-line"> Permanent • Full-Time • Starting at $94,796 • ND5 </p> 
+            <p class="usajobs-search-result__closing-date"> <i class="fa fa-clock-o is-near-closing"></i> Closes 06/20/2017 </p> 
+           </div> 
+          </div> </a> 
+        </div> 
+        <div class="usajobs-search-result--card"> 
+         <a href="https://www.usajobs.gov:443/GetJob/ViewDetails/471738600" class="usajobs-search-result--card__body"> <h3 class="usajobs-search-result__title" itemprop="title"> INTERDISCIPLINARY </h3> 
+          <div class="usajobs-search-result__summary"> 
+           <div class="usajobs-search-result__summary-body--single-col"> 
+            <h4 class="usajobs-search-result__department"> Department of the Navy </h4> 
+            <h5 class="usajobs-search-result__agency"> Naval Air Systems Command </h5> 
+            <h4 class="usajobs-search-result__location" itemprop="addressLocality"> <span onclick="window.location.href = '#modal-trigger'; return false;" class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Patuxent River, Maryland" data-coord-lat="38.756" data-coord-long="-76.7301" itemprop="addressLocality" data-jobtitle="INTERDISCIPLINARY"> <i class="fa fa-map-marker"></i> Patuxent River, Maryland </span> </h4> 
+            <p class="usajobs-search-result__multi-line"> Permanent • Full-Time • Starting at $112,021 • DP5 </p> 
+            <p class="usajobs-search-result__closing-date"> <i class="fa fa-clock-o is-near-closing"></i> Closes 06/20/2017 </p> 
+           </div> 
+          </div> </a> 
+        </div> 
+       </div> 
+       <ul class="usajobs-search-pagination"> 
+        <li class="usajobs-search-pagination__previous-page-container is-disabled"> <a class="usajobs-search-pagination__previous-page" title="Go To Previous Page" aria-hidden="true" href="#"> Previous </a> </li> 
+        <li class="usajobs-search-pagination__page is-active"> <span>1</span> </li> 
+        <li class="usajobs-search-pagination__page "> <a title="Go To Page 2" href="#">2</a> </li> 
+        <li class="usajobs-search-pagination__page-condensed"> … </li> 
+        <li class="usajobs-search-pagination__page "> <a title="Go To Page 6" href="#">6</a> </li> 
+        <li class="usajobs-search-pagination__next-page-container "> <a class="usajobs-search-pagination__next-page" title="Go To Next Page" aria-hidden="false" href="#"> Next </a> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </main> 
+    <aside class="usajobs-rightrail usajobs-content-gutter"> 
+     <h3> Other Departments &amp; Agencies hiring in this field</h3> 
+     <ul class="usajobs-opportunity__agencies"> 
+      <li><a href="/Search/?j=1550&amp;d=CM">Department of Commerce</a></li> 
+      <li><a href="/Search/?j=1550&amp;d=DD">Department of Defense</a></li> 
+     </ul> 
+     <h3> Narrow your search</h3> 
+     <p> Continue to search where you can refine by location, keywords, and other filters. <a href="/Search/?j=1550" class="usa-button usajobs-button usajobs-button-big"> Narrow your search </a> </p> 
+    </aside> 
+   </section> 
+  </section> 
+  <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-job-map" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description-map"> 
+   <div class="usajobs-modal__dialog"> 
+    <div class="usajobs-modal__content"> 
+     <div id="usajobs-modal-description-map" class="usajobs-assistive-text">
+       View Map 
+     </div> 
+     <div class="usajobs-modal__body" id="mapDivContent" style="height:600px;"> 
+      <h1 style="font-family: Arial;font-size : 12pt; font-weight :bold;text-align : left; color :#007FC2; background-color :#eeeeee;"> Please wait while map is being generated. </h1> 
+      <p style="text-align: center;"> <img src="/Content/images/gif/pleasewait.gif" alt="Please wait"> </p> 
+     </div> 
+     <div class="usajobs-modal__actions"> 
+      <a class="usajobs-modal__close usa-button" data-behavior="modal.close"> <span class="usajobs-assistive-text">Close</span> </a> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="sessionTimeout-dialog" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description"> 
+   <div class="usajobs-modal__dialog"> 
+    <div class="usajobs-modal__content"> 
+     <div id="usajobs-modal-description" class="usajobs-assistive-text">
+       Beginning of a dialog window for your session has expired. Escape will cancel And close the window. 
+     </div> 
+     <div class="usajobs-modal__header"> 
+      <h2 id="usajobs-modal-heading" class="usajobs-modal__title">Your Session is About to Expire!</h2> 
+     </div> 
+     <div class="usajobs-modal__body"> 
+      <div class="usajobs-grid" style="padding:0;"> 
+       <div class="usa-width-one-whole"> 
+        <p id="opt">Your USAJOBS session will expire due to inactivity in three minutes. Any unsaved data will be lost if you allow the session to expire. Click the button below to continue your session.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="usajobs-modal__footer"> 
+      <button id="sessionTimeout-dialog-logout" class="usa-button-big usa-button-primary" data-behavior="modal.close">Logoff</button> 
+      <button id="sessionTimeout-dialog-keepalive" class="usa-button-big usa-button-primary" data-behavior="modal.close">Stay Logged In</button> 
+     </div> 
+     <div class="usajobs-modal__actions"> 
+      <button class="usajobs-modal__close" data-behavior="modal.close"> <span class="usajobs-assistive-text">Close</span> </button> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <footer class="usa-footer usa-footer-big usajobs-footer--v2" aria-label="footer" data-object="footer"> 
+   <div class="usa-grid usa-footer-return-to-top"> 
+    <a href="javascript:;" id="footer-back-to-top">Return to top</a> 
+   </div> 
+   <div class="usa-footer-primary-section"> 
+    <div class="usa-grid-full"> 
+     <nav class="usa-footer-nav usa-width-one-whole"> 
+      <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__job_applications"> 
+       <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".home-menu"> Job Applications </li> 
+       <li class="usajobs-footer--v2__menu-item home-menu is-hidden"> <a href="/Applicant/ProfileDashboard/Home"> All</a> </li> 
+       <li class="usajobs-footer--v2__menu-item home-menu is-hidden"> <a href="/Applicant/ProfileDashboard/Home/Advancing"> Advancing</a> </li> 
+       <li class="usajobs-footer--v2__menu-item home-menu is-hidden"> <a href="/Applicant/ProfileDashboard/Home/Paused"> Paused</a> </li> 
+       <li class="usajobs-footer--v2__menu-item home-menu is-hidden"> <a href="/Applicant/ProfileDashboard/Home/Stopped"> Stopped</a> </li> 
+      </ul> 
+      <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__account"> 
+       <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".account-menu">Account</li> 
+       <li class="usajobs-footer--v2__menu-item account-menu is-hidden"> <a href="/Applicant/ProfileDashboard/Home">Home</a> </li> 
+       <li class="usajobs-footer--v2__menu-item account-menu is-hidden"> <a href="https://login.usajobs.gov/Account/Contact">Profile</a> </li> 
+       <li class="usajobs-footer--v2__menu-item account-menu is-hidden"> <a href="/Applicant/ProfileDashboard/Resumes/">Documents</a> </li> 
+       <li class="usajobs-footer--v2__menu-item account-menu is-hidden"> <a href="https://www.usajobs.gov/Applicant/ProfileDashboard/Home?c=saved-job">Saved Jobs</a> </li> 
+       <li class="usajobs-footer--v2__menu-item account-menu is-hidden"> <a href="https://www.usajobs.gov/Applicant/ProfileDashboard/Home?c=saved-search-active">Saved Searches</a> </li> 
+       <li class="usajobs-footer--v2__menu-item account-menu is-hidden"> <a href="https://login.usajobs.gov/Account/Username">Username &amp; Password</a> </li> 
+      </ul> 
+      <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__help"> 
+       <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".help-menu">Help</li> 
+       <li class="usajobs-footer--v2__menu-item help-menu is-hidden"> <a href="/Help/">Help Center</a> </li> 
+       <li class="usajobs-footer--v2__menu-item help-menu is-hidden"> <a href="/Help/About/">About USAJOBS</a> </li> 
+       <li class="usajobs-footer--v2__menu-item help-menu is-hidden"> <a href="/Support/">Contact Us</a> </li> 
+       <li class="usajobs-footer--v2__menu-item help-menu is-hidden"> <a href="/Help/faq/">FAQs</a> </li> 
+       <li class="usajobs-footer--v2__menu-item help-menu is-hidden"> <a href="/Help/Get-Started/">Get Started</a> </li> 
+       <li class="usajobs-footer--v2__menu-item help-menu is-hidden"> <a href="/Help/how-to/">How to…</a> </li> 
+       <li class="usajobs-footer--v2__menu-item help-menu is-hidden"> <a href="/Help/working-in-government/"> Working in Government </a> </li> 
+      </ul> 
+     </nav> 
+    </div> 
+   </div> 
+   <div class="usa-footer-secondary_section usa-footer-big-secondary-section"> 
+    <div class="usa-grid"> 
+     <div class="usa-footer-logo usa-width-one-half"> 
+      <span class="logo"></span> 
+      <p class="usajobs-footer--v1__note"> USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website. </p> 
+     </div> 
+     <div class="usa-footer-contact-links usa-width-one-half"> 
+      <div class="usa-social-links"> 
+       <a href="https://plus.google.com/+usajobs" class="usajobs-social-link" aria-label="Google Plus" title="Google Plus"> <span class="fa fa-google-plus"></span> </a> 
+       <a href="https://www.facebook.com/USAJOBS" class="usajobs-social-link" aria-label="Facebook" title="Facebook"> <span class="fa fa-facebook"></span> </a> 
+       <a href="https://www.linkedin.com/company/usajobs" class="usajobs-social-link" aria-label="LinkedIn" title="LinkedIn"> <span class="fa fa-linkedin"></span> </a> 
+       <a href="https://twitter.com/USAJOBS" class="usajobs-social-link" aria-label="Twitter" title="Twitter"> <span class="fa fa-twitter"></span> </a> 
+       <a href="https://www.youtube.com/user/usajobsapp" class="usajobs-social-link" aria-label="You Tube" title="You Tube"> <span class="fa fa-youtube"></span> </a> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="usa-grid"> 
+     <div class="usa-footer-logo usa-width-one-whole"> 
+      <ul class="usa-unstyled-list usajobs-footer--v1__subsection-horizontal"> 
+       <li><a href="https://www.opm.gov/about-us/budget-performance/">Budget and Performance</a></li> 
+       <li><a href="https://www.opm.gov/information-management/freedom-of-information-act/">FOIA</a></li> 
+       <li><a href="https://www.opm.gov/our-inspector-general/">Inspector General</a></li> 
+       <li><a href="https://www.opm.gov/information-management/no-fear-act/">No Fear Act Data</a></li> 
+       <li><a href="/Help/Privacy/">Privacy Policy</a></li> 
+       <li><a href="http://www.usa.gov/">USA.gov</a></li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </footer> 
+  <script src="/bundles/usaj-base?v=-tRA4aUW0FbUo_9Dh8JZ1hmsnXTCkwbRcceIMKgCxss1"></script> 
+  <script src="/bundles/usaj-design-system-js?v=ZnQOkVI7jW80bvj5Ahsz7El6aghMGjQkIQJeK25tf201"></script> 
+  <script type="text/javascript">
+        var acHostUrl = "https://ac.usajobs.gov/locationAC"
+        var lis = false;
+        var myInactivity = ((30 - 3) * 60 * 1000);
+        var mySessionTimeout = (30 * 60 * 1000);
+        var usajobsConfig = {"DataHome":"https://data.usajobs.gov/","MediaHome":"https://media.usajobs.gov/","BingKey":"Aq2HseksGy7yVZIw7TqmI6AQrgSsye0gPEVVGauJnnP1Zz9aGAgnVFjBERPX5otI"};
+        var protocol = new String();
+        var hostName = new String();
+        pathname = window.parent.document.location.pathname;
+        hostName = window.location.host;
+        $(function () {
+            if (lis) {
+                if (typeof $.jobsIdleTimeout === 'function') {
+                    $.jobsIdleTimeout({
+                        redirAfter: mySessionTimeout,
+                        warnAfter: myInactivity,
+                        noconfirm: 180000
+                    });
+                }
+            };
+        });
+    </script> 
+  <script src="/bundles/usaj-opportunities-js?v=k9dZncwJYY4CFUBuRX4CrB_otud1aSfETPd05O9HgLw1"></script> 
+  <script src="/bundles/usaj-design-system-view-map?v=q1NUUW13yFCK9gWTZC3tZSYspp4Zjj2WQRUioQdvZe81"></script> 
+  <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js" type="text/javascript" defer></script> 
+  <ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="z-index: 1; display: none;"></ul>
+  <iframe src="//gateway.answerscloud.com/code/19.3.2-v.3/fs.frame.html?d=www.usajobs.gov&amp;_cv_=19.3.2-v.3&amp;_vt_=il602uf&amp;uid=544445912.1497882204" id="_fsCtrlFr" class="_FSFRAME_" style="display: none;" title="ForeSee Control Frame" _fsrb="true"></iframe>
+ </body>
+</html>

@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <script type="text/javascript">var ue_t0=ue_t0||+new Date();</script> 
+  <script type="text/javascript">
+var ue_csm = window,
+    ue_hob = +new Date();
+(function(d){var e=d.ue=d.ue||{},f=Date.now||function(){return+new Date};e.d=function(b){return f()-(b?0:d.ue_t0)};e.stub=function(b,a){if(!b[a]){var c=[];b[a]=function(){c.push([c.slice.call(arguments),e.d(),d.ue_id])};b[a].replay=function(b){for(var a;a=c.shift();)b(a[0],a[1],a[2])};b[a].isStub=1}};e.exec=function(b,a){return function(){if(1==window.ueinit)try{return b.apply(this,arguments)}catch(c){ueLogError(c,{attribution:a||"undefined",logLevel:"WARN"})}}}})(ue_csm);
+
+
+    var ue_err_chan = 'jserr-rw';
+(function(c,d){function e(f,b){if(!(a.ec>a.mxe)&&f){a.ec++;a.ter.push(f);b=b||{};var c=f.logLevel||b.logLevel;c&&c!=k||a.ecf++;b.pageURL=""+(d.location?d.location.href:"");b.logLevel=c;b.attribution=f.attribution||b.attribution;a.erl.push({ex:f,info:b})}}function h(a,b,d,e,g){c.ueLogError({m:a,f:b,l:d,c:""+e,err:g,fromOnError:1,args:arguments},g?{attribution:g.attribution,logLevel:g.logLevel}:void 0);return!1}var k="FATAL",a={ec:0,ecf:0,pec:0,ts:0,erl:[],ter:[],mxe:50,startTimer:function(){a.ts++;
+setInterval(function(){c.ue&&a.pec<a.ec&&c.uex("at");a.pec=a.ec},1E4)}};h.skipTrace=1;e.skipTrace=1;e.isStub=1;c.ueLogError=e;c.ue_err=a;d.onerror=h})(ue_csm,window);
+
+
+var ue_id = '1XKAN08RNWXR7ARV2WNW',
+    ue_url = '/csmpb',
+    ue_navtiming = 1,
+    ue_mid = 'AYXWW5ND5JOM8',
+    ue_sid = '000-0000000-0000000',
+    ue_sn = 'www.bookdepository.com',
+    ue_furl = 'fls-eu.amazon.co.uk',
+    ue_fcsn = 1,
+    ue_urt = 3,
+    ue_rpl_ns = 'cel-rpl',
+    ue_fpf = '//fls-eu.amazon.co.uk/1/batch/1/OP/AYXWW5ND5JOM8:000-0000000-0000000:1XKAN08RNWXR7ARV2WNW$uedata=s:',
+
+    ue_swi = 1;
+function ue_viz(){(function(c,e,a){function k(b){if(c.ue.viz.length<p&&!l){var a=b.type;b=b.originalEvent;/^focus./.test(a)&&b&&(b.toElement||b.fromElement||b.relatedTarget)||(a=e[m]||("blur"==a||"focusout"==a?"hidden":"visible"),c.ue.viz.push(a+":"+(+new Date-c.ue.t0)),"visible"==a&&(ue.isl&&uex("at"),l=1))}}for(var l=0,f,g,m,n=["","webkit","o","ms","moz"],d=0,p=20,h=0;h<n.length&&!d;h++)if(a=n[h],f=(a?a+"H":"h")+"idden",d="boolean"==typeof e[f])g=a+"visibilitychange",m=(a?a+"V":"v")+"isibilityState";
+k({});d&&e.addEventListener(g,k,0);c.ue&&d&&(c.ue.pageViz={event:g,propHid:f})})(ue_csm,document,window)};
+
+(function(a,g){function x(a){return a&&a.replace&&a.replace(/^\s+|\s+$/g,"")}function p(a){return"undefined"===typeof a}function s(d,c,e,h){var g=h||+new Date,m;a.ueam&&a.ueam(c,d,h);if(c||p(e)){if(d)for(m in h=c?f("t",c)||f("t",c,{}):a.ue.t,h[d]=g,e)e.hasOwnProperty(m)&&f(m,c,e[m]);return g}}function f(d,c,e){var f=a.ue,g=c&&c!=f.id?f.sc[c]:f;g||(g=f.sc[c]={});"id"==d&&e&&(f.cfa2=1,a.ue_ran&&(a.ue_cel&&a.ue_cel.reset(e),a.ue.log.reset&&a.ue.log.reset()));return g[d]=e||g[d]}function t(d,c,e,f,g){e=
+"on"+e;var m=c[e];"function"===typeof m?d&&(a.ue.h[d]=m):m=function(){};c[e]=g?function(a){f(a);m(a)}:function(a){m(a);f(a)};c[e]&&(c[e].isUeh=1)}function y(d,c,e){function h(c,e){var b=[c],E=0,g={},m,h;e?(b.push("m=1"),g[e]=1):g=a.ue.sc;for(h in g)if(g.hasOwnProperty(h)){var k=f("wb",h),l=f("t",h)||{},q=f("t0",h)||a.ue.t0,n;if(e||2==k){k=k?E++:"";b.push("sc"+k+"="+h);for(n in l)3>=n.length&&!p(l[n])&&null!==l[n]&&b.push(n+k+"="+(l[n]-q));b.push("t"+k+"="+l[d]);if(f("ctb",h)||f("wb",h))m=1}}!z&&m&&
+b.push("ctb=1");return b.join("&")}function B(c,b,e,d){if(c){var f=a.ue_err,h;d&&a.ue.log||(h=new Image,a.ue.iel.push(h),h.src=c);F?a.ue_fpf&&g.encodeURIComponent&&c&&(d=new Image,c=""+a.ue_fpf+g.encodeURIComponent(c)+":"+(+new Date-a.ue_t0),a.ue.iel.push(d),d.src=c):a.ue.log&&(h=g.chrome&&"ul"==b,a.ue.log(c,"uedata",a.ue_svi?{n:1,img:!d&&h?1:0}:{n:1}),a.ue.ielf.push(c));f&&!f.ts&&f.startTimer();a.ue.b&&(f=a.ue.b,a.ue.b="",B(f,b,e,1))}}function m(c){if(!ue.collected){var b=c.timing,e=c.navigation,
+d=ue.t;b&&(d.na_=b.navigationStart,d.ul_=b.unloadEventStart,d._ul=b.unloadEventEnd,d.rd_=b.redirectStart,d._rd=b.redirectEnd,d.fe_=b.fetchStart,d.lk_=b.domainLookupStart,d._lk=b.domainLookupEnd,d.co_=b.connectStart,d._co=b.connectEnd,d.sc_=b.secureConnectionStart,d.rq_=b.requestStart,d.rs_=b.responseStart,d._rs=b.responseEnd,d.dl_=b.domLoading,d.di_=b.domInteractive,d.de_=b.domContentLoadedEventStart,d._de=b.domContentLoadedEventEnd,d._dc=b.domComplete,d.ld_=b.loadEventStart,d._ld=b.loadEventEnd,
+b=d.na_,c="function"!==typeof c.now||p(b)?0:new Date(b+c.now())-new Date,d.ntd=c+a.ue.t0);e&&(d.ty=e.type+a.ue.t0,d.rc=e.redirectCount+a.ue.t0);ue.collected=1}}function t(b){var c=n&&n.navigation?n.navigation.type:A,d=c&&2!=c,e=a.ue.bfini;a.ue.cfa2||(e&&1<e&&(b+="&bfform=1",d||(a.ue.isBFT=e-1)),2==c&&(b+="&bfnt=1",a.ue.isBFT=a.ue.isBFT||1),a.ue.ssw&&a.ue.isBFT&&(p(a.ue.isNRBF)&&(c=a.ue.ssw(a.ue.oid),c.e||p(c.val)||(a.ue.isNRBF=1<c.val?0:1)),p(a.ue.isNRBF)||(b+="&nrbf="+a.ue.isNRBF)),a.ue.isBFT&&!a.ue.isNRBF&&
+(b+="&bft="+a.ue.isBFT));return b}function w(){a.ue.isl&&y("eod")}if(c||p(e)){for(var q in e)e.hasOwnProperty(q)&&f(q,c,e[q]);s("pc",c,e);q=f("id",c)||a.ue.id;var b=a.ue.url+"?"+d+"&v="+a.ue.v+"&id="+q,z=f("ctb",c)||f("wb",c),n=g.performance||g.webkitPerformance,k,l;z&&(b+="&ctb="+z);1<a.ueinit&&(b+="&ic="+a.ueinit);!a.ue._fi||"at"!=d||c&&c!=q||(b+=a.ue._fi());if(!("ld"!=d&&"ul"!=d||c&&c!=q)){if("ld"==d){try{g.onbeforeunload&&g.onbeforeunload.isUeh&&(g.onbeforeunload=null)}catch(D){}if(g.chrome)for(l=
+0;l<ue.ulh.length;l++)C("beforeunload",ue.ulh[l]);(l=document.ue_backdetect)&&l.ue_back&&l.ue_back.value++;a._uess&&(k=a._uess());a.ue.isl=1;a.ue_sdbbc&&v("beforeunload",w)}ue._bf&&(b+="&bf="+ue._bf());a.ue_navtiming&&n&&n.timing&&(f("ctb",q,"1"),1==a.ue_navtiming&&s("tc",A,A,n.timing.navigationStart));n&&m(n);a.ue.t.hob=a.ue_hob;a.ue.t.hoe=a.ue_hoe;a.ue.ifr&&(b+="&ifr=1")}s(d,c,e);e="ld"==d&&c&&f("wb",c);var u;1!==ue_csm.ue_fma||e||q==a.ue.oid||G((f("t",c)||{}).tc||+f("t0",c),+f("t0",c));a.ue_mbl&&
+a.ue_mbl.cnt&&!e&&(b+=a.ue_mbl.cnt());e?f("wb",c,2):"ld"==d&&(r.lid=x(q));for(u in a.ue.sc)if(1==f("wb",u))break;if(e){if(a.ue.s)return;b=h(b,null)}else l=h(b,null),l!=b&&(l=t(l),a.ue.b=l),k&&(b+=k),b=h(b,c||a.ue.id);b=t(b);if(a.ue.b||e)for(u in a.ue.sc)2==f("wb",u)&&delete a.ue.sc[u];k=0;ue._rt&&(b+="&rt="+ue._rt());e||(a.ue.s=0,(k=a.ue_err)&&0<k.ec&&k.pec<k.ec&&(k.pec=k.ec,b+="&ec="+k.ec+"&ecf="+k.ecf),k=f("ctb",c),f("t",c,{}));b&&a.ue.tag&&0<a.ue.tag().length&&(b+="&csmtags="+a.ue.tag().join("|"),
+a.ue.tag=a.ue.tagC());b&&a.ue.viz&&0<a.ue.viz.length&&(b+="&viz="+a.ue.viz.join("|"),a.ue.viz=[]);b&&!p(a.ue_pty)&&(b+="&pty="+a.ue_pty+"&spty="+a.ue_spty+"&pti="+a.ue_pti);b&&a.ue.tabid&&(b+="&tid="+a.ue.tabid);b&&a.ue.aftb&&(b+="&aftb=1");b&&a.ue.sbf&&(b+="&sbf=1");!a.ue._ui||c&&c!=q||(b+=a.ue._ui());a.ue.a=b;B(b,d,k,e)}}function v(a,c,e){e=e||g;e.addEventListener?e.addEventListener(a,c,!1):e.attachEvent&&e.attachEvent("on"+a,c)}function C(a,c,e){e=e||g;e.removeEventListener?e.removeEventListener(a,
+c,!1):e.detachEvent&&e.detachEvent("on"+a,c)}function w(){function d(){a.onUl()}function c(a){return function(){e[a]||(e[a]=1,y(a))}}var e=a.ue.r,f,p;a.onLd=c("ld");a.onLdEnd=c("ld");a.onUl=c("ul");f={stop:c("os")};g.chrome?(v("beforeunload",d),ue.ulh.push(d)):f[D]=a.onUl;for(p in f)f.hasOwnProperty(p)&&t(0,g,p,f[p]);a.ue_viz&&ue_viz();v("load",a.onLd);s("ue")}function G(d,c){a.ue_mbl&&a.ue_mbl.ajax&&a.ue_mbl.ajax(d,c);a.ue.tag("ajax-transition")}a.ueinit=(a.ueinit||0)+1;var r={t0:g.aPageStart||a.ue_t0,
+id:a.ue_id,url:a.ue_url,rid:a.ue_id,a:"",b:"",h:{},r:{ld:0,oe:0,ul:0},s:1,t:{},sc:{},iel:[],ielf:[],fc_idx:{},viz:[],v:"0.528.57",d:a.ue&&a.ue.d,log:a.ue&&a.ue.log,clog:a.ue&&a.ue.clog,onflush:a.ue&&a.ue.onflush,onunload:a.ue&&a.ue.onunload,stub:a.ue&&a.ue.stub,lr:a.ue&&a.ue.lr,exec:a.ue&&a.ue.exec,ulh:[],cfa2:0},F=a.ue_fpf?1:0,D="beforeunload",A;r.oid=x(r.id);r.lid=x(r.id);a.ue=r;a.ue._t0=a.ue.t0;a.ue.tagC=function(){var a={};return function(c){c&&(a[c]=1);c=[];for(var e in a)a.hasOwnProperty(e)&&
+c.push(e);return c}};a.ue.tag=a.ue.tagC();a.ue.ifr=g.top!==g.self||g.frameElement?1:0;ue.attach=v;ue.detach=C;ue.reset=function(d,c){d&&(a.ue_cel&&a.ue_cel.reset(),a.ue.t0=+new Date,a.ue.rid=d,a.ue.id=d,a.ue.fc_idx={},a.ue.viz=[])};a.uei=w;a.ueh=t;a.ues=f;a.uet=s;a.uex=y;w()})(ue_csm,window);
+
+
+ue.stub(ue,"log");ue.stub(ue,"onunload");ue.stub(ue,"onflush");
+(function(g){var a=g.ue;a.cv={};a.cv.scopes={};a.count=function(b,e,c){var d={},f=a.cv;d.counter=b;d.value=e;d.t=a.d();c&&c.scope&&(f=a.cv.scopes[c.scope]=a.cv.scopes[c.scope]||{},d.scope=c.scope);if(void 0===e)return f[b];f[b]=e;b=0;c&&c.bf&&(b=1);a.clog&&0===b?a.clog(d,"csmcount",{bf:b}):a.log&&a.log(d,"csmcount",{c:1,bf:b})};a.count("baselineCounter2",1)})(ue_csm);
+
+
+<!-- 6pb8ut48mm21vqchwpkm4iavlpi0cvzhpqb0rmfte8t -->
+var ue_hoe = +new Date();
+</script>
+  <meta name="copyright" content="©2015 Book Depository Ltd."> 
+  <meta name="author" content="Book Depository"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> 
+  <meta name="google-site-verification" content=""> 
+  <meta name="msvalidate.01" content=""> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta http-equiv="content-language" content="en"> 
+  <meta http-equiv="pragma" content="no-cache"> 
+  <meta http-equiv="cache-control" content="no-cache"> 
+  <meta http-equiv="cache-control" content="must-revalidate"> 
+  <meta http-equiv="cache-control" content="max-age=0"> 
+  <meta http-equiv="expires" content="Sat, 17 Mar 1990 00:00:01 GMT"> 
+  <link rel="shortcut icon" type="image/ico" href="http://d3ogvdx946i4sr.cloudfront.net/favicon.ico"> 
+  <link rel="apple-touch-icon-precomposed" href="http://d3ogvdx946i4sr.cloudfront.net/apple-touch-icon.png"> 
+  <link href="https://plus.google.com/+bookdepository/" rel="publisher"> 
+  <meta name="description" content="Our Souls at Night by Kent Haruf, 9781447299370, available at Book Depository with free delivery worldwide."> 
+  <meta name="keywords" content="Kent Haruf"> 
+  <meta name="Revisit-After" content="30 days"> 
+  <link rel="canonical" href="https://www.bookdepository.com/Our-Souls-at-Night-Kent-Haruf/9781447299370"> 
+  <title>
+	Our Souls at Night : Kent Haruf : 9781447299370</title> 
+  <link rel="preload" href="http://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/fonts/bdicons.woff" as="font" type="font/woff2" crossorigin> 
+  <link rel="stylesheet" href="http://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/css/common.css"> 
+  <!--[if lte IE 9]>
+<link rel="stylesheet" href="http://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/css/ie/common.css">
+<![endif]-->
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    window.ga('create', 'UA-41807899-1', 'www.bookdepository.com', {'allowLinker': true});
+    window.ga('send', 'pageview');
+</script> 
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function()
+    {n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}
+    ;if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '760768887362598');
+    fbq('track', "PageView");
+</script> 
+  <noscript>
+   &lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=760768887362598&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;
+  </noscript>
+  <script type="text/javascript">
+(function(c,b){function g(a){e.push(a)}function f(a){if(a){var b=c.head||c.getElementsByTagName("head")[0]||c.documentElement,d=c.createElement("script");d.async="async";d.src=a;d.setAttribute("crossorigin","anonymous");b.insertBefore(d,b.firstChild)}}function h(){ue.uels=f;for(var a=0;a<e.length;a++)f(e[a]);ue.deffered=1}var e=[];b.ue&&(ue.uels=g,b.ue.attach&&b.ue.attach("load",h))})(document,window);
+(function(a){var b=a.alert;window.alert=function(){a.ueLogError&&a.ueLogError({message:"[CSM] Alert invocation detected with argument: "+arguments[0],logLevel:"WARN"});Function.prototype.apply.apply(b,[a,arguments||[]])}})(window);
+(function(k,l,g){function m(a){c||(c=b[a.type].id,"undefined"===typeof a.clientX?(e=a.pageX,f=a.pageY):(e=a.clientX,f=a.clientY),2!=c||h&&(h!=e||n!=f)?(r(),d.isl&&l.setTimeout(function(){p("at",d.id)},0)):(h=e,n=f,c=0))}function r(){for(var a in b)b.hasOwnProperty(a)&&d.detach(a,m,b[a].parent)}function s(){for(var a in b)b.hasOwnProperty(a)&&d.attach(a,m,b[a].parent)}function t(){var a="";!q&&c&&(q=1,a+="&ui="+c);return a}var d=k.ue,p=k.uex,q=0,c=0,h,n,e,f,b={click:{id:1,parent:g},mousemove:{id:2,
+parent:g},scroll:{id:3,parent:l},keydown:{id:4,parent:g}};d&&p&&(s(),d._ui=t)})(ue_csm,window,document);
+
+
+
+    if (window.ue && window.ue.uels) {
+            ue.uels("http://z-ecx.images-amazon.com/images/G/01/AUIClients/ClientSideMetricsAUIJavascript-98443f8ae1bfc9acc6ccb5e4d3f52c453eaaba78._V2_.js");
+    }
+
+(function(k,c){function l(a,b){return a.filter(function(a){return a.initiatorType==b})}function f(a,c){if(b.t[a]){var g=b.t[a]-b._t0,e=c.filter(function(a){return 0!==a.responseEnd&&m(a)<g}),f=l(e,"script"),h=l(e,"link"),k=l(e,"img"),n=e.map(function(a){return a.name.split("/")[2]}).filter(function(a,b,c){return a&&c.lastIndexOf(a)==b}),q=e.filter(function(a){return a.duration<p}),s=g-Math.max.apply(null,e.map(m))<r|0;"af"==a&&(b._afjs=f.length);return a+":"+[e[d],f[d],h[d],k[d],n[d],q[d],s].join("-")}}
+function m(a){return a.responseEnd-(b._t0-c.timing.navigationStart)}function n(){var a=c[h]("resource"),d=f("cf",a),g=f("af",a),a=f("ld",a);delete b._rt;b._ld=b.t.ld-b._t0;b._art&&b._art();return[d,g,a].join("_")}var p=20,r=50,d="length",b=k.ue,h="getEntriesByType";b._rre=m;b._rt=c&&c.timing&&c[h]&&n})(ue_csm,window.performance);
+
+(function(h,d){function e(c){c="";var b=a.isBFT?"b":"s",e=""+a.oid,d=""+a.lid,f=e;e!=d&&20==d.length&&(b+="a",f+="-"+d);a.tabid&&(c=a.tabid+"+");c+=b+"-"+f;c!=g&&100>c.length&&(g=c,document.cookie="csm-hit="+c+("|"+ +new Date)+l+"; path=/")}function m(){g=0}function k(b){!0===d[a.pageViz.propHid]?g=0:!1===d[a.pageViz.propHid]&&e({type:"visible"})}var l="; expires="+(new Date(+new Date+6048E5)).toGMTString(),g,b=h.ue_tbpv,a=h.ue||{},f=b&&a.pageViz&&a.pageViz.event&&a.pageViz.propHid;a.attach&&(a.attach("click",
+e),a.attach("keyup",e),f&&4!=b&&5!=b||(a.attach("focus",e),a.attach("blur",m)),f&&a.attach(a.pageViz.event,k,d),!f||3!=b&&5!=b||k({}));a.aftb=1})(ue_csm,document);
+
+
+ue_csm.ue.stub(ue,"impression");
+
+
+
+if(window.ue&&uet) { uet('bb'); }
+</script>
+ </head> 
+ <body> 
+  <img height="1" width="1" style="display:none;visibility:hidden;" src="//fls-eu.amazon.co.uk/1/batch/1/OP/AYXWW5ND5JOM8:000-0000000-0000000:1XKAN08RNWXR7ARV2WNW$uedata=s:%2Fcsmpb%3Fstaticb%26id%3D1XKAN08RNWXR7ARV2WNW:0" alt=""> 
+  <div class="header-wrap "> 
+   <header class="header"> 
+    <div class="user-nav-wrap"> 
+     <ul class="left-nav nav mobile-nav-content" data-order="1"> 
+      <li><a href="/" class="home-icon-link"><i class="icon-home"></i></a></li> 
+      <li><a href="https://www.bookdepository.com/contactus">Contact Us</a></li> 
+      <li><a rel="nofollow" href="http://www.bookdepository.com/help">Help</a></li> 
+     </ul> 
+     <ul class="right-nav mobile-nav-content" data-order="3"> 
+      <li><a rel="nofollow" href="https://www.bookdepository.com/track">Order Status</a></li> 
+      <li><a rel="nofollow" href="https://www.bookdepository.com/account/wishlist">Wishlist</a></li> 
+      <li><a rel="nofollow" href="https://www.bookdepository.com/account/login/to/account">Sign in/Join</a></li> 
+     </ul> 
+    </div> 
+    <div class="primary-wrap"> 
+     <button class="mobile-trigger"><i class="icon-menu"></i></button> 
+     <div class="brand-wrap"> 
+      <a href="/" class="brand-link"> <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/img/logo.png" alt="Bookdepository.com"> </a> 
+     </div> 
+     <div class="mobile-basket-wrap basket"> 
+      <div class="free-delivery"> 
+       <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/img/free-delivery-mobile.png" alt="Free delivery"> 
+      </div> 
+      <a href="https://www.bookdepository.com/basket" class="mobile-basket-btn basket-wrap"> <span class="item-count"> 0</span> <i class="icon-cart"></i> </a> 
+     </div> 
+     <div class="search-wrap" data-url="//suggestions.bookdepository.com/suggestions"> 
+      <form id="book-search-form" action="http://www.bookdepository.com/search"> 
+       <div class="el-wrap header-search-el-wrap"> 
+        <input id="book-search" type="text" placeholder="Search for books by keyword / title / author / ISBN" name="searchTerm" class="text-input" value=""> 
+        <input type="hidden" name="search" value="Find book"> 
+        <button class="header-search-btn" type="submit"><span class="text">Search</span></button> 
+       </div> 
+      </form> 
+      <a rel="nofollow" href="http://www.bookdepository.com/search/advanced" class="advanced-search">Advanced Search</a> 
+     </div> 
+     <div class="free-delivery-wrap"> 
+      <a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/3/Which-countries-do-you-deliver-to" title="Free delivery worldwide"> <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/img/free-delivery.png"> </a> 
+     </div> 
+    </div> 
+   </header> 
+  </div> 
+  <div class="secondary-header-wrap "> 
+   <div class="secondary-header"> 
+    <div class="secondary-header-content"> 
+     <ul class="page-links mobile-nav-content" data-order="2"> 
+      <li class="show-only-mobile"><a href="http://www.bookdepository.com/#browse-by-category">Browse by category</a></li> 
+      <li><a href="http://www.bookdepository.com/bestsellers">Bestsellers</a></li> 
+      <li><a href="http://www.bookdepository.com/comingsoon">Coming Soon</a></li> 
+      <li><a href="http://www.bookdepository.com/highlights">Highlights</a></li> 
+      <li><a href="http://www.bookdepository.com/bargain-shop">Bargain Shop</a></li> 
+     </ul> 
+     <div class="right-section"> 
+      <div class="currency-selector-wrap mobile-nav-content" data-order="4"> 
+       <form method="post" action="http://www.bookdepository.com/Our-Souls-at-Night-Kent-Haruf/9781447299370?ref=grid-view"> 
+        <div class="currency-selector" title="British Pound"> 
+         <select name="selectCurrency" id="selectCurrency" onchange="this.form.submit()"> <option value="AUD"> $&nbsp;Australian Dollar</option> <option value="EUR"> €&nbsp;Euro</option> <option value="USD"> $&nbsp;US Dollar</option> <option value="GBP" selected> £&nbsp;British Pound</option> <option value="NZD"> $&nbsp;New Zealand Dollar</option> <option value="SGD"> $&nbsp;Singapore Dollar</option> <option value="HKD"> $&nbsp;Hong Kong Dollar</option> <option value="CAD"> $&nbsp;Canadian Dollar</option> <option value="CZK"> Kč&nbsp;Czech Koruna</option> <option value="ILS"> ₪&nbsp;Israeli Shekel</option> <option value="JPY"> ￥&nbsp;Japanese Yen</option> <option value="NOK"> Kr&nbsp;Norwegian Krone</option> <option value="PLN"> zł&nbsp;Polish Zloty</option> <option value="SEK"> Kr&nbsp;Swedish Krona</option> <option value="CHF"> CHF&nbsp;Swiss Franc</option> <option value="THB"> ฿&nbsp;Thai Baht</option> <option value="DKK"> Kr&nbsp;Danish Krone</option> <option value="HUF"> Ft&nbsp;Hungarian Forint</option> <option value="TWD"> $&nbsp;Taiwan New Dollar</option> <option value="ZAR"> R&nbsp;South African Rand</option> <option value="MXN"> $&nbsp;Mexican Peso</option> <option value="ARS"> $&nbsp;Argentine Peso</option> <option value="CLP"> $&nbsp;Chilean Peso</option> <option value="MYR"> RM&nbsp;Malaysian Ringgit</option> <option value="KRW"> ￦&nbsp;South Korean Won</option> <option value="IDR"> Rp&nbsp;Indonesian Rupiah</option> </select> 
+        </div> 
+       </form>
+      </div> 
+      <div class="basket-wrap"> 
+       <span class="total">£0.00</span> 
+       <a rel="nofollow" href="https://www.bookdepository.com/basket" class="basket-btn"> <span class="item-count"> 0</span> <span class="item-text"> items </span> <i class="icon-cart"></i> </a> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div>
+  <div class="content-wrap"> 
+   <script>
+        window.ga('send', 'pageview', {nonInteraction: true, dimension1: '9781447299370', dimension2: 'product', dimension3: '5.99'});
+    </script> 
+   <div class="main-content no-borders book-page full-width"> 
+    <ol class="breadcrumb"> 
+     <li> <a href="http://www.bookdepository.com/category/334/Contemporary-Fiction" class="active"> Contemporary Fiction</a> </li> 
+    </ol> 
+    <div itemscope itemtype="http://schema.org/Book"> 
+     <div class="item-block"> 
+      <meta itemprop="url" content="http://www.bookdepository.com/Our-Souls-at-Night-Kent-Haruf/9781447299370"> 
+      <meta itemprop="author" content="Kent Haruf"> 
+      <meta itemprop="publisher" content="Pan MacMillan"> 
+      <span itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+       <meta itemprop="name" content="Our Souls at Night"> 
+       <meta itemprop="availability" content="http://schema.org/InStock"> 
+       <meta itemprop="itemCondition" content="http://schema.org/NewCondition"> 
+       <meta itemprop="image" content="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/large/9781/4472/9781447299370.jpg"> </span> 
+      <div class="item-img"> 
+       <img src="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/large/9781/4472/9781447299370.jpg" alt="Our Souls at Night" class="book-img" itemprop="image"> 
+       <div class="savings-splat">
+        25%
+        <br>off
+       </div> 
+      </div> 
+      <div class="item-info"> 
+       <h1 itemprop="name">Our Souls at Night</h1> 
+       <ul class="meta-info"> 
+        <li>Paperback</li> 
+        <li> <a href="/search/advanced?searchLang=123" itemprop="inLanguage">English</a></li> 
+       </ul> 
+       <div class="author-info">
+         By (author)
+        <a href="http://www.bookdepository.com/author/Kent-Haruf" itemprop="author"> Kent Haruf</a> 
+       </div> 
+       <ul class="social-wrap hidden-md"> 
+        <li>Share</li> 
+        <li><a href="mailto:?body=Hi,%0D%0A%0D%0AI saw this at BookDepository.com and thought you might like it!%0D%0A%0D%0Ahttp-www-bookdepository-com-Our-Souls-at-Night-Kent-Haruf-9781447299370"><i class="icon-em"></i></a></li> 
+        <li><a href="http://www.bookdepository.com/share/book?id=32435196&amp;service=facebook&amp;mess=book"><i class="icon-fb"></i></a></li> 
+        <li><a href="http://www.bookdepository.com/share/book?id=32435196&amp;service=twitter&amp;mess=book"><i class="icon-tw"></i></a></li> 
+        <li> <a href="http://pinterest.com/pin/create/button/?url=http-www-bookdepository-com-Our-Souls-at-Night-Kent-Haruf-9781447299370&amp;media=http-d3by36x8sj6cra-cloudfront-net-assets-images-book-large-9781-4472-9781447299370-jpg&amp;description="><i class="icon-pi"></i></a> </li> 
+       </ul> 
+       <ul class="formats-wrap hidden-md"> 
+        <li>Also available in</li> 
+        <li> <a href="http://www.bookdepository.com/Our-Souls-at-Night/9781447299356" class="format-item"> Hardback<span class="price"> £12.99</span> </a> </li> 
+        <li> <a href="http://www.bookdepository.com/Our-Souls-at-Night/9781101911921" class="format-item"> Paperback<span class="price"> £11.34</span> </a> </li> 
+        <li> <a href="http://www.bookdepository.com/Our-Souls-at-Night/9781101923450" class="format-item"> CD-Audio<span class="price"> £19.03</span> </a> </li> 
+       </ul> 
+      </div> 
+      <div class="item-tools"> 
+       <div class="checkout-tools"> 
+        <div class="price-info-wrap"> 
+         <div class="item-info-wrap"> 
+          <p class="price"> £5.99<span class="list-price">£7.99</span> </p> 
+          <p class="price-save red-text">You save £2.00</p> 
+          <p class="purple-text free-delivery-text bold">Free delivery worldwide</p> 
+          <p class="green-text"> <span> Available<br> Dispatched from the UK in 2 business days</span> </p>
+          <p><a target="_blank" href="http://www.bookdepository.com/help/topic/HelpId/2/When-will-my-order-arrive" class="purple-text small u">When will my order arrive?</a></p> 
+          <p></p> 
+         </div> 
+        </div> 
+        <div class="btn-wrap"> 
+         <a href="http://www.bookdepository.com/basket/addisbn/isbn13/9781447299370" class="btn btn-primary add-to-basket" data-isbn="9781447299370" data-price="5.99" data-show-related="true">Add to basket</a> 
+         <a rel="nofollow" href="https://www.bookdepository.com/account/wishlistItemUpdate?mainAction=add&amp;isbn13=9781447299370" data-isbn="9781447299370" class="btn btn-dark-grey add-to-wishlist">Add to wishlist</a> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="biblio-wrap"> 
+      <h2 class="visible-md resume-title">Description</h2> 
+      <div class="item-excerpt trunc" data-height="150"> 
+       <p itemprop="description"> 'Absolutely beautiful' The Times 'Luminous' Ursula K Le Guin, Guardian 'I loved Our Souls at Night' David Nicholls This is a love story. A story about growing old with grace. Addie Moore and Louis Waters have been neighbours for years. Now they both live alone, their houses empty of family, their quiet nights solitary. Then one evening Addie pays Louis a visit. Their brave adventures form the beating heart of Our Souls at Night, Kent Haruf's exquisite final novel.</p> 
+       <a class="read-more">show more</a> 
+      </div> 
+      <div class="biblio-info-wrap"> 
+       <h2 class="biblio-title">Product details</h2> 
+       <ul class="biblio-info"> 
+        <li> <label>Format</label> <span> Paperback | <span itemprop="numberOfPages">192 pages</span> </span> </li> 
+        <li> <label>Dimensions</label> <span> 129 x 198 x 12mm | 146g </span> </li> 
+        <li> <label>Publication date</label> <span itemprop="datePublished">05 May 2016</span> </li> 
+        <li> <label>Publisher</label> <span> <a href="http://www.bookdepository.com/publishers/Pan-MacMillan" itemprop="publisher"> Pan MacMillan</a> </span> </li> 
+        <li> <label>Imprint</label> <span>PICADOR</span> </li> 
+        <li> <label>Publication City/Country</label> <span> London, United Kingdom</span> </li> 
+        <li> <label>Language</label> <span> English</span> </li> 
+        <li> <label>Edition statement</label> <span>Main Market Ed.</span> </li> 
+        <li> <label>ISBN10</label> <span>144729937X</span> </li> 
+        <li> <label>ISBN13</label> <span itemprop="isbn">9781447299370</span> </li> 
+        <li> <label>Sales rank</label> <span>72</span> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="detail-page-carousel-wrap"> 
+     <div class="block-wrap isbn-recommendation-carousel"> 
+      <div class="block-header"> 
+       <h2>People who bought this also bought</h2> 
+      </div> 
+      <div class="block"> 
+       <div class="tab-wrap module type-book carousel tab-p13 tab-active"> 
+        <div class="tab"> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Transmigration-of-Bodies-Yuri-Herrer-Lis-Dillman/9781908276728?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/9082/9781908276728.jpg" alt="Transmigration of Bodies"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781908276728"> 
+          <meta itemprop="name" content="Transmigration of Bodies"> 
+          <meta itemprop="contributor" content="Yuri Herrera"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Transmigration-of-Bodies-Yuri-Herrer-Lis-Dillman/9781908276728?ref=bd_recs_1"> Transmigration of Bodies</a> </h3> 
+           <p class="author"> <a href="/author/Yuri-Herrera" itemprop="author">Yuri Herrera</a> </p> 
+           <p class="published" itemprop="datePublished">07 Jul 2016</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £8.99</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781908276728" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9781908276728" data-price="8.99">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Plainsong-Kent-Haruf/9781447240440?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9781/4472/9781447240440.jpg" alt="Plainsong"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781447240440"> 
+          <meta itemprop="name" content="Plainsong"> 
+          <meta itemprop="contributor" content="Kent Haruf"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Plainsong-Kent-Haruf/9781447240440?ref=bd_recs_1"> Plainsong</a> </h3> 
+           <p class="author"> <a href="/author/Kent-Haruf" itemprop="author">Kent Haruf</a> </p> 
+           <p class="published" itemprop="datePublished">11 Apr 2013</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £8.99</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781447240440" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9781447240440" data-price="8.99">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/All-the-Light-We-Cannot-See-Anthony-Doerr/9780008138301?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9780/0081/9780008138301.jpg" alt="All the Light We Cannot See"> </a> 
+           <div class="savings-splat">
+            30%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780008138301"> 
+          <meta itemprop="name" content="All the Light We Cannot See"> 
+          <meta itemprop="contributor" content="Anthony Doerr"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/All-the-Light-We-Cannot-See-Anthony-Doerr/9780008138301?ref=bd_recs_1"> All the Light We Cannot See</a> </h3> 
+           <p class="author"> <a href="/author/Anthony-Doerr" itemprop="author">Anthony Doerr</a> </p> 
+           <p class="published" itemprop="datePublished">01 May 2015</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £6.29 &nbsp;<span class="rrp">£8.99</span> </p> 
+           <p class="price-save"> Save £2.70</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780008138301" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9780008138301" data-price="6.29">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Harry-Potter-and-the-Cursed-Child---Parts-I--II-J-K-Rowling-Jack-Thorne-John-Tiffany/9780751565355?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9780/7515/9780751565355.jpg" alt="Harry Potter and the Cursed Child - Parts I &amp; II"> </a> 
+           <div class="savings-splat">
+            55%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780751565355"> 
+          <meta itemprop="name" content="Harry Potter and the Cursed Child - Parts I &amp; II"> 
+          <meta itemprop="contributor" content="J. K. Rowling"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Harry-Potter-and-the-Cursed-Child---Parts-I--II-J-K-Rowling-Jack-Thorne-John-Tiffany/9780751565355?ref=bd_recs_1"> Harry Potter and the Cursed Child - Parts I &amp; II</a> </h3> 
+           <p class="author"> <a href="/author/J-K-Rowling" itemprop="author">J. K. Rowling</a> </p> 
+           <p class="published" itemprop="datePublished">31 Jul 2016</p> 
+           <p class="format">Hardback</p> 
+           <p class="price"> £9.00 &nbsp;<span class="rrp">£20.00</span> </p> 
+           <p class="price-save"> Save £11.00</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780751565355" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9780751565355" data-price="9.0">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Little-Life-Hany-Yanagihar/9781447294832?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/4472/9781447294832.jpg" alt="A Little Life"> </a> 
+           <div class="savings-splat">
+            55%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9781447294832"> 
+          <meta itemprop="name" content="A Little Life"> 
+          <meta itemprop="contributor" content="Hanya Yanagihara"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Little-Life-Hany-Yanagihar/9781447294832?ref=bd_recs_1"> A Little Life</a> </h3> 
+           <p class="author"> <a href="/author/Hanya-Yanagihara" itemprop="author">Hanya Yanagihara</a> </p> 
+           <p class="published" itemprop="datePublished">10 Mar 2016</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £4.03 &nbsp;<span class="rrp">£8.99</span> </p> 
+           <p class="price-save"> Save £4.96</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781447294832" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9781447294832" data-price="4.03">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Our-Souls-at-Night-Kent-Haruf/9781447299356?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/4472/9781447299356.jpg" alt="Our Souls at Night"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781447299356"> 
+          <meta itemprop="name" content="Our Souls at Night"> 
+          <meta itemprop="contributor" content="Kent Haruf"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Our-Souls-at-Night-Kent-Haruf/9781447299356?ref=bd_recs_1"> Our Souls at Night</a> </h3> 
+           <p class="author"> <a href="/author/Kent-Haruf" itemprop="author">Kent Haruf</a> </p> 
+           <p class="published" itemprop="datePublished">04 Jun 2015</p> 
+           <p class="format">Hardback</p> 
+           <p class="price"> £12.99</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781447299356" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9781447299356" data-price="12.99">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Our-Souls-at-Night-Kent-Haruf/9781101875896?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d39ttiideeq0ys.cloudfront.net/assets/images/book/medium/9781/1018/9781101875896.jpg" alt="Our Souls at Night"> </a> 
+           <div class="savings-splat">
+            25%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9781101875896"> 
+          <meta itemprop="name" content="Our Souls at Night"> 
+          <meta itemprop="contributor" content="Kent Haruf"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Our-Souls-at-Night-Kent-Haruf/9781101875896?ref=bd_recs_1"> Our Souls at Night</a> </h3> 
+           <p class="author"> <a href="/author/Kent-Haruf" itemprop="author">Kent Haruf</a> </p> 
+           <p class="published" itemprop="datePublished">26 May 2015</p> 
+           <p class="format">Hardback</p> 
+           <p class="price"> £13.55 &nbsp;<span class="rrp">£18.14</span> </p> 
+           <p class="price-save"> Save £4.59</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781101875896" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9781101875896" data-price="13.55">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Tie-That-Binds-Kent-Haruf/9780330490450?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9780/3304/9780330490450.jpg" alt="The Tie That Binds"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9780330490450"> 
+          <meta itemprop="name" content="The Tie That Binds"> 
+          <meta itemprop="contributor" content="Kent Haruf"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Tie-That-Binds-Kent-Haruf/9780330490450?ref=bd_recs_1"> The Tie That Binds</a> </h3> 
+           <p class="author"> <a href="/author/Kent-Haruf" itemprop="author">Kent Haruf</a> </p> 
+           <p class="published" itemprop="datePublished">07 Jun 2002</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £8.99</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780330490450" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9780330490450" data-price="8.99">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Eventide-Kent-Haruf/9781447240457?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/medium/9781/4472/9781447240457.jpg" alt="Eventide"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781447240457"> 
+          <meta itemprop="name" content="Eventide"> 
+          <meta itemprop="contributor" content="Kent Haruf"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Eventide-Kent-Haruf/9781447240457?ref=bd_recs_1"> Eventide</a> </h3> 
+           <p class="author"> <a href="/author/Kent-Haruf" itemprop="author">Kent Haruf</a> </p> 
+           <p class="published" itemprop="datePublished">11 Apr 2013</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £8.99</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781447240457" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9781447240457" data-price="8.99">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Plainsong-Kent-Haruf/9781447289517?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d4rri9bdfuube.cloudfront.net/assets/images/book/medium/9781/4472/9781447289517.jpg" alt="Plainsong"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781447289517"> 
+          <meta itemprop="name" content="Plainsong"> 
+          <meta itemprop="contributor" content="Kent Haruf"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Plainsong-Kent-Haruf/9781447289517?ref=bd_recs_1"> Plainsong</a> </h3> 
+           <p class="author"> <a href="/author/Kent-Haruf" itemprop="author">Kent Haruf</a> </p> 
+           <p class="published" itemprop="datePublished">08 Oct 2015</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £8.99</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781447289517" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9781447289517" data-price="8.99">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="block-wrap category-recommendation-carousel"> 
+      <div class="block-header"> 
+       <h2>Other books in Contemporary Fiction</h2> 
+      </div> 
+      <div class="block"> 
+       <div class="tab-wrap module type-book carousel tab-p13 tab-active"> 
+        <div class="tab"> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Me-Before-You-Jojo-Moyes/9780718157838?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d39ttiideeq0ys.cloudfront.net/assets/images/book/medium/9780/7181/9780718157838.jpg" alt="Me Before You"> </a> 
+           <div class="savings-splat">
+            47%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780718157838"> 
+          <meta itemprop="name" content="Me Before You"> 
+          <meta itemprop="contributor" content="Jojo Moyes"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Me-Before-You-Jojo-Moyes/9780718157838?ref=bd_cat_1"> Me Before You</a> </h3> 
+           <p class="author"> <a href="/author/Jojo-Moyes" itemprop="author">Jojo Moyes</a> </p> 
+           <p class="published" itemprop="datePublished">02 Sep 2015</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £4.21 &nbsp;<span class="rrp">£7.99</span> </p> 
+           <p class="price-save"> Save £3.78</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780718157838" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9780718157838" data-price="4.21">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/All-the-Light-We-Cannot-See-Anthony-Doerr/9780008138301?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9780/0081/9780008138301.jpg" alt="All the Light We Cannot See"> </a> 
+           <div class="savings-splat">
+            30%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780008138301"> 
+          <meta itemprop="name" content="All the Light We Cannot See"> 
+          <meta itemprop="contributor" content="Anthony Doerr"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/All-the-Light-We-Cannot-See-Anthony-Doerr/9780008138301?ref=bd_cat_1"> All the Light We Cannot See</a> </h3> 
+           <p class="author"> <a href="/author/Anthony-Doerr" itemprop="author">Anthony Doerr</a> </p> 
+           <p class="published" itemprop="datePublished">01 May 2015</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £6.29 &nbsp;<span class="rrp">£8.99</span> </p> 
+           <p class="price-save"> Save £2.70</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780008138301" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9780008138301" data-price="6.29">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Book-Thief-Markus-Zusak/9780552773898?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9780/5527/9780552773898.jpg" alt="The Book Thief"> </a> 
+           <div class="savings-splat">
+            45%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780552773898"> 
+          <meta itemprop="name" content="The Book Thief"> 
+          <meta itemprop="contributor" content="Markus Zusak"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Book-Thief-Markus-Zusak/9780552773898?ref=bd_cat_1"> The Book Thief</a> </h3> 
+           <p class="author"> <a href="/author/Markus-Zusak" itemprop="author">Markus Zusak</a> </p> 
+           <p class="published" itemprop="datePublished">01 Jan 2008</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £4.39 &nbsp;<span class="rrp">£7.99</span> </p> 
+           <p class="price-save"> Save £3.60</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780552773898" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9780552773898" data-price="4.39">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Husbands-Secret-Liane-Moriarty/9781405911665?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/4059/9781405911665.jpg" alt="The Husband's Secret"> </a> 
+           <div class="savings-splat">
+            48%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9781405911665"> 
+          <meta itemprop="name" content="The Husband's Secret"> 
+          <meta itemprop="contributor" content="Liane Moriarty"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Husbands-Secret-Liane-Moriarty/9781405911665?ref=bd_cat_1"> The Husband's Secret</a> </h3> 
+           <p class="author"> <a href="/author/Liane-Moriarty" itemprop="author">Liane Moriarty</a> </p> 
+           <p class="published" itemprop="datePublished">29 Aug 2013</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £4.14 &nbsp;<span class="rrp">£7.99</span> </p> 
+           <p class="price-save"> Save £3.85</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781405911665" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9781405911665" data-price="4.14">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Everything-I-Never-Told-You-Celeste-Ng/9780349134284?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d39ttiideeq0ys.cloudfront.net/assets/images/book/medium/9780/3491/9780349134284.jpg" alt="Everything I Never Told You"> </a> 
+           <div class="savings-splat">
+            35%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780349134284"> 
+          <meta itemprop="name" content="Everything I Never Told You"> 
+          <meta itemprop="contributor" content="Celeste Ng"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Everything-I-Never-Told-You-Celeste-Ng/9780349134284?ref=bd_cat_1"> Everything I Never Told You</a> </h3> 
+           <p class="author"> <a href="/author/Celeste-Ng" itemprop="author">Celeste Ng</a> </p> 
+           <p class="published" itemprop="datePublished">13 Nov 2014</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £5.84 &nbsp;<span class="rrp">£8.99</span> </p> 
+           <p class="price-save"> Save £3.15</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780349134284" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9780349134284" data-price="5.84">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Elegance-of-the-Hedgehog-Muriel-Barbery-Alison-Anderson/9781906040185?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9781/9060/9781906040185.jpg" alt="The Elegance of the Hedgehog"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781906040185"> 
+          <meta itemprop="name" content="The Elegance of the Hedgehog"> 
+          <meta itemprop="contributor" content="Muriel Barbery"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Elegance-of-the-Hedgehog-Muriel-Barbery-Alison-Anderson/9781906040185?ref=bd_cat_1"> The Elegance of the Hedgehog</a> </h3> 
+           <p class="author"> <a href="/author/Muriel-Barbery" itemprop="author">Muriel Barbery</a> </p> 
+           <p class="published" itemprop="datePublished">28 May 2009</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £8.99</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781906040185" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9781906040185" data-price="8.99">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Perks-of-Being-Wallflower-Stephen-Chbosky/9781847394071?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/medium/9781/8473/9781847394071.jpg" alt="The Perks of Being a Wallflower"> </a> 
+           <div class="savings-splat">
+            30%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9781847394071"> 
+          <meta itemprop="name" content="The Perks of Being a Wallflower"> 
+          <meta itemprop="contributor" content="Stephen Chbosky"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Perks-of-Being-Wallflower-Stephen-Chbosky/9781847394071?ref=bd_cat_1"> The Perks of Being a Wallflower</a> </h3> 
+           <p class="author"> <a href="/author/Stephen-Chbosky" itemprop="author">Stephen Chbosky</a> </p> 
+           <p class="published" itemprop="datePublished">18 Mar 2015</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £5.59 &nbsp;<span class="rrp">£7.99</span> </p> 
+           <p class="price-save"> Save £2.40</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781847394071" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9781847394071" data-price="5.59">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/After-You-Jojo-Moyes/9781405909075?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d4rri9bdfuube.cloudfront.net/assets/images/book/medium/9781/4059/9781405909075.jpg" alt="After You"> </a> 
+           <div class="savings-splat">
+            48%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9781405909075"> 
+          <meta itemprop="name" content="After You"> 
+          <meta itemprop="contributor" content="Jojo Moyes"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/After-You-Jojo-Moyes/9781405909075?ref=bd_cat_1"> After You</a> </h3> 
+           <p class="author"> <a href="/author/Jojo-Moyes" itemprop="author">Jojo Moyes</a> </p> 
+           <p class="published" itemprop="datePublished">30 Jun 2016</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £4.14 &nbsp;<span class="rrp">£7.99</span> </p> 
+           <p class="price-save"> Save £3.85</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781405909075" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9781405909075" data-price="4.14">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Grownup-Gillian-Flynn/9781474603041?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9781/4746/9781474603041.jpg" alt="The Grownup"> </a> 
+           <div class="savings-splat">
+            37%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9781474603041"> 
+          <meta itemprop="name" content="The Grownup"> 
+          <meta itemprop="contributor" content="Gillian Flynn"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Grownup-Gillian-Flynn/9781474603041?ref=bd_cat_1"> The Grownup</a> </h3> 
+           <p class="author"> <a href="/author/Gillian-Flynn" itemprop="author">Gillian Flynn</a> </p> 
+           <p class="published" itemprop="datePublished">17 Feb 2016</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49 &nbsp;<span class="rrp">£3.99</span> </p> 
+           <p class="price-save"> Save £1.50</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781474603041" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9781474603041" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Dressmaker-Rosalie-Ham/9781846689949?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d39ttiideeq0ys.cloudfront.net/assets/images/book/medium/9781/8466/9781846689949.jpg" alt="The Dressmaker"> </a> 
+           <div class="savings-splat">
+            25%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9781846689949"> 
+          <meta itemprop="name" content="The Dressmaker"> 
+          <meta itemprop="contributor" content="Rosalie Ham"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Dressmaker-Rosalie-Ham/9781846689949?ref=bd_cat_1"> The Dressmaker</a> </h3> 
+           <p class="author"> <a href="/author/Rosalie-Ham" itemprop="author">Rosalie Ham</a> </p> 
+           <p class="published" itemprop="datePublished">01 Jun 2016</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £5.99 &nbsp;<span class="rrp">£7.99</span> </p> 
+           <p class="price-save"> Save £2.00</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781846689949" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9781846689949" data-price="5.99">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Little-Life-Hany-Yanagihar/9781447294832?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/4472/9781447294832.jpg" alt="A Little Life"> </a> 
+           <div class="savings-splat">
+            55%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9781447294832"> 
+          <meta itemprop="name" content="A Little Life"> 
+          <meta itemprop="contributor" content="Hanya Yanagihara"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Little-Life-Hany-Yanagihar/9781447294832?ref=bd_cat_1"> A Little Life</a> </h3> 
+           <p class="author"> <a href="/author/Hanya-Yanagihara" itemprop="author">Hanya Yanagihara</a> </p> 
+           <p class="published" itemprop="datePublished">10 Mar 2016</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £4.03 &nbsp;<span class="rrp">£8.99</span> </p> 
+           <p class="price-save"> Save £4.96</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781447294832" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9781447294832" data-price="4.03">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div>
+    <ol class="breadcrumb category-footer"> 
+     <li class="title">Categories</li> 
+     <li class="active"> <a href="http://www.bookdepository.com/category/334/Contemporary-Fiction"> Contemporary Fiction</a> </li> 
+    </ol> 
+    <div id="item-annotation"> 
+     <div class="blocks-wrap annotation"> 
+      <h2>Review quote</h2> 
+      <div class="block text-block trunc"> 
+       <p>The language is straightforward and stripped back, calm and unassuming. And it all combines to make a novel which, like Louis and Addie's relationship does for them, warms and expands the heart ... the sentiment that lingers most, on finishing this beautiful, tranquil, tender novel, is contentment Observer Simple, low-key and absolutely beautiful. The Times I loved Kent Haruf's small-town love story -- David Nicholls To ring true, description of even the humblest kind of fulfilment and contentment must be written in awareness of human inadequacy and cruelty and the possibility of illness, ruin, death. One false word can make it all incredible. I don't think there's a false word in Kent Haruf's final novel, Our Souls in the Night ... Many novels have been about the pursuit of happiness, but this one is luminous with its actual presence ... Perhaps happiness is less predictable than misery, since it partakes of freedom. Like freedom, also, it's never secure; it can't be for ever. But it can be real, and in this beautiful novel, we can share it -- Ursula K Le Guin Guardian So beautiful; quietly gripping, full of love, humour and gentle shocks. Our Souls at Night is a perfect tribute to a truly extraordinary writer. -- Donal Ryan, author of THE SPINNING HEART A humane, deeply affecting final novel Daily Mail His great subject was the struggle of decency against small-mindedness, and his rare gift was to make sheer decency a moving subject ... This novel runs on the dogged insistence that simple elements carry depths, and readers will find much to be grateful for. New York Times Gritty, painful and human ... his novels are imbued with an affection and understanding that transform the most mundane details into poetry ... Haruf's final novel is a beacon of hope; he is sorely missed -- Francesca Wade Financial Times A delicate, sneakily devastating evocation of place and character ... Haruf's story accumulates resonance through carefully chosen details; the novel is quiet but never complacent New Yorker Short, spare and moving ... Our Souls at Night is already creating a stir. Wall Street Journal An eloquent story of a man and a woman who, in advanced age, come together to wrestle with the events of their lives and their hopes for the future. Red Magazine Utterly charming and distilled to elemental purity ... such a tender, carefully polished work that it seems like a blessing we had no right to expect. -- Ron Charles Washington Post A novel full of kindness, open-heartedness and grace, of ordinary experiences and commonplace regret ... unputdownable as a thriller - an unlikely page-turner full of quiet surprises ... It's an astonishing piece of writing Literary Review In a fitting and gorgeous end to a body of work that prizes resilience above all else, Haruf has bequeathed readers a map charting a future that is neither easy nor painless, but it's also not something we have to bear alone. Esquire If you haven't read Kent Haruf's wonderful backlist, now is the time to discover it. Or jump in at the end, with this novel; a graceful story ... a melancholy reminder that happiness can be fragile. Psychologies Magazine Gripping and tender ... a sweet love story, a deep friendship ... with a stunning sense of all that's passed and the precious importance of the days that remain. Publishers Weekly</p> 
+       <a class="read-more">show more</a> 
+      </div> 
+     </div> 
+     <div class="blocks-wrap annotation"> 
+      <h2>About Kent Haruf</h2> 
+      <div class="block text-block trunc"> 
+       <p>Kent Haruf is the author of six novels (and, with the photographer Peter Brown, West of Last Chance). His honours include a Whiting Foundation Writers' Award, the Mountains &amp; Plains Booksellers Award, the Wallace Stegner Award, and a special citation from the PEN/Hemingway Foundation; he was also a finalist for the National Book Award, the Los Angeles Times Book Prize, and The New Yorker Book Award. Benediction was shortlisted for the Folio Prize. He died in November 2014, at the age of seventy-one.</p> 
+       <a class="read-more">show more</a> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="footer-wrap"> 
+   <footer class="footer"> 
+    <div class="footer-left-content hide-on-mobile"> 
+     <section class="footer-links"> 
+      <h4>Explore</h4> 
+      <ul> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/35/About-us#helpContent">About us</a></li> 
+       <li><a href="http://www.bookdepository.com/sitemap">Sitemap</a></li> 
+       <li><a href="http://www.bookdepository.com/bookmarks">Bookmarks</a></li> 
+       <li><a href="https://www.bookdepository.com/account/login/to/account">Sign in/Join</a></li> 
+      </ul> 
+     </section> 
+     <section class="footer-links"> 
+      <h4>How can we help?</h4> 
+      <ul> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help">Help</a></li> 
+       <li><a href="https://www.bookdepository.com/contactus">Contact us</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/2/When-will-my-order-arrive">Where's my stuff?</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/3/Which-countries-do-you-deliver-to">Where do you deliver?</a></li> 
+      </ul> 
+     </section> 
+     <section class="footer-links"> 
+      <h4>Join us</h4> 
+      <ul> 
+       <li><a href="http://affiliates.bookdepository.com/affiliates">Affiliates</a></li> 
+       <li><a href="http://www.bookdepository.com/jobs">Jobs</a></li> 
+      </ul> 
+     </section> 
+     <section class="footer-links"> 
+      <h4>Important stuff</h4> 
+      <ul> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/53/How-we-use-cookies">Cookies</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/20/Our-privacy-policy">Privacy policy</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/19/Terms-and-Conditions">Terms &amp; Conditions</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/17/Website-security">Secure shopping</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/11/Accessibility-guide">Accessibility</a></li> 
+      </ul> 
+     </section> 
+    </div> 
+    <div class="footer-left-content show-only-mobile"> 
+     <section class="footer-links"> 
+      <ul> 
+       <li><a rel="nofollow" href="https://www.bookdepository.com/account/login/to/account">Sign in/Join</a></li> 
+       <li><a href="https://www.bookdepository.com/track">Order Status</a></li> 
+       <li><a href="https://www.bookdepository.com/contactus">Contact us</a></li> 
+       <li><a href="http://www.bookdepository.com/help">Help</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/35/About-us#helpContent">About us</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/19/Terms-and-Conditions">Terms &amp; Conditions</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/20/Our-privacy-policy">Privacy policy</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/53/How-we-use-cookies">Cookies</a></li> 
+      </ul> 
+     </section> 
+    </div> 
+    <div class="footer-right-content"> 
+     <div class="payment-methods"> 
+      <p>We accept these payment methods</p> 
+      <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/img/payment-options.png" alt="Payment methods" class="method-img"> 
+     </div> 
+     <div class="small-print"> 
+      <i class="icon-bd"></i> 
+      <div id="copyright" class="text" title="BdiMetadata{webserver='warsaw', requestTime='0.05 sec', userSessionCurrencyCode='GBP', userSessionCountry='GB', userIp='192.76.8.20', cacheParams=BdiCacheMetadata{cacheCountry='null', cacheCurrency='null', controllerName='null', actionName='null', moduleName='null', serverScheme='null', cacheNamespace='null', cacheKey='null', generatedOn=Fri Aug 26 06:43:21 UTC 2016, cacheEnabled=true}}">
+        © 2016 The Book Depository Ltd.
+       <br> UK. Registered company number: 5124926 
+      </div> 
+     </div> 
+    </div> 
+   </footer> 
+  </div> 
+  <script async src="http://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/js/app.js"></script> 
+  <script type="text/javascript">document.body.className += " js";</script>
+  <script type="text/javascript">
+        window.google_remarketing_data = {
+            google_custom_params: {
+                prodid: '',
+                pagetype: '',
+                value: '',
+                pname: '',
+                pcat: ''
+            },
+            google_conversion_id: 997479781,
+            google_conversion_label: "jTANCIOb5wQQ5arR2wM"
+        };
+    </script> 
+  <noscript> 
+   <div style="display:inline;"> 
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/997479781/?value=0&amp;label=jTANCIOb5wQQ5arR2wM&amp;guid=ON&amp;script=0"> 
+   </div> 
+  </noscript> 
+  <script type="text/javascript">
+var ggoals_account ='bookdepository';
+</script> 
+  <script async type="text/javascript" src="//conversions.genieventures.co.uk/gt.js"></script> 
+  <!-- The first Confirmation flag is only present on order confirmation page --> 
+  <div id="be" style="display:none;visibility:hidden;">
+   <form name="ue_backdetect" action="get">
+    <input type="hidden" name="ue_back" value="1">
+   </form> 
+   <script type="text/javascript">
+var ue_mbl=ue_csm.ue.exec(function(e,a){function k(f){b=f||{};a.AMZNPerformance=b;b.transition=b.transition||{};b.timing=b.timing||{};if((f=a.webclient&&"function"===typeof webclient.getRealClickTime?a.cordova&&a.cordova.platformId&&"ios"==cordova.platformId?!1:!0:!1)&&b.tags instanceof Array){var c;c=-1!=b.tags.indexOf("usesAppStartTime")||b.transition.type?!b.transition.type&&-1<b.tags.indexOf("usesAppStartTime")?"warm-start":void 0:"view-transition";c&&(b.transition.type=c)}if(1===e.ue_ios_ip||
+f)"reload"===d._nt&&e.ue_orct||"intrapage-transition"===d._nt?a.performance&&performance.timing&&performance.timing.navigationStart?b.timing.transitionStart=a.performance.timing.navigationStart:delete b.timing.transitionStart:"undefined"===typeof d._nt&&a.performance&&performance.timing&&performance.timing.navigationStart&&a.history&&"function"===typeof a.History&&"object"===typeof a.history&&history.length&&1!=history.length&&(b.timing.transitionStart=a.performance.timing.navigationStart);f=b.transition;
+c=d._nt?d._nt:void 0;f.subType=c;a.ue&&a.ue.tag&&a.ue.tag("has-AMZNPerformance");d.isl&&a.uex&&uex("at","csm-timing");l()}function m(b){a.ue&&a.ue.count&&a.ue.count("csm-cordova-plugin-failed",1)}function l(){try{P.register("AMZNPerformance",function(){return b})}catch(a){}}function g(){if(!b)return"";ue_mbl.cnt=null;var a=b.transition,c;c=b.timing.transitionStart;c="undefined"!==typeof c&&"undefined"!==typeof h?c-h:void 0;a=["mts",c,"mtt",a.type,"mtst",a.subType,"mtlt",a.launchType];c="";for(var d=
+0;d<a.length;d+=2){var e=a[d],g=a[d+1];"undefined"!==typeof g&&(c+="&"+e+"="+g)}return c}function n(a,c){b&&(h=c,b.timing.transitionStart=a,b.transition.type="view-transition",b.transition.subType="ajax-transition",b.transition.launchType="normal",ue_mbl.cnt=g)}var d=e.ue||{},h=e.ue_t0,b;if(a.P&&a.P.when&&a.P.register)return a.P.when("CSMPlugin").execute(function(a){a.buildAMZNPerformance&&a.buildAMZNPerformance({successCallback:k,failCallback:m})}),{cnt:g,ajax:n}},"mobile-timing")(ue_csm,window);
+
+(function(d){d._uess=function(){var a="";screen&&screen.width&&screen.height&&(a+="&sw="+screen.width+"&sh="+screen.height);var b=function(a){var b=document.documentElement["client"+a];return"CSS1Compat"===document.compatMode&&b||document.body["client"+a]||b},c=b("Width"),b=b("Height");c&&b&&(a+="&vw="+c+"&vh="+b);return a}})(ue_csm);
+
+(function(a){var b=document.ue_backdetect;b&&b.ue_back&&a.ue&&(a.ue.bfini=b.ue_back.value);a.uet&&a.uet("be");a.onLdEnd&&(window.addEventListener?window.addEventListener("load",a.onLdEnd,!1):window.attachEvent&&window.attachEvent("onload",a.onLdEnd));a.ueh&&a.ueh(0,window,"load",a.onLd,1);a.ue&&a.ue.tag&&(a.ue_furl&&a.ue_furl.split?(b=a.ue_furl.split("."))&&b[0]&&a.ue.tag(b[0]):a.ue.tag("nofls"))})(ue_csm);
+(function(g,h){function d(a,d){var b={};if(!e||!f)try{var c=h.sessionStorage;c?a&&("undefined"!==typeof d?c.setItem(a,d):b.val=c.getItem(a)):f=1}catch(g){e=1}e&&(b.e=1);return b}var b=g.ue||{},a="",f,e,c,a=d("csmtid");f?a="NA":a.e?a="ET":(a=a.val,a||(a=b.oid||"NI",d("csmtid",a)),c=d(b.oid),c.e||(c.val=c.val||0,d(b.oid,c.val+1)),b.ssw=d);b.tabid=a})(ue_csm,window);
+
+
+(function(b,c){var a=c.images;a&&a.length&&b.ue.count("totalImages",a.length)})(ue_csm,document);
+
+
+ue_csm.ue._rtn = 1;
+(function(e,f){function h(a){a=a.split("?")[0]||a;a=a.replace("http://","").replace("https://","").replace("resource://","").replace("res://","").replace("undefined://","").replace("chrome://","").replace(/\*/g,"").replace(/!/g,"").replace(/~/g,"");var b=a.split("/");a=a.substr(a.lastIndexOf("/")+1);b.splice(-1);b=b.map(function(a){c[a]||(c[a]=(k++).toString(36));return c[a]});b.push(a);return b.join("!")}function l(){return f.getEntriesByType("resource").filter(function(a){return d._rre(a)<d._ld}).sort(function(a,
+b){return a.responseEnd-b.responseEnd}).splice(0,m).map(function(a){var b=[],c;for(c in a)g[c]&&a[c]&&b.push(g[c]+Math.max(a[c]|0,-1).toString(36));b.push("i"+a.initiatorType);(1==d._rtn&&d._afjs>n||2==d._rtn)&&b.push("n"+h(a.name));return b.join("_")}).join("*")}function p(){var a="pm",b;for(b in c)c.hasOwnProperty(b)&&(a+="*"+c[b]+"_"+b);return a}function q(){d.log({k:"rtiming",value:l()+"~"+p()},"csm")}if(f&&f.getEntriesByType&&Array.prototype.map&&Array.prototype.filter&&e.ue&&e.ue.log){var g=
+{connectStart:"c",connectEnd:"C",domainLookupStart:"d",domainLookupEnd:"D",duration:"z",fetchStart:"f",redirectStart:"r",redirectEnd:"R",requestStart:"q",responseStart:"s",responseEnd:"S",startTime:"a"},d=e.ue,c={},k=1,n=20,m=200;d&&d._rre&&(d._art=function(){d._ld&&window.setTimeout(q,0)})}})(ue_csm||{},window.performance);
+
+
+(function(c,d){var b=c.ue,a=d.navigator;b&&b.tag&&a&&(a=a.connection||a.mozConnection||a.webkitConnection)&&a.type&&b.tag("netInfo:"+a.type)})(ue_csm,window);
+
+
+(function(c,d){function g(a,b){for(var c=[],d=0;d<a.length;d++){var f=a[d],e=b.encode(f);if(f[h]){var k=b.metaSep,f=f[h],l=b.metaPairSep,g=[],m=void 0;for(m in f)f.hasOwnProperty(m)&&g.push(m+"="+f[m]);f=g.join(l);e+=k+f}c.push(e)}return c.join(b.resourceSep)}function n(a){var b=a[h]=a[h]||{};b[t]||(b[t]=c.ue_mid);b[u]||(b[u]=c.ue_sid);b[k]||(b[k]=c.ue_id);b.csm=1;a="//"+c.ue_furl+"/1/"+a[v]+"/1/OP/"+a[w]+"/"+a[x]+"/"+g([a],y);if(p)try{p.call(d[q],a)}catch(e){c.ue.sbf=1,(new Image).src=a}else(new Image).src=
+a}function r(){l&&l.isStub&&l.replay(function(a,b,c){a=a[0];b=a[h]=a[h]||{};b[k]=b[k]||c;n(a)});e.impression=n;l=null}if(!(1<c.ueinit)){var h="metadata",x="impressionType",v="foresterChannel",w="programGroup",t="marketplaceId",u="session",k="requestId",q="navigator",e=c.ue||{},p=d[q]&&d[q].sendBeacon,s=function(a,b,c,d){return{encode:d,resourceSep:a,metaSep:b,metaPairSep:c}},y=s("","?","&",function(a){return g(a.impressionData,z)}),z=s("/",":",",",function(a){return a.featureName+":"+g(a.resources,
+A)}),A=s(",","@","|",function(a){return a.id}),l=e.impression;(e.impression||n)({programGroup:"csm",impressionType:"action",impressionData:[{featureName:"csm-features",resources:[{id:"impression-tracking"}]}],foresterChannel:"action-impressions"});p?r():(e.attach("load",r),e.attach("beforeunload",r));d.P&&d.P.register&&d.P.register("impression-client",function(){})}})(ue_csm,window);
+
+
+if (window.ue_wurl) {
+(function(b,a,c){function d(){c.glog.flush({mid:a.ue_mid,sid:a.ue_sid,mkt:a.ue_mkt,sn:a.ue_sn,furl:"https://"+a.ue_furl+"/1/batch/1/OE/",async:!0})}if(b.URL&&b.Worker){b=URL.createObjectURL(new Blob(["(",function(a){importScripts(a)}.toString(),")('",a.ue_wurl,"')"],{type:"application/javascript"}));var f=new Worker(b),e=!1;c.glog=function(a,b,d){f.postMessage({m:"log",l:a,n:b,o:d});e||c.log();e=!0};c.glog.flush=function(a){f.postMessage({m:"flush",o:a});e=!1};c.onunload(d);c.onflush(d)}})(window,
+ue_csm,ue);
+
+}
+
+var ue_pty = "tbd";
+
+var ue_spty = "test";
+
+var ue_pti = "9781447299370";
+
+</script> 
+  </div> 
+  <noscript> 
+   <img height="1" width="1" style="display:none;visibility:hidden;" src="//fls-eu.amazon.co.uk/1/batch/1/OP/AYXWW5ND5JOM8:000-0000000-0000000:1XKAN08RNWXR7ARV2WNW$uedata=s:%2Fcsmpb%3Fnoscript%26id%3D1XKAN08RNWXR7ARV2WNW:0" alt=""> 
+  </noscript>  
+  <!-- RequestDurationMillis: 76 -->  
+ </body>
+</html>

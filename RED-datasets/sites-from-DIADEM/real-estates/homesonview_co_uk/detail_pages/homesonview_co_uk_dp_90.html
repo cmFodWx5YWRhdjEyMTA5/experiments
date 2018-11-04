@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+<title>homesonview.co.uk | Show Property</title>
+<link type="text/css" rel="stylesheet" href="../css/hovprop.css" />
+
+<link type="text/css" rel="stylesheet" href="../css/hovcolour.css" />
+
+<link type="text/css" rel="stylesheet" href="../css/hovonly.css" />
+
+<script type="text/javascript" language="JavaScript">
+   var currentPanel;
+   
+      function showPanel(panelNum) {
+      //hide visible panel, show selected panel, 
+      //set tab
+      if (currentPanel != null) {
+         hidePanel();
+      }
+      document.getElementById 
+         ('panel'+panelNum).style.display = 'inline';
+         currentPanel = panelNum;
+   }
+   
+   function hidePanel() {
+      //hide visible panel, unhilite tab
+      document.getElementById
+        ('panel'+currentPanel).style.display = 'none';
+   }
+   
+ 
+</script>
+<script type="text/javascript" language="JavaScript">
+&lt;!--
+function ShowPicture (cid,pid,width,height,pic) { 
+
+	{newwindow = window.open("ShowPhotos.asp?CompanyID=" + cid + "&amp;ID=" + pid + "&amp;pic=" + pic, "photo" ,"resizable=no,width=" + width + ",height=" + height + ",toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+
+	newwindow.focus();	
+}
+
+function ShowFloorplans (cid,pid,width,height,pic) { 
+
+	{newwindow = window.open("ShowFloors.asp?CompanyID=" + cid + "&amp;ID=" + pid + "&amp;pic=" + pic, "floor", "resizable=yes,width=" + width + ",height=" + height + ",toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+
+	newwindow.focus();	
+}
+
+function ShowEPC (cid,pid,width,height) { 
+
+	{newwindow = window.open("ShowEPC.asp?CompanyID=" + cid + "&amp;ID=" + pid, "epc", "resizable=Yes,width=" + width + ",height=" + height + ",toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	newwindow.focus();	
+}
+
+function Open (sZero,sOne,sTwo,sThree,i) { 
+	
+	if (i==1)
+		{newwindow = window.open(sZero , "winHip", "resizable=yes,width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+	
+	if (i==2)
+		{newwindow = window.open("FullDetails.aspx?CID=" + sZero + "&amp;AID=" + sOne + "&amp;PID=" + sTwo , "winDet", "resizable=no,width=680,height=500,toolbar=yes,location=no,directories=no,status=no,menubar=yes,scrollbars=yes,copyhistory=no");}
+
+	if (i==3)
+		{newwindow = window.open("GetViewing.asp?CompanyID=" + sZero + "&amp;AgencyID=" + sOne + "&amp;PropID=" + sTwo + "&amp;css=" + sThree , "winView", "resizable=no,width=360,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	if (i==5)
+		{newwindow = window.open("GetValuation.asp?CompanyID=" + sZero + "&amp;AgencyID=" + sOne + "&amp;Email=" + sTwo + "&amp;css=" + sThree , "winVal", "resizable=no,width=350,height=500,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+		
+	if (i==6)
+		{newwindow = window.open("GetMailing.asp?CompanyID=" + sZero + "&amp;AgencyID=" + sOne + "&amp;AgentEmail=" + sTwo + "&amp;css=" + sThree , "winMail", "resizable=no,width=650,height=410,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	if (i==9)
+		{newwindow = window.open(sOne , "winVirt", "resizable=yes,width=435,height=387,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no");}
+
+	if (i==7)
+		{newwindow = window.open("showmap.asp?lat=" + sZero + "&amp;long=" + sOne + "&amp;type=" + sTwo , "winMap", "resizable=no,width=760,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	if (i==10)
+		{newwindow = window.open("http://uk.multimap.com/p/browse.cgi?pc=" + sOne + " &amp;title=Property+Location" , "winMap", "resizable=yes,width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+		
+	newwindow.focus();
+}
+function OpenFull (aid,pid) { 
+	newwindow = window.open("FullDetails.asp?AgencyID=" + aid + "&amp;PropID=" + pid , "winDet", "resizable=no,width=680,height=500,toolbar=yes,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");
+}
+
+//--&gt;
+</script>
+<script>
+&lt;!--
+function MM_displayStatusMsg(msgStr) { //v1.0
+  status=msgStr;
+  document.MM_returnValue = true;
+}
+//--&gt;
+</script>
+
+
+<style type="text/css">
+
+#flashcontainer {	
+width:614px;	
+height:342px;
+}
+
+p.noflash {
+	background:#ff9;
+	margin:10px auto;
+	padding:10px;	
+}
+p.noflash a {
+	float:left;
+}
+p.noflash span{
+	font-size:8pt;
+	text-align:left;
+}
+
+</style>
+</head>
+<body onload="showPanel(1)">
+<div id="wrapper">
+  <div id="Header" class="colour1">
+    <div id="agentlogo">
+      <table height="70" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr><td valign="center"><img alt="Agent Logo" src="../scripts/thumb.ashx?type=logo&amp;img=MYLOLOND.jpg&amp;w=90&amp;h=70" />
+          </td>
+      </tr></tbody></table>
+    </div>
+    <h3>The Tower, St George Wharf, Vauxhall, London, SW8 2AU</h3>
+    <p><b>£3,200,000</b> | Bedrooms 3 | Receptions 1 | Bathrooms 2 </p>
+  </div>
+  <div id="Top">
+    <table width="100%" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="200" valign="top" align="center"><div id="Photo"><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('MYLOLOND','MLP03651',440,480,1) "><img alt="Main Photograph" src="../scripts/thumb.ashx?cid=MYLOLOND&amp;img=lMLP0365101.jpg&amp;w=200&amp;h=150" class="colour1" /></a></div></td>
+        <td valign="top"><div class="gold" id="Agent">
+            <div id="SSTC">
+              
+            </div>
+            <h2 class="colour2">My London Home (London)                           </h2>
+            <div id="AgentAddress">
+              <p> Grosvenor Gardens House, 35 - 37 Grovenor Gardens, London, SW1W 0BS <br />
+                Tel: 0207 821 1800        Fax: 0207 828 5261       <br /><a onmouseover="MM_displayStatusMsg('Email Agent');return document.MM_returnValue" href="mailto:office@mylondonhome.com">office@mylondonhome.com</a><br /><a onmouseover="MM_displayStatusMsg('View the agents website');return document.MM_returnValue" target="blank" href="http://www.mylondonhome.com">www.mylondonhome.com</a><br />
+              </p>
+            </div>
+            <div id="AgentOptions">
+              <ul id="subMenu"><li><a onmouseover="MM_displayStatusMsg('Email Agent');return document.MM_returnValue" href="mailto:office@mylondonhome.com">Email</a></li><li><a onmouseover="MM_displayStatusMsg('View the agents website');return document.MM_returnValue" target="blank" href="http://www.mylondonhome.com">Website</a></li><li><a onmouseover="MM_displayStatusMsg('Request a valuation of your property');return document.MM_returnValue" href="javascript:Open('MYLOLOND','MYLOLOND','office@mylondonhome.com','hov',5) ">Valuation</a> </li><li><a onmouseover="MM_displayStatusMsg('Join the mailing list to receive property updates');return document.MM_returnValue" href="javascript:Open('MYLOLOND','MYLOLOND','MYLOLOND','hov',6) ">Mailing List</a></li><li><a onmouseover="MM_displayStatusMsg('Book a Viewing at this Property');return document.MM_returnValue" href="javascript:Open('MYLOLOND','MYLOLOND','MLP03651','hov',3) ">Book Viewing</a></li></ul>
+            </div>
+          </div></td>
+      </tr>
+    </tbody></table>
+  </div>
+  <div id="Middle">
+    <div id="subWrapper"> <a id="tabs" name="tabs"></a>
+      <ul id="subNav">
+        <li><a onmouseover="MM_displayStatusMsg('EPC unavailable');return document.MM_returnValue" href="#" class="basic">EPC</a></li><li><a onmouseover="MM_displayStatusMsg('View an Aerial Photo of this Property');return document.MM_returnValue" href="javascript:Open('51.4851511111111','-0.126532777777778','hyb','',7) ">Aerial Photo</a></li><li><a onmouseover="MM_displayStatusMsg('View a Map of this Property');return document.MM_returnValue" href="javascript:Open('51.4851511111111','-0.126532777777778','map','',7) ">View Map</a></li><li><a onmouseover="MM_displayStatusMsg('View Full Details');return document.MM_returnValue" href="javascript:Open('MYLOLOND','MYLOLOND','MLP03651','hov',2) ">Full Details</a></li>
+        <li> <a onmouseover="MM_displayStatusMsg('There are no virtual tours for this property');return document.MM_returnValue" href="#tabs" class="basic">Virtual Tours</a> </li>
+        
+        <li onclick="showPanel(3);" class="tab" id="tab3"> <a onmouseover="MM_displayStatusMsg('View Floorplans');return document.MM_returnValue" href="#tabs"> Floorplans</a> </li>
+        
+        <li onclick="showPanel(2);" class="tab" id="tab2"> <a onmouseover="MM_displayStatusMsg('View Room Details');return document.MM_returnValue" href="#tabs">Rooms</a> </li>
+        
+        <li onclick="showPanel(1);" class="tab" id="tab1"> <a onmouseover="MM_displayStatusMsg('View Property Summary');return document.MM_returnValue" href="#tabs">Summary</a> </li>
+      </ul>
+    </div>
+    <div id="Container">
+      <div id="panel1" style="display: inline;">
+        <div id="Description">
+          <div id="back">
+            <table width="65" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="15" valign="middle"><a href="javascript:history.back(1)"><img title="Go back" alt="Back to results icon" src="../img/nav/back.gif" /></a></td>
+                <td valign="middle"><a href="javascript:history.back(1)">go back</a></td>
+              </tr>
+            </tbody></table>
+          </div>
+          <h2 class="colour1">Description</h2>
+          <div id="Internals">
+            <a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('MYLOLOND','MLP03651',440,480,02)"><img alt="Property Image 1" src="../scripts/thumb.ashx?cid=MYLOLOND&amp;img=lMLP0365102.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('MYLOLOND','MLP03651',440,480,03)"><img alt="Property Image 2" src="../scripts/thumb.ashx?cid=MYLOLOND&amp;img=lMLP0365103.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('MYLOLOND','MLP03651',440,480,04)"><img alt="Property Image 3" src="../scripts/thumb.ashx?cid=MYLOLOND&amp;img=lMLP0365104.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('MYLOLOND','MLP03651',440,480,05)"><img alt="Property Image 4" src="../scripts/thumb.ashx?cid=MYLOLOND&amp;img=lMLP0365105.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('MYLOLOND','MLP03651',440,480,06)"><img alt="Property Image 5" src="../scripts/thumb.ashx?cid=MYLOLOND&amp;img=lMLP0365106.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('MYLOLOND','MLP03651',440,480,07)"><img alt="Property Image 6" src="../scripts/thumb.ashx?cid=MYLOLOND&amp;img=lMLP0365107.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('MYLOLOND','MLP03651',440,480,08)"><img alt="Property Image 7" src="../scripts/thumb.ashx?cid=MYLOLOND&amp;img=lMLP0365108.jpg&amp;w=80&amp;h=60" /></a>
+          </div>
+          <p>A 3 bedroom flat for sale in Vauxhall, SW8 at £3,200,000.*The Tower, One St. George Wharf due to complete Winter 2013-14* - 1359 sq ft. Three bedroom apartment with valet parking and views towards Westminster from the 30th floor situated in one of the tallest residential towers in Europe and the final phase of the St George Wharf development. St George Wharf is an award winning riverside development with sweeping views towards the Houses of Parliament, Big Ben, Battersea Power Station and Chelsea Embankment. This apartment, which would make an exciting investment, benefits from a quality internal specification, floor to ceiling windows, comfort cooling, mood lighting and the development features a 24 hr concierge, communal landscape gardens, array of on-site facilities which includes a business boardroom &amp; lounge.</p>
+          <p>
+            <a onmouseover="MM_displayStatusMsg('View Full Details');return document.MM_returnValue" href="javascript:Open('MYLOLOND','MYLOLOND','MLP03651','hov',2) ">Full Details</a>
+          </p>
+          <div id="Message">
+            <p>For a closer look click on any of the floorplans or photos to enlarge</p>
+          </div>
+          <div id="EPC">
+            
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel2">
+        <div id="Rooms">
+          <div id="back">
+            <table width="65" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="15" valign="middle"><a href="javascript:history.back(1)"><img title="Go back" alt="Back to results icon" src="../img/nav/back.gif" /></a></td>
+                <td valign="middle"><a href="javascript:history.back(1)">go back</a></td>
+              </tr>
+            </tbody></table>
+          </div>
+          <h2 class="colour1">Room Details</h2>
+          <div id="RoomsTable">
+            <table width="90%">
+              <tbody><tr><td>*The Tower, One St. George Wharf due to complete Winter 2013-14*</td><td> </td>
+</tr><tr><td>Three bedroom apartment</td><td> </td>
+</tr><tr><td>Valet parking</td><td> </td>
+</tr><tr><td>Views towards Westminster</td><td> </td>
+</tr><tr><td>Exceptional kitchen designs</td><td> </td>
+</tr><tr><td>Mood lighting control which is fully adjustable via touch screens</td><td> </td>
+</tr><tr><td>Fitted wardrobes</td><td> </td>
+</tr><tr><td>Floor to ceiling windows</td><td> </td>
+</tr><tr><td>A boardroom</td><td> </td>
+</tr><tr><td>Conference facility</td><td> </td>
+</tr><tr><td>Business lounge and a private screening room</td><td> </td>
+</tr><tr><td>A health club</td><td> </td>
+</tr><tr><td>Bespoke detail and design</td><td> </td>
+</tr><tr><td>One St George will be provided by internationally renowned Harrods Estates Asset Management</td><td> </td>
+</tr><tr><td>24 hr Concierge service</td><td> </td>
+</tr><tr><td>Array of on site facilities</td><td> </td>
+</tr><tr><td>Landscaped gardens and courtyards</td><td> </td>
+</tr><tr><td>Adjacent to Vauxhall Underground</td><td> </td>
+</tr><tr><td>Adjacent to Vauxhall Mainline</td><td> </td>
+</tr><tr><td>Thames Clipper Service</td><td> </td>
+</tr><tr><td>Final phase of the St George Wharf Development</td><td> </td>
+</tr>
+            </tbody></table>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel3">
+        <div id="Floorplans">
+          <h2 class="colour1">Floorplans</h2>
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td><a onmouseover="MM_displayStatusMsg('Click to see an enlarged floorplan');return document.MM_returnValue" href="javascript:ShowFloorplans('MYLOLOND','MLP03651',800,600,1)"><img alt="Property Floorplan 1" src="../scripts/thumb.ashx?cid=MYLOLOND&amp;img=MLP0365101.png&amp;w=120&amp;h=120" /></a></td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div class="panel" id="panel4">
+        <div id="Virtual">
+          <h2 class="colour1">Virtual Tours / External Links</h2>
+          <p>
+            There are no virtual tours or external links for this property
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="ref"> ref MLP03651 </div>
+  </div>
+  <div id="Footer"><a onmouseover="MM_displayStatusMsg('View the website disclaimer');return document.MM_returnValue" href="../legal/disclaimer.htm">Legal Disclaimer</a></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8308170-7");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body></html>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+	Search for properties
+</title><meta http-equiv="Content-Type" content="text/html;charset=windows-1252" /><meta http-equiv="pragma" content="no-cache" /><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR" /><link type="text/css" rel="stylesheet" href="/css/default.css" /><link media="screen" type="text/css" rel="stylesheet" href="/css/1column.css" /><link media="print" type="text/css" rel="stylesheet" href="/css/print.css" /><link type="image/x-icon" href="/favicon.ico" rel="icon" /><link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="/js/HttpManager.js" type="text/javascript"></script>
+<!--[if (gte IE 6)&(lte IE 9)]>
+    <script src="/js/libraries/html5.js"></script>    
+    <![endif]-->
+<!--[if IE 8]> 
+    <link href="/css/ie8.css" rel="stylesheet" type="text/css" media="screen" />
+    <![endif]-->
+<!--[if lt IE 8]> 
+    <link href="/css/ie7.css" rel="stylesheet" type="text/css" media="screen" />
+    <![endif]-->
+
+    <link media="screen" type="text/css" rel="stylesheet" href="/css/searchresults.css" />
+<link rel="stylesheet" type="text/css" href="/App_Themes/Default/Controls/isotope.css" /><link rel="stylesheet" type="text/css" href="/App_Themes/Default/css/common.css" /><link rel="stylesheet" type="text/css" href="/App_Themes/Default/css/styles.css" /><link rel="stylesheet" type="text/css" href="/App_Themes/Default/RadControls/Skins/Default/Menu.Default.css" /><link rel="stylesheet" type="text/css" href="/App_Themes/Default/RadControls/Skins/Pro2010/ComboBox.Pro2010.css" /><link rel="stylesheet" type="text/css" href="/App_Themes/Default/RadControls/Skins/Pro2010/Menu.Pro2010.css" /><link rel="stylesheet" type="text/css" href="/App_Themes/Default/RadControls/Skins/Pro2010/ToolTip.Pro2010.css" /><link rel="stylesheet" type="text/css" href="/App_Themes/Default/RadControls/Skins/Pro2010/ToolTip.Pro2010_NextPrevious.css" /><link rel="stylesheet" type="text/css" href="/App_Themes/Default/RadControls/Skins/Pro2010/Window.Newsletter.Pro2010.css" /><link rel="stylesheet" type="text/css" href="/App_Themes/Default/RadControls/Skins/Pro2010/Window.Pro2010.css" /><link rel="stylesheet" type="text/css" href="/App_Themes/Default/RadControls/Skins/Pro2011/ComboBox.Pro2011.css" /><link rel="stylesheet" type="text/css" href="/App_Themes/Default/RadControls/Skins/Pro2011/Input.Pro2011.css" /><script type="text/javascript">
+                                    var _gaq = _gaq || [];  
+                                    _gaq.push(['_setAccount', 'UA-43414500-1']);  
+                                    _gaq.push(['_trackPageview']);  
+                                    (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();
+                                    </script><script src="/hdbackgroundchanger.scriptresource.axd" type="text/javascript"></script>
+<link media="screen" type="text/css" rel="stylesheet" href="/css/cookiepolicy.css" />
+
+<script src="http://maps.google.com/maps?file=api&amp;v=2s&amp;key=AIzaSyBLrcMKBQcSrFJUDtYtJvV_BJH3l2jqPRE" type="text/javascript"></script><script type="text/javascript" src="http://maps.gstatic.com/cat_js/mapfiles/api-3/17/9/%7Bmain,adsense,geometry,zombie%7D.js"></script>
+
+<script src="/js/libraries/jquery-1.3.2.min.js" type="text/javascript"></script>
+
+<script src="/Js/mapping/propertymanager.js" type="text/javascript"></script>
+
+<script src="/js/mapping/clusterer.js" type="text/javascript"></script>
+
+<script src="/js/mapping/propertysearchmanager.js" type="text/javascript"></script>
+
+<script src="/js/mapping/mappingmanager.js" type="text/javascript"></script>
+
+<script src="/js/controls/listmapview.control.js" type="text/javascript"></script>
+
+<script src="/js/controls/listitem.itemtemplate.ascx.js" type="text/javascript"></script>
+
+<script src="/js/controls/telerik.windowmessaging.provider.vb.js" type="text/javascript"></script>
+
+<script src="/js/controls/cookiepolicy.control.js" type="text/javascript"></script>
+<link class="Telerik_stylesheet" rel="stylesheet" type="text/css" href="/WebResource.axd?d=FGsK7TGE45kXvXVEXyolojcAkHMc0P27AOzqcwqT0-B_vVibxlVw7Mr2Se_iQWMr1YB3uZ5rxQTCM0f3XGOUyRQKDw0Wc__veTjTOWIeFC1z9LJdB4u3rN5gNRHkesH95BeG6g2&amp;t=634902386718138383" /><link class="Telerik_stylesheet" rel="stylesheet" type="text/css" href="/WebResource.axd?d=2LQFs_GdHjo8XN87u0o_hgE1omG02bhPQ5Pk9at0zIqt-dwPkkFnW2ySmdu2AsiookjokTxWd-DG9s_DdcvfgHdJSNzrGuk8njdyGcRZM8N3vizbvOxBN73S3bMhjMuZPkQl0w2&amp;t=634902386718138383" /><link class="Telerik_stylesheet" rel="stylesheet" type="text/css" href="/WebResource.axd?d=MHtQyxxx5Vex_VZhOCEy8_YKIHx7KtrhBvlodtRZhC9S9gb5jA3FmnByfFW8s7cbxIR22LwdgqFMSArZyh8MkDQazX2yCf5M6VhKidYWEu4IdmREs759q_W5wMugnPAI7UWusQ2&amp;t=634902386718138383" /></head>
+
+<body>
+<form id="aspnetForm" action="/search.aspx?ListingType=6&amp;areainformation=&amp;areainformationname=Location&amp;radius=0&amp;igid=&amp;imgid=9&amp;egid=&amp;emgid=&amp;category=1&amp;defaultlistingtype=6&amp;markettype=0&amp;cur=GBP" method="post"><input type="hidden" value="/wEWFQKv36WnBgLatNmjAgLCqpziBQK/0ZL0BgLyjL/mAwLalNycCAKf7NC2BgKy45LvAgLihLj9CwLa8qj4CAK8xqPHDgLC8umqDgKc6MryCgKA0MTsCALyha3nCQKv1evuBALq6ZuzCAKgwPfhAwL4raSiCwKkxfOoDwKw3tz0AgYyBtQQ5UYw7IfbSlWPVP58738a" id="__EVENTVALIDATION" name="__EVENTVALIDATION" />
+<div>
+<input type="hidden" value=";;System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35:en-US:b4491a8b-c094-46c4-848c-d2a016749dfa:ea597d4b:b25378d2;Telerik.Web.UI, Version=2012.2.724.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en-US:c8b048d6-c2e5-465c-b4e7-22b9c95f45c5:16e4e7cd:f7645509:24ee1bba:f46195d3:874f8ea2:19620875:39040b5c:f85f9819:e330518b:2003d0b8:1e771326:c8618e41:490a9d4e:bd8f85e4" id="ctl00_ctl14_TSM" name="ctl00_ctl14_TSM" />
+<input type="hidden" value="" id="__EVENTTARGET" name="__EVENTTARGET" />
+<input type="hidden" value="" id="__EVENTARGUMENT" name="__EVENTARGUMENT" />
+
+</div>
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var theForm = document.forms['aspnetForm'];
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]&gt;
+</script>
+
+
+<script type="text/javascript" src="/WebResource.axd?d=FDLAbwaq0gKEI2zacmQAczabyoUwcwPWfxm9nh6tDeXtJtw9Pdaig2pnpoFUf07LxaSCj50uwfXn1pfvPtF4GzuVE1s1&amp;t=635020124605588680"></script>
+
+
+<script type="text/javascript" src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_ctl14_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d3.5.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3ab4491a8b-c094-46c4-848c-d2a016749dfa%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%2c+Version%3d2012.2.724.35%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen-US%3ac8b048d6-c2e5-465c-b4e7-22b9c95f45c5%3a16e4e7cd%3af7645509%3a24ee1bba%3af46195d3%3a874f8ea2%3a19620875%3a39040b5c%3af85f9819%3ae330518b%3a2003d0b8%3a1e771326%3ac8618e41%3a490a9d4e%3abd8f85e4"></script>
+	<script type="text/javascript">
+//&lt;![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl14', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$cntrlItemTemplateActionTooltipManagerRTMPanel','tctl00$ctl16$pnlCIPUser$ctl00','tctl00$cntrlCenterRegion$ctl01$cntrlSearchResultsUpdatePanel','tctl00$cntrlCenterRegion$ctl01$ctl00'], ['ctl00$ctl14'], [], 90);
+//]]&gt;
+</script>
+<input type="hidden" id="ctl00_ctl14" name="ctl00$ctl14" />
+	<div style="display:none;position:absolute;" id="ctl00_cntrlItemTemplateActionTooltipManager">
+	<!-- 2012.2.724.35 --><div id="ctl00_cntrlItemTemplateActionTooltipManagerRTMPanel">
+
+	</div><input type="hidden" name="ctl00_cntrlItemTemplateActionTooltipManager_ClientState" id="ctl00_cntrlItemTemplateActionTooltipManager_ClientState" />
+</div>
+	<div class="bg">
+		<div id="siteContainer">
+			<div class="header">
+				<div id="headerItems">
+					<header>
+						
+
+<a href="/"><img title="RMA Properties Ltd" alt="RMA Properties Ltd" class="logo logoContainer" src="/Images/structure/trans.gif" /></a>
+<div class="header-right">
+	
+<script type="text/javascript">
+    function forceUpdate() {
+        __doPostBack('ctl00_ctl16_pnlCIPUser_btnUpdate', '');
+    }
+</script>
+
+<div id="ctl00_ctl16_pnlCIPUser_ctl00">
+	
+		<div class="userPanel">
+			<div class="cookie-policy"><a class="cipNavBarItem" href="/Content/Our-Cookie-Policy.aspx"><img border="0" alt="" src="/Images/cookie-policy.png" /> Cookie Policy</a></div>
+			<div style="float:left;position:relative; display:none;" id="ctl00_ctl16_pnlCIPUser_pnlCookiePolicyDivider">  |  </div>
+			<div id="ctl00_ctl16_pnlCIPUser_pnlNotLoggedIn">
+				<div style="position: relative; float: left;display:none">
+					<div id="ctl00_ctl16_pnlCIPUser_txtWelcomeTitle">Welcome to RMA Properties Ltd</div>
+				</div>
+				<a class="cipNavBarItem" id="ctl00_ctl16_pnlCIPUser_lnkLogin" href="http://www.rmaproperties.co.uk/Content/Applicant-Login.aspx"><img border="0" alt="" src="/Images/login.png" /> Log in</a>
+				<div style="float:left; display:none;" id="ctl00_ctl16_pnlCIPUser_pnlLogInDivider">  |  </div>
+				<a class="cipNavBarItem" id="ctl00_ctl16_pnlCIPUser_lnkRegster" href="http://www.rmaproperties.co.uk/Content/Register.aspx"><img border="0" alt="" src="/Images/register.png" /> Register</a> </div>
+			
+		</div>
+		<a style="display:none;" href="javascript:__doPostBack('ctl00$ctl16$pnlCIPUser$btnUpdate','')" id="ctl00_ctl16_pnlCIPUser_btnUpdate"></a>
+	
+</div>
+
+	<div class="branchHolder-header">
+		<div id="ctl00_ctl16_ctl00_itemscontainer">
+				<div class="branchHolder-header-item"> Telephone: 01865 251025<br />
+					Fax: 01865 434320
+				</div>
+			</div>
+	</div>
+</div>
+
+
+					</header>
+				</div>
+			</div>
+			<nav>
+				
+
+<div id="navbar">
+	<table align="center" cellspacing="0" cellpadding="0" border="0">
+		<tbody><tr>
+			<td><div class="RadMenu RadMenu_Pro2010" id="ctl00_ctl17_cntrlMenu" style="z-index: 7000;">
+	<ul class="rmRootGroup rmHorizontal">
+		<li class="rmItem rmFirst"><a class="rmLink rmRootLink" href="/"><span class="rmText">Home</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/Landlords.aspx"><span class="rmText">Landlords</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/Tenants.aspx"><span class="rmText">Tenants</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/Students.aspx"><span class="rmText">Students</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/Commercial.aspx"><span class="rmText">Commercial</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/Content/About-Us.aspx"><span class="rmText rmExpandDown">About Us</span></a><div class="rmSlide">
+			<ul class="rmVertical rmGroup rmLevel1">
+				<li class="rmItem rmFirst"><a class="rmLink" href="/Content/About-Us/Staff-Profiles.aspx"><span class="rmText">Staff Profiles</span></a></li><li class="rmItem "><a class="rmLink" href="/Content/About-Us/Company-Profile.aspx"><span class="rmText">Company Profile</span></a></li><li class="rmItem rmLast"><a class="rmLink" href="/Content/About-Us/News.aspx"><span class="rmText">News</span></a></li>
+			</ul>
+		</div></li><li class="rmItem "><a class="rmLink rmRootLink" href="/Content/Contact-Us.aspx"><span class="rmText">Contact Us</span></a></li><li class="rmItem rmLast"><a class="rmLink rmRootLink" href="/Saved-Properties.aspx"><span class="rmText">Saved Properties</span></a></li>
+	</ul><input type="hidden" name="ctl00_ctl17_cntrlMenu_ClientState" id="ctl00_ctl17_cntrlMenu_ClientState" autocomplete="off" />
+</div></td>
+		</tr>
+	</tbody></table>
+</div>
+
+			</nav>
+			<div id="container">
+				<div id="inner">
+					<div id="left">
+						
+						
+					</div>
+					<div id="right">
+						
+					</div>
+					<div id="center">
+						<article>
+							
+    
+    
+
+<div class="PagePadding">
+	<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearchResultsUpdatePanel">
+	
+			<div style="display:none;position:absolute;" id="ctl00_cntrlCenterRegion_ctl01_cntrlSavedItems_cntrlTooltipManager">
+		
+     <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSavedItems_lblAlreadySaved"></span>
+     <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSavedItems_lblSuccessMessage"></span>
+<input type="hidden" name="ctl00_cntrlCenterRegion_ctl01_cntrlSavedItems_cntrlTooltipManager_ClientState" id="ctl00_cntrlCenterRegion_ctl01_cntrlSavedItems_cntrlTooltipManager_ClientState" autocomplete="off" />
+	</div>
+
+			<div class="PageTitle">Search Results</div>
+			<div>
+				<div class="ListMapView">
+					 <a class="SortPriceSelected" id="lnkName" onclick="Map_Toggle(0)" href="javascript:void(0);">View in List</a> <a class="SortPriceLink" id="lnkMap" onclick="Map_Toggle(1)" href="javascript:void(0);">View on Map</a> 
+				</div>
+				<div style="display:none" id="mapIcons"><img src="/Images/map-key.gif" /></div>
+			</div>
+			<div class="pagingContainer">
+				
+
+<table cellspacing="0" cellpadding="5" border="0" style="display:none;">
+	<tbody><tr>
+		<td>Filter Your Results:</td>
+		
+		
+		
+		
+	</tr>
+</tbody></table>
+
+				<div id="propertiesFound" class="propertiesFound"><span id="ctl00_cntrlCenterRegion_ctl01_txtResultsCount">Displaying 1 to 6 of 6 Properties</span></div>
+				<div class="pagingBox" id="ctl00_cntrlCenterRegion_ctl01_pnlPagingHeader"><table cellspacing="0" cellpadding="0" border="0" class="PagerContainerTable">
+		<tbody><tr>
+			<td class="PagerCurrentPageCell"><span title="Showing Results 1 to 6 of 6" class="PagerHyperlinkStyle"><strong> 1 </strong></span></td>
+		</tr>
+	</tbody></table><span id="ctl00_cntrlCenterRegion_ctl01_cntrlPagingHeader"></span></div>
+			</div>
+			<div id="ctl00_cntrlCenterRegion_ctl01_pnlSearchItemsContainer">
+				<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_itemscontainer">
+						
+
+
+<div class="ListSearchResult">
+	<div class="ListPropertyCellLeft">
+		<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_Photos">
+		
+			<div style="height:189px;overflow:hidden;" class="mainimage-scroller-container" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_pnlMainPhotoContainer">
+				<a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_lnkFullDetailsImgMain" href="/Property/Residential/for-rent/Oxfordshire/Oxford/Iffley/Iffley-Road/RMLP1525.aspx"><img alt="Iffley Road, Oxford" class="smallImage mainimage-scroller-item" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_imgMain" src="http://media5.estateweb.com/PhotoServ/Default.aspx?a=6163&amp;i=1.jpg&amp;r=RMLP1525&amp;l=4&amp;h=189&amp;w=277&amp;st=&amp;rt=0.9&amp;ds=1&amp;lt=6&amp;t=0&amp;resinfo=&amp;ct=0&amp;sb=1&amp;bc=000000&amp;fgc=ffffff" /></a>
+			</div>
+			
+		
+	</div>
+	</div>
+	<div class="ListResultContainer">
+		<div class="ListPropertyCellRight">
+			<h2 id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_lblFormattedPrice">£3,000 Per Calendar Month</h2>
+			<div class="ListResultsRooms">
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_tdBedrooms"> <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_txtBedrooms">8 Bedrooms</span></div>
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_tdBathrooms"> <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_txtBathrooms">2 Bathrooms</span></div>
+				
+			</div>
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_SaveProperty">
+		
+				<div class="ListResultsLinks">
+					<a href="javascript:__doPostBack('ctl00$cntrlCenterRegion$ctl01$cntrlSearch$item_0$cntrlItemTemplate$lnkSaveProperty','')" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_lnkSaveProperty">Save Property</a>
+				</div>
+			
+	</div>			
+			
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_FullDetails">
+		
+				<div class="ListResultsLinks"> <a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_lnkFullDetailsIcon" href="/Property/Residential/for-rent/Oxfordshire/Oxford/Iffley/Iffley-Road/RMLP1525.aspx">Full Details</a> </div>
+			
+	</div>
+			
+			
+			
+		</div>
+		<h3>
+			<div style="width:10px;white-space:nowrap;" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_Address">
+		 <a class="propAdd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_lnkFullDetailsAddress" href="/Property/Residential/for-rent/Oxfordshire/Oxford/Iffley/Iffley-Road/RMLP1525.aspx">Iffley Road, Oxford</a> 
+	</div>
+		</h3>
+		<span class="property-statuslabel" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_cntrlStatus_lblStatus"></span>
+		<div class="SearchText">
+			<span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_lblBriefDescription"></span>
+		</div>
+		
+	</div>
+	<div class="clearer"> </div>
+</div>
+					
+						
+
+
+<div class="ListSearchResult">
+	<div class="ListPropertyCellLeft">
+		<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_Photos">
+		
+			<div style="height:189px;overflow:hidden;" class="mainimage-scroller-container" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_pnlMainPhotoContainer">
+				<a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_lnkFullDetailsImgMain" href="/Property/Residential/for-rent/Oxford/Headington/Cardwell-Crescent/RMLP1250.aspx"><img alt="Cardwell Crescent, Headington" class="smallImage mainimage-scroller-item" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_imgMain" src="http://media5.estateweb.com/PhotoServ/Default.aspx?a=6163&amp;i=1.jpg&amp;r=RMLP1250&amp;l=4&amp;h=189&amp;w=277&amp;st=&amp;rt=0.9&amp;ds=1&amp;lt=6&amp;t=0&amp;resinfo=&amp;ct=0&amp;sb=1&amp;bc=000000&amp;fgc=ffffff" /></a>
+			</div>
+			
+		
+	</div>
+	</div>
+	<div class="ListResultContainer">
+		<div class="ListPropertyCellRight">
+			<h2 id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_lblFormattedPrice">£2,400 Per Calendar Month</h2>
+			<div class="ListResultsRooms">
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_tdBedrooms"> <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_txtBedrooms">6 Bedrooms</span></div>
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_tdBathrooms"> </div>
+				
+			</div>
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_SaveProperty">
+		
+				<div class="ListResultsLinks">
+					<a href="javascript:__doPostBack('ctl00$cntrlCenterRegion$ctl01$cntrlSearch$item_1$cntrlItemTemplate$lnkSaveProperty','')" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_lnkSaveProperty">Save Property</a>
+				</div>
+			
+	</div>			
+			
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_FullDetails">
+		
+				<div class="ListResultsLinks"> <a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_lnkFullDetailsIcon" href="/Property/Residential/for-rent/Oxford/Headington/Cardwell-Crescent/RMLP1250.aspx">Full Details</a> </div>
+			
+	</div>
+			
+			
+			
+		</div>
+		<h3>
+			<div style="width:10px;white-space:nowrap;" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_Address">
+		 <a class="propAdd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_lnkFullDetailsAddress" href="/Property/Residential/for-rent/Oxford/Headington/Cardwell-Crescent/RMLP1250.aspx">Cardwell Crescent, Headington</a> 
+	</div>
+		</h3>
+		<span class="property-statuslabel" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_cntrlStatus_lblStatus"></span>
+		<div class="SearchText">
+			<span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_lblBriefDescription"></span>
+		</div>
+		
+	</div>
+	<div class="clearer"> </div>
+</div>
+					
+						
+
+
+<div class="ListSearchResult">
+	<div class="ListPropertyCellLeft">
+		<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_Photos">
+		
+			<div style="height:189px;overflow:hidden;" class="mainimage-scroller-container" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_pnlMainPhotoContainer">
+				<a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_lnkFullDetailsImgMain" href="/Property/Residential/for-rent/Headington/Oxford/Tilehouse-Close/RMLP1457.aspx"><img alt="Tilehouse Close, Oxford" class="smallImage mainimage-scroller-item" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_imgMain" src="http://media5.estateweb.com/PhotoServ/Default.aspx?a=6163&amp;i=1.jpg&amp;r=RMLP1457&amp;l=4&amp;h=189&amp;w=277&amp;st=&amp;rt=0.9&amp;ds=1&amp;lt=6&amp;t=0&amp;resinfo=&amp;ct=0&amp;sb=1&amp;bc=000000&amp;fgc=ffffff" /></a>
+			</div>
+			
+		
+	</div>
+	</div>
+	<div class="ListResultContainer">
+		<div class="ListPropertyCellRight">
+			<h2 id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_lblFormattedPrice">£1,900 Per Calendar Month</h2>
+			<div class="ListResultsRooms">
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_tdBedrooms"> <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_txtBedrooms">5 Bedrooms</span></div>
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_tdBathrooms"> <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_txtBathrooms">2 Bathrooms</span></div>
+				
+			</div>
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_SaveProperty">
+		
+				<div class="ListResultsLinks">
+					<a href="javascript:__doPostBack('ctl00$cntrlCenterRegion$ctl01$cntrlSearch$item_2$cntrlItemTemplate$lnkSaveProperty','')" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_lnkSaveProperty">Save Property</a>
+				</div>
+			
+	</div>			
+			
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_FullDetails">
+		
+				<div class="ListResultsLinks"> <a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_lnkFullDetailsIcon" href="/Property/Residential/for-rent/Headington/Oxford/Tilehouse-Close/RMLP1457.aspx">Full Details</a> </div>
+			
+	</div>
+			
+			
+			
+		</div>
+		<h3>
+			<div style="width:10px;white-space:nowrap;" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_Address">
+		 <a class="propAdd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_lnkFullDetailsAddress" href="/Property/Residential/for-rent/Headington/Oxford/Tilehouse-Close/RMLP1457.aspx">Tilehouse Close, Oxford</a> 
+	</div>
+		</h3>
+		<span class="property-statuslabel" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_cntrlStatus_lblStatus"></span>
+		<div class="SearchText">
+			<span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_lblBriefDescription"></span>
+		</div>
+		
+	</div>
+	<div class="clearer"> </div>
+</div>
+					
+						
+
+
+<div class="ListSearchResult">
+	<div class="ListPropertyCellLeft">
+		<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_Photos">
+		
+			<div style="height:189px;overflow:hidden;" class="mainimage-scroller-container" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_pnlMainPhotoContainer">
+				<a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_lnkFullDetailsImgMain" href="/Property/Residential/for-rent/Oxford/Fern-Hill-Road/RMLP1438.aspx"><img alt="Fern Hill Road, Oxford" class="smallImage mainimage-scroller-item" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_imgMain" src="http://media5.estateweb.com/PhotoServ/Default.aspx?a=6163&amp;i=1.jpg&amp;r=RMLP1438&amp;l=4&amp;h=189&amp;w=277&amp;st=&amp;rt=0.9&amp;ds=1&amp;lt=6&amp;t=0&amp;resinfo=&amp;ct=0&amp;sb=1&amp;bc=000000&amp;fgc=ffffff" /></a>
+			</div>
+			
+		
+	</div>
+	</div>
+	<div class="ListResultContainer">
+		<div class="ListPropertyCellRight">
+			<h2 id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_lblFormattedPrice">£1,200 Per Calendar Month</h2>
+			<div class="ListResultsRooms">
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_tdBedrooms"> <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_txtBedrooms">3 Bedrooms</span></div>
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_tdBathrooms"> <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_txtBathrooms">1 Bathrooms</span></div>
+				
+			</div>
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_SaveProperty">
+		
+				<div class="ListResultsLinks">
+					<a href="javascript:__doPostBack('ctl00$cntrlCenterRegion$ctl01$cntrlSearch$item_3$cntrlItemTemplate$lnkSaveProperty','')" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_lnkSaveProperty">Save Property</a>
+				</div>
+			
+	</div>			
+			
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_FullDetails">
+		
+				<div class="ListResultsLinks"> <a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_lnkFullDetailsIcon" href="/Property/Residential/for-rent/Oxford/Fern-Hill-Road/RMLP1438.aspx">Full Details</a> </div>
+			
+	</div>
+			
+			
+			
+		</div>
+		<h3>
+			<div style="width:10px;white-space:nowrap;" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_Address">
+		 <a class="propAdd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_lnkFullDetailsAddress" href="/Property/Residential/for-rent/Oxford/Fern-Hill-Road/RMLP1438.aspx">Fern Hill Road, Oxford</a> 
+	</div>
+		</h3>
+		<span class="property-statuslabel" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_cntrlStatus_lblStatus"></span>
+		<div class="SearchText">
+			<span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_lblBriefDescription"></span>
+		</div>
+		
+	</div>
+	<div class="clearer"> </div>
+</div>
+					
+						
+
+
+<div class="ListSearchResult">
+	<div class="ListPropertyCellLeft">
+		<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_Photos">
+		
+			<div style="height:189px;overflow:hidden;" class="mainimage-scroller-container" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_pnlMainPhotoContainer">
+				<a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_lnkFullDetailsImgMain" href="/Property/Residential/for-rent/Oxford/Jeune-Hall/RMLP1001.aspx"><img alt="Jeune Hall, Oxford" class="smallImage mainimage-scroller-item" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_imgMain" src="http://media5.estateweb.com/PhotoServ/Default.aspx?a=6163&amp;i=1.jpg&amp;r=RMLP1001&amp;l=4&amp;h=189&amp;w=277&amp;st=&amp;rt=0.9&amp;ds=1&amp;lt=6&amp;t=0&amp;resinfo=&amp;ct=0&amp;sb=1&amp;bc=000000&amp;fgc=ffffff" /></a>
+			</div>
+			
+		
+	</div>
+	</div>
+	<div class="ListResultContainer">
+		<div class="ListPropertyCellRight">
+			<h2 id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_lblFormattedPrice">£600 Per Calendar Month</h2>
+			<div class="ListResultsRooms">
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_tdBedrooms"> <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_txtBedrooms">1 Bedrooms</span></div>
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_tdBathrooms"> <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_txtBathrooms">1 Bathrooms</span></div>
+				
+			</div>
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_SaveProperty">
+		
+				<div class="ListResultsLinks">
+					<a href="javascript:__doPostBack('ctl00$cntrlCenterRegion$ctl01$cntrlSearch$item_4$cntrlItemTemplate$lnkSaveProperty','')" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_lnkSaveProperty">Save Property</a>
+				</div>
+			
+	</div>			
+			
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_FullDetails">
+		
+				<div class="ListResultsLinks"> <a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_lnkFullDetailsIcon" href="/Property/Residential/for-rent/Oxford/Jeune-Hall/RMLP1001.aspx">Full Details</a> </div>
+			
+	</div>
+			
+			
+			
+		</div>
+		<h3>
+			<div style="width:10px;white-space:nowrap;" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_Address">
+		 <a class="propAdd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_lnkFullDetailsAddress" href="/Property/Residential/for-rent/Oxford/Jeune-Hall/RMLP1001.aspx">Jeune Hall, Oxford</a> 
+	</div>
+		</h3>
+		<span class="property-statuslabel" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_cntrlStatus_lblStatus"></span>
+		<div class="SearchText">
+			<span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_lblBriefDescription">Excellent condition In easy Access to central Oxford. Brorokes University.</span>
+		</div>
+		
+	</div>
+	<div class="clearer"> </div>
+</div>
+					
+						
+
+
+<div class="ListSearchResult">
+	<div class="ListPropertyCellLeft">
+		<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_Photos">
+		
+			<div style="height:189px;overflow:hidden;" class="mainimage-scroller-container" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_pnlMainPhotoContainer">
+				<a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_lnkFullDetailsImgMain" href="/Property/Residential/for-rent/Oxford/Cowley-Road-Master/RMLP1186.aspx"><img alt="Cowley Road (Master), Oxford" class="smallImage mainimage-scroller-item" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_imgMain" src="http://media5.estateweb.com/PhotoServ/Default.aspx?a=6163&amp;i=1.jpg&amp;r=RMLP1186&amp;l=4&amp;h=189&amp;w=277&amp;st=&amp;rt=0.9&amp;ds=1&amp;lt=6&amp;t=0&amp;resinfo=&amp;ct=0&amp;sb=1&amp;bc=000000&amp;fgc=ffffff" /></a>
+			</div>
+			
+		
+	</div>
+	</div>
+	<div class="ListResultContainer">
+		<div class="ListPropertyCellRight">
+			<h2 id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_lblFormattedPrice">£550 Per Calendar Month</h2>
+			<div class="ListResultsRooms">
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_tdBedrooms"> <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_txtBedrooms">1 Bedrooms</span></div>
+				<div class="BedroomsTd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_tdBathrooms"> <span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_txtBathrooms">2 Bathrooms</span></div>
+				
+			</div>
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_SaveProperty">
+		
+				<div class="ListResultsLinks">
+					<a href="javascript:__doPostBack('ctl00$cntrlCenterRegion$ctl01$cntrlSearch$item_5$cntrlItemTemplate$lnkSaveProperty','')" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_lnkSaveProperty">Save Property</a>
+				</div>
+			
+	</div>			
+			
+			<div id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_FullDetails">
+		
+				<div class="ListResultsLinks"> <a id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_lnkFullDetailsIcon" href="/Property/Residential/for-rent/Oxford/Cowley-Road-Master/RMLP1186.aspx">Full Details</a> </div>
+			
+	</div>
+			
+			
+			
+		</div>
+		<h3>
+			<div style="width:10px;white-space:nowrap;" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_Address">
+		 <a class="propAdd" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_lnkFullDetailsAddress" href="/Property/Residential/for-rent/Oxford/Cowley-Road-Master/RMLP1186.aspx">Cowley Road (Master), Oxford</a> 
+	</div>
+		</h3>
+		<span class="property-statuslabel" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_cntrlStatus_lblStatus"></span>
+		<div class="SearchText">
+			<span id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_lblBriefDescription"></span>
+		</div>
+		
+	</div>
+	<div class="clearer"> </div>
+</div>
+					</div><div style="width:100%;display:none;" id="ctl00_cntrlCenterRegion_ctl01_cntrlSearch_itemscontainer_restorehistoryprogress">
+						<div style="width:100%;text-align:center;padding:20px">
+							<table cellspacing="0" cellpadding="5" border="0">
+								<tbody><tr>
+									<td><img src="/images/icons/loader_64.gif" /></td>
+									<td><b>Please wait...</b></td>
+								</tr>
+							</tbody></table>
+						</div>
+					</div><script type="text/javascript">                                             
+            if (document.location.toString().indexOf("#&amp;&amp;") &gt; 0) {
+                document.getElementById("ctl00_cntrlCenterRegion_ctl01_cntrlSearch_itemscontainer").style.display = "none";
+                document.getElementById("ctl00_cntrlCenterRegion_ctl01_cntrlSearch_itemscontainer_restorehistoryprogress").style.display = "block";
+            }
+                                                </script>
+			</div>
+			<div class="MapIconContainer" id="ctl00_cntrlCenterRegion_ctl01_pnlPagingFooter">
+				<div class="pagingBox">
+					<table cellspacing="0" cellpadding="0" border="0" class="PagerContainerTable">
+		<tbody><tr>
+			<td class="PagerCurrentPageCell"><span title="Showing Results 1 to 6 of 6" class="PagerHyperlinkStyle"><strong> 1 </strong></span></td>
+		</tr>
+	</tbody></table><span id="ctl00_cntrlCenterRegion_ctl01_cntrlPagingFooter"></span>
+				</div>
+				<div class="BacktoTop"><a onclick="window.scrollTo(0,0); return false" href="#"><img border="0" alt="" src="/Images/back-to-top-but.gif" /></a></div>
+			</div>
+		
+</div>
+	<div id="ctl00_cntrlCenterRegion_ctl01_ctl00">
+	
+			<div style="display:none;position:absolute;" id="ctl00_cntrlCenterRegion_ctl01_cntrlMapSavedItems_cntrlTooltipManager">
+		
+     <span id="ctl00_cntrlCenterRegion_ctl01_cntrlMapSavedItems_lblAlreadySaved"></span>
+     <span id="ctl00_cntrlCenterRegion_ctl01_cntrlMapSavedItems_lblSuccessMessage"></span>
+<input type="hidden" name="ctl00_cntrlCenterRegion_ctl01_cntrlMapSavedItems_cntrlTooltipManager_ClientState" id="ctl00_cntrlCenterRegion_ctl01_cntrlMapSavedItems_cntrlTooltipManager_ClientState" autocomplete="off" />
+	</div>
+
+			<input type="button" style="display:none" id="ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper_btnExecute" name="ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$btnExecute" onclick="__doPostBack('ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$btnExecute','')" />
+<input type="hidden" id="ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper_txtMethod" name="ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$txtMethod" />
+<input type="hidden" id="ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper_txtClientCallback" name="ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$txtClientCallback" />
+<input type="hidden" value="10" id="ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper_txtRecordsPerPage" name="ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$txtRecordsPerPage" />
+<input type="hidden" value="1" id="ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper_txtPage" name="ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$txtPage" />
+<input type="hidden" id="ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper_txtPropertyReference" name="ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$txtPropertyReference" />
+<input type="hidden" id="ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper_txtAdditionalReferences" name="ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$txtAdditionalReferences" />
+<input type="hidden" id="ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper_txtMapReference" name="ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$txtMapReference" />
+<input type="hidden" id="ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper_txtOutputType" name="ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$txtOutputType" />
+<input type="hidden" value="1" id="ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper_txtAllowSavingControls" name="ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$txtAllowSavingControls" />
+<input type="hidden" value="1" id="ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper_txtGeocodedDataOnly" name="ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper$txtGeocodedDataOnly" />
+
+
+			<input type="button" style="display:none" id="ctl00_cntrlCenterRegion_ctl01_btnMappingSaveProperty" name="ctl00$cntrlCenterRegion$ctl01$btnMappingSaveProperty" onclick="__doPostBack('ctl00$cntrlCenterRegion$ctl01$btnMappingSaveProperty','')" />
+			<input type="hidden" id="ctl00_cntrlCenterRegion_ctl01_txtMappingSavedPropertyArgs" name="ctl00$cntrlCenterRegion$ctl01$txtMappingSavedPropertyArgs" />
+		
+</div>
+	<div style="margin-left:0px;display:none" id="theMap">
+		<div style="width:100%;height:650px;" id="cntrlPropertySearch_map_pnlMap"></div>
+		<div style="width:100%;height:650px;position:absolute;top:0px;text-align:center;" id="cntrlPropertySearch_map_loading">
+			<div style="background-color:#C3C3C3;width:100%;height:650px;filter:alpha(opacity=20);opacity:.2"></div>
+			<div style="position:absolute;top:300px;width:100%;text-align:center;"> <img alt="Loading" style="margin-right:20px" src="/images/icons/ajax-loading.gif" /><b>Please wait...</b> </div>
+		</div>
+	</div>
+	<div style="display:none;" id="TopToBottomLink" class="MapIconContainer">
+		<div class="BacktoTop"><a onclick="window.scrollTo(0,0); return false" href="#"><img border="0" alt="" src="/Images/back-to-top-but.gif" /></a></div>
+	</div>
+</div>
+
+
+						</article>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		
+
+<div class="BottomTopPart">
+	<div class="LookingforBotBox">
+		<h3>Looking for:</h3>
+		<div class="LookingforLink">
+			<div class="LookingforImg"><img border="0" title="Saved Properties" alt="Saved Properties" src="/Images/save-pro-bot.png" /></div>
+			<div class="LookingforTxt"><a href="/Saved-Properties.aspx">Saved Properties</a></div>
+		</div>
+		<div class="LookingforLink">
+			<div class="LookingforImg"><img border="0" title="Contact Us" alt="Contact Us" src="/Images/contact-bot.png" /></div>
+			<div class="LookingforTxt"><a href="/Content/Contact-Us.aspx">Contact Us</a></div>
+		</div>
+		<div class="LookingforLink">
+			<div class="LookingforImg"><img border="0" title="Valuation" alt="Valuation" src="/Images/valuation-bot.png" /></div>
+			<div class="LookingforTxt"><a href="/Content/Valuation.aspx">Valuation</a></div>
+		</div>
+		<div class="LookingforLink">
+			<div class="LookingforImg"><img border="0" title="Register" alt="Register" src="/Images/register-bot.png" /></div>
+			<div class="LookingforTxt"><a href="/Content/Register.aspx">Register</a></div>
+		</div>
+	</div>
+	<div class="FollowusonBox">
+		<h3>Follow us on:</h3>
+		<div class="FollowusonLink"><a href="https://www.facebook.com/pages/RMA-Properties/385368534923003"><img title="facebook" alt="facebook" src="/Images/f.png" /></a></div>
+		<div class="FollowusonLink"><a href="http://www.linkedin.com/company/rma-property-ltd/products?trk=tabs_biz_product"><img border="0" title="LinkedIn" alt="LinkedIn" src="/Images/in.png" /></a></div>
+		<div class="FollowusonLink"><a href="http://www.youtube.com/channel/UCSYt_aZYYrulacc3WdWvCjw?feature=watch"><img title="You Tube" alt="You Tube" src="/Images/youtube.png" /></a></div>
+		<div class="FollowusonLink"></div>
+	</div>
+	<div class="UsefullinksBox">
+		<h3>Useful Links</h3>
+		<div class="UsefullinkBot">
+			<a name="Link1"></a><div>
+	 <a target="_blank" href="http://www.tpos.co.uk/consumer_guide_rents.htm">The Property Ombudsman </a><br /> 
+</div>
+		</div>
+		<div class="UsefullinkBot">
+			<a name="Link2"></a><div>
+	 <a target="_blank" href="http://www.depositprotection.com/">Deposit Protection Service</a> 
+</div>
+		</div>
+		<div class="UsefullinkBot">
+			<a name="Link3"></a><div>
+	 <a target="_blank" href="http://www.bjpoxford.com/products/student-contents-cover">BJP Insurance For Tenants</a> 
+</div>
+		</div>
+		<div class="UsefullinkBot">
+			<a name="Link4"></a><div>
+	 <a target="_blank" href="http://www.oxford.gov.uk/PageRender/decER/Refuse_collection_days_occw.htm">Recycling &amp; Rubbish Collection</a> 
+</div>
+		</div>
+		<div class="UsefullinkBot">
+			<a name="Link5"></a><div>
+	 <a target="_blank" href="http://www.oxfordshire.gov.uk/cms/content/oxford-parking-shop">Oxfordshire Parking Shop</a> 
+</div>
+		</div>
+		<div class="UsefullinkBot">
+			<a name="Link6"></a><div>
+	 <a target="_blank" href="http://www.oxford.gov.uk/PageRender/decCB/Council_Tax_occw.htm">Oxford Council Tax Offiice</a> 
+</div>
+		</div>
+		<div class="UsefullinkBot UsefullinkBotLast">
+			<a name="Link7"></a><div>
+	<a target="_blank" href="http://www.sobellhospicecharity.org.uk/">RMA Supporting Sobell House </a> 
+</div>
+		</div>
+	</div>
+	<div class="NewsBoxFooter">
+		<h3>News</h3>
+		
+			<div class="NewsBox">
+				<div class="NewsBoxFooterLink"><a id="ctl00_ctl18_ctl00_rptItems_ctl00_txtHeading" href="/News/83/Official-sales-figures-show-UK-property-market-slowing.aspx">Official sales figures show UK property market slowing</a></div>
+				<div class="NewsText">
+					<span id="ctl00_ctl18_ctl00_rptItems_ctl00_txtContent"></span>
+					<span class="ReadMore"> <a id="ctl00_ctl18_ctl00_rptItems_ctl00_lnkView" href="/News/83/Official-sales-figures-show-UK-property-market-slowing.aspx">more</a> </span>
+				</div>
+				<div style="display:none;" id="ctl00_ctl18_ctl00_rptItems_ctl00_txtDate">24 July 2014</div>
+			</div>
+		
+		
+			<div class="NewsBox">
+				<div class="NewsBoxFooterLink"><a id="ctl00_ctl18_ctl00_rptItems_ctl02_txtHeading" href="/News/82/Rightmoves-instant-listing-service-scores-quick-hit.aspx">Rightmove’s ‘instant’ listing service scores quick hit</a></div>
+				<div class="NewsText">
+					<span id="ctl00_ctl18_ctl00_rptItems_ctl02_txtContent"></span>
+					<span class="ReadMore"> <a id="ctl00_ctl18_ctl00_rptItems_ctl02_lnkView" href="/News/82/Rightmoves-instant-listing-service-scores-quick-hit.aspx">more</a> </span>
+				</div>
+				<div style="display:none;" id="ctl00_ctl18_ctl00_rptItems_ctl02_txtDate">16 July 2014</div>
+			</div>
+		
+	<div class="ReadAll"><a id="ctl00_ctl18_ctl00_lnkSeeAll" href="/Content/About-Us/News.aspx">Read ALL articles</a></div>
+    
+	</div>
+</div>
+	</div>
+	<footer>
+		
+
+
+<div class="copyRight">
+	Property Website Design by <a class="tweb" rel="nofollow" target="_blank" href="http://www.technicweb.com/">TECHNICWEB©</a> / all content © RMA Properties Ltd 2014 <a target="_blank" href="/SiteMap.aspx">[+Sitemap]</a> <a target="_blank" id="ctl00_ctl19_lnkPrivacyPolicy" href="/Content/Privacy-Policy.aspx">Privacy Policy</a>  |  <a target="_blank" id="ctl00_ctl19_lnkTC" href="/Content/Terms-and-Conditions.aspx">Terms and Conditions</a>
+	<div class="footer-imag"><img title="Prime Location" alt="Prime Location" src="/Images/prime-loc.png" /><img title="Globrix" alt="Globrix" src="/Images/globrix.png" /><img title="Zoopla" alt="Zoopla" src="/Images/zoopla.png" /><img title="The Property Ombudsman Letting" alt="The Property Ombudsman Letting" src="/Images/prop-ombudsman.png" /><img title="DPS" alt="DPS" src="/Images/dps.png" /><img title="Rightmove.co.uk" alt="Rightmove.co.uk" src="/Images/right-moove.png" /><img title="Fina a Property" alt="Fina a Property" src="/Images/find-prop.png" /></div>
+</div>
+ 
+	</footer>
+
+
+<script type="text/javascript">CookiePolicy.moreInformationURL = "/Content/Our-Cookie-Policy.aspx";</script>
+<div id="cookiepolicy-container" style="bottom: -90.7929px;">
+    
+    The cookie settings on this website are set to allow all cookies to give you the very best experience. If you continue past this page without changing these settings, you consent to this. You can change your cookies settings at any time in your browser.
+    
+    <br /><br />
+    
+    <span onclick="CookiePolicy.moreInformation();CookiePolicy.accept();CookiePolicy.hide();" class="cookiepolicy-button">More Information</span>
+
+       
+    
+    <span onclick="CookiePolicy.hide();CookiePolicy.accept();" class="cookiepolicy-button">No Thanks</span>
+
+</div><div style="background-color:Black;display:none;z-index:100000;" id="ctl00_cntrlWindowManager">
+	<div style="display:none;" id="ctl00_cntrlWindowManager_alerttemplate">
+
+<div style="background-color:#FFF" class="rwDialogPopup radalert">   
+    <div class="rwDialogText">
+    {1}
+    </div>
+
+    <div>
+     <a style="color:#fff" href="javascript:$find('{0}').close();" class="rwPopupButton">
+      <span class="rwOuterSpan">
+       <span class="rwInnerSpan">##LOC[OK]##</span>
+      </span>
+     </a>    
+    </div>
+</div></div><div style="display:none;" id="ctl00_cntrlWindowManager_prompttemplate">
+		 <div class="rwDialogPopup radprompt">			
+			    <div class="rwDialogText">
+			    {1}				
+			    </div>		
+			    <div>
+				    <script type="text/javascript">
+				    function RadWindowprompt_detectenter(id, ev, input)
+				    {							
+					    if (!ev) ev = window.event;                
+					    if (ev.keyCode == 13)
+					    {															        
+					        var but = input.parentNode.parentNode.getElementsByTagName("A")[0];					        
+					        if (but)
+						    {							
+							    if (but.click) but.click();
+							    else if (but.onclick)
+							    {
+							        but.focus(); var click = but.onclick; but.onclick = null; if (click) click.call(but);							 
+							    }
+						    }
+					       return false;
+					    } 
+					    else return true;
+				    }	 
+				    </script>
+				    <input type="text" value="{2}" class="rwDialogInput" onkeydown="return RadWindowprompt_detectenter('{0}', event, this);" title="Enter Value" />
+			    </div>
+			    <div>
+				    <a href="javascript:void(0);" class="rwPopupButton" onclick="$find('{0}').close(this.parentNode.parentNode.getElementsByTagName('input')[0].value);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[OK]##</span></span></a>
+				    <a href="javascript:void(0);" class="rwPopupButton" onclick="$find('{0}').close(null);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[Cancel]##</span></span></a>
+			    </div>
+		    </div>				       
+		</div><div style="display:none;" id="ctl00_cntrlWindowManager_confirmtemplate">
+		<div class="rwDialogPopup radconfirm">			
+			<div class="rwDialogText">
+			{1}				
+			</div>						
+			<div>
+				<a href="javascript:void(0);" class="rwPopupButton" onclick="$find('{0}').close(true);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[OK]##</span></span></a>
+				<a href="javascript:void(0);" class="rwPopupButton" onclick="$find('{0}').close(false);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[Cancel]##</span></span></a>
+			</div>
+		</div>		
+		</div><input type="hidden" name="ctl00_cntrlWindowManager_ClientState" id="ctl00_cntrlWindowManager_ClientState" />
+</div>
+<div>
+
+	
+</div>
+
+<script type="text/javascript">
+//&lt;![CDATA[
+Sys.Application.add_init(function(){ if ( typeof Telerik_WindowMessaging_Provider == "undefined"){ alert("telerik.windowmessaging.provider.vb.js missing"); } });Sys.Application.add_init(function(){ 
+                                                                             __mappingAjaxHelper_uniqueID = "ctl00$cntrlCenterRegion$ctl01$cntrlMappingAjaxHelper";
+                                                                             __mappingAjaxHelper_clientID = "ctl00_cntrlCenterRegion_ctl01_cntrlMappingAjaxHelper";
+                                                                             __mappingSavedPropertyArgs_clientID = "ctl00_cntrlCenterRegion_ctl01_txtMappingSavedPropertyArgs";
+                                                                             __mappingSaveProperty_uniqueID = "ctl00$cntrlCenterRegion$ctl01$btnMappingSaveProperty";
+                                                                             __mappingSearchItemsContainer_clientID = "ctl00_cntrlCenterRegion_ctl01_pnlSearchItemsContainer";
+                                                                             __mappingPagingFooter_clientID = "ctl00_cntrlCenterRegion_ctl01_pnlPagingFooter";
+                                                                             __mappingPagingHeader_clientID = "ctl00_cntrlCenterRegion_ctl01_pnlPagingHeader";
+                                                                             __mappingAjaxHelper_method = "search";
+                                                                             __mappingAjaxHelper_allowSaveControls = "1";
+                                                                           });
+Sys.Application.setServerId("ctl00_ctl14", "ctl00$ctl14");
+
+Sys.Application._enableHistoryInScriptManager();
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadToolTipManager, {"_cssClass":"","_manualCloseButtonText":"Close","_updatePanelUniqueId":"ctl00$cntrlItemTemplateActionTooltipManagerRTMPanel","clientStateFieldID":"ctl00_cntrlItemTemplateActionTooltipManager_ClientState","formID":"aspnetForm","hideDelay":0,"isToolTipFactory":true,"loadOnDemand":false,"mouseTrailing":true,"position":31,"showDelay":0,"skin":"Pro2010","targetControls":"[['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_Photos','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_Photos',''],['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_Address','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_0_cntrlItemTemplate_Address',''],['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_Photos','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_Photos',''],['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_Address','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_1_cntrlItemTemplate_Address',''],['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_Photos','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_Photos',''],['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_Address','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_2_cntrlItemTemplate_Address',''],['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_Photos','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_Photos',''],['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_Address','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_3_cntrlItemTemplate_Address',''],['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_Photos','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_Photos',''],['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_Address','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_4_cntrlItemTemplate_Address',''],['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_Photos','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_Photos',''],['ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_Address','ctl00_cntrlCenterRegion_ctl01_cntrlSearch_item_5_cntrlItemTemplate_Address','']]"}, null, null, $get("ctl00_cntrlItemTemplateActionTooltipManager"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_skin":"Pro2010","clientStateFieldID":"ctl00_ctl17_cntrlMenu_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"value":"1","navigateUrl":"/"},{"value":"53","navigateUrl":"/Landlords.aspx"},{"value":"57","navigateUrl":"/Tenants.aspx"},{"value":"58","navigateUrl":"/Students.aspx"},{"value":"78","navigateUrl":"/Commercial.aspx"},{"items":[{"value":"54","navigateUrl":"/Content/About-Us/Staff-Profiles.aspx"},{"value":"55","navigateUrl":"/Content/About-Us/Company-Profile.aspx"},{"value":"65","navigateUrl":"/Content/About-Us/News.aspx"}],"value":"26","navigateUrl":"/Content/About-Us.aspx"},{"value":"64","navigateUrl":"/Content/Contact-Us.aspx"},{"value":"34","navigateUrl":"/Saved-Properties.aspx"}]}, null, null, $get("ctl00_ctl17_cntrlMenu"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadToolTip, {"_cssClass":"","_manualCloseButtonText":"Close","clientStateFieldID":"ctl00_cntrlCenterRegion_ctl01_cntrlSavedItems_cntrlTooltipManager_ClientState","formID":"aspnetForm","position":11,"relativeTo":1,"showEvent":16,"skin":"Pro2010"}, null, null, $get("ctl00_cntrlCenterRegion_ctl01_cntrlSavedItems_cntrlTooltipManager"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadToolTip, {"_cssClass":"","_manualCloseButtonText":"Close","clientStateFieldID":"ctl00_cntrlCenterRegion_ctl01_cntrlMapSavedItems_cntrlTooltipManager_ClientState","formID":"aspnetForm","position":11,"relativeTo":1,"showEvent":16,"skin":"Pro2010"}, null, null, $get("ctl00_cntrlCenterRegion_ctl01_cntrlMapSavedItems_cntrlTooltipManager"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindowManager, {"behaviors":4,"clientStateFieldID":"ctl00_cntrlWindowManager_ClientState","destroyOnClose":true,"formID":"aspnetForm","iconUrl":"","keepInScreenBounds":true,"minimizeIconUrl":"","modal":true,"name":"cntrlWindowManager","skin":"Pro2010","visibleStatusbar":false,"windowControls":"[]"}, null, null, $get("ctl00_cntrlWindowManager"));
+});
+//]]&gt;
+</script>
+<input type="hidden" value="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C34oY/+9fxJ+Qktxheao52wHrf2lWEd9rp/F/qbGl/2CcuMXryk+yimeJf9nh2h9Yub082vyO8iXFV/kWUFrUDvPf5LmUvByvhvrjFcL8963T7z3yNfJfu+fmv8+98h3+fwh1uPvOzyMf/lVAf1AtoBjpZ8kvUH6rqXxUXzkxZlL1+ezi4Ovfq+r45NnlO/WnDb7Cz9F/1/sPPjO6pNF9tOXL+bNT5XtF9Nv/6C4f/3ly/b4s/8HCxgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WBQUrY3RsMDAkY250cmxJdGVtVGVtcGxhdGVBY3Rpb25Ub29sdGlwTWFuYWdlcgUVY3RsMDAkY3RsMTckY250cmxNZW51BUFjdGwwMCRjbnRybENlbnRlclJlZ2lvbiRjdGwwMSRjbnRybFNhdmVkSXRlbXMkY250cmxUb29sdGlwTWFuYWdlcgVEY3RsMDAkY250cmxDZW50ZXJSZWdpb24kY3RsMDEkY250cmxNYXBTYXZlZEl0ZW1zJGNudHJsVG9vbHRpcE1hbmFnZXIFGGN0bDAwJGNudHJsV2luZG93TWFuYWdlcgU1Y3RsMDAkY250cmxDZW50ZXJSZWdpb24kY3RsMDEkY3RsMDIkY250cmxJdGVtc1BlclBhZ2UPFCsAAmUFAjEwZDVGhHdOnH3NCz/sXw7AggQyAUQb" id="__VIEWSTATE" name="__VIEWSTATE" /></form>
+
+
+</body></html>

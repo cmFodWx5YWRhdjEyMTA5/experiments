@@ -1,0 +1,925 @@
+<html lang="en">
+ <head>
+  <style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style>
+  <style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> 
+  <meta name="keywords" content=""> 
+  <meta name="description" content="jobs from National Career Fairs - Job Boards"> 
+  <meta name="viewport" content="width=device-width, height=device-height,
+                                   initial-scale=1.0, maximum-scale=1.0,
+                                   target-densityDpi=device-dpi"> 
+  <link rel="alternate" type="application/rss+xml" title="Jobs" href="https://www.ncfjobs.com/rss/"> 
+  <title>Jobs | National Career Fairs - Job Boards</title> 
+  <link href="https://www.ncfjobs.com/templates/Bootstrap/assets/third-party/jquery-ui.css" rel="stylesheet"> 
+  <link href="https://www.ncfjobs.com/templates/Bootstrap/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="https://www.ncfjobs.com/templates/Bootstrap/assets/style/styles.css?v=" rel="stylesheet"> 
+  <link rel="icon" href="https://www.ncfjobs.com/templates/Bootstrap/assets/images/favicon.ico" type="image/x-icon"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css"> 
+  <style type="text/css">.navbar {
+    min-height: 100px;
+}
+
+.navbar-brand {
+	 height:75px;
+}</style> 
+  <script async src="//www.google-analytics.com/analytics.js" style=""></script>
+  <script type="text/javascript" src="https://gdc.indeed.com/ads/apiresults.js"></script> 
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/6/common.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/6/util.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/6/controls.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/6/places_impl.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/6/stats.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttps%3A%2F%2Fwww.ncfjobs.com%2Fjobs%2F%3Flisting_type%255Bequal%255D%3DJob%26action%3Dsearch%26keywords%255Ball_words%255D%3D%26GooglePlace%255Blocation%255D%255Bvalue%255D%3D%26GooglePlace%255Blocation%255D%255Bradius%255D%3D50&amp;4sAIzaSyAGXeZ9l9LqnpYzbqmnwuanCTGQrBywTmk&amp;callback=_xdc_._tql7oe&amp;token=91704"></script>
+ </head> 
+ <body> 
+  <nav class="navbar navbar-default"> 
+   <div class="container container-fluid"> 
+    <div class="logo navbar-header"> 
+     <a class="logo__text navbar-brand" href="https://www.ncfjobs.com"> <img src="https://www.ncfjobs.com/templates/Bootstrap/assets/images/ncfjobs-temp-logo.png"> </a> 
+    </div> 
+    <div class="burger-button__wrapper burger-button__wrapper__js visible-sm visible-xs" data-target="#navbar-collapse" data-toggle="collapse"> 
+     <div class="burger-button"></div> 
+    </div> 
+    <div class="collapse navbar-collapse" id="navbar-collapse"> 
+     <div class="visible-sm visible-xs"> 
+      <ul class="nav navbar-nav navbar-left"> 
+       <li class="navbar__item active"> <a class="navbar__link" href="https://www.ncfjobs.com/jobs/"><span>Jobs</span></a> </li> 
+       <li class="navbar__item "> <a class="navbar__link" href="https://www.ncfjobs.com/companies/"><span>Companies</span></a> </li> 
+       <li class="navbar__item "> <a class="navbar__link" href="https://www.ncfjobs.com/add-listing/?listing_type_id=Job"><span>Post a Job</span></a> </li> 
+       <li class="navbar__item "> <a class="navbar__link" href="https://www.ncfjobs.com/resumes/"><span>Resume Search</span></a> </li> 
+      </ul> 
+     </div> 
+     <ul class="nav navbar-nav navbar-right"> 
+      <li class="navbar__item navbar__item "> <a class="navbar__link navbar__login" href="https://www.ncfjobs.com/login/">Sign in</a> </li> 
+      <li class="navbar__item navbar__item__filled"><a class="navbar__link  btn__blue" href="https://www.ncfjobs.com/registration/">Sign up</a></li> 
+     </ul> 
+     <div class="visible-md visible-lg"> 
+      <ul class="nav navbar-nav navbar-left"> 
+       <li class="navbar__item active"> <a class="navbar__link" href="https://www.ncfjobs.com/jobs/"><span>Jobs</span></a> </li> 
+       <li class="navbar__item "> <a class="navbar__link" href="https://www.ncfjobs.com/companies/"><span>Companies</span></a> </li> 
+       <li class="navbar__item "> <a class="navbar__link" href="https://www.ncfjobs.com/add-listing/?listing_type_id=Job"><span>Post a Job</span></a> </li> 
+       <li class="navbar__item "> <a class="navbar__link" href="https://www.ncfjobs.com/resumes/"><span>Resume Search</span></a> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </nav> 
+  <div class="page-row page-row-expanded"> 
+   <div class="display-item"> 
+    <div class="search-header hidden-xs-480"></div> 
+    <div class="quick-search__inner-pages hidden-xs-480"> 
+     <div class="container container-fluid quick-search"> 
+      <div class="quick-search__wrapper well"> 
+       <form action="https://www.ncfjobs.com/jobs/" class="form-inline row"> 
+        <input name="listing_type[equal]" value="Job" type="hidden"> 
+        <input name="searchId" value="1490267449.3695" type="hidden"> 
+        <input name="action" value="search" type="hidden"> 
+        <div class="form-group form-group__input "> 
+         <input value="" class="form-control form-control__centered" name="keywords[all_words]" id="keywords" placeholder="Keywords" type="text"> 
+        </div> 
+        <div class="form-group form-group__input"> 
+         <input name="GooglePlace[location][value]" id="GooglePlace" class="form-control form-control__google-location" value="" placeholder="Location" autocomplete="off" type="text"> 
+         <input name="GooglePlace[location][radius]" value="50" id="radius" class="hidden-radius" type="hidden"> 
+        </div> 
+        <div class="form-group form-group__btn"> 
+         <button type="submit" class="quick-search__find btn btn__orange btn__bold ">Find Jobs</button> 
+        </div> 
+       </form> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="container"> 
+     <div class="details-body details-body__search row"> 
+      <div class="search-results__top clearfix"> 
+       <h1 class="search-results__title col-sm-offset-3 col-xs-offset-0"> 177 jobs found </h1> 
+       <a class="btn create-job-alert btn__blue" data-toggle="modal" data-target="#apply-modal" data-href="https://www.ncfjobs.com/guest-alerts/create/?searchId=1490267449.3695" data-title="Create Job Alert"> Email me jobs like this </a> 
+      </div> 
+      <div id="ajax-refine-search" class="col-sm-3 col-xs-12 refine-search"> 
+       <a class="toggle--refine-search visible-xs" role="button" data-toggle="collapse" href="#" aria-expanded="true"> Refine Search </a> 
+       <div class="refine-search__wrapper"> 
+        <div class="quick-search__inner-pages visible-xs-480"> 
+         <div class="container container-fluid quick-search"> 
+          <div class="quick-search__wrapper well"> 
+           <form action="https://www.ncfjobs.com/jobs/" class="form-inline row"> 
+            <input name="listing_type[equal]" value="Job" type="hidden"> 
+            <input name="searchId" value="1490267449.3695" type="hidden"> 
+            <input name="action" value="search" type="hidden"> 
+            <div class="form-group form-group__input "> 
+             <input value="" class="form-control form-control__centered" name="keywords[all_words]" id="keywords" placeholder="Keywords" type="text"> 
+            </div> 
+            <div class="form-group form-group__input"> 
+             <input name="GooglePlace[location][value]" id="GooglePlace" class="form-control form-control__google-location" value="" placeholder="Location" autocomplete="off" type="text"> 
+             <input name="GooglePlace[location][radius]" value="50" id="radius" class="hidden-radius" type="hidden"> 
+            </div> 
+            <div class="form-group form-group__btn"> 
+             <button type="submit" class="quick-search__find btn btn__orange btn__bold ">Find Jobs</button> 
+            </div> 
+           </form> 
+          </div> 
+         </div> 
+        </div> 
+        <div id="refine-block-preloader"></div> 
+        <div class="refine-search__block"> 
+         <a class="btn__refine-search" role="button" data-toggle="collapse" href="#refine-block-JobCategory" aria-expanded="true" aria-controls="refine-block-JobCategory"> Refine by Categories </a> 
+         <div class="collapse in clearfix" id="refine-block-JobCategory"> 
+          <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=388"> <span class="refine-search__value">Sales</span> <span class="refine-search__count">&nbsp;(65)</span> </a> 
+          <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=375"> <span class="refine-search__value">Marketing</span> <span class="refine-search__count">&nbsp;(64)</span> </a> 
+          <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=351"> <span class="refine-search__value">Customer Service</span> <span class="refine-search__count">&nbsp;(55)</span> </a> 
+          <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=369"> <span class="refine-search__value">Installation-Maint-Repair</span> <span class="refine-search__count">&nbsp;(21)</span> </a> 
+          <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=344"> <span class="refine-search__value">Admin-Clerical</span> <span class="refine-search__count">&nbsp;(21)</span> </a> 
+          <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=387"> <span class="refine-search__value">Retail</span> <span class="refine-search__count">&nbsp;(20)</span> </a> 
+          <div class="less-more" style="display: none"> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=374"> <span class="refine-search__value">Manufacturing</span> <span class="refine-search__count">&nbsp;(13)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=365"> <span class="refine-search__value">Health Care</span> <span class="refine-search__count">&nbsp;(13)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=359"> <span class="refine-search__value">Finance</span> <span class="refine-search__count">&nbsp;(12)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=395"> <span class="refine-search__value">Transportation</span> <span class="refine-search__count">&nbsp;(11)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=366"> <span class="refine-search__value">Hospitality-Hotel</span> <span class="refine-search__count">&nbsp;(10)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=379"> <span class="refine-search__value">Other</span> <span class="refine-search__count">&nbsp;(9)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=346"> <span class="refine-search__value">Banking</span> <span class="refine-search__count">&nbsp;(8)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=354"> <span class="refine-search__value">Education</span> <span class="refine-search__count">&nbsp;(6)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=355"> <span class="refine-search__value">Engineering</span> <span class="refine-search__count">&nbsp;(3)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=397"> <span class="refine-search__value">Warehouse</span> <span class="refine-search__count">&nbsp;(2)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=396"> <span class="refine-search__value">Veterinary Services</span> <span class="refine-search__count">&nbsp;(2)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=381"> <span class="refine-search__value">Professional Services</span> <span class="refine-search__count">&nbsp;(2)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=394"> <span class="refine-search__value">Training</span> <span class="refine-search__count">&nbsp;(1)</span> </a> 
+           <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;JobCategory[multi_like][]=390"> <span class="refine-search__value">Skilled Labor</span> <span class="refine-search__count">&nbsp;(1)</span> </a> 
+          </div>
+          <a href="#" class="less-more__btn link">More</a> 
+         </div> 
+        </div> 
+        <div class="refine-search__block"> 
+         <a class="btn__refine-search" role="button" data-toggle="collapse" href="#refine-block-EmploymentType" aria-expanded="true" aria-controls="refine-block-EmploymentType"> Refine by Job Type </a> 
+         <div class="collapse in clearfix" id="refine-block-EmploymentType"> 
+          <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;EmploymentType[multi_like][]=76"> <span class="refine-search__value">Full time</span> <span class="refine-search__count">&nbsp;(160)</span> </a> 
+          <a class="refine-search__item" href="?searchId=1490267449.3695&amp;action=refine&amp;EmploymentType[multi_like][]=77"> <span class="refine-search__value">Part time</span> <span class="refine-search__count">&nbsp;(17)</span> </a> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="search-results col-xs-12 col-sm-9"> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/819/sales-manager/" class="link">Sales Manager</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Colonial Life </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Pewaukee, WI, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Colonial Life, an established leader in the corporate benefits industry that’s been in business for more than 75 years, has an immediate opening for a sales leader to join its market-leading team in Milwaukee. The person in this position is responsible for recruiting and developing other sales leaders as well as building and maintaining relationships with business owners and employees by offering financial protection benefits at the worksite. Qualified candidates will receive comprehensive sales and management training along with dependable home office support to grow his/her own business and realize the unlimited growth potential unique to the employee benefits industry and to Colonial Life as a leader in the national market. This position provides:  Competitive production-based compensation  Lucrative recruiting, development and sales bonuses  Residual and renewal income opportunities for life  Incentives such as world-class travel experiences offered annually to top performers  Unparalleled training and support including classroom training, hands-on, field training and a dedicated instructor Desired skills and experience:  Proven track record of recruiting and developing a team  Desire to lead and motivate others  Energetic, self-starter attitude  Previous sales experience preferred  Health &amp;amp; Life Insurance License is required, but can be attained during the onboarding process Learn more about Colonial Life and the specific responsibilities of this position at http://www.coloniallife.com/career-seekers/join- our-sales- team/sales-managers. Interested candidate should submit resume for consideration to the Territory Recruiter at TR Contact Info. © 2015 Colonial Life &amp;amp; Accident Insurance Company. Colonial Life insurance products are underwritten by Colonial Life &amp;amp; Accident Insurance Company, for which Colonial Life is the marketing brand. 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Colonial Life, an established leader in the corporate benefits industry that’s been in business for more than 75 years, has an immediate opening for a sales leader to join its market-leading team in Milwaukee. The person in this position is responsible for recruiting and developing other sales leaders as well as building and maintaining relationships with business owners and employees by offering financial protection benefits at the worksite. Qualified candidates will receive comprehensive sales and management training along with dependable home office support to grow his/her own business and realize the unlimited growth potential unique to the employee benefits industry and to Colonial Life as a leader in the national market. This position provides:  Competitive production-based compensation  Lucrative recruiting, development and sales bonuses  Residual and renewal income opportunities for life  Incentives such as world-class travel experiences offered annually to top performers  Unparalleled training and support including classroom training, hands-on, field training and a dedicated instructor Desired skills and experience:  Proven track record of recruiting and developing a team  Desire to lead and motivate others  Energetic, self-starter attitude  Previous sales experience preferred  Health &amp;amp; Life Insurance License is required, but can be attained during the onboarding process Learn more about Colonial Life and the specific responsibilities of this position at http://www.coloniallife.com/career-seekers/join- our-sales- team/sales-managers. Interested candidate should submit resume for consideration to the Territory Recruiter at TR Contact Info. © 2015 Colonial Life &amp;amp; Accident Insurance Company. Colonial Life insurance products are underwritten by Colonial Life &amp;amp; Accident Insurance Company, for which Colonial Life is the marketing brand. 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/818/account-representative/" class="link">Account Representative</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Colonial Life </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Pewaukee, WI, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Account Representative Colonial Life, an established leader in the corporate benefits industry that’s been in business for more than 77 years, has an immediate opening for a sales representative to join its market-leading team in Milwaukee. The person in this position is responsible for building and maintaining relationships with business owners and employees by offering financial protection benefits at the worksite. The ideal candidate for this position is an enthusiastic, career-minded, self-motivated individual with a proven record of professionalism and success in fast-paced environments. The individual selected will receive comprehensive sales training along with dependable home office support to grow his/her own business and realize the unlimited growth potential unique to the employee benefits industry and to Colonial Life as a leader in the national market. This position provides:  Competitive compensation  Residual and renewal income opportunities for life  Incentives such as world-class travel experiences offered annually to top performers  Unparalleled training and support including classroom training, hands-on, field training and a dedicated instructor. Desired skills and experience:  Energetic, self-starter attitude  Previous sales experience preferred  Life and Health Insurance License is required, but can be attained during the onboarding process Learn more about Colonial Life and the specific responsibilities of this position at http://www.coloniallife.com/career-seekers/join- our-sales- team/sales-managers. Interested candidate should submit resume for consideration to the Territory Recruiter at TR Contact Info. © 2015 Colonial Life &amp;amp; Accident Insurance Company. Colonial Life insurance products are underwritten by Colonial Life &amp;amp; Accident Insurance Company, for which Colonial Life is the marketing brand. 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Account Representative Colonial Life, an established leader in the corporate benefits industry that’s been in business for more than 77 years, has an immediate opening for a sales representative to join its market-leading team in Milwaukee. The person in this position is responsible for building and maintaining relationships with business owners and employees by offering financial protection benefits at the worksite. The ideal candidate for this position is an enthusiastic, career-minded, self-motivated individual with a proven record of professionalism and success in fast-paced environments. The individual selected will receive comprehensive sales training along with dependable home office support to grow his/her own business and realize the unlimited growth potential unique to the employee benefits industry and to Colonial Life as a leader in the national market. This position provides:  Competitive compensation  Residual and renewal income opportunities for life  Incentives such as world-class travel experiences offered annually to top performers  Unparalleled training and support including classroom training, hands-on, field training and a dedicated instructor. Desired skills and experience:  Energetic, self-starter attitude  Previous sales experience preferred  Life and Health Insurance License is required, but can be attained during the onboarding process Learn more about Colonial Life and the specific responsibilities of this position at http://www.coloniallife.com/career-seekers/join- our-sales- team/sales-managers. Interested candidate should submit resume for consideration to the Territory Recruiter at TR Contact Info. © 2015 Colonial Life &amp;amp; Accident Insurance Company. Colonial Life insurance products are underwritten by Colonial Life &amp;amp; Accident Insurance Company, for which Colonial Life is the marketing brand. 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured "> 
+        <div class="media-left listing-item__logo"> 
+         <a href="https://www.ncfjobs.com/job/817/residential-commercial-technicians/"> <img class="media-object profile__img-company" src="https://www.ncfjobs.com/files/pictures/SEI_LOGO.png" alt="Security Equipment, Inc"> </a> 
+        </div> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/817/residential-commercial-technicians/" class="link">Residential/Commercial Technicians</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Security Equipment, Inc </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Kansas City, KS, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Minimum experience or requirements: Qualified candidates must possess a minimum of 2 years of installation or service related experience with Burglary, Fire, Closed Circuit Television, and Access Control. In lieu of the aforementioned experience we will consider individuals who have completed classes in Electronics and have full understanding of AC/DC theory. Computer networking experience is required. COMMERCIAL INSTALLATION TECHNICIAN Job Summary The purpose of this position is to install and test electronic security systems including burglar and fire alarms, IP Video, Access Control systems and all related electronic security equipment in commercial and industrial environments and to provide excellent customer service to our clients. Essential Job Functions The essential functions include, but are not limited to the following:  Install Access Control, IP Video, Burglar Alarm, and Fire systems  Understands specifications as indicated in work order to complete the installation of commercial alarm systems  Prefer candidate with proficient knowledge of computer software, hardware, network infrastructure and IP schemes.  Utilizes a variety of hand tools to install equipment in locations as requested by customer or identified on work order.  Utilize technical skills to read blueprints and schematic wiring diagrams  Ensures worksite is clean after completion of job.  Loads inventory to ensure the necessary materials for assigned job is on the truck and transports to job site.  Tests installed systems following company protocols.  Provides necessary end user training for customers and their designees.  Take care of other tasks as needed to complete the installation. Requirements  High school diploma. Technical School Training a plus.  Minimum one year of experience installing Burglar Systems, and IP Video.  General knowledge of International Building Code, Life Safety Code and the ability to read blueprints and schematic drawings.  Excellent communication and interpersonal skills.  Networking experience specifically with cable termination combination  A proficiency&nbsp; to install and program alarm security systems  Proficiency with running and pulling cable, programming and calibrating equipment while adhering to codes, regulations and standards  Ability to install program and trouble shoot wireless devices.  Able to climb ladders and manipulate hand tools.  Skill and ability to meet with customers and determine their expectations.  Ability to provide the necessary skills for troubleshooting a variety of systems.  Ability to interpret a variety of instructions furnished in written, oral or schedule form. Confidential Information This position has access to and must maintain the confidentiality of the company. Note: The statements herein are intended to describe the general nature and level of work being performed by employees assigned to this classification. They are not intended to be constructed as an exhaustive list of all responsibilities, duties, and skills required of personnel so classified. This job description may be changed or updated at any time without notice. RESIDENTIAL INSTALLATION TECHNICIAN Job Summary The purpose of this position is to install and test electronic security systems including burglar and fire alarms, IP Video, Access Control systems and all related electronic security equipment in residential and small commercial environments while providing unmatched customer service to our clients. Essential Job Functions The essential functions include, but are not limited to the following:  Install Access Control, IP Video, Hard wired and Wireless Burglar Alarm Systems.  Ability to interpret specifications as indicated in work order to complete the installation of work.  Utilize technical skills to read blueprints and schematic wiring diagrams  Ability to utilize a variety of hand tools and specialty equipment with proficiency  Ability to identify, understand and utilize basic networking equipment and practices to complete necessary job functions.  Ensures worksite is well organized during installation and clean after completion of job.  Tests and troubleshoots installed systems following company protocols.  Provides necessary end user training for customers and their designees.  Perform other duties as assigned Requirements  High school diploma. Technical School Training a plus.  General knowledge of International Building Code, Life Safety Code and the ability to read blueprints and schematic drawings.  Excellent communication and interpersonal skills.  Networking experience specifically with cable termination combination  Prefer candidate with proficient knowledge of computer software, hardware, network infrastructure and IP schemes.  General understanding or ability to learn electrical principles and circuits  Able to climb ladders and manipulate hand tools.  Ability to interpret a variety of instructions furnished in written, oral or schedule form.  Must be able to push, pull and lift up to 50 pounds.  Ability to perform on-call duties as assigned Confidential Information This position has access to and must maintain the confidentiality of the company. Note: The statements herein are intended to describe the general nature and level of work being performed by employees assigned to this classification. They are not intended to be constructed as an exhaustive list of all responsibilities, duties, and skills required of personnel so classified. This job description may be changed or updated at any time without notice. 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Minimum experience or requirements: Qualified candidates must possess a minimum of 2 years of installation or service related experience with Burglary, Fire, Closed Circuit Television, and Access Control. In lieu of the aforementioned experience we will consider individuals who have completed classes in Electronics and have full understanding of AC/DC theory. Computer networking experience is required. COMMERCIAL INSTALLATION TECHNICIAN Job Summary The purpose of this position is to install and test electronic security systems including burglar and fire alarms, IP Video, Access Control systems and all related electronic security equipment in commercial and industrial environments and to provide excellent customer service to our clients. Essential Job Functions The essential functions include, but are not limited to the following:  Install Access Control, IP Video, Burglar Alarm, and Fire systems  Understands specifications as indicated in work order to complete the installation of commercial alarm systems  Prefer candidate with proficient knowledge of computer software, hardware, network infrastructure and IP schemes.  Utilizes a variety of hand tools to install equipment in locations as requested by customer or identified on work order.  Utilize technical skills to read blueprints and schematic wiring diagrams  Ensures worksite is clean after completion of job.  Loads inventory to ensure the necessary materials for assigned job is on the truck and transports to job site.  Tests installed systems following company protocols.  Provides necessary end user training for customers and their designees.  Take care of other tasks as needed to complete the installation. Requirements  High school diploma. Technical School Training a plus.  Minimum one year of experience installing Burglar Systems, and IP Video.  General knowledge of International Building Code, Life Safety Code and the ability to read blueprints and schematic drawings.  Excellent communication and interpersonal skills.  Networking experience specifically with cable termination combination  A proficiency&nbsp; to install and program alarm security systems  Proficiency with running and pulling cable, programming and calibrating equipment while adhering to codes, regulations and standards  Ability to install program and trouble shoot wireless devices.  Able to climb ladders and manipulate hand tools.  Skill and ability to meet with customers and determine their expectations.  Ability to provide the necessary skills for troubleshooting a variety of systems.  Ability to interpret a variety of instructions furnished in written, oral or schedule form. Confidential Information This position has access to and must maintain the confidentiality of the company. Note: The statements herein are intended to describe the general nature and level of work being performed by employees assigned to this classification. They are not intended to be constructed as an exhaustive list of all responsibilities, duties, and skills required of personnel so classified. This job description may be changed or updated at any time without notice. RESIDENTIAL INSTALLATION TECHNICIAN Job Summary The purpose of this position is to install and test electronic security systems including burglar and fire alarms, IP Video, Access Control systems and all related electronic security equipment in residential and small commercial environments while providing unmatched customer service to our clients. Essential Job Functions The essential functions include, but are not limited to the following:  Install Access Control, IP Video, Hard wired and Wireless Burglar Alarm Systems.  Ability to interpret specifications as indicated in work order to complete the installation of work.  Utilize technical skills to read blueprints and schematic wiring diagrams  Ability to utilize a variety of hand tools and specialty equipment with proficiency  Ability to identify, understand and utilize basic networking equipment and practices to complete necessary job functions.  Ensures worksite is well organized during installation and clean after completion of job.  Tests and troubleshoots installed systems following company protocols.  Provides necessary end user training for customers and their designees.  Perform other duties as assigned Requirements  High school diploma. Technical School Training a plus.  General knowledge of International Building Code, Life Safety Code and the ability to read blueprints and schematic drawings.  Excellent communication and interpersonal skills.  Networking experience specifically with cable termination combination  Prefer candidate with proficient knowledge of computer software, hardware, network infrastructure and IP schemes.  General understanding or ability to learn electrical principles and circuits  Able to climb ladders and manipulate hand tools.  Ability to interpret a variety of instructions furnished in written, oral or schedule form.  Must be able to push, pull and lift up to 50 pounds.  Ability to perform on-call duties as assigned Confidential Information This position has access to and must maintain the confidentiality of the company. Note: The statements herein are intended to describe the general nature and level of work being performed by employees assigned to this classification. They are not intended to be constructed as an exhaustive list of all responsibilities, duties, and skills required of personnel so classified. This job description may be changed or updated at any time without notice. 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured "> 
+        <div class="media-left listing-item__logo"> 
+         <a href="https://www.ncfjobs.com/job/816/valet/"> <img class="media-object profile__img-company" src="https://www.ncfjobs.com/files/pictures/Old_Time_Trolley_LOGO.png" alt="Old Town Trolley Tours of Boston"> </a> 
+        </div> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/816/valet/" class="link">Valet</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Old Town Trolley Tours of Boston </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Boston, MA, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Valet Outgoing, friendly, and fun valets needed! Help enhance our guests experience on our trolley tours. Old Town Trolley Tours of Boston (the orange-and- green sightseeing vehicles) is the city&amp;#39;s largest and most trusted sightseeing tour company, entertaining visitors since 1984. The Valet is the face of Old Town Trolley Tours of Boston and is to communicate the benefits or our product with pride and enthusiasm in keeping to the company’s mission to be The Nation’s Storyteller. The Valet is to give accurate information, hand out brochures, and guide customers to OTT-BOS ticket booths and/or trolleys. The customer’s first impressions should be that our company has integrity and is safe and fun. Customers judge our company by the way you do your job. If you&amp;#39;re friendly, outgoing, and love helping people, you will make a successful Valet at Old Town Trolley Tours of Boston. You will work a variety of locations throughout Boston and meet tourists from all over the world. Highlights of the position: * Competitive hourly wage and benefits package. * Full-time and seasonal positions available. * Flexibility in working a combination of weekdays and weekend days. * Well Pay bonuses. * Fun, upbeat work environment. * Convenient South Boston headquarters (near Red Line). Qualifications:  Outgoing and enjoy working with the public  High school graduate or equivalent preferred  Should have proven, sustained record of high-quality work.  Ability to read, write and speak clear English in order to communicate with co-workers and the general public.  Ability to work with a diverse CAST and the general public equally.  Mental attitude required to handle the stress that goes with this job as described. Drug free workplace, EOE * Must pass pre-employment, background check and substance abuse testing. 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Valet Outgoing, friendly, and fun valets needed! Help enhance our guests experience on our trolley tours. Old Town Trolley Tours of Boston (the orange-and- green sightseeing vehicles) is the city&amp;#39;s largest and most trusted sightseeing tour company, entertaining visitors since 1984. The Valet is the face of Old Town Trolley Tours of Boston and is to communicate the benefits or our product with pride and enthusiasm in keeping to the company’s mission to be The Nation’s Storyteller. The Valet is to give accurate information, hand out brochures, and guide customers to OTT-BOS ticket booths and/or trolleys. The customer’s first impressions should be that our company has integrity and is safe and fun. Customers judge our company by the way you do your job. If you&amp;#39;re friendly, outgoing, and love helping people, you will make a successful Valet at Old Town Trolley Tours of Boston. You will work a variety of locations throughout Boston and meet tourists from all over the world. Highlights of the position: * Competitive hourly wage and benefits package. * Full-time and seasonal positions available. * Flexibility in working a combination of weekdays and weekend days. * Well Pay bonuses. * Fun, upbeat work environment. * Convenient South Boston headquarters (near Red Line). Qualifications:  Outgoing and enjoy working with the public  High school graduate or equivalent preferred  Should have proven, sustained record of high-quality work.  Ability to read, write and speak clear English in order to communicate with co-workers and the general public.  Ability to work with a diverse CAST and the general public equally.  Mental attitude required to handle the stress that goes with this job as described. Drug free workplace, EOE * Must pass pre-employment, background check and substance abuse testing. 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured "> 
+        <div class="media-left listing-item__logo"> 
+         <a href="https://www.ncfjobs.com/job/815/trolley-drivers/"> <img class="media-object profile__img-company" src="https://www.ncfjobs.com/files/pictures/Old_Time_Trolley_LOGO.png" alt="Old Town Trolley Tours of Boston"> </a> 
+        </div> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/815/trolley-drivers/" class="link">Trolley Drivers</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Old Town Trolley Tours of Boston </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Boston, MA, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Trolley Driver/Conductor Join our team of FUN-employed, Driving and Narrating Boston&amp;#39;s BEST tour with OLD TOWN TROLLEY TOURS, the original orange-and- green sightseeing vehicles! We are now holding interviews for our next PAID training class (we have a very extensive PAID training program that will thoroughly prepare you to be a professional tour conductor)! You&amp;#39;ve seen the orange-and- green trolleys all over Boston, and probably thought, &amp;quot;What a fun job that must be.&amp;quot; Well, you&amp;#39;re absolutely right! Come join the ranks of the FUN-employed on the orange-and green Old Town Trolleys. We&amp;#39;re the biggest BECAUSE we&amp;#39;re the best! We are the city&amp;#39;s largest and most trusted sightseeing tour company, entertaining guests with our fully narrated tours of Boston since 1984. Old Town Trolley is part of a national company called Historic Tours of America, &amp;quot;The Nation&amp;#39;s Storyteller.&amp;quot; Our tour conductors earn not only a competitive wage and cash tips, but also built-in gratuities on group charters (weddings, school groups, business transportation, conventions, etc.). Here are some basics: * PAID EXTENSIVE TRAINING and subsequent CDL ROAD TEST fees (a $3,000+ value). * Competitive hourly wage and benefit package. * Full-time and seasonal positions available. * Flexibility in working a combination of weekdays and weekend days. * Safe Driver &amp;amp; Well Pay bonuses. * Excellent tips and charter gratuities. * Fun, upbeat work environment. * Convenient South Boston headquarters (near Red Line). Drug free workplace, EOE. PAID TRAINING! COMPETITIVE WAGE! EXCELLENT TIPS, CHARTER GRATUITIES AND MORE! Qualifications:&nbsp;You must have a valid MA Driver&amp;#39;s license, with at least 3 years of good driving experience. Already having a CDL Class B is a plus, but not required…because we’ll prepare and take you to test for one! A sincere love of Boston is essential and knowledge of its history and culture is ideal... but the overall desire to have FUN in a team-orientated environment is crucial! Drug free workplace, EOE * Must pass pre-employment, background check and substance abuse testing. 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Trolley Driver/Conductor Join our team of FUN-employed, Driving and Narrating Boston&amp;#39;s BEST tour with OLD TOWN TROLLEY TOURS, the original orange-and- green sightseeing vehicles! We are now holding interviews for our next PAID training class (we have a very extensive PAID training program that will thoroughly prepare you to be a professional tour conductor)! You&amp;#39;ve seen the orange-and- green trolleys all over Boston, and probably thought, &amp;quot;What a fun job that must be.&amp;quot; Well, you&amp;#39;re absolutely right! Come join the ranks of the FUN-employed on the orange-and green Old Town Trolleys. We&amp;#39;re the biggest BECAUSE we&amp;#39;re the best! We are the city&amp;#39;s largest and most trusted sightseeing tour company, entertaining guests with our fully narrated tours of Boston since 1984. Old Town Trolley is part of a national company called Historic Tours of America, &amp;quot;The Nation&amp;#39;s Storyteller.&amp;quot; Our tour conductors earn not only a competitive wage and cash tips, but also built-in gratuities on group charters (weddings, school groups, business transportation, conventions, etc.). Here are some basics: * PAID EXTENSIVE TRAINING and subsequent CDL ROAD TEST fees (a $3,000+ value). * Competitive hourly wage and benefit package. * Full-time and seasonal positions available. * Flexibility in working a combination of weekdays and weekend days. * Safe Driver &amp;amp; Well Pay bonuses. * Excellent tips and charter gratuities. * Fun, upbeat work environment. * Convenient South Boston headquarters (near Red Line). Drug free workplace, EOE. PAID TRAINING! COMPETITIVE WAGE! EXCELLENT TIPS, CHARTER GRATUITIES AND MORE! Qualifications:&nbsp;You must have a valid MA Driver&amp;#39;s license, with at least 3 years of good driving experience. Already having a CDL Class B is a plus, but not required…because we’ll prepare and take you to test for one! A sincere love of Boston is essential and knowledge of its history and culture is ideal... but the overall desire to have FUN in a team-orientated environment is crucial! Drug free workplace, EOE * Must pass pre-employment, background check and substance abuse testing. 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured "> 
+        <div class="media-left listing-item__logo"> 
+         <a href="https://www.ncfjobs.com/job/814/sales-representatives/"> <img class="media-object profile__img-company" src="https://www.ncfjobs.com/files/pictures/Old_Time_Trolley_LOGO.png" alt="Old Town Trolley Tours of Boston"> </a> 
+        </div> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/814/sales-representatives/" class="link">Sales Representatives</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Old Town Trolley Tours of Boston </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Boston, MA, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Ticket Sales Representative Friendly, Motivated, Goal-Oriented Sales Reps Wanted! Are you friendly and outgoing? Do you love to sell? Are you motivated to achieve sales goals? Old Town Trolley Tours of Boston (the orange-and- green sightseeing vehicles) is the city&amp;#39;s largest and most trusted sightseeing tour company, entertaining visitors since 1984. Our paid Sales Rep training program is great, and our Sales Reps earn excellent commissions on all direct sales, while also earning a competitive hourly wage. As mentioned above, you will be paid an hourly rate, while also earning money based on our tiered commission structure. What does that mean? It means that the more tickets and tour packages you sell while working to achieve your daily sales goals, the higher your commission rate and the more you will be paid! If you&amp;#39;re friendly, goal-oriented, and love talking to people, you will make a successful Sales Representative at Old Town Trolley Tours of Boston (and make excellent money). You will work a variety of high-volume sales locations throughout Boston and meet tourists from all over the world. Highlights of the position: * A tiered commission structure: the more tickets and tour packages that you sell, the higher your commission rate! * A constant variety of high-volume sales locations; both indoors and outdoors (Prudential Center, Quincy Market, Boston Waterfront, etc.), so the ability to work in both indoor and outdoor locations is required. * The ability to prospect in a friendly, enthusiastic manner is essential. * You must be at least 18 years old and successfully pass a pre-employment drug test and background check. * Schedules include a combination of weekdays and weekends. * Convenient South Boston headquarters (close to Red Line). Drug free workplace, EOE * Must pass pre-employment, background check and substance abuse testing. 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Ticket Sales Representative Friendly, Motivated, Goal-Oriented Sales Reps Wanted! Are you friendly and outgoing? Do you love to sell? Are you motivated to achieve sales goals? Old Town Trolley Tours of Boston (the orange-and- green sightseeing vehicles) is the city&amp;#39;s largest and most trusted sightseeing tour company, entertaining visitors since 1984. Our paid Sales Rep training program is great, and our Sales Reps earn excellent commissions on all direct sales, while also earning a competitive hourly wage. As mentioned above, you will be paid an hourly rate, while also earning money based on our tiered commission structure. What does that mean? It means that the more tickets and tour packages you sell while working to achieve your daily sales goals, the higher your commission rate and the more you will be paid! If you&amp;#39;re friendly, goal-oriented, and love talking to people, you will make a successful Sales Representative at Old Town Trolley Tours of Boston (and make excellent money). You will work a variety of high-volume sales locations throughout Boston and meet tourists from all over the world. Highlights of the position: * A tiered commission structure: the more tickets and tour packages that you sell, the higher your commission rate! * A constant variety of high-volume sales locations; both indoors and outdoors (Prudential Center, Quincy Market, Boston Waterfront, etc.), so the ability to work in both indoor and outdoor locations is required. * The ability to prospect in a friendly, enthusiastic manner is essential. * You must be at least 18 years old and successfully pass a pre-employment drug test and background check. * Schedules include a combination of weekdays and weekends. * Convenient South Boston headquarters (close to Red Line). Drug free workplace, EOE * Must pass pre-employment, background check and substance abuse testing. 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured "> 
+        <div class="media-left listing-item__logo"> 
+         <a href="https://www.ncfjobs.com/job/813/ballroom-dance-instructor/"> <img class="media-object profile__img-company" src="https://www.ncfjobs.com/files/pictures/LOGO_fred-astiare-dance-studios-cary.png" alt="Fred Astaire Dance Studio"> </a> 
+        </div> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/813/ballroom-dance-instructor/" class="link">Ballroom Dance Instructor</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Fred Astaire Dance Studio </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Chagrin Falls, OH, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           &nbsp; With its growing popularity, there’s no better time than today to join the exciting, rewarding dance industry! Fred Astaire Dance Studios are always looking for outgoing, enthusiastic instructors to add to our winning team! Because of our thorough and comprehensive training program, teaching experience is not required. You will teach, travel, choreography, coach, and learn! Must be able to be on feet for 6+ hours a day, speak fluent English, and be physically active. Nationwide, our studios offer the possibility of unlimited opportunities to grow. Currently, 85% of our studio owners began as teachers. The right person with the necessary skills and abilities can open a franchise within 5 years of starting with the company. With our Conceptual Method of Teaching program and continuous training opportunities, our teachers have all the skills required to open a studio. So what are you waiting for? Contact us right away to learn more about our current job openings. We look forward to hearing from you! 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          &nbsp; With its growing popularity, there’s no better time than today to join the exciting, rewarding dance industry! Fred Astaire Dance Studios are always looking for outgoing, enthusiastic instructors to add to our winning team! Because of our thorough and comprehensive training program, teaching experience is not required. You will teach, travel, choreography, coach, and learn! Must be able to be on feet for 6+ hours a day, speak fluent English, and be physically active. Nationwide, our studios offer the possibility of unlimited opportunities to grow. Currently, 85% of our studio owners began as teachers. The right person with the necessary skills and abilities can open a franchise within 5 years of starting with the company. With our Conceptual Method of Teaching program and continuous training opportunities, our teachers have all the skills required to open a studio. So what are you waiting for? Contact us right away to learn more about our current job openings. We look forward to hearing from you! 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/812/qa-technician/" class="link">QA Technician</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> TH Foods, Inc. </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Henderson, NV, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Position Summary: Collect on-line data, conduct testing and keep all records as required to audit and insure product and packaging quality and consistency through application of TH Foods Inc. Company policy procedures. Essential Duties and Requirements include the following. Other duties may be assigned.  Adhere to personnel safety policies and procedures as well as promote personnel safety to peers.  Promote food safety and quality to peers.  Report food safety and quality issues to QA Supervisor, Production Supervisor, and/or Plant Manager.  Adhere to all Food Safety and Quality policies and procedures.  Detail line inspection for adherence to allergen management program.  Audit production lines for compliance to packaging requirements.  Collect and test production samples for compliance to analytical, physical, and organolyptic specifications.  Audit metal detection and weight control equipment.  Record production finished goods and WIP data.  Recognize out of specification results and communicate to production in a timely manner.  Place non-conforming product on Hold and process paperwork.  Communicate with Plant Supervisors and Leads regarding Quality issues.  Recognize out of specification results and communicate to production in a timely manner.  Responsible for recognizing and reporting and correcting food safety and employee safety issues.  Performs other duties as assigned. Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. Education and/or Experience High School Diploma or equivalent and fluency in English are required. Vocation training in Quality Systems is preferred. Work experience in Food Manufacturing or Quality Assurance is preferred. Physical Ability The physical demands described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. While performing the duties of this job, the employee is regularly required to sit and listen or hear. The employee frequently is required to use hands to finger, handle, or feel. The employee is required to stand, walk, and reach with hands and arms. Work Environment The work environment characteristics described here are representative of those an employee encounters while performing the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. The noise level in the work environment is usually moderate. 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Position Summary: Collect on-line data, conduct testing and keep all records as required to audit and insure product and packaging quality and consistency through application of TH Foods Inc. Company policy procedures. Essential Duties and Requirements include the following. Other duties may be assigned.  Adhere to personnel safety policies and procedures as well as promote personnel safety to peers.  Promote food safety and quality to peers.  Report food safety and quality issues to QA Supervisor, Production Supervisor, and/or Plant Manager.  Adhere to all Food Safety and Quality policies and procedures.  Detail line inspection for adherence to allergen management program.  Audit production lines for compliance to packaging requirements.  Collect and test production samples for compliance to analytical, physical, and organolyptic specifications.  Audit metal detection and weight control equipment.  Record production finished goods and WIP data.  Recognize out of specification results and communicate to production in a timely manner.  Place non-conforming product on Hold and process paperwork.  Communicate with Plant Supervisors and Leads regarding Quality issues.  Recognize out of specification results and communicate to production in a timely manner.  Responsible for recognizing and reporting and correcting food safety and employee safety issues.  Performs other duties as assigned. Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. Education and/or Experience High School Diploma or equivalent and fluency in English are required. Vocation training in Quality Systems is preferred. Work experience in Food Manufacturing or Quality Assurance is preferred. Physical Ability The physical demands described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. While performing the duties of this job, the employee is regularly required to sit and listen or hear. The employee frequently is required to use hands to finger, handle, or feel. The employee is required to stand, walk, and reach with hands and arms. Work Environment The work environment characteristics described here are representative of those an employee encounters while performing the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. The noise level in the work environment is usually moderate. 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/811/operator-food-processing/" class="link">Operator- Food Processing</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> TH Foods, Inc. </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Henderson, NV, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Job description: Position Summary: Sets up, operates and tends to machines that mix, cook, season, convey and wrap product. Ensures product remains within company specifications by following batch sheets, formulas and setup procedures. Ensures product remains within food safety guidelines and product specifications. Operates equipment to meet production requirements. Measures and records data. Operates equipment in a safe manner to meet production requirements and to minimize waste and maximize productivity. Verifies that all labels and ingredients and materials are correct to ensure food safety. DUTIES:  Reviews daily schedule with supervisors/leads.  Obtains batch sheets/formula sheets and process check sheets from Supervisor.  Obtains ingredients/labels/materials per batchsheet/formula specifications.  Verifies that all obtained materials/ingredients match items listed on batch sheet.  Inspects the appropriate production equipment for cleanliness, allergen issues and foreign objects and material.  Completes machinery setup/shutdown process for specific operation of equipment to the batch sheet.  Mixes/cooks batches or wraps product to specifications as per formula in batch sheet.  Monitors equipment throughout production run to ensure operation is within process parameters.  Performs and maintain quality inspections and checks.  Communicates and works cooperatively with co-workers.  Performs daily housekeeping chores.  Maintains a clean, dry and safe working environment by consistently adhering to good housekeeping practices.  Works safely and performs daily safety checks on all equipment.  Performs calculations for partial formulas, ingredient and materials usage and waste recording.  Responsible for recognizing and reporting food safety and employee safety issues.  Performs changeovers with adherence to Food Safety and Good Manufacturing Practices.  Rotates into Packer position to perform Packer duties as business/operational needs dictate.  Performs other duties as assigned. CLIMATE: Works individually and in teams with little supervision. Accuracy and attention to detail are critical as mistakes can cause significant lost productivity, loss of raw materials, downtime or food safety issues. The close proximity to processing equipment produces a loud work environment. Operators must communicate effectively with all operators and supervisors and work within established procedures and guidelines for safe and efficient operations. Operators will be exposed to heavy machinery, heat, humidity and strenuous work. The work is rather fast-paced and involves a considerable amount of climbing, lifting and reaching. This position requires weekend work and work in excess of eight hours per day as business priorities dictate. Supervisory Responsibilities This job may direct co-workers daily activities but has no direct responsibility. &nbsp; Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. Education and/or Experience Prior manufacturing experience setting up and adjusting production processing or packaging machinery is preferred. Language Skills Ability to read, verify and confirm all batch sheets, orders and instructions in a timely manner. Mathematical Skills Must be able to perform basic math calculations. Reasoning Ability Ability to follow formulas and mix a quality product. Ability to recognize problems and determine a course of action such as making authorized corrections or knowing when to seek assistance from a supervisor. Physical Ability The physical demands described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. While performing the duties of this job, the employee is regularly required to talk or hear. The employee frequently is required to use hands to finger, handle, or feel. The employee is frequently required to stand, walk, lift, and reach with hands and arms. Work Environment The work environment characteristics described here are representative of those an employee encounters while performing the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. The noise level in the work environment is usually moderate. The area is somewhat dusty. The floor area can be slippery at times. 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Job description: Position Summary: Sets up, operates and tends to machines that mix, cook, season, convey and wrap product. Ensures product remains within company specifications by following batch sheets, formulas and setup procedures. Ensures product remains within food safety guidelines and product specifications. Operates equipment to meet production requirements. Measures and records data. Operates equipment in a safe manner to meet production requirements and to minimize waste and maximize productivity. Verifies that all labels and ingredients and materials are correct to ensure food safety. DUTIES:  Reviews daily schedule with supervisors/leads.  Obtains batch sheets/formula sheets and process check sheets from Supervisor.  Obtains ingredients/labels/materials per batchsheet/formula specifications.  Verifies that all obtained materials/ingredients match items listed on batch sheet.  Inspects the appropriate production equipment for cleanliness, allergen issues and foreign objects and material.  Completes machinery setup/shutdown process for specific operation of equipment to the batch sheet.  Mixes/cooks batches or wraps product to specifications as per formula in batch sheet.  Monitors equipment throughout production run to ensure operation is within process parameters.  Performs and maintain quality inspections and checks.  Communicates and works cooperatively with co-workers.  Performs daily housekeeping chores.  Maintains a clean, dry and safe working environment by consistently adhering to good housekeeping practices.  Works safely and performs daily safety checks on all equipment.  Performs calculations for partial formulas, ingredient and materials usage and waste recording.  Responsible for recognizing and reporting food safety and employee safety issues.  Performs changeovers with adherence to Food Safety and Good Manufacturing Practices.  Rotates into Packer position to perform Packer duties as business/operational needs dictate.  Performs other duties as assigned. CLIMATE: Works individually and in teams with little supervision. Accuracy and attention to detail are critical as mistakes can cause significant lost productivity, loss of raw materials, downtime or food safety issues. The close proximity to processing equipment produces a loud work environment. Operators must communicate effectively with all operators and supervisors and work within established procedures and guidelines for safe and efficient operations. Operators will be exposed to heavy machinery, heat, humidity and strenuous work. The work is rather fast-paced and involves a considerable amount of climbing, lifting and reaching. This position requires weekend work and work in excess of eight hours per day as business priorities dictate. Supervisory Responsibilities This job may direct co-workers daily activities but has no direct responsibility. &nbsp; Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. Education and/or Experience Prior manufacturing experience setting up and adjusting production processing or packaging machinery is preferred. Language Skills Ability to read, verify and confirm all batch sheets, orders and instructions in a timely manner. Mathematical Skills Must be able to perform basic math calculations. Reasoning Ability Ability to follow formulas and mix a quality product. Ability to recognize problems and determine a course of action such as making authorized corrections or knowing when to seek assistance from a supervisor. Physical Ability The physical demands described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. While performing the duties of this job, the employee is regularly required to talk or hear. The employee frequently is required to use hands to finger, handle, or feel. The employee is frequently required to stand, walk, lift, and reach with hands and arms. Work Environment The work environment characteristics described here are representative of those an employee encounters while performing the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. The noise level in the work environment is usually moderate. The area is somewhat dusty. The floor area can be slippery at times. 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/810/maintenance-technician/" class="link">Maintenance Technician</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> TH Foods, Inc. </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Henderson, NV, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Position Summary: Trouble shoots repairs mechanical, pneumatic, electrical/electronically controlled production equipment, pumps motors, code daters and high speed packaging equipment. Performs preventative maintenance on equipment on a specified schedule. Records, repair and preventative maintenance data into a computerized maintenance management system for future troubleshooting use. Essential Duties and Requirements:  Obtains maintenance work orders from maintenance planner.  Responds to maintenance machine repair calls when equipment is down.  Trouble shoots problems and repairs equipment as necessary  Monitors equipment throughout production run to ensure operation is within process parameters  Performs preventative maintenance inspections and performs necessary repairs as necessary  Communicates and works cooperatively with co-workers and operators to ensure that machinery issues are identified and corrected  Performs daily housekeeping chores  Works safely and performs daily safety checks on all equipment  Works on assigned machinery rebuild projects as necessary  Enters maintenance and preventative maintenance records in a computerized maintenance management system (CMMS)  Performs building maintenance projects as assigned  Responsible for recognizing and reporting food safety and employee safety issues  Performs other duties as assigned Roll Specific Competencies:  Job Knowledge  Problem Solving/Analysis  Productivity  Sense of Urgency  Self Development CLIMATE: Works individually and in teams with little supervision. Accuracy and attention to detail are critical as mistakes can cause significant lost productivity, loss of raw materials, downtime or food safety or employee safety issues. The close proximity to processing equipment produces a loud work environment. Mechanics must communicate effectively with all operators and supervisors to obtain critical information and work within established procedures and guidelines for safe and efficient operations. Mechanics are exposed to heavy machinery, heat, humidity and strenuous work. The work is rather fast-paced and involves a considerable amount of climbing, lifting and reaching. This position requires weekend work with a flex schedule and work in excess of eight hours per day as business priorities dictate. Supervisory Responsibilities This job may direct co-worker’s daily activities but has no direct responsibility. &nbsp; Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. Education and/or Experience Prior manufacturing maintenance experience is required. Preferably in a food or pharmaceutical industry. Language Skills Ability to read, verify and confirm all work orders, technical manuals, blueprints and instructions in a timely manner. Mathematical Skills Must be able to perform basic math calculations and measurements. Reasoning Ability Ability to follow technical manuals. Ability to recognize problems and determine a course of action such as making authorized corrections or knowing when to seek assistance from a supervisor or equipment. Physical Ability The physical demands described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. While performing the duties of this job, the employee is regularly required to talk or hear. The employee frequently is required to use hands to finger, handle, or feel. The employee is frequently required to stand, walk, lift, and reach with hands and arms. Employee is frequently required to crawl under tight spaces to reach problem area. Work Environment The work environment characteristics described here are representative of those an employee encounters while performing the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. The noise level in the work environment is usually moderate. The area is somewhat dusty. The floor area can be slippery at times. The work area is oily. The work area has higher heat and humidity than normal due oven and dryer repairs. 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Position Summary: Trouble shoots repairs mechanical, pneumatic, electrical/electronically controlled production equipment, pumps motors, code daters and high speed packaging equipment. Performs preventative maintenance on equipment on a specified schedule. Records, repair and preventative maintenance data into a computerized maintenance management system for future troubleshooting use. Essential Duties and Requirements:  Obtains maintenance work orders from maintenance planner.  Responds to maintenance machine repair calls when equipment is down.  Trouble shoots problems and repairs equipment as necessary  Monitors equipment throughout production run to ensure operation is within process parameters  Performs preventative maintenance inspections and performs necessary repairs as necessary  Communicates and works cooperatively with co-workers and operators to ensure that machinery issues are identified and corrected  Performs daily housekeeping chores  Works safely and performs daily safety checks on all equipment  Works on assigned machinery rebuild projects as necessary  Enters maintenance and preventative maintenance records in a computerized maintenance management system (CMMS)  Performs building maintenance projects as assigned  Responsible for recognizing and reporting food safety and employee safety issues  Performs other duties as assigned Roll Specific Competencies:  Job Knowledge  Problem Solving/Analysis  Productivity  Sense of Urgency  Self Development CLIMATE: Works individually and in teams with little supervision. Accuracy and attention to detail are critical as mistakes can cause significant lost productivity, loss of raw materials, downtime or food safety or employee safety issues. The close proximity to processing equipment produces a loud work environment. Mechanics must communicate effectively with all operators and supervisors to obtain critical information and work within established procedures and guidelines for safe and efficient operations. Mechanics are exposed to heavy machinery, heat, humidity and strenuous work. The work is rather fast-paced and involves a considerable amount of climbing, lifting and reaching. This position requires weekend work with a flex schedule and work in excess of eight hours per day as business priorities dictate. Supervisory Responsibilities This job may direct co-worker’s daily activities but has no direct responsibility. &nbsp; Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. Education and/or Experience Prior manufacturing maintenance experience is required. Preferably in a food or pharmaceutical industry. Language Skills Ability to read, verify and confirm all work orders, technical manuals, blueprints and instructions in a timely manner. Mathematical Skills Must be able to perform basic math calculations and measurements. Reasoning Ability Ability to follow technical manuals. Ability to recognize problems and determine a course of action such as making authorized corrections or knowing when to seek assistance from a supervisor or equipment. Physical Ability The physical demands described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. While performing the duties of this job, the employee is regularly required to talk or hear. The employee frequently is required to use hands to finger, handle, or feel. The employee is frequently required to stand, walk, lift, and reach with hands and arms. Employee is frequently required to crawl under tight spaces to reach problem area. Work Environment The work environment characteristics described here are representative of those an employee encounters while performing the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. The noise level in the work environment is usually moderate. The area is somewhat dusty. The floor area can be slippery at times. The work area is oily. The work area has higher heat and humidity than normal due oven and dryer repairs. 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/808/early-education-teachers-and-teacher-aides/" class="link">Early Education Teachers and Teacher Aides</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> ChildCare Careers </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs"> 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs"> 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/807/sales-agent/" class="link">Sales Agent</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Elephant </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Carrollton, TX, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1 year of experience and a High school diploma Or A Bachelor Degree Position Overview: We are currently seeking dynamic sales-oriented professionals to join our exciting and quickly growing sales team at Elephant Insurance. Individuals with a strong customer-oriented focus and desire to succeed in a fast-paced environment are encouraged to apply. As a sales representative for Elephant Insurance, you will learn about the various insurance products we offer and will have training in order to effectively offer and sell these products to our customers. Inbound quote opportunities will be provided to you from a variety of lead sources; no cold calling is required. Individuals who are hungry to learn and earn while performing at the highest of ethical standards are strongly encouraged to apply. As we are a fast growing business, we're looking for talented people to help us develop. We pride ourselves in recruiting from within and investing in our staff! If you have the commitment and dedication to progress, Elephant will 100% support and help get you reach your goals. Did you know that 80% of managers within Elephant have all been promoted from within? Responsibilities: Provide auto insurance quotes to interested customers from our different lead sources Sell auto policies to interested individuals Cross-sell and/or refer interested customers to our ancillary products Accurately capture underwriting information for each customer Present and educate customers on their insurance options (coverage options, product options, discount options, payment options, etc.) 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1 year of experience and a High school diploma Or A Bachelor Degree Position Overview: We are currently seeking dynamic sales-oriented professionals to join our exciting and quickly growing sales team at Elephant Insurance. Individuals with a strong customer-oriented focus and desire to succeed in a fast-paced environment are encouraged to apply. As a sales representative for Elephant Insurance, you will learn about the various insurance products we offer and will have training in order to effectively offer and sell these products to our customers. Inbound quote opportunities will be provided to you from a variety of lead sources; no cold calling is required. Individuals who are hungry to learn and earn while performing at the highest of ethical standards are strongly encouraged to apply. As we are a fast growing business, we're looking for talented people to help us develop. We pride ourselves in recruiting from within and investing in our staff! If you have the commitment and dedication to progress, Elephant will 100% support and help get you reach your goals. Did you know that 80% of managers within Elephant have all been promoted from within? Responsibilities: Provide auto insurance quotes to interested customers from our different lead sources Sell auto policies to interested individuals Cross-sell and/or refer interested customers to our ancillary products Accurately capture underwriting information for each customer Present and educate customers on their insurance options (coverage options, product options, discount options, payment options, etc.) 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/806/santa-clara-go-partners-recruiters/" class="link">SANTA CLARA GO PARTNERS/RECRUITERS</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> New York Life </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> San Jose, CA, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;NO MINIMUM EXPERIENCE REQUIRED &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AGENTS / FINANCIAL SERVICES PROFESSIONAL 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;NO MINIMUM EXPERIENCE REQUIRED &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AGENTS / FINANCIAL SERVICES PROFESSIONAL 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/805/stand/" class="link">Stand</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Aramark </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Tampa, FL, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs"> 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Part time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs"> 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/804/customer-service-representative/" class="link">Customer Service Representative</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Truly Nolen of America, Inc. </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Tucson, AZ, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Job description: CUSTOMER SERVICE REPRESENTATIVE Truly Nolen of America is the world's leading family-owned pest control company with over 80 branch offices throughout the United States.&nbsp; Truly Nolen believes that the best way to fulfill our commitment to quality customer service is to form a partnership with our employees.&nbsp; We strive to provide a great work environment and a dynamic company culture for everyone at Truly Nolen based upon our core values. Do you have a good work ethic?&nbsp; Are you looking for a company where hard work is rewarded and top performers move up quickly?&nbsp; Do you have the following qualities?&nbsp; Confidence, Persistence, Drive, Ambition and Great Customer Skills? If you answered yes….then we want to meet you! JOB SUMMARY: As a Customer Service Representative in our call center you will be responsible for responding to and tracking customer inquiries.&nbsp; Our CSR’s enhance our sales and workforce teams, so that we can continue to provide dependability and quality service as part of our commitment to customer satisfaction.&nbsp; Our shifts range between 4:00 am – 8:00 pm Sunday through Saturday. &nbsp;We are hiring for all shifts – Full time positions. CORE RESPONSIBILITIES: Inbound calls relating to existing and new service Scheduling service appointments and sales leads Data Entry while ensuring accuracy of information IDEAL CANDIDATES WILL POSSESS: Excellent telephone etiquette and customer service skills Must have good listening skills Must have basic math aptitude, typing skills and be computer literate COMPENSATION AND BENEFITS: Truly Nolen offers great compensation.&nbsp; For our FT employees we offer an employee focused benefits package including: Medical/Dental/Vision, Flexible spending accounts, Short/Long Term Disability, Life Insurance, Paid Vacation, Matching 401k, Employee Assistance Program (EAP) and Wellness Program. &nbsp; 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Job description: CUSTOMER SERVICE REPRESENTATIVE Truly Nolen of America is the world's leading family-owned pest control company with over 80 branch offices throughout the United States.&nbsp; Truly Nolen believes that the best way to fulfill our commitment to quality customer service is to form a partnership with our employees.&nbsp; We strive to provide a great work environment and a dynamic company culture for everyone at Truly Nolen based upon our core values. Do you have a good work ethic?&nbsp; Are you looking for a company where hard work is rewarded and top performers move up quickly?&nbsp; Do you have the following qualities?&nbsp; Confidence, Persistence, Drive, Ambition and Great Customer Skills? If you answered yes….then we want to meet you! JOB SUMMARY: As a Customer Service Representative in our call center you will be responsible for responding to and tracking customer inquiries.&nbsp; Our CSR’s enhance our sales and workforce teams, so that we can continue to provide dependability and quality service as part of our commitment to customer satisfaction.&nbsp; Our shifts range between 4:00 am – 8:00 pm Sunday through Saturday. &nbsp;We are hiring for all shifts – Full time positions. CORE RESPONSIBILITIES: Inbound calls relating to existing and new service Scheduling service appointments and sales leads Data Entry while ensuring accuracy of information IDEAL CANDIDATES WILL POSSESS: Excellent telephone etiquette and customer service skills Must have good listening skills Must have basic math aptitude, typing skills and be computer literate COMPENSATION AND BENEFITS: Truly Nolen offers great compensation.&nbsp; For our FT employees we offer an employee focused benefits package including: Medical/Dental/Vision, Flexible spending accounts, Short/Long Term Disability, Life Insurance, Paid Vacation, Matching 401k, Employee Assistance Program (EAP) and Wellness Program. &nbsp; 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/803/experienced-outside-salesperson/" class="link">Experienced Outside Salesperson</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Equipment Management Services </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs"> 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs"> 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/802/sales-assistant/" class="link">Sales Assistant</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Equipment Management Services </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Houston, TX, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs"> 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs"> 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/801/parts-inventory-manager-transportation-dispatcher/" class="link">Parts Inventory manager/Transportation Dispatcher</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Equipment Management Services </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Houston, TX, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs"> 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs"> 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/800/entry-level-sales-representative/" class="link">Entry Level Sales Representative</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> The Mike Ferry Organization </span> 
+          <span class="listing-item__info--item listing-item__info--item-location"> Las Vegas, NV, United States </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Our product is to teach people how to sell at a high level. When you join our company we will teach you the same techniques that people pay tens of thousands of dollars to learn. You will have 1 week of paid training along with ongoing training for the rest of your career. Whether you have been in sales or not, we can show you exactly what it takes to get on track to meeting your financial goals. We are looking for the following attributes: Clear speaking voice High energy Goal motivated Coachable Positive personality Dress professionally If you meet this criteria then we probably have a place for you on our team. Our lowest income earners are making $30,000/yr. and our highest are making $130,000+. Position Type/Hours of Work: The position is Full Time, Monday to Friday 7:30 a.m. to 4:30 p.m. Benefits: Company paid medical insurance, basic life insurance and long term disability, paid vacation and holidays, options for dental, vision, voluntary life and short term disability. Company closure from Christmas Day through New Year’s Day to spend time with your family, paid as a gift from the company. Location: We are located in Southwest Las Vegas just off the 215 between Durango and Rainbow, 89113. Job Type: Full-time Salary: $30,000.00 /year, plus commission &nbsp; &nbsp; 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Our product is to teach people how to sell at a high level. When you join our company we will teach you the same techniques that people pay tens of thousands of dollars to learn. You will have 1 week of paid training along with ongoing training for the rest of your career. Whether you have been in sales or not, we can show you exactly what it takes to get on track to meeting your financial goals. We are looking for the following attributes: Clear speaking voice High energy Goal motivated Coachable Positive personality Dress professionally If you meet this criteria then we probably have a place for you on our team. Our lowest income earners are making $30,000/yr. and our highest are making $130,000+. Position Type/Hours of Work: The position is Full Time, Monday to Friday 7:30 a.m. to 4:30 p.m. Benefits: Company paid medical insurance, basic life insurance and long term disability, paid vacation and holidays, options for dental, vision, voluntary life and short term disability. Company closure from Christmas Day through New Year’s Day to spend time with your family, paid as a gift from the company. Location: We are located in Southwest Las Vegas just off the 215 between Durango and Rainbow, 89113. Job Type: Full-time Salary: $30,000.00 /year, plus commission &nbsp; &nbsp; 
+        </div> 
+       </article> 
+       <article class="media well listing-item listing-item__jobs listing-item__featured listing-item__no-logo"> 
+        <div class="media-body"> 
+         <div class="media-heading listing-item__title"> 
+          <a href="https://www.ncfjobs.com/job/799/sales-representative-apprentice-operator-maintenance-technician/" class="link">Sales Representative, Apprentice Operator &amp; Maintenance Technician</a> 
+         </div> 
+         <div class="listing-item__info clearfix"> 
+          <span class="listing-item__info--item listing-item__info--item-company"> Boxes, Inc. - Mid America Display </span> 
+         </div> 
+         <div class="listing-item__desc hidden-sm hidden-xs">
+           Job Title: Sales Representative Department: SLS Reports To: VP of Sales FLSA Status: Exempt &nbsp; Summary The Sales Representative will use their knowledge of company products and understanding of the customers’ business to form and maintain relationships with existing customers and develop strategic plans to qualify, target, and close new business within an assigned geographic region or territory.&nbsp; &nbsp; Essential Duties and Responsibilities include the following. Other duties may be assigned. &nbsp; Soliciting new business opportunities within our business region/territory. &nbsp; Planning strategies to establish and maintain account relationships and meet personal sales goals. &nbsp; Developing business plans for each account. &nbsp; Developing strong customer relationships that provide significant input to planning company production, pricing, and service strategies. &nbsp; Coordinate and use company resources to provide value added services to accounts. &nbsp; Provide analysis and information on sales forecast and budget preparation &nbsp; Supervisory Responsibilities &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This job has no supervisory responsibilities. &nbsp; Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. Must be willing to travel. &nbsp; Education and/or Experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; High School diploma or GED equivalent. You must have at least 2 years sales experience (or complimentary business experience) preferably in manufacturing, be trainable, and have tremendous desire to earn a significant income with uncapped earnings potential. You must have exceptional hunting and closing skills, the ability to sell value over price, work well independently and be held accountable to your goals. &nbsp; Language Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to read, analyze, and interpret general business periodicals, professional journals, technical procedures, or governmental regulations.&nbsp; Ability to write reports, business correspondence, and procedure manuals.&nbsp; Ability to effectively present information and respond to questions from groups of managers, clients, customers, and the general public. &nbsp; Mathematical Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to add, subtract, multiply, and divide in all units of measure, using whole numbers, common fractions, and decimals.&nbsp; Ability to compute rate, ratio, and percent and to draw and interpret bar graphs. &nbsp; Ability to calculate figures and amounts such as discounts, interest, commissions, proportions, percentages, area, circumference, and volume.&nbsp; Ability to apply concepts of basic algebra and geometry. &nbsp; Reasoning Ability &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to apply common sense understanding to carry out instructions furnished in written, oral, or diagram form.&nbsp; Ability to deal with problems involving several concrete variables in standardized situations. &nbsp; Computer Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To perform this job successfully, an individual should have knowledge of Internet Explorer Internet software; Amtech; Microsoft Excel spreadsheet software and Microsoft Word word-processing software. &nbsp; Certificates, Licenses, Registrations Current Driver License; good driving record &nbsp; Physical Demands and Work Environment The physical demands and work environment characteristics described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. &nbsp; While performing the duties of this Job, the employee is regularly required to sit; use hands to finger, handle, or feel; reach with hands and arms and talk or hear. The employee is frequently required to stand and walk. The employee is occasionally required to stoop, kneel, crouch, or crawl. The employee must frequently lift and/or move up to 25 pounds and occasionally lift and/or move up to 50 pounds.&nbsp; Specific vision abilities required by this job include close vision, distance vision, color vision, peripheral vision, depth perception and ability to adjust focus. &nbsp; While performing the duties of this Job, the employee is occasionally exposed to moving mechanical parts; fumes or airborne particles; extreme cold; extreme heat and vibration. The noise level in the work environment is usually quiet when working in the office and loud when working in the plant. &nbsp; &nbsp; &nbsp; We put our customers’ needs above all else, working to provide the utmost in service through every stage of our projects. From everyday packaging needs to custom display conception, our highly-skilled team of designers, support personnel, along with our expansive production capabilities gives you the firepower needed to close accounts. We aim to exceed our customers’ packaging objectives with each project, making us a valuable and trusted repeat partner for our clients. &nbsp; Job Title: Apprentice Operator Department: Plant Reports To: Supervisor and Plant Manager FLSA Status: Non-Exempt Shift: Days 5:00am-5:30pm, Rotating 12s Salary: $14-$18/hour &nbsp; Essential Duties and Responsibilities include the following. Other duties may be assigned. &nbsp; Responsible for all activities associated with running a Flexo or Rotary Die Cutter including: setup, operation, cleanup, and recommending improvements to operations. &nbsp; Sets up and runs the Load Former pre-feeder, feeding corrugated sheets through the machine &nbsp; Reviews job tickets, print cards, and quality inspection paperwork with machine Captain &nbsp; Reads job order and mounts specified &nbsp;rubber print plate and printing dies on cylinder. &nbsp; Installs cylinder on shaft, and secures assembly in bed of press. &nbsp; Fills dye fonts with prescribed inks or dyes. &nbsp; Moves levers to engage dye rolls, adjusting position of cylinder to print two or more colors without overlapping or smearing previously printed area. &nbsp; Starts press, adjusting speed, tension, and alignment of printing plate as necessary. &nbsp; Cuts sample of printed material from end of printed roll and inspects for imperfections, such as blurred or off-center impressions. &nbsp; Cleans rubber plate, cylinder, and dye fonts, using solvent, and lubricates press as needed, using grease gun. &nbsp; May mix inks or dyes to produce desired colors. &nbsp; Sets up rails, print, and die cut section on machinery accurately in accordance with proper setup techniques. &nbsp; Inspects all dies before and after run to ensure that any necessary repairs are made before the next run. &nbsp; Ensures all bolts for cutting dies are in place and tightly secured. &nbsp; Monitor box quality, including, but not limited to, loose liner, warp, correct size, and print. &nbsp; Checks anilox rolls for damage. &nbsp; Maximizes the utilization of equipment by operating the machinery at available capacity and speed. Cross trains and assist Helpers, Stackers, and Bundlers with job duties on the machine. &nbsp; Completes necessary reports in an accurate and timely manner, including but not limited to: Production Data, Machine Operational Status, Safety Data, Quality Data. Turn in maintenance work orders to supervision for needed repairs. &nbsp; Adherence to company policies, including its attendance is essential. &nbsp; Supervisory Responsibilities &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This job has no supervisory responsibilities. &nbsp; Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. &nbsp; Education and/or Experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; One year certificate from college or technical school; or 2-3 to years related experience and/or training. Previous experience in a manufacturing environment, printing or similar industry experience preferred. &nbsp; Language Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to read and interpret documents such as safety rules, operating and maintenance instructions, and procedure manuals.&nbsp; Ability to write routine reports and correspondence.&nbsp; Ability to speak effectively before groups of customers or employees of organization. &nbsp; Mathematical Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to add, subtract, multiply, and divide in all units of measure, using whole numbers, common fractions, and decimals.&nbsp; Ability to compute rate and ratio.&nbsp; Ability to calculate figures and amounts such as proportions, percentages, area, circumference, and volume.&nbsp; Ability to apply concepts of basic algebra and geometry.&nbsp; Ability to correctly measure and correctly read a tape measure. &nbsp; Reasoning Ability &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to apply common sense understanding to carry out instructions furnished in written, oral, or diagram form.&nbsp; Ability to deal with problems involving several concrete variables in standardized situations. &nbsp; Computer Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To perform this job successfully, an individual should have knowledge of RPM and PDE Manufacturing software. Must be computer literate. &nbsp; Physical Demands and Work Environment The physical demands and work environment characteristics described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. &nbsp; While performing the duties of this Job, the employee is regularly required to stand; use hands to finger, handle, or feel and reach with hands and arms. The employee is frequently required to walk. The employee is occasionally required to sit; climb or balance; stoop, kneel, crouch, or crawl and talk or hear. The employee must regularly lift and /or move up to 50 pounds, frequently lift and/or move up to 50 pounds.&nbsp; Specific vision abilities required by this job include close vision, distance vision, color vision, peripheral vision, depth perception and ability to adjust focus. While performing the duties of this Job, the employee is regularly exposed to moving mechanical parts; fumes or airborne particles; extreme cold; extreme heat and vibration. The employee is occasionally exposed to risk of electrical shock. The noise level in the work environment is usually loud. Job Title: Maintenance Technician Department: Maintenance Reports To: Maintenance Manager, Indirect report to Operations FLSA Status: Non-Exempt, Hourly Shift: Nights, Rotating 12s Salary : $20/hr starting; negotiable with experience &nbsp; Summary Repairs and maintains production machinery, conveyor lines&nbsp; mechanical and hydraulic components of production machines and equipment such as fabricating machine tools, material handling system, and automated lubrication system by performing the following duties. &nbsp; Essential Duties and Responsibilities include the following. Other duties may be assigned. &nbsp; Visually inspects and listens to machines and equipment to locate causes of malfunctions while working with machine operators. &nbsp; Ensures safe operation of machinery, mechanical, electrical, pneumatic systems equipment and components. &nbsp; Observes all health and safety requirements and maintains work area in neat order and orderly condition. &nbsp; Uses common tools including but not limited to: hand and power tools such as hammers, saws, drills and wrenches, precision measuring instruments, and electrical and electronic testing devices. &nbsp; Troubleshoots sources of equipment problems by observing mechanical, electrical, pneumatic systems equipment and component devices in the operation; uses precision measuring and testing instruments. Knowledge of 3 –phase electrical, motor control center, pump, motors, compressors, variable frequency drives, wiring and PLC Programming required. &nbsp; Inspects motors and belts, checks fluid levels, replaces filters, and performs other maintenance actions while following maintenance procedures. &nbsp; Cleans and lubricates shafts, bearings, gears, and other parts of equipment per work procedures or technical manual. &nbsp; Perform&nbsp; preventative maintenance and predictive maintenance of process equipment throughout the plant&nbsp; to include mechanical, pneumatic, valves, lines, connections, pumps, and electrical maintenance. &nbsp; Reports immediately to supervisor problems and unusual situations which cannot be resolved quickly. &nbsp; Performs upgrades and install new systems when required. &nbsp; Repairs broken parts. Sets up and operates metalworking tools such as lathe, drill press, or grinder, to make or repair parts. &nbsp; Operates forklifts and high lifts, and other powered lift equipment as needed &nbsp; Adherence to company policies, including its attendance is essential. Must be flexible to come in early, stay late and may need to be “on call" in case of emergencies. &nbsp; Supervisory Responsibilities &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This job has no supervisory responsibilities but may be required to assist and /or oversee outside vendors /service contractors. &nbsp; Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. &nbsp; Education and/or Experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fifth year college or university program certificate in electrical and/or mechanical fields; or four years related experience in a manufacturing or Industrial setting; or equivalent combination of education and experience. PLC training preferred. Must be willing to attend training classes. &nbsp; Language Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to read and interpret documents such as safety rules, operating and maintenance instructions, and procedure manuals.&nbsp; Ability to write routine reports and correspondence.&nbsp; Ability to speak effectively before groups of customers or employees of organization. &nbsp; Mathematical Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to calculate figures and amounts such as discounts, interest, commissions, proportions, percentages, area, circumference, and volume.&nbsp; Ability to apply concepts of basic algebra and geometry. &nbsp; Reasoning Ability &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to define problems, collect data, establish facts, and draw valid conclusions. Ability to interpret an extensive variety of technical instructions in mathematical or diagram form and deal with several abstract and concrete variables. Ability to troubleshoot electrical and mechanical control systems using electrical and mechanical diagrams, meters, gauges, etc. &nbsp; Computer Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To perform this job successfully, an individual should have knowledge of RPM and PDE Manufacturing software, Microsoft Windows based software as well as PLC structured software. &nbsp; Physical Demands and Work Environment The physical demands and work environment characteristics described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. &nbsp; While performing the duties of this Job, the employee is regularly required to stand; use hands to finger, handle, or feel; reach with hands and arms and stoop, kneel, crouch, or crawl. The employee is frequently required to walk; sit and climb or balance. The employee is occasionally required to talk or hear. The employee must regularly lift and /or move up to 50 pounds, frequently lift and/or move up to 50 pounds.&nbsp; Specific vision abilities required by this job include close vision, distance vision, color vision, peripheral vision, depth perception and ability to adjust focus. &nbsp; While performing the duties of this Job, the employee is regularly exposed to moving mechanical parts; fumes or airborne particles; extreme cold; extreme heat and vibration. The employee is frequently exposed to risk of electrical shock. The employee is occasionally exposed to high, precarious places. The noise level in the work environment is usually loud. &nbsp; &nbsp; &nbsp; 
+         </div> 
+        </div> 
+        <div class="media-right text-right"> 
+         <div class="listing-item__date">
+           Mar 22, 2017 
+         </div> 
+         <span class="listing-item__employment-type">Full time</span> 
+        </div> 
+        <div class="listing-item__desc visible-sm visible-xs">
+          Job Title: Sales Representative Department: SLS Reports To: VP of Sales FLSA Status: Exempt &nbsp; Summary The Sales Representative will use their knowledge of company products and understanding of the customers’ business to form and maintain relationships with existing customers and develop strategic plans to qualify, target, and close new business within an assigned geographic region or territory.&nbsp; &nbsp; Essential Duties and Responsibilities include the following. Other duties may be assigned. &nbsp; Soliciting new business opportunities within our business region/territory. &nbsp; Planning strategies to establish and maintain account relationships and meet personal sales goals. &nbsp; Developing business plans for each account. &nbsp; Developing strong customer relationships that provide significant input to planning company production, pricing, and service strategies. &nbsp; Coordinate and use company resources to provide value added services to accounts. &nbsp; Provide analysis and information on sales forecast and budget preparation &nbsp; Supervisory Responsibilities &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This job has no supervisory responsibilities. &nbsp; Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. Must be willing to travel. &nbsp; Education and/or Experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; High School diploma or GED equivalent. You must have at least 2 years sales experience (or complimentary business experience) preferably in manufacturing, be trainable, and have tremendous desire to earn a significant income with uncapped earnings potential. You must have exceptional hunting and closing skills, the ability to sell value over price, work well independently and be held accountable to your goals. &nbsp; Language Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to read, analyze, and interpret general business periodicals, professional journals, technical procedures, or governmental regulations.&nbsp; Ability to write reports, business correspondence, and procedure manuals.&nbsp; Ability to effectively present information and respond to questions from groups of managers, clients, customers, and the general public. &nbsp; Mathematical Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to add, subtract, multiply, and divide in all units of measure, using whole numbers, common fractions, and decimals.&nbsp; Ability to compute rate, ratio, and percent and to draw and interpret bar graphs. &nbsp; Ability to calculate figures and amounts such as discounts, interest, commissions, proportions, percentages, area, circumference, and volume.&nbsp; Ability to apply concepts of basic algebra and geometry. &nbsp; Reasoning Ability &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to apply common sense understanding to carry out instructions furnished in written, oral, or diagram form.&nbsp; Ability to deal with problems involving several concrete variables in standardized situations. &nbsp; Computer Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To perform this job successfully, an individual should have knowledge of Internet Explorer Internet software; Amtech; Microsoft Excel spreadsheet software and Microsoft Word word-processing software. &nbsp; Certificates, Licenses, Registrations Current Driver License; good driving record &nbsp; Physical Demands and Work Environment The physical demands and work environment characteristics described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. &nbsp; While performing the duties of this Job, the employee is regularly required to sit; use hands to finger, handle, or feel; reach with hands and arms and talk or hear. The employee is frequently required to stand and walk. The employee is occasionally required to stoop, kneel, crouch, or crawl. The employee must frequently lift and/or move up to 25 pounds and occasionally lift and/or move up to 50 pounds.&nbsp; Specific vision abilities required by this job include close vision, distance vision, color vision, peripheral vision, depth perception and ability to adjust focus. &nbsp; While performing the duties of this Job, the employee is occasionally exposed to moving mechanical parts; fumes or airborne particles; extreme cold; extreme heat and vibration. The noise level in the work environment is usually quiet when working in the office and loud when working in the plant. &nbsp; &nbsp; &nbsp; We put our customers’ needs above all else, working to provide the utmost in service through every stage of our projects. From everyday packaging needs to custom display conception, our highly-skilled team of designers, support personnel, along with our expansive production capabilities gives you the firepower needed to close accounts. We aim to exceed our customers’ packaging objectives with each project, making us a valuable and trusted repeat partner for our clients. &nbsp; Job Title: Apprentice Operator Department: Plant Reports To: Supervisor and Plant Manager FLSA Status: Non-Exempt Shift: Days 5:00am-5:30pm, Rotating 12s Salary: $14-$18/hour &nbsp; Essential Duties and Responsibilities include the following. Other duties may be assigned. &nbsp; Responsible for all activities associated with running a Flexo or Rotary Die Cutter including: setup, operation, cleanup, and recommending improvements to operations. &nbsp; Sets up and runs the Load Former pre-feeder, feeding corrugated sheets through the machine &nbsp; Reviews job tickets, print cards, and quality inspection paperwork with machine Captain &nbsp; Reads job order and mounts specified &nbsp;rubber print plate and printing dies on cylinder. &nbsp; Installs cylinder on shaft, and secures assembly in bed of press. &nbsp; Fills dye fonts with prescribed inks or dyes. &nbsp; Moves levers to engage dye rolls, adjusting position of cylinder to print two or more colors without overlapping or smearing previously printed area. &nbsp; Starts press, adjusting speed, tension, and alignment of printing plate as necessary. &nbsp; Cuts sample of printed material from end of printed roll and inspects for imperfections, such as blurred or off-center impressions. &nbsp; Cleans rubber plate, cylinder, and dye fonts, using solvent, and lubricates press as needed, using grease gun. &nbsp; May mix inks or dyes to produce desired colors. &nbsp; Sets up rails, print, and die cut section on machinery accurately in accordance with proper setup techniques. &nbsp; Inspects all dies before and after run to ensure that any necessary repairs are made before the next run. &nbsp; Ensures all bolts for cutting dies are in place and tightly secured. &nbsp; Monitor box quality, including, but not limited to, loose liner, warp, correct size, and print. &nbsp; Checks anilox rolls for damage. &nbsp; Maximizes the utilization of equipment by operating the machinery at available capacity and speed. Cross trains and assist Helpers, Stackers, and Bundlers with job duties on the machine. &nbsp; Completes necessary reports in an accurate and timely manner, including but not limited to: Production Data, Machine Operational Status, Safety Data, Quality Data. Turn in maintenance work orders to supervision for needed repairs. &nbsp; Adherence to company policies, including its attendance is essential. &nbsp; Supervisory Responsibilities &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This job has no supervisory responsibilities. &nbsp; Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. &nbsp; Education and/or Experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; One year certificate from college or technical school; or 2-3 to years related experience and/or training. Previous experience in a manufacturing environment, printing or similar industry experience preferred. &nbsp; Language Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to read and interpret documents such as safety rules, operating and maintenance instructions, and procedure manuals.&nbsp; Ability to write routine reports and correspondence.&nbsp; Ability to speak effectively before groups of customers or employees of organization. &nbsp; Mathematical Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to add, subtract, multiply, and divide in all units of measure, using whole numbers, common fractions, and decimals.&nbsp; Ability to compute rate and ratio.&nbsp; Ability to calculate figures and amounts such as proportions, percentages, area, circumference, and volume.&nbsp; Ability to apply concepts of basic algebra and geometry.&nbsp; Ability to correctly measure and correctly read a tape measure. &nbsp; Reasoning Ability &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to apply common sense understanding to carry out instructions furnished in written, oral, or diagram form.&nbsp; Ability to deal with problems involving several concrete variables in standardized situations. &nbsp; Computer Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To perform this job successfully, an individual should have knowledge of RPM and PDE Manufacturing software. Must be computer literate. &nbsp; Physical Demands and Work Environment The physical demands and work environment characteristics described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. &nbsp; While performing the duties of this Job, the employee is regularly required to stand; use hands to finger, handle, or feel and reach with hands and arms. The employee is frequently required to walk. The employee is occasionally required to sit; climb or balance; stoop, kneel, crouch, or crawl and talk or hear. The employee must regularly lift and /or move up to 50 pounds, frequently lift and/or move up to 50 pounds.&nbsp; Specific vision abilities required by this job include close vision, distance vision, color vision, peripheral vision, depth perception and ability to adjust focus. While performing the duties of this Job, the employee is regularly exposed to moving mechanical parts; fumes or airborne particles; extreme cold; extreme heat and vibration. The employee is occasionally exposed to risk of electrical shock. The noise level in the work environment is usually loud. Job Title: Maintenance Technician Department: Maintenance Reports To: Maintenance Manager, Indirect report to Operations FLSA Status: Non-Exempt, Hourly Shift: Nights, Rotating 12s Salary : $20/hr starting; negotiable with experience &nbsp; Summary Repairs and maintains production machinery, conveyor lines&nbsp; mechanical and hydraulic components of production machines and equipment such as fabricating machine tools, material handling system, and automated lubrication system by performing the following duties. &nbsp; Essential Duties and Responsibilities include the following. Other duties may be assigned. &nbsp; Visually inspects and listens to machines and equipment to locate causes of malfunctions while working with machine operators. &nbsp; Ensures safe operation of machinery, mechanical, electrical, pneumatic systems equipment and components. &nbsp; Observes all health and safety requirements and maintains work area in neat order and orderly condition. &nbsp; Uses common tools including but not limited to: hand and power tools such as hammers, saws, drills and wrenches, precision measuring instruments, and electrical and electronic testing devices. &nbsp; Troubleshoots sources of equipment problems by observing mechanical, electrical, pneumatic systems equipment and component devices in the operation; uses precision measuring and testing instruments. Knowledge of 3 –phase electrical, motor control center, pump, motors, compressors, variable frequency drives, wiring and PLC Programming required. &nbsp; Inspects motors and belts, checks fluid levels, replaces filters, and performs other maintenance actions while following maintenance procedures. &nbsp; Cleans and lubricates shafts, bearings, gears, and other parts of equipment per work procedures or technical manual. &nbsp; Perform&nbsp; preventative maintenance and predictive maintenance of process equipment throughout the plant&nbsp; to include mechanical, pneumatic, valves, lines, connections, pumps, and electrical maintenance. &nbsp; Reports immediately to supervisor problems and unusual situations which cannot be resolved quickly. &nbsp; Performs upgrades and install new systems when required. &nbsp; Repairs broken parts. Sets up and operates metalworking tools such as lathe, drill press, or grinder, to make or repair parts. &nbsp; Operates forklifts and high lifts, and other powered lift equipment as needed &nbsp; Adherence to company policies, including its attendance is essential. Must be flexible to come in early, stay late and may need to be “on call" in case of emergencies. &nbsp; Supervisory Responsibilities &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This job has no supervisory responsibilities but may be required to assist and /or oversee outside vendors /service contractors. &nbsp; Qualifications To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. &nbsp; Education and/or Experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fifth year college or university program certificate in electrical and/or mechanical fields; or four years related experience in a manufacturing or Industrial setting; or equivalent combination of education and experience. PLC training preferred. Must be willing to attend training classes. &nbsp; Language Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to read and interpret documents such as safety rules, operating and maintenance instructions, and procedure manuals.&nbsp; Ability to write routine reports and correspondence.&nbsp; Ability to speak effectively before groups of customers or employees of organization. &nbsp; Mathematical Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to calculate figures and amounts such as discounts, interest, commissions, proportions, percentages, area, circumference, and volume.&nbsp; Ability to apply concepts of basic algebra and geometry. &nbsp; Reasoning Ability &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ability to define problems, collect data, establish facts, and draw valid conclusions. Ability to interpret an extensive variety of technical instructions in mathematical or diagram form and deal with several abstract and concrete variables. Ability to troubleshoot electrical and mechanical control systems using electrical and mechanical diagrams, meters, gauges, etc. &nbsp; Computer Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To perform this job successfully, an individual should have knowledge of RPM and PDE Manufacturing software, Microsoft Windows based software as well as PLC structured software. &nbsp; Physical Demands and Work Environment The physical demands and work environment characteristics described here are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. &nbsp; While performing the duties of this Job, the employee is regularly required to stand; use hands to finger, handle, or feel; reach with hands and arms and stoop, kneel, crouch, or crawl. The employee is frequently required to walk; sit and climb or balance. The employee is occasionally required to talk or hear. The employee must regularly lift and /or move up to 50 pounds, frequently lift and/or move up to 50 pounds.&nbsp; Specific vision abilities required by this job include close vision, distance vision, color vision, peripheral vision, depth perception and ability to adjust focus. &nbsp; While performing the duties of this Job, the employee is regularly exposed to moving mechanical parts; fumes or airborne particles; extreme cold; extreme heat and vibration. The employee is frequently exposed to risk of electrical shock. The employee is occasionally exposed to high, precarious places. The noise level in the work environment is usually loud. &nbsp; &nbsp; &nbsp; 
+        </div> 
+       </article> 
+       <button type="button" class="load-more btn btn__white" data-page="2" data-backfilling="false" data-backfilling-page="1"> Load more </button> 
+      </div> 
+     </div> 
+    </div> 
+    <div id="apply-modal" class="modal fade"> 
+     <div class="modal-dialog"> 
+      <div class="modal-content"> 
+       <div class="modal-header"> 
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button> 
+        <h4 class="modal-title">Modal Window</h4> 
+       </div> 
+       <div class="modal-body"> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="page-row hidden-print"> 
+   <footer class="footer"> 
+    <div class="container"> 
+     <div> 
+      <div> 
+       <ul> 
+        <li><a class="footer-nav__link" href="https://www.ncfjobs.com/">Home</a></li> 
+        <li><a class="footer-nav__link" href="https://www.ncfjobs.com/contact/">Contact</a></li> 
+        <li><a class="footer-nav__link" href="https://www.ncfjobs.com/about/">About Us </a></li> 
+        <li><a class="footer-nav__link" href="https://www.ncfjobs.com/terms-of-use/">Terms &amp; Conditions</a></li> 
+       </ul> 
+      </div> 
+      <div> 
+       <ul> 
+        <li>Employer</li> 
+        <li><a class="footer-nav__link" href="https://www.ncfjobs.com/add-listing/?listing_type_id=Job">Post a Job</a></li> 
+        <li><a class="footer-nav__link" href="https://www.ncfjobs.com/resumes/">Search Resumes</a></li> 
+        <li><a class="footer-nav__link" href="https://www.ncfjobs.com/login/">Sign in</a></li> 
+       </ul> 
+      </div> 
+      <div> 
+       <ul> 
+        <li>Job Seeker</li> 
+        <li><a class="footer-nav__link" href="https://www.ncfjobs.com/jobs/">Find Jobs</a></li> 
+        <li><a class="footer-nav__link" href="https://www.ncfjobs.com/add-listing/?listing_type_id=Resume">Create Resume</a></li> 
+        <li><a class="footer-nav__link" href="https://www.ncfjobs.com/login/">Sign in</a></li> 
+       </ul> 
+      </div> 
+      <div> 
+       <ul> 
+        <li><a class="footer-nav__link footer-nav__link-social footer-nav__link-facebook" href="https://www.facebook.com/nationalcareerfairs/">Facebook</a></li> 
+        <li><a class="footer-nav__link footer-nav__link-social footer-nav__link-twitter" href="#">Twitter</a></li> 
+        <li><a class="footer-nav__link footer-nav__link-social footer-nav__link-plus" href="#">Google Plus</a></li> 
+        <li><a class="footer-nav__link footer-nav__link-social footer-nav__link-in" href="#">LinkedIn</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+     <div>
+      © 2017
+     </div> 
+    </div> 
+   </footer> 
+   <script>
+		
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-90116432-1', 'auto');
+		ga('send', 'pageview');
+	</script> 
+  </div> 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+  <script src="https://www.ncfjobs.com/templates/Bootstrap/assets/third-party/jquery.min.js"></script> 
+  <!-- Include all compiled plugins (below), or include individual files as needed --> 
+  <script src="https://www.ncfjobs.com/templates/Bootstrap/vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script> 
+  <script src="https://www.ncfjobs.com/templates/Bootstrap/assets/third-party/jquery-ui.min.js"></script> 
+  <script language="JavaScript" type="text/javascript" src="https://www.ncfjobs.com/templates/_system/common_js/main.js"></script> 
+  <script language="JavaScript" type="text/javascript" src="https://www.ncfjobs.com/templates/Bootstrap/assets/third-party/jquery.form.min.js"></script> 
+  <script language="JavaScript" type="text/javascript" src="https://www.ncfjobs.com/system/ext/jquery/jquery.validate.min.js"></script> 
+  <script language="JavaScript" type="text/javascript" src="https://www.ncfjobs.com/templates/Bootstrap/common_js/autoupload_functions.js"></script> 
+  <link rel="Stylesheet" type="text/css" href="https://www.ncfjobs.com/system/ext/jquery/css/jquery.multiselect.css"> 
+  <script language="JavaScript" type="text/javascript" src="https://www.ncfjobs.com/system/ext/jquery/multilist/jquery.multiselect.min.js"></script> 
+  <script language="JavaScript" type="text/javascript" src="https://www.ncfjobs.com/templates/Bootstrap/common_js/multilist_functions.js"></script> 
+  <script>
+        document.addEventListener("touchstart", function() { }, false);
+
+        var langSettings = {
+            thousands_separator : ',',
+            decimal_separator : '.',
+            decimals : '2',
+            currencySign: '$',
+            showCurrencySign: 1,
+            currencySignLocation: '0',
+            rightToLeft: 0
+        };
+    </script> 
+  <script language="JavaScript" type="text/javascript" src="https://www.ncfjobs.com/templates/_system/common_js/floatnumbers_functions.js"></script> 
+  <script language="javascript" type="text/javascript">
+
+        // Set global javascript value for page
+        window.SJB_GlobalSiteUrl = 'https://www.ncfjobs.com';
+        window.SJB_UserSiteUrl   = 'https://www.ncfjobs.com';
+
+        $("#apply-modal")
+                .on('show.bs.modal', function(event){
+                    var button = $(event.relatedTarget);
+                    var titleData = button.data('title');
+                    $(this).find('.modal-title').text(titleData);
+                    if (button.data('applied')) {
+                        $(this).find('.modal-body').html('<p class="alert alert-danger">You already applied to this job</p>');
+                    } else {
+                        $(this).find('.modal-body').load(button.data('href'), function() {
+                            $(this).find('.form-control').focus().select()
+                        });
+                    }
+                })
+                .on('shown.bs.modal', function(){
+                    $(this).find('.form-control').first().focus().select();
+                });
+
+        $('.toggle--refine-search').on('click', function(e) {
+            e.preventDefault();
+            $(this).toggleClass('collapsed');
+            $('.refine-search__wrapper').toggleClass('show');
+            $(document).mouseup(function (e) {
+                var container = $(".refine-search");
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    $('.toggle--refine-search').removeClass('collapsed');
+                    $('.refine-search__wrapper').removeClass('show');
+                }
+            });
+        });
+
+        $('#apply-modal').on('click', '.email-frequency__btn-js', function(){
+            $('.email-frequency__btn-js').each(function(){
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+        })
+    </script> 
+  <script>
+        function initService() {
+            var input = /** @type  */($('.form-control__google-location'));
+            var options = {
+                componentRestrictions: {
+                                            country: 'US'
+                                    }
+            };
+
+            for(var i=0; i<input.length; i++){
+                new google.maps.places.Autocomplete(input[i], options);
+            }
+
+        }
+
+        $('#ajax-refine-search').on('click', '.refine-search__item-radius', function(e) {
+            e.preventDefault();
+            var radiusValue = $(this).data('value');
+
+            $('.hidden-radius').each(function() {
+                $(this).val(radiusValue);
+            });
+
+            $('#refine-block-radius .dropdown-toggle').text($(this).data('value') + ' miles');
+            $('.quick-search__wrapper').find('form').submit();
+        });
+
+        $('#GooglePlace').keydown(function (e) {
+            if (e.which == 13 && $('.pac-container:visible').length) {
+                return false;
+            }
+        });
+    </script> 
+  <script>
+		$(document).on('click', '.less-more__btn', function(e) {
+			e.preventDefault();
+			var butt = $(this);
+			butt.toggleClass('collapse');
+			$(this).prev('.less-more').slideToggle('normal', function() {
+				if ($(this).css('display') == 'block') {
+					butt.html('');
+				} else {
+					butt.html('');
+				}
+			});
+		});
+	</script> 
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGXeZ9l9LqnpYzbqmnwuanCTGQrBywTmk&amp;libraries=places&amp;callback=initService&amp;language=en" async defer></script> 
+  <script>
+		var listingPerPage = 20;
+		var listingNumber = '177';
+		$(document).ready(function() {
+			// refine search
+			var ajaxUrl = "https://www.ncfjobs.com/ajax/";
+			var ajaxParams = {
+				'action': 'get_refine_search_block',
+				'listing_type[equal]': 'Job',
+				'searchId': '1490267449.3695',
+				'showRefineFields': 177 > 0
+			};
+
+			$.get(ajaxUrl, ajaxParams, function (data) {
+				if (data.length > 0) {
+					$('.current-search').remove();
+					$('#ajax-refine-search').find('.refine-search__wrapper .refine-search__block').remove();
+					$('#ajax-refine-search').find('.refine-search__wrapper').append(data);
+					$('.refine-search__wrapper').removeClass('loading');
+
+					$('.refine-search__item-radius.active').removeClass('active');
+					var miles = $('.form-group__input input[type="hidden"]').val();
+					$('#refine-block-radius .dropdown-toggle').text(miles + ' miles');
+				}
+			});
+
+			if (listingNumber != '' && listingNumber < listingPerPage) {
+				$('.load-more').trigger('click');
+			}
+		});
+
+
+		$('.load-more').click(function() {
+			var self = $(this);
+			self.addClass('loading');
+			if (self.data('backfilling')) {
+				var page = self.data('backfilling-page');
+				self.data('backfilling-page', parseInt(page) + 1);
+
+				// request to listings providers
+				var ajaxUrl = "https://www.ncfjobs.com/ajax/";
+				var ajaxParams = {
+					'action' : 'request_for_listings',
+					'searchId' : '1490267449.3695',
+					'page' : page
+				};
+
+				$.get(ajaxUrl, ajaxParams, function(data) {
+					if (data.length > 0) {
+						$('.no-listings-found').hide();
+					} else {
+						self.prop('disabled', true);
+						$('.no-listings-found').removeClass('hidden');
+					}
+					self.before(data);
+					if ($('.listing_item__backfilling').length < listingPerPage) {
+						self.hide();
+					}
+					self.removeClass('loading');
+				});
+				return;
+			}
+
+			$.get('?searchId=1490267449.3695&action=search&page=' + self.data('page'), function(data) {
+				var listings = $(data).find('.listing-item');
+				self.removeClass('loading');
+				if (listings.length) {
+					$('.listing-item').last().after(listings);
+					self.data('page', parseInt(self.data('page')) + 1);
+				}
+				if (listings.length !== listingPerPage) {
+					if ('1') {
+						self.data('backfilling', true);
+						$('.load-more').click();
+					} else {
+						self.hide();
+					}
+				}
+			});
+		});
+	</script> 
+  <script>
+        $('.navbar__link').on('click', function(e) {
+            if ($(this).attr('href') == '' || $(this).attr('href') == 'http://' ||
+                    $(this).attr('href') == 'https://' || $(this).attr('href') == '#') {
+                e.preventDefault();
+            }
+        });
+
+        $('.dropdown > a').on('touchstart', function (e) {
+            var link = $(this);
+            if (link.hasClass('hover')) {
+                return true;
+            } else {
+                link.addClass('hover');
+                $('.dropdown > a').not(this).removeClass('hover');
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        $(document).on('click', function (e) {
+            var dropdown = $('.navbar__link.hover').closest('.navbar__item');
+
+            if (!dropdown.is(e.target) && dropdown.has(e.target).length === 0) {
+                dropdown.find('.navbar__link.hover').removeClass('hover');
+            }
+        });
+    </script> 
+  <div class="pac-container pac-logo" style="display: none;"></div>
+  <div class="pac-container pac-logo" style="display: none;"></div>
+ </body>
+</html>

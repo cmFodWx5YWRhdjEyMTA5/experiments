@@ -1,0 +1,5 @@
+datasets/megaplextheatres/megaplextheatres_rp_0.html	datasets/megaplextheatres/detail_pages/megaplextheatres_dp_0.html	https://www.megaplextheatres.com/northmain	https://www.megaplextheatres.com/feature/1007679
+datasets/megaplextheatres/megaplextheatres_rp_0.html	datasets/megaplextheatres/detail_pages/megaplextheatres_dp_1.html	https://www.megaplextheatres.com/northmain	https://www.megaplextheatres.com/feature/1007563
+datasets/megaplextheatres/megaplextheatres_rp_0.html	datasets/megaplextheatres/detail_pages/megaplextheatres_dp_2.html	https://www.megaplextheatres.com/northmain	https://www.megaplextheatres.com/feature/1007695
+datasets/megaplextheatres/megaplextheatres_rp_0.html	datasets/megaplextheatres/detail_pages/megaplextheatres_dp_3.html	https://www.megaplextheatres.com/northmain	https://www.megaplextheatres.com/feature/1007278
+datasets/megaplextheatres/megaplextheatres_rp_0.html	datasets/megaplextheatres/detail_pages/megaplextheatres_dp_4.html	https://www.megaplextheatres.com/northmain	https://www.megaplextheatres.com/feature/1007395

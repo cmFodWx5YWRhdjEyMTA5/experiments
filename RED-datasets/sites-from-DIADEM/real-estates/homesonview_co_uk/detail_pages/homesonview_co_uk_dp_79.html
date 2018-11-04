@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+<title>homesonview.co.uk | Show Property</title>
+<link type="text/css" rel="stylesheet" href="../css/hovprop.css" />
+
+<link type="text/css" rel="stylesheet" href="../css/hovcolour.css" />
+
+<link type="text/css" rel="stylesheet" href="../css/hovonly.css" />
+
+<script type="text/javascript" language="JavaScript">
+   var currentPanel;
+   
+      function showPanel(panelNum) {
+      //hide visible panel, show selected panel, 
+      //set tab
+      if (currentPanel != null) {
+         hidePanel();
+      }
+      document.getElementById 
+         ('panel'+panelNum).style.display = 'inline';
+         currentPanel = panelNum;
+   }
+   
+   function hidePanel() {
+      //hide visible panel, unhilite tab
+      document.getElementById
+        ('panel'+currentPanel).style.display = 'none';
+   }
+   
+ 
+</script>
+<script type="text/javascript" language="JavaScript">
+&lt;!--
+function ShowPicture (cid,pid,width,height,pic) { 
+
+	{newwindow = window.open("ShowPhotos.asp?CompanyID=" + cid + "&amp;ID=" + pid + "&amp;pic=" + pic, "photo" ,"resizable=no,width=" + width + ",height=" + height + ",toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+
+	newwindow.focus();	
+}
+
+function ShowFloorplans (cid,pid,width,height,pic) { 
+
+	{newwindow = window.open("ShowFloors.asp?CompanyID=" + cid + "&amp;ID=" + pid + "&amp;pic=" + pic, "floor", "resizable=yes,width=" + width + ",height=" + height + ",toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+
+	newwindow.focus();	
+}
+
+function ShowEPC (cid,pid,width,height) { 
+
+	{newwindow = window.open("ShowEPC.asp?CompanyID=" + cid + "&amp;ID=" + pid, "epc", "resizable=Yes,width=" + width + ",height=" + height + ",toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	newwindow.focus();	
+}
+
+function Open (sZero,sOne,sTwo,sThree,i) { 
+	
+	if (i==1)
+		{newwindow = window.open(sZero , "winHip", "resizable=yes,width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+	
+	if (i==2)
+		{newwindow = window.open("FullDetails.aspx?CID=" + sZero + "&amp;AID=" + sOne + "&amp;PID=" + sTwo , "winDet", "resizable=no,width=680,height=500,toolbar=yes,location=no,directories=no,status=no,menubar=yes,scrollbars=yes,copyhistory=no");}
+
+	if (i==3)
+		{newwindow = window.open("GetViewing.asp?CompanyID=" + sZero + "&amp;AgencyID=" + sOne + "&amp;PropID=" + sTwo + "&amp;css=" + sThree , "winView", "resizable=no,width=360,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	if (i==5)
+		{newwindow = window.open("GetValuation.asp?CompanyID=" + sZero + "&amp;AgencyID=" + sOne + "&amp;Email=" + sTwo + "&amp;css=" + sThree , "winVal", "resizable=no,width=350,height=500,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+		
+	if (i==6)
+		{newwindow = window.open("GetMailing.asp?CompanyID=" + sZero + "&amp;AgencyID=" + sOne + "&amp;AgentEmail=" + sTwo + "&amp;css=" + sThree , "winMail", "resizable=no,width=650,height=410,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	if (i==9)
+		{newwindow = window.open(sOne , "winVirt", "resizable=yes,width=435,height=387,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no");}
+
+	if (i==7)
+		{newwindow = window.open("showmap.asp?lat=" + sZero + "&amp;long=" + sOne + "&amp;type=" + sTwo , "winMap", "resizable=no,width=760,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no");}
+
+	if (i==10)
+		{newwindow = window.open("http://uk.multimap.com/p/browse.cgi?pc=" + sOne + " &amp;title=Property+Location" , "winMap", "resizable=yes,width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");}
+		
+	newwindow.focus();
+}
+function OpenFull (aid,pid) { 
+	newwindow = window.open("FullDetails.asp?AgencyID=" + aid + "&amp;PropID=" + pid , "winDet", "resizable=no,width=680,height=500,toolbar=yes,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no");
+}
+
+//--&gt;
+</script>
+<script>
+&lt;!--
+function MM_displayStatusMsg(msgStr) { //v1.0
+  status=msgStr;
+  document.MM_returnValue = true;
+}
+//--&gt;
+</script>
+
+
+<style type="text/css">
+
+#flashcontainer {	
+width:614px;	
+height:342px;
+}
+
+p.noflash {
+	background:#ff9;
+	margin:10px auto;
+	padding:10px;	
+}
+p.noflash a {
+	float:left;
+}
+p.noflash span{
+	font-size:8pt;
+	text-align:left;
+}
+
+</style>
+</head>
+<body onload="showPanel(1)">
+<div id="wrapper">
+  <div id="Header" class="colour1">
+    <div id="agentlogo">
+      <table height="70" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr><td valign="center"><img alt="Agent Logo" src="../scripts/thumb.ashx?type=logo&amp;img=JDMECHIS.jpg&amp;w=90&amp;h=70" />
+          </td>
+      </tr></tbody></table>
+    </div>
+    <h3>St Georges Road, Bickley, Kent, BR1 2AU</h3>
+    <p><b>£3,500,000</b> | Bedrooms 7 | Receptions 3 | Bathrooms 3 </p>
+  </div>
+  <div id="Top">
+    <table width="100%" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="200" valign="top" align="center"><div id="Photo"><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,1) "><img alt="Main Photograph" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741501.jpg&amp;w=200&amp;h=150" class="colour1" /></a></div></td>
+        <td valign="top"><div class="platinum" id="Agent">
+            <div id="SSTC">
+              
+            </div>
+            <h2 class="colour2">JDM Estate Agents (Chislehurst)                   </h2>
+            <div id="AgentAddress">
+              <p> 41 High Street, Chislehurst, Kent, BR7 5AE <br />
+                Tel: 020 832 58000        <br /><a onmouseover="MM_displayStatusMsg('Email Agent');return document.MM_returnValue" href="mailto:ch@jdmonline.co.uk">ch@jdmonline.co.uk</a><br /><a onmouseover="MM_displayStatusMsg('View the agents website');return document.MM_returnValue" target="blank" href="http://www.jdmonline.co.uk">www.jdmonline.co.uk</a><br />
+              </p>
+            </div>
+            <div id="AgentOptions">
+              <ul id="subMenu"><li><a onmouseover="MM_displayStatusMsg('Email Agent');return document.MM_returnValue" href="mailto:ch@jdmonline.co.uk">Email</a></li><li><a onmouseover="MM_displayStatusMsg('View the agents website');return document.MM_returnValue" target="blank" href="http://www.jdmonline.co.uk">Website</a></li><li><a onmouseover="MM_displayStatusMsg('Request a valuation of your property');return document.MM_returnValue" href="javascript:Open('JDMECHIS','JDMECHIS','ch@jdmonline.co.uk','hov',5) ">Valuation</a> </li><li><a onmouseover="MM_displayStatusMsg('Join the mailing list to receive property updates');return document.MM_returnValue" href="javascript:Open('JDMECHIS','JDMECHIS','JDMECHIS','hov',6) ">Mailing List</a></li><li><a onmouseover="MM_displayStatusMsg('Book a Viewing at this Property');return document.MM_returnValue" href="javascript:Open('JDMECHIS','JDMECHIS','JCP07415','hov',3) ">Book Viewing</a></li></ul>
+            </div>
+          </div></td>
+      </tr>
+    </tbody></table>
+  </div>
+  <div id="Middle">
+    <div id="subWrapper"> <a id="tabs" name="tabs"></a>
+      <ul id="subNav">
+        <li><a onmouseover="MM_displayStatusMsg('EPC unavailable');return document.MM_returnValue" href="#" class="basic">EPC</a></li><li><a onmouseover="MM_displayStatusMsg('View an Aerial Photo of this Property');return document.MM_returnValue" href="javascript:Open('51.4027555555556','4.83208333333333E-02','hyb','',7) ">Aerial Photo</a></li><li><a onmouseover="MM_displayStatusMsg('View a Map of this Property');return document.MM_returnValue" href="javascript:Open('51.4027555555556','4.83208333333333E-02','map','',7) ">View Map</a></li><li><a onmouseover="MM_displayStatusMsg('View Full Details');return document.MM_returnValue" href="javascript:Open('JDMECHIS','JDMECHIS','JCP07415','hov',2) ">Full Details</a></li>
+        <li> <a onmouseover="MM_displayStatusMsg('There are no virtual tours for this property');return document.MM_returnValue" href="#tabs" class="basic">Virtual Tours</a> </li>
+        
+        <li onclick="showPanel(3);" class="tab" id="tab3"> <a onmouseover="MM_displayStatusMsg('View Floorplans');return document.MM_returnValue" href="#tabs"> Floorplans</a> </li>
+        
+        <li onclick="showPanel(2);" class="tab" id="tab2"> <a onmouseover="MM_displayStatusMsg('View Room Details');return document.MM_returnValue" href="#tabs">Rooms</a> </li>
+        
+        <li onclick="showPanel(1);" class="tab" id="tab1"> <a onmouseover="MM_displayStatusMsg('View Property Summary');return document.MM_returnValue" href="#tabs">Summary</a> </li>
+      </ul>
+    </div>
+    <div id="Container">
+      <div id="panel1" style="display: inline;">
+        <div id="Description">
+          <div id="back">
+            <table width="65" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="15" valign="middle"><a href="javascript:history.back(1)"><img title="Go back" alt="Back to results icon" src="../img/nav/back.gif" /></a></td>
+                <td valign="middle"><a href="javascript:history.back(1)">go back</a></td>
+              </tr>
+            </tbody></table>
+          </div>
+          <h2 class="colour1">Description</h2>
+          <div id="Internals">
+            <a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,02)"><img alt="Property Image 1" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741502.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,03)"><img alt="Property Image 2" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741503.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,04)"><img alt="Property Image 3" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741504.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,05)"><img alt="Property Image 4" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741505.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,06)"><img alt="Property Image 5" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741506.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,07)"><img alt="Property Image 6" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741507.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,08)"><img alt="Property Image 7" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741508.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,09)"><img alt="Property Image 8" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741509.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,10)"><img alt="Property Image 9" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741510.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,11)"><img alt="Property Image 10" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741511.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,12)"><img alt="Property Image 11" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741512.jpg&amp;w=80&amp;h=60" /></a><a onmouseover="MM_displayStatusMsg('Click to see an enlarged photograph');return document.MM_returnValue" href="javascript:ShowPicture('JDMECHIS','JCP07415',440,480,13)"><img alt="Property Image 12" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=lJCP0741513.jpg&amp;w=80&amp;h=60" /></a>
+          </div>
+          <p>Situated within the sought after Bickley Park Estate and occupying a plot of just under one acre,  this fine example of an Arts &amp; Craft property designed by renowned architect Charles Quennell comes to the market for the first time in nearly 40 years.As one would expect of a property of this era, the accommodation, which is arranged over 3 floors,  is well proportioned with high ceilings, large windows and an abundance of charm and character. At the heart of the property is a grand entrance hall with an elegant staircase ascending to the upper floors.   To the ground floor  there is the bonus of an annex which was formerly a surgery but  which could either be incorporated into the main property or refurbished to create independent living for an elderly relative or au pair.   The west facing rear garden extends to nearly 200ft and  is lovingly tended with well stocked mature borders and lawns and the wide frontage provides plentiful off street parking.With Bickley and Chislehurst stations close by and a number of schools (both private and state) in the vicinity,  this property is ideal for a large or growing family. Early viewing of this exceptional house is urged at your earliest convenience to avoid disappointment.</p>
+          <p>
+            <a onmouseover="MM_displayStatusMsg('View Full Details');return document.MM_returnValue" href="javascript:Open('JDMECHIS','JDMECHIS','JCP07415','hov',2) ">Full Details</a>
+          </p>
+          <div id="Message">
+            <p>For a closer look click on any of the floorplans or photos to enlarge</p>
+          </div>
+          <div id="EPC">
+            <a onmouseover="MM_displayStatusMsg('Click to see full EPC');return document.MM_returnValue" href="javascript:ShowEPC('JDMECHIS','JCP07415',800,600)"><img width="250" alt="Energy Performance Certificate" src="../hov/JDMECHIS/JCP0741505.png" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel2">
+        <div id="Rooms">
+          <div id="back">
+            <table width="65" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="15" valign="middle"><a href="javascript:history.back(1)"><img title="Go back" alt="Back to results icon" src="../img/nav/back.gif" /></a></td>
+                <td valign="middle"><a href="javascript:history.back(1)">go back</a></td>
+              </tr>
+            </tbody></table>
+          </div>
+          <h2 class="colour1">Room Details</h2>
+          <div id="RoomsTable">
+            <table width="90%">
+              <tbody><tr><td>Entrance Porch</td><td>reception Hall</td>
+</tr><tr><td>Entrance Porch</td><td>reception Hall</td>
+</tr><tr><td>Entrance Porch</td><td>reception Hall</td>
+</tr><tr><td>Entrance Porch</td><td>reception Hall</td>
+</tr><tr><td>Reception Hall</td><td> </td>
+</tr><tr><td>Cloakroom</td><td> </td>
+</tr><tr><td>Lounge</td><td>20' x 19'11</td>
+</tr><tr><td>Dining Room</td><td>20' x 17'11</td>
+</tr><tr><td>Study</td><td>13'11 x 13'5</td>
+</tr><tr><td>Kitchen/Breakfast Room</td><td>18'1 x 11'6</td>
+</tr><tr><td>Utility Area</td><td>18'1 x 5'11</td>
+</tr><tr><td>Sitting Room</td><td>18' x 13'11</td>
+</tr><tr><td>Inner Hall</td><td> </td>
+</tr><tr><td>Inner Hall</td><td> </td>
+</tr><tr><td>Inner Hall</td><td> </td>
+</tr><tr><td>Inner Hall</td><td> </td>
+</tr><tr><td>Room</td><td>14'  x 7'3</td>
+</tr><tr><td>Cloakroom</td><td> </td>
+</tr><tr><td>Store Rooms</td><td> </td>
+</tr><tr><td>Store Rooms</td><td> </td>
+</tr><tr><td>Store Rooms</td><td> </td>
+</tr><tr><td>Store Rooms</td><td> </td>
+</tr><tr><td>First Floor Landing</td><td> </td>
+</tr><tr><td>Master Bedroom</td><td>20'4 x 20'1</td>
+</tr><tr><td>Ensuite Bathroom</td><td> </td>
+</tr><tr><td>Bedroom 2</td><td>19'11 x 17'11</td>
+</tr><tr><td>Bedroom 3</td><td>13'11 x 13'11</td>
+</tr><tr><td>Bedroom 4</td><td>14' x 13'5</td>
+</tr><tr><td>Bedroom 5</td><td>13'11 x 12'9</td>
+</tr><tr><td>Bathroom</td><td> </td>
+</tr><tr><td>Separate WC</td><td> </td>
+</tr><tr><td>Separate WC</td><td> </td>
+</tr><tr><td>Separate WC</td><td> </td>
+</tr><tr><td>Separate WC</td><td> </td>
+</tr><tr><td>Second Floor Landing</td><td> </td>
+</tr><tr><td>Bedroom 6</td><td>18'3 x 15'3</td>
+</tr><tr><td>Bedroom 7</td><td>18'3 x 8'10</td>
+</tr><tr><td>Kitchen</td><td>12'4 x 10'10</td>
+</tr><tr><td>Store Room</td><td>17'11 x 5'5</td>
+</tr><tr><td>Bathroom</td><td> </td>
+</tr><tr><td>Outside</td><td> </td>
+</tr><tr><td>Outside</td><td> </td>
+</tr><tr><td>Outside</td><td> </td>
+</tr><tr><td>Outside</td><td> </td>
+</tr><tr><td>Garage</td><td>19'2 x 18'1</td>
+</tr><tr><td>Garden</td><td>197'11 x 127'11</td>
+</tr>
+            </tbody></table>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel3">
+        <div id="Floorplans">
+          <h2 class="colour1">Floorplans</h2>
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td><a onmouseover="MM_displayStatusMsg('Click to see an enlarged floorplan');return document.MM_returnValue" href="javascript:ShowFloorplans('JDMECHIS','JCP07415',800,600,1)"><img alt="Property Floorplan 1" src="../scripts/thumb.ashx?cid=JDMECHIS&amp;img=JCP0741501.png&amp;w=120&amp;h=120" /></a></td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div class="panel" id="panel4">
+        <div id="Virtual">
+          <h2 class="colour1">Virtual Tours / External Links</h2>
+          <p>
+            There are no virtual tours or external links for this property
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="brochures">
+      <h2 class="colour1">Brochure</h2>
+      <div id="pdfFiles">
+        <span style="font-size:9px;">No brochure found</span>
+      </div>
+    </div>
+    
+    <div id="ref"> ref JCP07415 </div>
+  </div>
+  <div id="Footer"><a onmouseover="MM_displayStatusMsg('View the website disclaimer');return document.MM_returnValue" href="../legal/disclaimer.htm">Legal Disclaimer</a></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8308170-7");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body></html>

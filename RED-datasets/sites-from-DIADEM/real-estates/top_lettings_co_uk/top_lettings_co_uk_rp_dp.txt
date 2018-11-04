@@ -1,0 +1,4 @@
+datasets/top_lettings_co_uk/top_lettings_co_uk_rp_0.html	datasets/top_lettings_co_uk/detail_pages/top_lettings_co_uk_dp_0.html	http://www.top-lettings.co.uk/list.php	details.php?prop_id=299
+datasets/top_lettings_co_uk/top_lettings_co_uk_rp_0.html	datasets/top_lettings_co_uk/detail_pages/top_lettings_co_uk_dp_2.html	http://www.top-lettings.co.uk/list.php	details.php?prop_id=296
+datasets/top_lettings_co_uk/top_lettings_co_uk_rp_0.html	datasets/top_lettings_co_uk/detail_pages/top_lettings_co_uk_dp_4.html	http://www.top-lettings.co.uk/list.php	details.php?prop_id=295
+datasets/top_lettings_co_uk/top_lettings_co_uk_rp_0.html	datasets/top_lettings_co_uk/detail_pages/top_lettings_co_uk_dp_6.html	http://www.top-lettings.co.uk/list.php	details.php?prop_id=298

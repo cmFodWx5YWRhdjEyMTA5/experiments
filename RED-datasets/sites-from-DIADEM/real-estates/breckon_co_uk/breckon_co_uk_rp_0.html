@@ -1,0 +1,844 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head></head><body><div style="display:none;">host='waidev16.com', user='admin', pass='psU72!sll'</div>
+
+
+
+	<link rel="stylesheet" href="../css/master.css" type="text/css" />
+	<title>Breckon and Breckon Estate Agents - Sales Top Level Map</title>
+	<link href="../images/favicon.ico" rel="shortcut icon" />
+	<script src="../includes/flashobject.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://rocketmap.worldarcstudio.com/gmap_js/functions_bb.js"></script>
+<script src="../includes/open.js" type="text/javascript"></script>
+
+		
+
+
+
+
+
+<!--  
+Created By World Archipelago - (www.worldarchipelago.com)
+Designer: Nick Wood.
+Developers: Ed Weld, Marian Seffer.
+Project Manager: Jason Brooks.
+
+Created: 26th October 2006.
+HTML and CSS Tested to W3C standards.
+Copyright: Breckon and Breckon Estate Agents
+-->
+	
+		<meta content="world archipelago" name="author" />
+		<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+		<link href="../css/master.css" media="screen" type="text/css" rel="stylesheet" />
+				<script type="text/javascript">var page="sales";</script>
+		<link href="../images/favicon.ico" rel="shortcut icon" />
+		<script src="../includes/functions.js" type="text/javascript"></script>
+		
+	
+	
+	
+		<div align="center">
+			<div id="container">
+				<div id="content">
+					<div id="header"><img border="0" alt="breckon and breckon estate agents" src="../images/img_header.jpg" /></div>
+						<!--NAVIGATION START-->
+<div id="nav2"><div style="z-index:2;" id="home" class="nav">
+	<a id="linkhome" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/index.php"><img border="0" id="nav_home_off" alt="Home" src="../images/btn_home_off.gif" /></a></div>
+<div id="sales" class="nav">
+	<a href="http://www.breckon.co.uk/site/search/index.php?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;orderby=price+DESC&amp;ppp=25"><img border="0" class="nav_over_under" alt="Sales" src="../images/btn_sales_over.gif" /></a></div><a href="http://www.breckon.co.uk/site/search/index.php?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;orderby=price+DESC&amp;ppp=25"><img border="0" id="nav_sales_on" alt="Sales" src="../images/btn_sales_on.gif" /></a>
+<div style="z-index:4;" id="lettings" class="nav">
+	<a id="linklettings" onmouseout="mo(this)" onmouseover="mo(this)" href="http://www.breckon.co.uk/site/search/index.php?minbeds=0&amp;maxbeds=99&amp;minprice=0&amp;maxprice=3000000999&amp;houses=true&amp;flats=true&amp;a=main_search&amp;type=r&amp;from=tlm&amp;orderby=price+DESC&amp;ppp=25"><img border="0" id="nav_lettings_off" alt="Lettings" src="../images/btn_lets_off.gif" /></a></div>
+<div style="z-index:5;" id="about" class="nav">
+	<a id="linkabout" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/about_us.php"><img border="0" id="nav_about_off" alt="About Us" src="../images/btn_about_off.gif" /></a></div>
+<div style="z-index:6;" id="contact" class="nav">
+	<a id="linkcontact" onmouseout="mo(this)" onmouseover="mo(this)" href="../forms/insert.php?form=contact_general"><img border="0" id="nav_contact_off" alt="Contact Us" src="../images/btn_contact_off.gif" /></a></div>
+<div style="z-index:7;" id="register" class="nav">
+	<a id="linkregister" onmouseout="mo(this)" onmouseover="mo(this)" href="../forms/insert.php?form=register"><img border="0" id="nav_register_off" alt="Register" src="../images/btn_register_off.gif" /></a></div>
+<div style="z-index:8;" id="useful_contacts" class="nav">
+	<a id="linkuseful_contacts" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/useful_contacts.php"><img border="0" id="nav_useful_contacts_off" alt="Useful Contacts" src="../images/btn_useful_contacts_off.gif" /></a></div>
+</div><!--NAVIGATION END-->
+<!--HEADER GRAPHIC-->
+	<div id="hdr_sales" class="hdr_style"><div style="text-align:left;margin-right:10px;margin-top:7px;float:right;"><a href="/site/pages/"><b>&lt; back to home page</b></a></div>	</div>
+	
+<!--END HEADER GRAPHIC-->
+		<!--<div style="margin-bottom:10px;"><a href='/site/pages/'>back to home page</a></div>-->
+				<div style="width:300px;float:left;display:inline;height:50px;margin-left:15px;"><b>
+		231 properties found matching your criteria		</b></div>
+		<div style="float:right;display:inline;width:300px;height:50px;text-align:right;margin-right:15px;">
+
+<!--ORDER BY FORM-->
+			<form id="orderbyform" action="index.php">
+				<input type="hidden" value="main_search" name="a" /><input type="hidden" value="home" name="from" /><input type="hidden" value="" name="ptype" /><input type="hidden" value="" name="added" /><input type="hidden" value="" name="office" /><input type="hidden" value="b" name="type" /><input type="hidden" value="0" name="minbeds" /><input type="hidden" value="0" name="minprice" /><input type="hidden" value="99999999999" name="maxprice" />
+				order properties by: 
+					<select onchange="document.forms.orderbyform.submit()" id="qs_select" name="orderby">
+						<option selected="selected" value="price ASC">lowest price first</option>
+						<option value="price DESC">highest price first</option>
+					</select>
+				<div style="padding:5 0 0 0">properties per page: 
+					<select onchange="document.forms.orderbyform.submit()" id="qs_select2" name="ppp"> 
+						<option selected="selected" value="10000">all on one page</option>
+						<option value="10">10</option>
+						<option selected="selected" value="25">25</option>
+						<option value="50">50</option>
+					</select>
+				</div>
+			</form>
+<!--ENDS-->
+					<script type="text/javascript">
+		
+		if(top.document.getElementById('gmap')) top.document.getElementById('gmap').style.display='none';
+		if(top.document.getElementById('rmlist')) top.document.getElementById('rmlist').style.display='block';
+		if(top.document.getElementById('viewmylist')) top.document.getElementById('viewmylist').style.display='block';
+		
+		function ShowMap()
+		{
+			top.document.getElementById('gmap').style.display='block';
+			top.document.getElementById('rmlist').style.display='none';		
+			top.document.getElementById('viewmylist').style.display='none';		
+		}
+		
+		var url='/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=1';
+		function $(el){
+			return document.getElementById(el);
+		}
+			function ammend(opt){
+			
+				if(opt.name=="minprice"){
+					//if(url.match(/minprice\=[0-9]/)){ alert("ok");}
+					url=url.replace(/minprice\=[0-9]+/,"minprice="+opt.value);
+					
+				}	
+				if(opt.name=="maxprice"){
+					url=url.replace(/maxprice\=[0-9]+/,"maxprice="+opt.value);
+				}
+				//if(url.match(/minbeds\=[0-9]/)){ alert("ok");}
+				if(opt.name=="minbeds"){
+					
+					url=url.replace(/minbeds\=[0-9]/,"minbeds="+opt.value);
+				}				
+				window.location=url;
+			}
+		
+		</script>
+		
+			</div>
+			<div style="clear:both;"></div>
+			<div style="display:inline;float:left;margin-left:15px;">
+			<strong>Refine Your Search</strong><br />
+			<form name="ammendresults" method="get" action="index.php">
+			Bedrooms:
+			<select onchange="ammend(this)" style="margin-top:3px;" id="minbeds" name="minbeds">
+				<option selected="selected" value="0">All Bedrooms</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4+</option>
+			</select> 
+			
+			
+						  From: 
+			<select style="margin-top:3px;" onchange="ammend(this)" id="minprice" name="minprice">
+				<option value="1">Minimum</option>
+				<option value="100000">£100,000</option>
+				<option value="200000">£200,000</option>
+				<option value="250000">£250,000</option>
+				<option value="300000">£300,000</option>
+				<option value="400000">£400,000</option>
+				<option value="500000">£500,000</option>
+				<option value="600000">£600,000</option>
+				<option value="750000">£750,000</option>
+				<option value="1000000">£1,000,000</option>
+				<option value="2000000">£2,000,000</option>
+				<option value="3000000">£3,000,000+</option>
+			</select> 
+			  To: 
+			<select style="margin-top:3px;" onchange="ammend(this)" id="maxprice" name="maxprice">
+				<option value="99999999999">Maximum</option>
+				<option value="100000">£100,000</option>
+				<option value="200000">£200,000</option>
+				<option value="250000">£250,000</option>
+				<option value="300000">£300,000</option>
+				<option value="400000">£400,000</option>
+				<option value="500000">£500,000</option>
+				<option value="600000">£600,000</option>
+				<option value="750000">£750,000</option>
+				<option value="1000000">£1,000,000</option>
+				<option value="2000000">£2,000,000</option>
+				<option value="30000000000">£3,000,000+</option>
+			</select>
+					</form>
+			</div>
+			
+			<div style="text-align:right;margin-bottom:20px;margin-right:15px;margin-top:10px;">
+<!--				<a href='#reu' class='l_red bold'><img src='../images/env.gif' border='0' hspace='10' alt="">Register search to receive e-mail updates ></a>-->
+			</div>							
+				<div style="clear:both;"></div>
+<!-- PAGE LINKS -->
+<!--
+	
+TOTAL_PROPERTIES
+PAGES
+PAGE
+NEXT_PAGE
+PREVIOUS_PAGE
+
+-->
+
+<!--PAGINATION START-->
+			<div style="border:1px solid #d7d7d7;width:800px;height:20px;">
+				<div style="display:inline; float:left;width:100px;height:17px;border-right:1px solid #d7d7d7;margin-top:3px;text-align:center;"><a class="h1" href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=10">&lt;&lt;</a></div>
+
+				<div style="display:inline;float:left;width:590px;height:17px;word-spacing:1.2em;margin-top:3px;text-align:center;"> <b>1</b> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=2">2</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=3">3</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=4">4</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=5">5</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=6">6</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=7">7</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=8">8</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=9">9</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=10">10</a> </div>
+
+				<div style="display:inline; float:left;width:100px;height:17px;border-left:1px solid #d7d7d7;margin-top:3px;text-align:center;"><a class="h1" href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=2">&gt;&gt;</a></div>
+
+			</div>
+			<div style="clear:left;"></div>
+<!--ENDS-->	<div>	
+
+<!-- 
+PROPERTY SUMMARY 1 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140124&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Dailey Hill House, Moorland Close, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140124_03.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140124&amp;type=b&amp;from=results" target="_self">Dailey Hill House, Moorland Close, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £125,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A recently redecorated one bedroom first floor apartment in a block of similar properties.  This delightful apartment is situated within easy walking distance of the town centre and all amenities.   The modern kitchen has integrated washing/dryer, oven, hob and hood plus fridge freezer.  Both bedrooms are equipped with wardrobe storage and externally there is a gravel communal area and parking.
+
+Witney is a small country town steeped in history, but with good modern amenities and a bustling community life.   The Leisure centre caters for a va...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140124&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140124','b','Dailey%20Hill%20House%2C%20Moorland%20Close%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140124_03.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4954820&amp;lat=51.7879350&amp;zoom=1&amp;from=results&amp;id=WIT140124&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 1 
+-->
+
+<!-- 
+PROPERTY SUMMARY 2 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT110213&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Dailey Hill House, 11 Moorland Close, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT110213_17.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT110213&amp;type=b&amp;from=results" target="_self">Dailey Hill House, 11 Moorland Close, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> £125,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>This end of chain, one bedroom ground floor apartment close to the centre of town has double glazing, electric panel heating and good size ensuite bedroom.  The property is ready for immediate occupation.
+
+Witney is a small country town steeped in history, but with good modern amenities and a bustling community life. There are fine buildings surrounding the ancient Buttercross in Market Square and a twice weekly market. Countryside is all around and the river Windrush flows through the town providing bankside walks and fishing. The Leisure ce...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT110213&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT110213','b','Dailey%20Hill%20House%2C%2011%20Moorland%20Close%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT110213_17.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4954820&amp;lat=51.7879350&amp;zoom=1&amp;from=results&amp;id=WIT110213&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 2 
+-->
+
+<!-- 
+PROPERTY SUMMARY 3 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=SUM140046&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Wykeham Crescent, Oxford, Oxfordshire, OX4 " src="../utils/image_resize_ed.php?i=SUM140046_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=SUM140046&amp;type=b&amp;from=results" target="_self">Wykeham Crescent, Oxford, Oxfordshire, OX4 </a><br /><font class="blue bold"> £140,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>In need of refurbishment throughout, a ground floor apartment, with its own private entrance, comprising two double bedrooms, bathroom, kitchen, and a dual aspect living room with direct access to the communal gardens.
+Wykeham Crescent is ideally placed for those looking to take advantage of Templars Square Shopping Centre, and the Oxford Business, Science and Retails Parks. The Eastern Bypass is within easy reach, providing links to the A34, A40 and M40.
+Please note, the apartment i...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=SUM140046&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','SUM140046','b','Wykeham%20Crescent%2C%20Oxford%2C%20Oxfordshire%2C%20OX4%20',true,'SUM140046_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2198658&amp;lat=51.7293875&amp;zoom=1&amp;from=results&amp;id=SUM140046&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 3 
+-->
+
+<!-- 
+PROPERTY SUMMARY 4 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140176&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Swan Court, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140176_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140176&amp;type=b&amp;from=results" target="_self">Swan Court, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £160,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Set just behind the bustle of Corn Street this delightful first floor apartment is but a moment's walk from the centre of the town and all the amenities on offer.   The spacious reception hall has stairs rising to the front door which in turn leads into a hallway with doors to all accommodation.  The large living area is a great space with vaulted ceiling, window and archway through to the kitchen. This room has a floor level arched window which allows a good deal of natural light to fill the room and is fitted with a wide range of cream wall a...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140176&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140176','b','Swan%20Court%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140176_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4881902&amp;lat=51.7840282&amp;zoom=1&amp;from=results&amp;id=WIT140176&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 4 
+-->
+
+<!-- 
+PROPERTY SUMMARY 5 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140107&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Lakeside, Ducklington Lane, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140107_13.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140107&amp;type=b&amp;from=results" target="_self">Lakeside, Ducklington Lane, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £165,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Tucked away in the grounds of the Four Pillars hotel and positioned on the edge of allotments and open countryside is the Lakeside development.  This two bedroom ground floor apartment is well presented throughout with a comfortable and homely feel. The living area overlooks the communal gardens and allotments through double doors which open on to a private patio area. Externally there is a designated parking space.
+
+Witney is a small country town steeped in history, but with good mo...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140107&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140107','b','Lakeside%2C%20Ducklington%20Lane%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140107_13.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4880212&amp;lat=51.7746226&amp;zoom=1&amp;from=results&amp;id=WIT140107&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 5 
+-->
+
+<!-- 
+PROPERTY SUMMARY 6 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140113&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Dailey Hill House, Moorland Close, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140113_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140113&amp;type=b&amp;from=results" target="_self">Dailey Hill House, Moorland Close, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £170,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A recently redecorated two bedroom first floor apartment in a block of similar properties.  This delightful apartment is situated within easy walking distance of the town centre and all amenities.   The modern kitchen has integrated washing/dryer, oven, hob and hood plus fridge freezer.  Externally there is a gravel communal area and parking.
+
+Witney is a small country town steeped in history, but with good modern amenities and a bustling community life.   The Leisure centre caters f...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140113&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140113','b','Dailey%20Hill%20House%2C%20Moorland%20Close%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140113_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4954820&amp;lat=51.7879350&amp;zoom=1&amp;from=results&amp;id=WIT140113&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 6 
+-->
+
+<!-- 
+PROPERTY SUMMARY 7 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140122&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Dailey Hill House, Moorland Close, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140122_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140122&amp;type=b&amp;from=results" target="_self">Dailey Hill House, Moorland Close, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £170,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A recently redecorated two bedroom second floor apartment in a block of similar properties.  This delightful apartment is situated within easy walking distance of the town centre and all amenities.   The modern kitchen has integrated washing/dryer, oven, hob and hood plus fridge freezer.  Externally there is a gravel communal area and parking.
+
+Witney is a small country town steeped in history, but with good modern amenities and a bustling community life.   The Leisure centre caters ...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140122&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140122','b','Dailey%20Hill%20House%2C%20Moorland%20Close%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140122_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4954820&amp;lat=51.7879350&amp;zoom=1&amp;from=results&amp;id=WIT140122&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 7 
+-->
+
+<!-- 
+PROPERTY SUMMARY 8 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140220&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Dailey Hill House, Moorland Close, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140220_12.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140220&amp;type=b&amp;from=results" target="_self">Dailey Hill House, Moorland Close, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £170,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A recently redecorated two bedroom ground floor apartment in a block of similar properties.  This delightful apartment is situated within easy walking distance of the town centre and all amenities.   The modern kitchen has integrated washing/dryer, oven, hob and hood plus fridge freezer.  Externally there is a gravel communal area and parking.
+
+Witney is a small country town steeped in history, but with good modern amenities and a bustling community life.   The Leisure centre caters ...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140220&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140220','b','Dailey%20Hill%20House%2C%20Moorland%20Close%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140220_12.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4954820&amp;lat=51.7879350&amp;zoom=1&amp;from=results&amp;id=WIT140220&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 8 
+-->
+
+<!-- 
+PROPERTY SUMMARY 9 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT130618&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Aston Road, Brighthampton, Witney, Oxfordshire, OX29 " src="../utils/image_resize_ed.php?i=WIT130618_10.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT130618&amp;type=b&amp;from=results" target="_self">Aston Road, Brighthampton, Witney, Oxfordshire, OX29 </a><br /><font class="blue bold"> Guide Price £175,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Planning Permission has been approved for the construction of a single detached dwelling built of natural stone with lawned and landscaped gardens at the front and delightful open views to the side.  The property will offer four bedroom accommodation across two floors with two en-suites and a family bathroom.   The ground floor will offer a good size sitting room with kitchen/dining room and study/breakfast room.   An entrance hall with separate WC and separate utility room will comple...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT130618&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT130618','b','Aston%20Road%2C%20Brighthampton%2C%20Witney%2C%20Oxfordshire%2C%20OX29%20',true,'WIT130618_10.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4465370&amp;lat=51.7286236&amp;zoom=1&amp;from=results&amp;id=WIT130618&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 9 
+-->
+
+<!-- 
+PROPERTY SUMMARY 10 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140201&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Harvest Way, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140201_13.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140201&amp;type=b&amp;from=results" target="_self">Harvest Way, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> £175,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Positioned on the popular Madley Park development this two bedroom first floor apartment has been a buy to let investment since its construction in 2005. The property, therefore is very neat and tidy and ready for immediate occupation with no onward chain. This would make an ideal first time buy as there is little to no work necessary or indeed a great buy to let investment as the rent comes in around £750 pcm. 
+
+Witney is a small country town steeped in history, but with good modern amenities and a bustling community life. There are fi...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140201&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140201','b','Harvest%20Way%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140201_13.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4639090&amp;lat=51.7937208&amp;zoom=1&amp;from=results&amp;id=WIT140201&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 10 
+-->
+
+<!-- 
+PROPERTY SUMMARY 11 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140123&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Dailey Hill House, Moorland Close, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140123_12.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140123&amp;type=b&amp;from=results" target="_self">Dailey Hill House, Moorland Close, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £175,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A recently redecorated first floor three bedroom apartment in a block of similar properties.  This delightful apartment is situated within easy walking distance of the town centre and all amenities.   The modern kitchen has integrated washing/dryer, oven, hob and hood plus fridge freezer.  Externally there is a gravel communal area and parking.  
+
+Witney is a small country town steeped in history, but with good modern amenities and a bustling community life.   The Leisure centre cate...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140123&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140123','b','Dailey%20Hill%20House%2C%20Moorland%20Close%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140123_12.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4954820&amp;lat=51.7879350&amp;zoom=1&amp;from=results&amp;id=WIT140123&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 11 
+-->
+
+<!-- 
+PROPERTY SUMMARY 12 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WST110186&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Chapmans House, Church Street, Charlbury, Oxfordshire, OX7 " src="../utils/image_resize_ed.php?i=WST110186_22.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WST110186&amp;type=b&amp;from=results" target="_self">Chapmans House, Church Street, Charlbury, Oxfordshire, OX7 </a><br /><font class="blue bold"> Guide Price £204,950</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A well proportioned flat with a wealth of character, occupying the top floor of a Georgian building in the very centre of town, with fine views over the town and beyond. Refurbished in recent years with exposed stonework and original floorboards amongst the period features. The flat is the only residential property in the building and as such, benefits from having no immediate neighbours in the evenings and at weekends. It is also within reasonable walking distance of the main line rai...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WST110186&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WST110186','b','Chapmans%20House%2C%20Church%20Street%2C%20Charlbury%2C%20Oxfordshire%2C%20OX7%20',true,'WST110186_22.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4827733&amp;lat=51.8722804&amp;zoom=1&amp;from=results&amp;id=WST110186&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 12 
+-->
+
+<!-- 
+PROPERTY SUMMARY 13 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140026&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Thorney Leys, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140026_02.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140026&amp;type=b&amp;from=results" target="_self">Thorney Leys, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £205,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Positioned in a quiet cul-de-sac on the very popular Thorney Leys development this well presented house has a good size light and airy living room with a feature spiral staircase to the first floor and doors opening to the garden.  The kitchen is set to the front and has a wide range of units with integrated oven, hob and hood.  There are two double bedrooms and a house bathroom with three piece white suite to the first floor.   The rear garden is fully enclosed and has a decked area l...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140026&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140026','b','Thorney%20Leys%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140026_02.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.5044178&amp;lat=51.7782174&amp;zoom=1&amp;from=results&amp;id=WIT140026&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 13 
+-->
+
+<!-- 
+PROPERTY SUMMARY 14 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=ABD140009&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Anna Pavlova Close, Abingdon, Oxfordshire, OX14 " src="../utils/image_resize_ed.php?i=ABD140009_17.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=ABD140009&amp;type=b&amp;from=results" target="_self">Anna Pavlova Close, Abingdon, Oxfordshire, OX14 </a><br /><font class="blue bold"> Guide Price £205,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A delightful triple aspect Ground Floor apartment within this popular development, conveniently situated approximately one mile to the west of Abingdon town centre. 
+
+The property is well presented with neutral décor throughout and benefits from its own personal front door, giving a sense of privacy. Comprising of an entrance hall with useful built in double storage cupboard, fitted kitchen, a lounge/diner with doors to a private patio and the communal gardens beyond. Two generously...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=ABD140009&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','ABD140009','b','Anna%20Pavlova%20Close%2C%20Abingdon%2C%20Oxfordshire%2C%20OX14%20',true,'ABD140009_17.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2990233&amp;lat=51.6733389&amp;zoom=1&amp;from=results&amp;id=ABD140009&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 14 
+-->
+
+<!-- 
+PROPERTY SUMMARY 15 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=SUM140100&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Medhurst Way, Littlemore, Oxford, Oxfordshire, OX4 " src="../utils/image_resize_ed.php?i=SUM140100_06.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=SUM140100&amp;type=b&amp;from=results" target="_self">Medhurst Way, Littlemore, Oxford, Oxfordshire, OX4 </a><br /><font class="blue bold"> £210,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A well-proportioned second floor apartment with the benefit of allocated parking, located to the South-East of Oxford city centre.
+The apartment comprises one double bedroom, bathroom, generously sized separate kitchen, and a spacious double aspect living/dining room.
+Medhurst Way is ideally placed for those looking for access to the Oxford Business, Science and Retail Parks. Also, there is a Sainsburys within a half mile, along with the Eastern bypass giving access to the A34, A40 a...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=SUM140100&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','SUM140100','b','Medhurst%20Way%2C%20Littlemore%2C%20Oxford%2C%20Oxfordshire%2C%20OX4%20',true,'SUM140100_06.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2202058&amp;lat=51.7222508&amp;zoom=1&amp;from=results&amp;id=SUM140100&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 15 
+-->
+
+<!-- 
+PROPERTY SUMMARY 16 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT110088&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Hill Close, Newland, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT110088_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT110088&amp;type=b&amp;from=results" target="_self">Hill Close, Newland, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £215,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Newland is a short walk from the town centre and this super three bedroom property offers spacious and well presented accommodation.  The kitchen is fitted with a good range of Beech effect units at base and eye level and offers space for appliances.  The dining room sits to the rear and is dual aspect with a fireplace housing an electric fire on a marble effect hearth.  The sitting room is to the front and has two arched alcoves with the utility room completing the ground floor pictur...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT110088&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT110088','b','Hill%20Close%2C%20Newland%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT110088_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4783096&amp;lat=51.7897662&amp;zoom=1&amp;from=results&amp;id=WIT110088&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 16 
+-->
+
+<!-- 
+PROPERTY SUMMARY 17 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=SUM140181&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Larch Close, Oxford, Oxfordshire, OX2 " src="../utils/image_resize_ed.php?i=SUM140181_08.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=SUM140181&amp;type=b&amp;from=results" target="_self">Larch Close, Oxford, Oxfordshire, OX2 </a><br /><font class="blue bold"> £219,950</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A second (top) floor apartment ideally positioned for access to the A34 and Oxford city centre.
+The apartment offers two bedrooms, shower room, and living room with a kitchen leading off. There is also the added benefit of one allocated parking space.
+This property would make an ideal first home or an equally good investment.</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=SUM140181&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','SUM140181','b','Larch%20Close%2C%20Oxford%2C%20Oxfordshire%2C%20OX2%20',true,'SUM140181_08.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2945616&amp;lat=51.7463949&amp;zoom=1&amp;from=results&amp;id=SUM140181&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 17 
+-->
+
+<!-- 
+PROPERTY SUMMARY 18 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=SUM140182&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Larch Close, Oxford, Oxfordshire, OX2 " src="../utils/image_resize_ed.php?i=SUM140182_07.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=SUM140182&amp;type=b&amp;from=results" target="_self">Larch Close, Oxford, Oxfordshire, OX2 </a><br /><font class="blue bold"> £219,950</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A ground floor apartment with its own private entrance located to the west of Oxford city centre.
+The apartment comprises two bedrooms, shower room, and a living room with a kitchen leading off. The property also benefits from one allocated parking space.
+Larch Close is ideally positioned for easy access to the A34 and Oxford city centre. There is a local shop nearby along with public transport links.</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=SUM140182&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','SUM140182','b','Larch%20Close%2C%20Oxford%2C%20Oxfordshire%2C%20OX2%20',true,'SUM140182_07.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2945616&amp;lat=51.7463949&amp;zoom=1&amp;from=results&amp;id=SUM140182&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 18 
+-->
+
+<!-- 
+PROPERTY SUMMARY 19 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=OXF120520&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Leafield Road, Temple Cowley, Oxford, OX4 " src="../utils/image_resize_ed.php?i=OXF120520_05.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=OXF120520&amp;type=b&amp;from=results" target="_self">Leafield Road, Temple Cowley, Oxford, OX4 </a><br /><font class="blue bold"> £220,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Well positioned within Leafield Road with open aspect to front and rear a well-proportioned modern terraced house with 2 double bedrooms.
+
+Attractive rear garden with rear access gate and a garage situated in a separate block.
+
+The property has the benefit of double glazed windows and a recently installed combi-boiler.
+
+Leafield Road is just off Crescent Road, well-placed for a good selection of local amenities, including the shops at Templars Square, the Cowley Business Park and...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=OXF120520&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','OXF120520','b','Leafield%20Road%2C%20Temple%20Cowley%2C%20Oxford%2C%20OX4%20',true,'OXF120520_05.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2122526&amp;lat=51.7400366&amp;zoom=1&amp;from=results&amp;id=OXF120520&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 19 
+-->
+
+<!-- 
+PROPERTY SUMMARY 20 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WST140003&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Longore, Stonesfield, Witney, Oxfordshire, OX29 " src="../utils/image_resize_ed.php?i=WST140003_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WST140003&amp;type=b&amp;from=results" target="_self">Longore, Stonesfield, Witney, Oxfordshire, OX29 </a><br /><font class="blue bold"> Guide Price £220,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A chance to acquire a two bedroom end terrace house situated in the heart of this attractive and well placed village, offering well presented, versatile accommodation and the possibility of a swift move. With a sitting/dining room, kitchen, two double bedrooms (one with a walk in wardrobe or study space) and a first floor, fitted bathroom, double glazing and gas central heating, the property will very much appeal to those looking to establish a first or family home. Or perhaps as a dow...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WST140003&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WST140003','b','Longore%2C%20Stonesfield%2C%20Witney%2C%20Oxfordshire%2C%20OX29%20',true,'WST140003_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4283196&amp;lat=51.8549721&amp;zoom=1&amp;from=results&amp;id=WST140003&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 20 
+-->
+
+<!-- 
+PROPERTY SUMMARY 21 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=OXF140154&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Old Botley, Oxford, OX2 " src="../utils/image_resize_ed.php?i=OXF140154_04.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=OXF140154&amp;type=b&amp;from=results" target="_self">Old Botley, Oxford, OX2 </a><br /><font class="blue bold"> £220,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>An unusual 3-storey mid-terrace period home situated 2 miles west of the train station and City Centre.
+
+The property is presented in good order throughout. The interesting accommodation provides a degree of flexibility - the current occupiers are using the first floor bedroom as a sitting room and the ground floor reception room as a dining room.  
+
+A small courtyard garden provides an alfresco dining area.
+
+The property is currently tenanted with vacant possession available aft...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=OXF140154&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','OXF140154','b','Old%20Botley%2C%20Oxford%2C%20OX2%20',true,'OXF140154_04.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2935903&amp;lat=51.7529438&amp;zoom=1&amp;from=results&amp;id=OXF140154&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 21 
+-->
+
+<!-- 
+PROPERTY SUMMARY 22 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=SUM140104&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Larch Close, Oxford, Oxfordshire, OX2 " src="../utils/image_resize_ed.php?i=SUM140104_06.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=SUM140104&amp;type=b&amp;from=results" target="_self">Larch Close, Oxford, Oxfordshire, OX2 </a><br /><font class="blue bold"> £225,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A ground floor apartment comprising two bedrooms, bathroom, separate kitchen, and living room. The apartment also benefits from one allocated parking space.
+Larch Close is ideally positioned for easy access to the A34 and Oxford city centre. This apartment would be an ideal first home or an equally good investment.</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=SUM140104&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','SUM140104','b','Larch%20Close%2C%20Oxford%2C%20Oxfordshire%2C%20OX2%20',true,'SUM140104_06.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2945616&amp;lat=51.7463949&amp;zoom=1&amp;from=results&amp;id=SUM140104&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 22 
+-->
+
+<!-- 
+PROPERTY SUMMARY 23 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=SUM140176&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Chestnut Road, Oxford, Oxfordshire, OX2 " src="../utils/image_resize_ed.php?i=SUM140176_05.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=SUM140176&amp;type=b&amp;from=results" target="_self">Chestnut Road, Oxford, Oxfordshire, OX2 </a><br /><font class="blue bold"> £235,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A first (top) floor apartment comprising two double bedrooms, bathroom, and a living room with the kitchen leading off. There is also the added benefit of one allocated parking space.
+Chestnut Road is ideally located for easy access to the A34, A420 and Oxford city centre. The Elms Parade shops are located nearby for the day to day necessities.
+This apartment would make an ideal first home or an equally good investment.</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=SUM140176&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','SUM140176','b','Chestnut%20Road%2C%20Oxford%2C%20Oxfordshire%2C%20OX2%20',true,'SUM140176_05.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2972388&amp;lat=51.7456197&amp;zoom=1&amp;from=results&amp;id=SUM140176&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 23 
+-->
+
+<!-- 
+PROPERTY SUMMARY 24 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT120055&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Crawley Road, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT120055_24.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT120055&amp;type=b&amp;from=results" target="_self">Crawley Road, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £240,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A charming Cotswold stone cottage that is equally at home on a cold wintery night with curtains drawn and the log fire burning, as it is in the summer with the leaves back on the trees and roses flourishing around the windows, currently pictured on our sales brochures.  This fine example offers two bedroom accommodation with plentiful period features and modern day essentials.  The extensive renovation works carried out over recent years include opening the two small reception rooms in...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT120055&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT120055','b','Crawley%20Road%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT120055_24.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4876657&amp;lat=51.7944918&amp;zoom=1&amp;from=results&amp;id=WIT120055&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 24 
+-->
+
+<!-- 
+PROPERTY SUMMARY 25 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WST140024&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Green Lane, Woodstock, Oxfordshire, OX20 " src="../utils/image_resize_ed.php?i=WST140024_03.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WST140024&amp;type=b&amp;from=results" target="_self">Green Lane, Woodstock, Oxfordshire, OX20 </a><br /><font class="blue bold"> Guide Price £250,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A rare opportunity to design and build your own home!  Residential development plot measuring c. 125' x 38' in this popular road in Woodstock. Formerly a detached chalet bungalow (c. 1300 sq ft) which has been demolished due to fire damage. Footings removed and services taken back to the public highway. Unconditional offers are invited for the freehold.
+
+Woodstock is an historic town adjoining one of Britain's finest World Heritage Sites and has a bank, shops, hotels and restaurants,...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WST140024&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WST140024','b','Green%20Lane%2C%20Woodstock%2C%20Oxfordshire%2C%20OX20%20',true,'WST140024_03.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.3499378&amp;lat=51.8512474&amp;zoom=1&amp;from=results&amp;id=WST140024&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 25 
+-->
+				</div>
+<div style="border:1px solid #d7d7d7;width:800px;height:35px;margin-top:7px;"><div style="display:inline; float:left;width:100px;height:32px;border-right:1px solid #d7d7d7;margin-top:3px;text-align:center;"><a class="h1" href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=10">&lt;&lt;</a></div>
+<div style="display:inline;float:left;width:590px;height:32px;word-spacing:1.2em;margin-top:3px;text-align:center;"> <b>1</b> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=2">2</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=3">3</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=4">4</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=5">5</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=6">6</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=7">7</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=8">8</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=9">9</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=10">10</a> <br />[ <a style="word-spacing:0em" href="#top">Top of page</a> ]</div>
+<div style="display:inline; float:left;width:100px;height:32px;border-left:1px solid #d7d7d7;margin-top:3px;text-align:center;"><a class="h1" href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=2">&gt;&gt;</a></div></div><!--EMAIL UPDATES-->
+<!--<div id="reu"></div>
+				<h4><b> &nbsp;Register here to receive email updates</b></h4>
+				<script type='text/javascript'>
+	function checkemailform()
+	{
+		var myform = document.forms.emailupdateform;
+		var msg = '';
+
+		if (myform.email.value=='')
+		msg+='<br>- your email address';
+
+		if (myform.name.value=='' || myform.name.value=="[my search]")
+		msg+='<br>- a meaningful name for your email update';
+
+		if (msg)
+		{
+			msg = '<table cellpadding=4><tr><td><b>Please complete the following:</b>' + msg + '</td></tr></table>';
+			document.getElementById('feedback').innerHTML=msg;
+			return false;
+		}
+		return true;
+
+	}
+	</script>
+	<div id='feedback'></div>
+	<form action='../forms/email_update_register.php' name='emailupdateform' onsubmit='return checkemailform()' method='post'>
+	<table cellpadding=5>
+	<input type=hidden name=type value="b">
+	<input type=hidden name=office value="">
+	<input type=hidden name=country value="">
+	<input type=hidden name=area value="">
+	<input type=hidden name=minbeds value="0">
+	<input type=hidden name=minprice value="0">
+	<input type=hidden name=maxprice value="99999999999">
+	<input type=hidden name=searchtext value="">
+	<input type=hidden name=x1 value="">
+	<input type=hidden name=y1 value="">
+	<input type=hidden name=x2 value="">
+	<input type=hidden name=version value="reapit10">
+	<input type=hidden name=y2 value="">
+	<input type=hidden name=ptype value="">
+	<input type=hidden name=action value="main_search">
+	<tr><td width=120>Email:</td><td><input type=text name=email></td></tr>
+	<tr><td>Meaningful Name:</td><td><input type=text name=name onclick='this.value=""' onfocus='this.value=""' value='[my search]'></td></tr>
+	<tr><td>Format:</td><td>HTML <input type=radio checked name='format' value='html'> Text <input type=radio name='format' value='text'></td></tr>
+	<tr><td>Frequency:</td><td>Daily <input type=radio checked name='frequency' value='daily'> Weekly <input type=radio name='frequency' value='weekly'></td></tr>
+	<tr><td colspan=2>
+	You can cancel your email updates at any time by following the link at the bottom of your updates email. Each update is valid for 90 days and can be renewed at any time.<br>&nbsp;<br>
+	<input type=image src='../images/btn_save.gif'>
+	</td></tr>
+	</table>
+	</form>-->
+<!--ENDS-->
+<!--FOOTER START-->
+
+				</div>
+			<div id="footer"><div><iframe width="365" scrolling="no" height="25" frameborder="0" title="properties added to your list" src="../panes/pane_property_list.php" name="viewmylist" id="viewmylist"></iframe></div><a target="_blank" title="visit the world archipelago website" href="http://www.worldarchipelago.com"><img border="0" align="right" alt="created by world archipelago" src="../images/img_worldarch_logo.gif" /></a>
+			<div style="float:left;display:inline;width:400px;margin-top:12px;border:0px solid #FFFFFF;">© Breckon and Breckon Estate Agents  <a class="footer" href="../pages/terms__conditions.php">Terms and Conditions</a> | <a class="footer" href="../forms/insert.php?form=contact_general">Contact Us</a></div>
+			
+			</div>
+			<div class="basebox"></div>
+		</div>
+	</div>
+	<div style="height:120px;"></div>
+	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12939940-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+	
+
+</body></html>

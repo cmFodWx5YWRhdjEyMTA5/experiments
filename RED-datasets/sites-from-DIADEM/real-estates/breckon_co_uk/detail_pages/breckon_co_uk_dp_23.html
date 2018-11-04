@@ -1,0 +1,212 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head></head><body style="margin:0px"><div style="display:none;">host='waidev16.com', user='admin', pass='psU72!sll'</div>
+
+
+
+<!--  
+Created By World Archipelago - (www.worldarchipelago.com)
+Designer: Nick Wood.
+Developers: Ed Weld, Marian Seffer.
+Project Manager: Jason Brooks.
+
+Created: 26th October 2006.
+HTML and CSS Tested to W3C standards.
+Copyright: Breckon and Breckon Estate Agents
+-->
+	<link href="../images/favicon.ico" rel="shortcut icon" />
+	<link href="../css/master.css" media="screen" type="text/css" rel="stylesheet" />
+	<title>Breckon and Breckon Estate Agents - Property Details</title>
+	<script src="../includes/flashobject.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://rocketmap.worldarcstudio.com/gmap_js/functions_bb.js"></script>
+<script src="../includes/open.js" type="text/javascript"></script>
+
+	
+<style type="text/css">	
+/* Styles for gliding layers  */ 
+#slide_1  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_2  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_3  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_4  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_5  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_6  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_7  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_8  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_9  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}
+</style>	
+<script type="text/javascript">
+var divElement= new Array();
+var inView='';
+var inThumb='';
+//the default div to be displayed when all others arent!
+var defaultDiv='slide_1'; 
+var defaultThumb='thumb_1';
+  divElement[0]='1';
+divElement[1]='2';
+divElement[2]='3';
+divElement[3]='4';
+divElement[4]='5';
+divElement[5]='6';
+divElement[6]='7';
+divElement[7]='8';
+divElement[8]='9';
+
+</script>
+<script src="../includes/tween.js" type="text/javascript"></script>
+<script src="../includes/opacitytween.js" type="text/javascript"></script>
+<script src="../includes/functions.js" type="text/javascript"></script>
+
+
+
+
+<!--  
+Created By World Archipelago - (www.worldarchipelago.com)
+Designer: Nick Wood.
+Developers: Ed Weld, Marian Seffer.
+Project Manager: Jason Brooks.
+
+Created: 26th October 2006.
+HTML and CSS Tested to W3C standards.
+Copyright: Breckon and Breckon Estate Agents
+-->
+	
+		<meta content="world archipelago" name="author" />
+		<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+		<link href="../css/master.css" media="screen" type="text/css" rel="stylesheet" />
+				<script type="text/javascript">var page="sales";</script>
+		<link href="../images/favicon.ico" rel="shortcut icon" />
+		<script src="../includes/functions.js" type="text/javascript"></script>
+		
+	
+	
+	
+		<div align="center">
+			<div id="container">
+				<div id="content">
+					<div id="header"><img border="0" alt="breckon and breckon estate agents" src="../images/img_header.jpg" /></div>
+						<!--NAVIGATION START-->
+<div id="nav2"><div style="z-index:2;" id="home" class="nav">
+	<a id="linkhome" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/index.php"><img border="0" id="nav_home_off" alt="Home" src="../images/btn_home_off.gif" /></a></div>
+<div id="sales" class="nav">
+	<a href="http://www.breckon.co.uk/site/search/index.php?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;orderby=price+DESC&amp;ppp=25"><img border="0" class="nav_over_under" alt="Sales" src="../images/btn_sales_over.gif" /></a></div><a href="http://www.breckon.co.uk/site/search/index.php?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;orderby=price+DESC&amp;ppp=25"><img border="0" id="nav_sales_on" alt="Sales" src="../images/btn_sales_on.gif" /></a>
+<div style="z-index:4;" id="lettings" class="nav">
+	<a id="linklettings" onmouseout="mo(this)" onmouseover="mo(this)" href="http://www.breckon.co.uk/site/search/index.php?minbeds=0&amp;maxbeds=99&amp;minprice=0&amp;maxprice=3000000999&amp;houses=true&amp;flats=true&amp;a=main_search&amp;type=r&amp;from=tlm&amp;orderby=price+DESC&amp;ppp=25"><img border="0" id="nav_lettings_off" alt="Lettings" src="../images/btn_lets_off.gif" /></a></div>
+<div style="z-index:5;" id="about" class="nav">
+	<a id="linkabout" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/about_us.php"><img border="0" id="nav_about_off" alt="About Us" src="../images/btn_about_off.gif" /></a></div>
+<div style="z-index:6;" id="contact" class="nav">
+	<a id="linkcontact" onmouseout="mo(this)" onmouseover="mo(this)" href="../forms/insert.php?form=contact_general"><img border="0" id="nav_contact_off" alt="Contact Us" src="../images/btn_contact_off.gif" /></a></div>
+<div style="z-index:7;" id="register" class="nav">
+	<a id="linkregister" onmouseout="mo(this)" onmouseover="mo(this)" href="../forms/insert.php?form=register"><img border="0" id="nav_register_off" alt="Register" src="../images/btn_register_off.gif" /></a></div>
+<div style="z-index:8;" id="useful_contacts" class="nav">
+	<a id="linkuseful_contacts" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/useful_contacts.php"><img border="0" id="nav_useful_contacts_off" alt="Useful Contacts" src="../images/btn_useful_contacts_off.gif" /></a></div>
+</div><!--NAVIGATION END-->
+<!--HEADER GRAPHIC-->
+	<div id="hdr_full_details" class="hdr_style"><div style="text-align:left;margin-right:10px;margin-top:7px;float:right;"><a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=1"><b>&lt; back to search results list</b></a></div>	</div>
+	
+<!--END HEADER GRAPHIC-->
+	
+<!--SLIDESHOW-->
+		<div class="slideshow">
+		<div id="menu1"><div class="property-thumb_off" id="thumb_1"><a onmouseover='javascript:void(rotateDiv("1",true))' href="#1"><img border="0" src="../utils/image_resize_ed.php?i=WIT120055_24.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_2"><a onmouseover='javascript:void(rotateDiv("2",true))' href="#2"><img border="0" src="../utils/image_resize_ed.php?i=WIT120055_02.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_3"><a onmouseover='javascript:void(rotateDiv("3",true))' href="#3"><img border="0" src="../utils/image_resize_ed.php?i=WIT120055_03.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_4"><a onmouseover='javascript:void(rotateDiv("4",true))' href="#4"><img border="0" src="../utils/image_resize_ed.php?i=WIT120055_13.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_5"><a onmouseover='javascript:void(rotateDiv("5",true))' href="#5"><img border="0" src="../utils/image_resize_ed.php?i=WIT120055_05.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> </div><div id="menu2"><div class="property-thumb_off" id="thumb_6"><a onmouseover='javascript:void(rotateDiv("6",true))' href="#6"><img border="0" src="../utils/image_resize_ed.php?i=WIT120055_06.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_7"><a onmouseover='javascript:void(rotateDiv("7",true))' href="#7"><img border="0" src="../utils/image_resize_ed.php?i=WIT120055_07.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_8"><a onmouseover='javascript:void(rotateDiv("8",true))' href="#8"><img border="0" src="../utils/image_resize_ed.php?i=WIT120055_08.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_9"><a onmouseover='javascript:void(rotateDiv("9",true))' href="#9"><img border="0" src="../utils/image_resize_ed.php?i=WIT120055_18.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> </div>		<div class="slide" id="slide_1" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=WIT120055_24.JPG&amp;w=525&amp;h=370&amp;type=b&amp;state=soldSTC" /></div>
+<div class="slide" id="slide_2" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=WIT120055_02.JPG&amp;w=525&amp;h=370&amp;type=b&amp;state=soldSTC" /></div>
+<div class="slide" id="slide_3" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=WIT120055_03.JPG&amp;w=525&amp;h=370&amp;type=b&amp;state=soldSTC" /></div>
+<div class="slide" id="slide_4" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=WIT120055_13.JPG&amp;w=525&amp;h=370&amp;type=b&amp;state=soldSTC" /></div>
+<div class="slide" id="slide_5" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=WIT120055_05.JPG&amp;w=525&amp;h=370&amp;type=b&amp;state=soldSTC" /></div>
+<div class="slide" id="slide_6" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=WIT120055_06.JPG&amp;w=525&amp;h=370&amp;type=b&amp;state=soldSTC" /></div>
+<div class="slide" id="slide_7" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=WIT120055_07.JPG&amp;w=525&amp;h=370&amp;type=b&amp;state=soldSTC" /></div>
+<div class="slide" id="slide_8" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=WIT120055_08.JPG&amp;w=525&amp;h=370&amp;type=b&amp;state=soldSTC" /></div>
+<div class="slide" id="slide_9" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=WIT120055_18.JPG&amp;w=525&amp;h=370&amp;type=b&amp;state=soldSTC" /></div>
+<a href="javascript: void(menuB2())"><img border="0" class="property-t-mbtn" src="../images/btn_more_grey.gif" /></a><a href="javascript: void(menuB2())"><img border="0" class="property-t-lbtn" src="../images/btn_less_grey.gif" /></a>		<script type="text/javascript">setTimeout("initSlideShow()",300);</script>
+				</div>
+<!-- /  SLIDESHOW-->
+								
+<!--RNAV-->
+		<div class="rnav">
+<div class="navright">
+<!-- HIDDEN FORM -->
+
+
+<div class="navLinkBox"><img alt="printable details" src="../images/pn_printDetails.gif" /><div><a class="navLink bold" target="_blank" href="http://breckon.reapit.com/pdf.php?path=content/&amp;vars=propertypdf-sales-babrps-WIT120055">Property Brochure</a></div></div><div class="navLinkBox"><img alt="print details" src="../images/pn_floorPlans.gif" /><div><a class="navLink bold" target="_blank" href="../php/floorplans.php?zoom=&amp;from=results&amp;id=WIT120055&amp;type=b">Floorplans</a></div></div><div class="navLinkBox"><img alt="virtual tours" src="../images/pn_arialImageMap.gif" /><div><a class="navLink bold" href='javascript:void(window.open("popup_mmap.php?ptype=&amp;lng=-1.4876657&amp;lat=51.7944918&amp;address=Crawley Road, Witney, Oxfordshire, OX28 ","mmap","height=550,width=500"))'>Aerial Image/Map</a></div></div><div style="height:30px;font-size:0px;">   </div><div class="navLinkBox"><img alt="arrange a viewing" src="../images/pn_arrangeViewing.gif" /><div><a class="navLink bold" href="../forms/insert.php?form=viewing&amp;type=b&amp;id=WIT120055&amp;oemail=witney@breckon.co.uk">Arrange a Viewing</a></div></div><div class="navLinkBox"><img alt="email us" src="../images/pn_emailUs.gif" /><div><a class="navLink bold" href="../forms/insert.php?form=contact_property&amp;type=b&amp;id=WIT120055&amp;oemail=witney@breckon.co.uk">Email Us</a></div></div><div class="navLinkBox"><img alt="add to list" src="../images/pn_addToList.gif" /><div><a class="navLink bold" href="javascript:void(addpropertylist('add','WIT120055','b','Crawley%20Road%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT120055_24.JPG'))">Save to Property list</a></div></div>
+<div style="margin-left:27px;"><span class="blue" style="background-color:#682331;color:white">  <b>SALE AGREED</b>  </span></div>	<div style="margin-left:27px;margin-top:10px;"><iframe width="125" scrolling="no" height="65" frameborder="0" title="properties added to your list" src="../panes/fd_%20pane_property_list.php" name="viewmylist" id="viewmylist"></iframe></div>
+
+</div>
+<p><span class="blue"><b>Previous Property:</b></span><br /><a href="property.php?from=results&amp;id=SUM140176&amp;type=b">Chestnut Road,  Oxford</a></p><p><span class="blue"><b>Next Property:</b></span><br /><a href="property.php?from=results&amp;id=WST140024&amp;type=b">Green Lane,  Woodstock</a></p>					
+		</div>
+<!-- / RNAV-->
+		<div style="clear:both;"></div>
+<!--PROPERTY DETAILS-->
+		<div class="propdetails">
+			<div>
+				<div style="display:inline;width:130px;vertical-align:top;text-align:right;float:right;margin-right:5px;" class="red">
+					Ref No.<br />WIT120055				</div>
+				<div style="display:inline;width:360px;height:20px;text-align:left;float:left;margin-left:20px;">
+					<b class="red h1">
+Crawley Road, Witney, Oxfordshire, OX28   1HT (Sold STC)					</b><br />
+					<font class="blue bold">Guide Price £240,000</font>
+				</div>
+				
+			</div>
+					
+					
+			<div class="proptable">
+<table width="250" cellpadding="0" border="0" style="margin-left:20px"><tbody><tr><td height="15" class="black">Bedrooms: </td><td class="black">2</td></tr><tr><td height="15" class="black">Bathroom: </td><td class="black">1</td></tr><tr><td height="15" class="black">Reception room: </td><td class="black">1</td></tr><tr><td height="10"></td></tr></tbody></table>
+			<br /><br />
+				<p align="justify">
+</p><p>A charming Cotswold stone cottage that is equally at home on a cold wintery night with curtains drawn and the log fire burning, as it is in the summer with the leaves back on the trees and roses flourishing around the windows, currently pictured on our sales brochures.  This fine example offers two bedroom accommodation with plentiful period features and modern day essentials.  The extensive renovation works carried out over recent years include opening the two small reception rooms into one delightful open space with log burning stove set within exposed stone fireplace.  The refitted kitchen has a tiled floor and country cottage cream units with pewter style door furniture.  There are two good size bedrooms to the first floor that are light and airy with open views to the front.  The property has a replacement gas fired boiler serving radiator central heating, a refitted bathroom and is offered for sale in excellent decorative order throughout.  Unlike many period properties this cottage benefits from a detached double garage with additional parking to the side, a lawned front garden in excess of 100' and is all but a short walk from Witney town centre in one direction and open countryside walks in the other.  The front garden is currently open to the adjoining property but if a more private arrangement would suit a timber picket fence could be erected along the boundary line as other cottages have done in this row.  A delightful property in every respect with individual features for every season. 
+<br />
+<br />Witney is a small country town steeped in history, but with good modern amenities and a bustling community life.   The Leisure centre caters for a variety of sports and there are excellent schools, including a number of church schools. The Woolgate centre and other smaller shops have been supplemented by a new central shopping precinct with major names such as Marks &amp; Spencer, Debenhams and in addition a multi-screen cinema. Public transport is available from outlying villages and from Witney to Oxford and on to London. </p><p><br />�  DELIGHTFUL PERIOD COTTAGE   �  TWO BEDROOMS   � SITTING ROOM/DINING ROOM   � DINING AREA   � REFITTED KITCHEN   � DOUBLE GARAGE   � 100 GARDEN   � GAS CENTRAL HEATING   �  FIREPLACE WITH LOG BURNING STOVE<br />ENTRY VIA: <br /><br />Covered storm porch with tiled floor through glass panelled front door to:<br /><br />SITTING ROOM/DINING ROOM <br /><br />A delightful light, south facing and airy room with stone faced open fireplace currently set with free standing log burning stove.  Useful recess to side for book shelving and audio visual display area.  Window to front with cupboard housing electricity meter trip switches.  Two wall light points.  Further built-in book shelves.  Inset ceiling down lighters.  Opening directly through to:<br /><br />DINING AREA <br /><br />Wood laminate flooring.  A good size understairs area currently set as an office with built-in desk.  Further understairs storage cupboard.  Stairs to first floor landing.  Two steps rising to:<br /><br />KITCHEN <br /><br />A re-fitted cottage cream kitchen with pewter effect door furniture comprising one and a half bowl bowl sink unit with mixer taps set in granite effect roll top work surfaces.  Range of cupboards under.  Plumbing for automatic washing machine. Matching eye level storage cupboards.  Standing space for gas or electric oven.  Adjacent floor to ceiling space for fridge freezer.  Tiled floor. Window to rear.  Skylight which allows a considerable amount of additional light into the kitchen.  Open doorway to:<br /><br />REAR LOBBY <br /><br />Larder cupboard housing wall mounted gas fired boiler serving radiator central heating and domestic hot water.  Shelving from floor to ceiling.  Wall mounted LCD timer control.  Tiled floor.  Panelled part glazed door which is the door mainly used by the current owners.  Tiled floor.  Large area for hanging coats and space under for shoe racks.  Half glazed door to rear.<br /><br />BATHROOM <br /><br />A contemporary re-fitted white suite comprising panelled bath with shower mixer taps over.  Low flush WC.  Wash hand basin set on timber vanity unit with storage cupboards under.  Frosted window to rear.  Radiator.  Chrome heated towel ladder radiator.  Underfloor heating.<br /><br />FIRST FLOOR LANDING <br /><br />Loft hatch leading to well-insulated &amp; fully boarded loft providing useful storage space.<br /><br />MASTER BEDROOM <br /><br />Leaded light window to front with views across the garden to the valley beyond.  Window seat.  Folding shutters.  Ample standing space to either side of chimney breast for wardrobes and standing space for dressers.  Radiator.<br /><br />BEDROOM TWO <br /><br />Leaded light window to rear with deep set window sill.  Radiator.<br /><br />OUTSIDE <br /><br />The property has a large front south facing garden which stretches down to the Crawley Road and is stocked with a host of mature bushes and trees.  Enclosed by timber panel fencing to the adjoining gardens as the current owners have a good relationship with the neighbours.  Timber fencing could be erected if desired to enclose this large lawned space.  Patio adjacent to the front of the property with good standing space for table and outside chairs.<br /><br />REAR <br /><br />The property benefits from a detached double garage with up and over door.  Standing space for further vehicle to the side.<br /></p>				<p></p>
+				<p>
+					<b>MISREPRESENTATION ACT - PROPERTY MISDESCRIPTIONS ACT</b><br />
+					
+
+
+The information in these property details is believed to be accurate, but Breckon &amp; Breckon does not give, nor does any Partner or employee have authority to give, any warranty as to the accuracy of any statement, written, verbal or visual. You should not rely on any information contained herein.				</p>
+				<br /><br />
+				<span class="red">[ <a href="#top">Top of page</a> ]</span>
+				<br /><br />
+			</div>
+		</div>
+<!--END PROPERTY DETAILS-->
+			<div class="rextra">
+				<div>
+					<p>
+					<span class="red"><strong>Other properties of interest:</strong></span>
+<br />- <a href="../search/?zoom=&amp;from=results&amp;id=WIT120055&amp;minbeds=0&amp;minprice=0&amp;maxprice=1000000&amp;searchtext=OX28%20&amp;type=b&amp;a=main_search">within the postcode OX28 </a><br />- <a href="../search/?zoom=&amp;from=results&amp;id=WIT120055&amp;minbeds=0&amp;minprice=0&amp;maxprice=1000000&amp;searchtext=Witney&amp;type=b&amp;a=main_search">in Witney</a><br />- <a href="../search/?zoom=&amp;from=results&amp;id=WIT120055&amp;minbeds=0&amp;minprice=0&amp;maxprice=1000000&amp;searchtext=Oxfordshire&amp;type=b&amp;a=main_search">in Oxfordshire</a><br />- <a href="../search/?zoom=&amp;from=results&amp;id=WIT120055&amp;minbeds=0&amp;minprice=0&amp;maxprice=1000000&amp;office=WIT&amp;type=b&amp;a=main_search">for this office</a>					</p>
+				</div>
+<!--LOCATION MAP-->
+				<div class="content-to-right no-margin">
+					<script type="text/javascript" language="JavaScript" src="../mapping/localjs/setup.js"></script>
+					<script type="text/javascript" language="JavaScript">
+						var smallMap = true;
+					</script>
+					<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAjNte1MXPrJ7i-hq88AlyhRTH7p-YeGE6hggTOPz8PhQFfwBf6hQP2NiBfXtbiYsAeO6cR2vihVdceQ"></script><script type="text/javascript" src="http://maps.gstatic.com/cat_js/mapfiles/api-3/17/9/%7Bmain,adsense,geometry,zombie%7D.js"></script>
+					<script type="text/javascript" src="http://rocketmap.worldarcstudio.com/gmap_js2/functions.js"></script><div style="height:1px; width:1px; top:0px; left:0px; position:absolute" id="recordstat"><img width="1" height="1" src="http://rocketmap.worldarcstudio.com/gmap_js2/stats.php?action=init&amp;url=http://www.breckon.co.uk/site/php/property.php?id=WIT120055&amp;type=b&amp;from=results" /></div>
+					<script language="Javascript" type="text/javascript">
+						googleMapInsertSmall(253,270,'51.7944918','-1.4876657',3,"house");
+					</script><div style="width:253px; font: arial; height:270px" id="map"><br />   please wait... map loading</div>
+</div>
+<!--END LOCATION MAP-->		
+		<div><!--OFFICE DETAILS START-->
+<p>
+<b>Witney Office</b><br />21 Corn Street<br />Witney<br />Oxfordshire<br />OX28   9DB<br /> <br />
+<b>Telephone:</b> 01993 776775<br />
+[<a href="mailto:witney@breckon.co.uk"><b>Email Office</b></a>]<br />  <br />
+</p>
+<!--END OFFICE DETAILS--></div>
+			</div>
+				<div style="clear:both;"></div>
+
+
+		<!--FOOTER START-->
+
+				</div>
+			<div id="footer"><div></div><a target="_blank" title="visit the world archipelago website" href="http://www.worldarchipelago.com"><img border="0" align="right" alt="created by world archipelago" src="../images/img_worldarch_logo.gif" /></a>
+			<div style="float:left;display:inline;width:400px;margin-top:12px;border:0px solid #FFFFFF;">© Breckon and Breckon Estate Agents  <a class="footer" href="../pages/terms__conditions.php">Terms and Conditions</a> | <a class="footer" href="../forms/insert.php?form=contact_general">Contact Us</a></div>
+			
+			</div>
+			<div class="basebox"></div>
+		</div>
+	</div>
+	<div style="height:120px;"></div>
+	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12939940-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+	
+
+</body></html>

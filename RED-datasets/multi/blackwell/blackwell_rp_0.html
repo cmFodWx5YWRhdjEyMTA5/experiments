@@ -1,0 +1,2271 @@
+<html ng-app="BWApp" class="ng-scope" lang="en">
+ <head>
+  <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style> 
+  <script type="text/javascript" async src="http://www.google-analytics.com/analytics.js"></script>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PNVBV9S"></script>
+  <script>
+    	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    	})(window,document,'script','dataLayer','GTM-PNVBV9S');
+    	</script> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Web Application Manifest --> 
+  <!-- This page took 370 milliseconds to load --> 
+  <!-- Server: b5a1 --> 
+  <!-- Site: LIVE --> 
+  <!-- Apple favicons --> 
+  <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/favicons/apple-touch-icon-57x57.png"> 
+  <link rel="apple-touch-icon" sizes="60x60" href="/resources/images/favicons/apple-touch-icon-60x60.png"> 
+  <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/favicons/apple-touch-icon-72x72.png"> 
+  <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/favicons/apple-touch-icon-76x76.png"> 
+  <link rel="apple-touch-icon" sizes="114x114" href="/resources/images/favicons/apple-touch-icon-114x114.png"> 
+  <link rel="apple-touch-icon" sizes="120x120" href="/resources/images/favicons/apple-touch-icon-120x120.png"> 
+  <link rel="apple-touch-icon" sizes="144x144" href="/resources/images/favicons/apple-touch-icon-144x144.png"> 
+  <link rel="apple-touch-icon" sizes="152x152" href="/resources/images/favicons/apple-touch-icon-152x152.png"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/favicons/apple-touch-icon-180x180.png"> 
+  <!-- Browser favicons --> 
+  <link rel="icon" type="image/png" href="/resources/images/favicons/favicon-32x32.png" sizes="32x32"> 
+  <link rel="icon" type="image/png" href="/resources/images/favicons/favicon-194x194.png" sizes="194x194"> 
+  <link rel="icon" type="image/png" href="/resources/images/favicons/favicon-96x96.png" sizes="96x96"> 
+  <link rel="icon" type="image/png" href="/resources/images/favicons/android-chrome-192x192.png" sizes="192x192"> 
+  <link rel="icon" type="image/png" href="/resources/images/favicons/favicon-16x16.png" sizes="16x16"> 
+  <!-- Desktop pin favicons/tiles --> 
+  <meta name="apple-mobile-web-app-title" content="Blackwell's"> 
+  <meta name="application-name" content="Blackwell's"> 
+  <meta name="msapplication-TileColor" content="#002d62"> 
+  <meta name="msapplication-TileImage" content="/resources/images/favicons/mstile-144x144.png"> 
+  <!-- Chrome specific, nav bar color on mobile --> 
+  <meta name="theme-color" content="#002d62"> 
+  <title>Category - Art and Craft Blackwell's</title> 
+  <link rel="canonical" href=""> 
+  <!-- FontAwesome CDN --> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/2580631367.css"> 
+  <meta name="description" content="Trading since 1879, Blackwell of Oxford is the largest academic and specialist bookseller in the UK. Fast dispatch, carefully packaged, worldwide delivery."> 
+  <meta name="keywords" content="books,free,delivery,worldwide,book,offers,bestsellers,coming soon, oxford, pre-order, antiquarian"> 
+  <meta name="Revisit-After" content="30 days"> 
+  <!-- Implement localStorage font for BW fonts --> 
+  <link rel="stylesheet" href="/resources/styles/styles.min.css"> 
+  <!--[if IE 8]>
+        <script src="/resources/scripts/third/respond.min.js"></script>
+        <![endif]--> 
+  <!-- Carousel css --> 
+  <link rel="stylesheet" href="/resources/styles/owl.carousel.css"> 
+  <!-- Angular for basket sync accross pages --> 
+  <script src="/resources/scripts/third/angular.min.js"></script> 
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-route.js"></script> 
+ </head>
+ <body ng-controller="BasketCtrl" class="ng-scope"> 
+  <!-- Google Tag Manager (noscript) --> 
+  <noscript> 
+   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNVBV9S" height="0" width="0" style="display:none;visibility:hidden"> </iframe> 
+  </noscript> 
+  <!-- End Google Tag Manager (noscript) --> 
+  <div id="site-wrapper"> 
+   <header class="main-header"> 
+    <div class="container u-m"> 
+     <div class="container--25 u-cf hide-small"> 
+      <div class="container__content container__content--large"> 
+       <a href="#primary-navigation" class="visuallyhidden">Skip your Account's links</a> 
+       <nav class="top-links"> 
+        <ul class="navigation navigation--inline u-small dot-separated"> 
+         <li class="greeting"><span>Hello</span></li> 
+         <li><a href="/bookshop/login" class="mobile-icon-account">Login</a></li> 
+         <li><a href="http://bookshop.blackwell.co.uk/bookshop/editorial/help_faq.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Help</a></li> 
+        </ul> 
+       </nav> 
+      </div> 
+      <div class="container__content container__content--small"> 
+      </div> 
+     </div> 
+     <div class="container--333 u-cf"> 
+      <!-- logo --> 
+      <figure class="logo-holder container__content"> 
+       <div class="logo-holder__ie8 hide-small"> 
+        <a href="/bookshop/"><img src="/resources/images/logo.png" alt="Blackwells logo"></a> 
+       </div> 
+       <div class="hide-large hide-med logo-holder__ie8"> 
+        <a href="/bookshop/"><img src="/resources/images/favicons/favicon-48x48.png" alt="Blackwells Logo, Is a Capital white B over a dark blue background" width="42px" height="42px"></a> 
+       </div> 
+      </figure> 
+      <!-- search form --> 
+      <div class="container__content search-bar-container"> 
+       <!-- Original form HTML element--> 
+       <form action="/bookshop/search/" method="GET" class="search-form ng-pristine ng-valid"> 
+        <p> <label for="query" class="visuallyhidden">Search</label> <input name="keyword" value="" placeholder="Search" id="keyword" type="search"> <span class="submit-wrapper"> <input class="btn btn--secondary" value="" type="submit"> <i class="icon__search fa fa-search"></i><span class="visuallyhidden">Search</span> </span> </p> 
+       </form> 
+       <p class="u-right u-small advance-search"><a href="/bookshop/search/">Advanced search options</a></p> 
+       <!-- JS based search (no submit button)--> 
+      </div> 
+      <div class="container__content basket-container"> 
+       <div class="mini-basket"> 
+        <div class="mini-basket__summary"> 
+         <a href="/bookshop/basket"> <p class="icon icon__mini-basket" basketitems="0"></p> <p class="qty hide-small">0 items</p> <p class="total hide-small">£0.00</p> </a> 
+        </div> 
+        <ul class="mini-basket__list"> 
+         <li class="mini-basket__heading">Your basket</li> 
+         <li ng-show="bm.getBasket().length" class="js-add-after ng-hide"> <p><a href="/bookshop/basket" class="btn btn--primary mini-basket__top-btn">View basket</a></p> </li> 
+         <li class="mini-basket__message mini-basket__message--empty">Your basket is empty</li> 
+         <li class="mini-basket__message"> <p><i class="fa fa-truck"></i> Spend just <span class="delivery-free-value">£10</span> more to get <span class="color-emphasis">FREE UK delivery</span> on your order!</p> </li> 
+         <li class="mini-basket__value"> <p class="mini-basket__sub-total mini-basket__sum"> <span>Sub-total 0 items:</span> <span class="u-right">£0.00</span> </p> <p class="mini-basket__delivery mini-basket__sum"> <span>UK Delivery:</span> <span class="u-right">FREE</span> </p> <p><a href="/bookshop/basket" class="btn btn--primary">View basket</a></p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </header> 
+   <div class="main-navigation"> 
+    <a href="#main-content" class="visuallyhidden">Skip Navigation and go to main content</a> 
+    <nav class="container hide-small u-mb-sans" id="primary-navigation"> 
+     <ul class="navigation navigation--inline primary-navigation"> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="/bookshop/wellcomeshop/;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Wellcome Shop</a> </li> 
+      <li class="primary-navigation__item"> 
+       <div class="primary-navigation__head js-categories-trigger"> 
+        <a href="/bookshop/category/-169269">Books</a> 
+       </div> 
+       <div class="primary-navigation__body"> 
+        <div class="primary-navigation__sub-items-generiq"> 
+         <div class="promo"> 
+          <figure> 
+           <a href="/bookshop/product/Hillbilly-Elegy-by-J-D-Vance/9780008221096"><img src="/jacket/100x150/9780008221096.jpg" alt="Multiple Choice jacket"></a> 
+           <figcaption> 
+            <p> <span class="color-emphasis">We love!</span> <span class="promo__book-title">Hillbilly Elegy</span> <span class="promo__book-author">by J. D. Vance</span> </p> 
+            <p><a href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780008221096" class="btn btn--secondary btn--small js-add-to-basket" data-isbn="9780008221096" ng-click="addToBasket( 9780008221096, $event )">Buy now</a></p> 
+           </figcaption> 
+          </figure> 
+         </div> 
+        </div> 
+        <ul class="primary-navigation__sub-items primary-navigation__sub-items--categories"> 
+         <li class="primary-navigation__heading">Browse by category</li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169272/ANT/Art_and_Craft;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Art and Craft</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169273/BUS/Business_and_Economics;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Business and Economics</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169274/JNF/Childrens;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Children's</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169275/CAH/Classics_and_Ancient_History;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Classics and Ancient History</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169276/COM/Computing;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Computing</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169277/EDU/Education;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Education</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169278/CGN/Fiction;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Fiction</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169279/BIO/General_Books;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">General Books</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169280/HIS/History;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">History</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169281/FOR/Languages_and_Reference;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Languages and Reference</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169282/GPS/Law_and_Official_Publications;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Law and Official Publications</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169283/NAT/Life_Sciences;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Life Sciences</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169284/DRA/Literature;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Literature</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169285/TRV/Maps_and_Travel;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Maps and Travel</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169286/HEA/Medicine_and_Health;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Medicine and Health</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169287/OCC/Mind_Body_and_Spirit;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Mind, Body and Spirit</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169288/MUS/Music_Books;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Music Books</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169289/PHI/Philosophy;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Philosophy</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169290/CUR/Politics_and_Current_Affairs;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Politics and Current Affairs</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169291/PSY/Psychology;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Psychology</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169292/REL/Religion;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Religion</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169293/MAT/Science_and_Technical;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Science and Technical</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169294/PER/Society_and_Culture;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Society and Culture</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-170299/NON000000/Stationery__Gifts;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Stationery &amp; Gifts</a> </li> 
+        </ul> 
+       </div> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="http://www.blackwell.co.uk/rarebooks">Rare Books</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="/bookshop/category/-143966">Music</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="/bookshop/category/-143964">Films &amp; TV</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/laptops-tablets-and-electronics.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?route=browse">Technology</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/puzzles_games.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?route=browse">Games</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/category/-170299/NON000000/Stationery__Gifts;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Stationery</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/christmas.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Gifts</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="/bookshop/events/;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1" class="mobile-icon-event">Events</a> </li> 
+     </ul> 
+    </nav> 
+    <nav class="container u-mb-sans hide-med hide-large mobile-nav-wrapper"> 
+     <ul class="navigation navigation--inline primary-navigation mobile-navigation"> 
+      <li class="primary-navigation__item"> <label for="toggle-browse">Browse</label> <input id="toggle-browse" type="checkbox"> 
+       <div class="mobile--open"> 
+        <ul> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="/bookshop/wellcomeshop/;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Wellcome Shop</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="/bookshop/category/-169269">Books</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="http://www.blackwell.co.uk/rarebooks">Rare Books</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="/bookshop/category/-143966">Music</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="/bookshop/category/-143964">Films &amp; TV</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/laptops-tablets-and-electronics.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?route=browse">Technology</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/puzzles_games.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?route=browse">Games</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/category/-170299/NON000000/Stationery__Gifts;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Stationery</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/christmas.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Gifts</a> </li> 
+        </ul> 
+       </div> </li> 
+      <li class="primary-navigation__item"><a class="mobile-icon-shop" href="/bookshop/shops">Shops</a></li> 
+      <li class="primary-navigation__item"><a class="mobile-icon-event" href="/bookshop/events/">Events</a></li> 
+      <li class="primary-navigation__item"><a class="mobile-icon-account" href="/bookshop/login">Login</a></li> 
+      <li class="primary-navigation__item"><a class="mobile-icon-contact" href="/bookshop/contact.jsp">Contact</a></li> 
+     </ul> 
+    </nav> 
+   </div> 
+   <div class="page-banner delivery-free-banner"> 
+    <p> <i class="fa fa-truck"></i> <span>Free uk delivery on orders over £10</span> <span class="hide-small">&nbsp;|&nbsp;</span> <span class="hide-small">Free reserve &amp; collect in our bookshops</span> <i class="fa fa-book hide-small"></i> <i class="fa fa-truck hide-med hide-large"></i> </p> 
+   </div> 
+   <main id="main-content" role="main"> 
+    <div class="container page-header search-stats container--50"> 
+     <div class="u-left"> 
+      <nav> 
+       <ul class="breadcrumb"> 
+        <li><a href="http://bookshop.blackwell.co.uk/bookshop/home;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Home</a></li> 
+        <li><a href="http://bookshop.blackwell.co.uk/bookshop/category.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?catOID=-169269/">Books</a></li> 
+        <li><a href="http://bookshop.blackwell.co.uk/bookshop/category.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?catOID=-169272/ANT">Art and Craft</a></li> 
+       </ul> 
+      </nav> 
+     </div> 
+     <div class="u-right"> 
+      <span class="dropdown-label--search">Sort by: </span> 
+      <div class="dropdown"> 
+       <div class="dropdown__trigger"> 
+        <p class="dropdown__selected js-dropdown__selected"> <span>Sort by:</span> <i class="fa fa-caret-down"></i> </p> 
+        <div class="dropdown__inner"> 
+         <ul class="dropdown__list"> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=TitleAsc
+" class="dropdown__link" data-action="TitleAsc">Title (A-Z)</a></li> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=TitleDesc
+" class="dropdown__link" data-action="TitleDesc">Title (Z-A)</a></li> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=DateDesc
+" class="dropdown__link" data-action="DateDesc">Date (new-old)</a></li> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=DateAsc
+" class="dropdown__link" data-action="DateAsc">Date (old-new)</a></li> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=PriceAsc
+" class="dropdown__link" data-action="PriceAsc">Price (low-high)</a></li> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=PriceDesc
+" class="dropdown__link" data-action="PriceDesc">Price (high-low)</a></li> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=PublisherAsc
+" class="dropdown__link" data-action="PublisherAsc">Publisher (A-Z)</a></li> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=PublisherDesc
+" class="dropdown__link" data-action="PublisherDesc">Publisher (Z-A)</a></li> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=AuthorAsc
+" class="dropdown__link" data-action="AuthorAsc">Author (A-Z)</a></li> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=AuthorDesc
+" class="dropdown__link" data-action="AuthorDesc">Author (Z-A)</a></li> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=Rating
+" class="dropdown__link" data-action="Rating">Rating</a></li> 
+          <li class="dropdown__item"><a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+    
+
+    /bookshop/category/-169272?sortValue=Bestselling
+" class="dropdown__link" data-action="Bestselling">Bestselling</a></li> 
+         </ul> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <!-- show/hide --> 
+    <div class="container block-filter__button--container"> 
+     <button class="js-filter block-filter__button"> <i class="fa fa-sliders" aria-hidden="true"></i> <span>Hide filters</span> </button> 
+    </div> 
+    <section class="container container--25 u-relative"> 
+     <aside class="container__content container__content--small u-separator-right block-filter-layout is-active"> 
+      <section class="block-filter-wrapper"> 
+       <form action="/bookshop/category/-169272" method="GET" class="refine-form ng-pristine ng-valid"> 
+        <input name="keyword" value="" type="hidden"> 
+        <input name="author" value="" type="hidden"> 
+        <input name="publisher" value="" type="hidden"> 
+        <section class="block-filter u-separator-bottom"> 
+         <header> 
+          <h3 class="block-filter__headline">Refine:</h3> 
+         </header> 
+         <section lass="block-filter__content"> 
+          <!-- list of categories --> 
+          <ul class="block-filter__list category-list"> 
+           <li class="category-list__item"> <a href="/bookshop/search_results.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?catOID=-169344">Architecture</a> </li> 
+           <li class="category-list__item"> <a href="/bookshop/search_results.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?catOID=-169371">Art - General</a> </li> 
+           <li class="category-list__item"> <a href="/bookshop/search_results.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?catOID=-169379">Art History, Theory and Criticism</a> </li> 
+           <li class="category-list__item"> <a href="/bookshop/search_results.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?catOID=-169445">Crafts and Hobbies</a> </li> 
+           <li class="category-list__item"> <a href="/bookshop/search_results.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?catOID=-169295">Decorative Art and Antiques</a> </li> 
+           <li class="category-list__item"> <a href="/bookshop/search_results.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?catOID=-169385">Fashion, Design and Graphics</a> </li> 
+           <li class="category-list__item"> <a href="/bookshop/search_results.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?catOID=-169391">Individual Artists</a> </li> 
+           <li class="category-list__item"> <a href="/bookshop/search_results.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?catOID=-169503">Photography</a> </li> 
+           <li class="category-list__item"> <a href="/bookshop/search_results.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?catOID=-169373">Techniques</a> </li> 
+          </ul> 
+         </section> 
+         <!-- Need condition on when to show more --> 
+        </section> 
+        <section class="block-filter u-separator-bottom"> 
+         <header> 
+          <h3 class="block-filter__headline">Price:</h3> 
+         </header> 
+         <section class="block-filter__content block-filter__content--price"> 
+          <div id="priceRange" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+           <div class="noUi-base">
+            <div class="noUi-origin noUi-connect" style="left: 0%;">
+             <div class="noUi-handle noUi-handle-lower">
+              <div class="noUi-tooltip">
+               £0
+              </div>
+             </div>
+            </div>
+            <div class="noUi-origin noUi-background" style="left: 100%;">
+             <div class="noUi-handle noUi-handle-upper">
+              <div class="noUi-tooltip">
+               £500
+              </div>
+             </div>
+            </div>
+           </div>
+          </div> 
+          <input name="priceFrom" value=" 0 " type="hidden"> 
+          <input name="priceTo" value=" 500 " type="hidden"> 
+         </section> 
+        </section> 
+        <section class="block-filter u-separator-bottom"> 
+         <header> 
+          <h3 class="block-filter__headline">Publication year:</h3> 
+         </header> 
+         <section class="block-filter__content"> 
+          <!-- fom to input text --> 
+          <p class="block-filter__input field-container"> <label for="pubDateFrom">From:</label> <input name="pubDateFrom" placeholder="YYYY: 1785" id="pubDateFrom" class="js-filter-action" data-filter="pubDateFrom" type="text"> </p> 
+          <p class="block-filter__input field-container"> <label for="pubDateTo">To:</label> <input name="pubDateTo" placeholder="YYYY: 1812" id="pubDateTo" class="js-filter-action" data-filter="pubDateTo" type="text"> </p> 
+         </section> 
+        </section> 
+        <section class="block-filter u-separator-bottom"> 
+         <header> 
+          <h3 class="block-filter__headline">Format:</h3> 
+         </header> 
+         <section class="block-filter__content"> 
+          <!-- lis of image/icons of formats + qty--> 
+          <ul class="block-filter__list block-filter__list--columns block-filter__list--formats"> 
+           <li> <input id="BP" name="format" value="BP" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="BP"> <img src="/resources/images/formatsIcons/paperback.jpg" alt="Paperback"> <span>Paperback</span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="BH" name="format" value="BH" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="BH"> <img src="/resources/images/formatsIcons/hardback.jpg" alt="Hardback"> <span>Hardback</span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="BE" name="format" value="BE" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="BE"> <img src="/resources/images/formatsIcons/ebook.jpg" alt="Ebook"> <span>Ebook</span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="M*" name="format" value="M*" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="M*"> <img src="/resources/images/formatsIcons/audiobook.jpg" alt="Audio"> <span>Audio</span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+          </ul> 
+         </section> 
+        </section> 
+        <section class="block-filter u-separator-bottom"> 
+         <header> 
+          <h3 class="block-filter__headline">Colour:</h3> 
+         </header> 
+         <section> 
+          <!-- list of 15 colours circles --> 
+          <ul class="block-filter__list block-filter__list--colours"> 
+           <li> <input id="Black" name="imagecolours" value="Black" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Black"> <span class="u-rounded colour-swatch" style="background-color: #000000"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Blue" name="imagecolours" value="Blue" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Blue"> <span class="u-rounded colour-swatch" style="background-color: #0000FF"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Brown" name="imagecolours" value="Brown" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Brown"> <span class="u-rounded colour-swatch" style="background-color: #663300"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Cyan" name="imagecolours" value="Cyan" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Cyan"> <span class="u-rounded colour-swatch" style="background-color: #CCFFFF"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="DarkGreen" name="imagecolours" value="DarkGreen" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="DarkGreen"> <span class="u-rounded colour-swatch" style="background-color: #003300"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="DarkMagenta" name="imagecolours" value="DarkMagenta" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="DarkMagenta"> <span class="u-rounded colour-swatch" style="background-color: #660033"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="DarkOrange" name="imagecolours" value="DarkOrange" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="DarkOrange"> <span class="u-rounded colour-swatch" style="background-color: #994C00"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="DarkRed" name="imagecolours" value="DarkRed" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="DarkRed"> <span class="u-rounded colour-swatch" style="background-color: #990000"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Gold" name="imagecolours" value="Gold" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Gold"> <span class="u-rounded colour-swatch" style="background-color: #888800"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Green" name="imagecolours" value="Green" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Green"> <span class="u-rounded colour-swatch" style="background-color: #00FF00"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Grey" name="imagecolours" value="Grey" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Grey"> <span class="u-rounded colour-swatch" style="background-color: #808080"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Lightergreen" name="imagecolours" value="Lightergreen" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Lightergreen"> <span class="u-rounded colour-swatch" style="background-color: #CCFFCC"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="LightMagenta" name="imagecolours" value="LightMagenta" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="LightMagenta"> <span class="u-rounded colour-swatch" style="background-color: #FFCCE5"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="LightOrange" name="imagecolours" value="LightOrange" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="LightOrange"> <span class="u-rounded colour-swatch" style="background-color: #FFCC99"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="LightRed" name="imagecolours" value="LightRed" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="LightRed"> <span class="u-rounded colour-swatch" style="background-color: #FF9999"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Lightviolet" name="imagecolours" value="Lightviolet" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Lightviolet"> <span class="u-rounded colour-swatch" style="background-color: #FFAAFF"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="LightYellow" name="imagecolours" value="LightYellow" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="LightYellow"> <span class="u-rounded colour-swatch" style="background-color: #FFFF99"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Lime" name="imagecolours" value="Lime" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Lime"> <span class="u-rounded colour-swatch" style="background-color: #99FF00"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Magenta" name="imagecolours" value="Magenta" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Magenta"> <span class="u-rounded colour-swatch" style="background-color: #FF00FF"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Navy" name="imagecolours" value="Navy" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Navy"> <span class="u-rounded colour-swatch" style="background-color: #000033"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Orange" name="imagecolours" value="Orange" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Orange"> <span class="u-rounded colour-swatch" style="background-color: #FF6600"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Purple" name="imagecolours" value="Purple" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Purple"> <span class="u-rounded colour-swatch" style="background-color: #660066"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Red" name="imagecolours" value="Red" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Red"> <span class="u-rounded colour-swatch" style="background-color: #FF0000"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Violet" name="imagecolours" value="Violet" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Violet"> <span class="u-rounded colour-swatch" style="background-color: #CC66CC"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="White" name="imagecolours" value="White" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="White"> <span class="u-rounded colour-swatch" style="background-color: #FFFFFF"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+           <li> <input id="Yellow" name="imagecolours" value="Yellow" class="visuallyhidden" type="checkbox"> <label class="advanced-search__display label--with-check" for="Yellow"> <span class="u-rounded colour-swatch" style="background-color: #FFFF00"></span> 
+             <!-- <span class="is-information">(xxx)</span> --> </label> </li> 
+          </ul> 
+         </section> 
+        </section> 
+        <section class="block-filter "> 
+         <header> 
+          <h3 class="block-filter__headline">In stock at</h3> 
+         </header> 
+         <select name="shopstock" id=""> <option value="B2"></option> <option value="KE"></option> <option value="G7"></option> <option value="F6"></option> <option value="F5"></option> <option value="V0"></option> <option value="Q3"></option> <option value="J7"></option> <option value="LA"></option> <option value="K1"></option> <option value="KB"></option> <option value="E0"></option> <option value="LB"></option> <option value="R2"></option> <option value="G4"></option> <option value="M3"></option> <option value="T0"></option> <option value="TW"></option> <option value="R4"></option> <option value="S2"></option> <option value="L2"></option> <option value="L9"></option> <option value="L7"></option> <option value="L8"></option> <option value="CA"></option> <option value="C6"></option> <option value="C0"></option> <option value="C1"></option> <option value="P0"></option> <option value="N3"></option> <option value="H2"></option> <option value="H3"></option> <option value="K5"></option> </select> 
+        </section> 
+        <section class="block-filter"> 
+         <a href="
+
+    
+                        
+    
+        
+
+
+
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+    
+                                            
+
+    
+
+                
+
+    /bookshop/category/-169272?
+" class="u-left bolder__link"><small>Clear filter</small></a> 
+         <input class="btn btn--secondary u-right" value="Refine" type="submit"> 
+        </section> 
+       </form> 
+      </section> 
+     </aside> 
+     <section class="container__content container__content--large"> 
+      <div class="search-result"> 
+       <ul class="search-result__list"> 
+        <span id="search-result__page_1" class="visuallyhidden">Anchor for 1 page of results</span> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£0.69</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Fifty-Cars-That-Changed-the-World-by-Design-Museum/9781840917345" class="product-name"> <img src="/jacket/s/9781840917345.jpg" alt="jacket,Fifty Cars That Changed the World" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Fifty-Cars-That-Changed-the-World-by-Design-Museum/9781840917345" class="product-name">Fifty Cars That Changed the...</a></h4> 
+           <p itemprop="author" class="product-author">Design Museum</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £0.69</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £12.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £12.30 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781840917345, $event )" data-isbn="9781840917345" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781840917345"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£1.50</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Star-Wars-Return-of-the-Jedi-Volume-3-by-The-Topps-Company/9781419720925" class="product-name"> <img src="/jacket/s/9781419720925.jpg" alt="jacket,Star Wars: Return of the Jedi: Volume 3" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Star-Wars-Return-of-the-Jedi-Volume-3-by-The-Topps-Company/9781419720925" class="product-name">Star Wars: Return of the Je...</a></h4> 
+           <p itemprop="author" class="product-author">The Topps Company</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £1.50</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £15.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £14.49 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781419720925, $event )" data-isbn="9781419720925" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781419720925"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/The-Wristwatch-Handbook-by-Ryan-Schmidt/9781851498291" class="product-name"> <img src="/jacket/s/9781851498291.jpg" alt="jacket,The Wristwatch Handbook" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/The-Wristwatch-Handbook-by-Ryan-Schmidt/9781851498291" class="product-name">The Wristwatch Handbook</a></h4> 
+           <p itemprop="author" class="product-author">Ryan Schmidt</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £50.00 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781851498291, $event )" data-isbn="9781851498291" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781851498291"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£4.42</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Magnum-Photos-Poster-Book-Icons-by-Magnum-Photos/9780500420461" class="product-name"> <img src="/jacket/s/9780500420461.jpg" alt="jacket,Magnum Photos: Poster Book (Icons)" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Magnum-Photos-Poster-Book-Icons-by-Magnum-Photos/9780500420461" class="product-name">Magnum Photos: Poster Book ...</a></h4> 
+           <p itemprop="author" class="product-author">Magnum Photos</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £4.42</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £19.96
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £15.54 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780500420461, $event )" data-isbn="9780500420461" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780500420461"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£5.01</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Typewriter-by-Paul-Robert-Peter-Weil/9781454920786" class="product-name"> <img src="/jacket/s/9781454920786.jpg" alt="jacket,Typewriter" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Typewriter-by-Paul-Robert-Peter-Weil/9781454920786" class="product-name">Typewriter</a></h4> 
+           <p itemprop="author" class="product-author">Paul Robert, Pete...</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £5.01</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £20.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £14.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781454920786, $event )" data-isbn="9781454920786" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781454920786"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/The-Gladius-by-M-C-Bishop/9781472815859" class="product-name"> <img src="/jacket/s/9781472815859.jpg" alt="jacket,The Gladius" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/The-Gladius-by-M-C-Bishop/9781472815859" class="product-name">The Gladius</a></h4> 
+           <p itemprop="author" class="product-author">M. C. Bishop</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £12.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781472815859, $event )" data-isbn="9781472815859" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781472815859"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/100-Midcentury-Chairs-by-Lucy-Ryder-Richardson/9781910904336" class="product-name"> <img src="/jacket/s/9781910904336.jpg" alt="jacket,100 Midcentury Chairs" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/100-Midcentury-Chairs-by-Lucy-Ryder-Richardson/9781910904336" class="product-name">100 Midcentury Chairs</a></h4> 
+           <p itemprop="author" class="product-author">Lucy Ryder Richar...</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £16.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781910904336, $event )" data-isbn="9781910904336" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781910904336"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Wristwatch-Annual-2017-by-Braun-Peter-Radkai-Marton-CON/9780789212627" class="product-name"> <img src="/jacket/s/9780789212627.jpg" alt="jacket,Wristwatch Annual 2017" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Wristwatch-Annual-2017-by-Braun-Peter-Radkai-Marton-CON/9780789212627" class="product-name">Wristwatch Annual 2017</a></h4> 
+           <p itemprop="author" class="product-author">Braun, Peter/ Rad...</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £26.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780789212627, $event )" data-isbn="9780789212627" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780789212627"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£12.01</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Lydia-Courteille-by-Juliet-Weir-de-La-Rochefoucauld/9781851498376" class="product-name"> <img src="/jacket/s/9781851498376.jpg" alt="jacket,Lydia Courteille" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Lydia-Courteille-by-Juliet-Weir-de-La-Rochefoucauld/9781851498376" class="product-name">Lydia Courteille</a></h4> 
+           <p itemprop="author" class="product-author">Juliet Weir-de La...</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £12.01</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £40.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £27.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781851498376, $event )" data-isbn="9781851498376" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781851498376"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£0.41</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Garnitures-by-Patricia-Ferguson/9781851779000" class="product-name"> <img src="/jacket/s/9781851779000.jpg" alt="jacket,Garnitures" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Garnitures-by-Patricia-Ferguson/9781851779000" class="product-name">Garnitures</a></h4> 
+           <p itemprop="author" class="product-author">Patricia Ferguson</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £0.41</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £10.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £9.59 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781851779000, $event )" data-isbn="9781851779000" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781851779000"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/The-Design-Museum-in-a-Box-by-Deyan-Sudjic/9781846148705" class="product-name"> <img src="/jacket/s/9781846148705.jpg" alt="jacket,The Design Museum in a Box" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/The-Design-Museum-in-a-Box-by-Deyan-Sudjic/9781846148705" class="product-name">The Design Museum in a Box</a></h4> 
+           <p itemprop="author" class="product-author">Deyan Sudjic</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £14.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781846148705, $event )" data-isbn="9781846148705" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781846148705"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£2.96</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Medal-Yearbook-2017-by/9781908828316" class="product-name"> <img src="/jacket/s/9781908828316.jpg" alt="jacket,Medal Yearbook 2017" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Medal-Yearbook-2017-by/9781908828316" class="product-name">Medal Yearbook 2017</a></h4> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £2.96</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £19.95
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £16.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781908828316, $event )" data-isbn="9781908828316" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781908828316"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£6.79</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Knives-2017-by-Joe-Kertzman/9781440246784" class="product-name"> <img src="/jacket/s/9781440246784.jpg" alt="jacket,Knives 2017" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Knives-2017-by-Joe-Kertzman/9781440246784" class="product-name">Knives 2017</a></h4> 
+           <p itemprop="author" class="product-author">Joe Kertzman</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £6.79</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £25.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £19.20 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781440246784, $event )" data-isbn="9781440246784" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781440246784"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£6.54</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Gun-Digest-2017-by-Lee-Jerry-EDT/9781440246586" class="product-name"> <img src="/jacket/s/9781440246586.jpg" alt="jacket,Gun Digest 2017" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Gun-Digest-2017-by-Lee-Jerry-EDT/9781440246586" class="product-name">Gun Digest 2017</a></h4> 
+           <p itemprop="author" class="product-author">Lee, Jerry (EDT)</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £6.54</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £26.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £20.45 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781440246586, $event )" data-isbn="9781440246586" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781440246586"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£1.43</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Collect-British-Stamps-by-Hugh-Jefferies/9780852599877" class="product-name"> <img src="/jacket/s/9780852599877.jpg" alt="jacket,Collect British Stamps" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Collect-British-Stamps-by-Hugh-Jefferies/9780852599877" class="product-name">Collect British Stamps</a></h4> 
+           <p itemprop="author" class="product-author">Hugh Jefferies</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £1.43</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £14.95
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £13.52 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780852599877, $event )" data-isbn="9780852599877" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780852599877"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£5.68</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Ningyo-by-Alan-Scott-Pate-Lynton-Gardiner/9780804847353" class="product-name"> <img src="/jacket/s/9780804847353.jpg" alt="jacket,Ningyo" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Ningyo-by-Alan-Scott-Pate-Lynton-Gardiner/9780804847353" class="product-name">Ningyo</a></h4> 
+           <p itemprop="author" class="product-author">Alan Scott Pate, ...</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £5.68</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £22.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £17.31 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780804847353, $event )" data-isbn="9780804847353" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780804847353"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£74.01</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Stamps-of-the-World-2017-by-Hugh-Jefferies/9780852599785" class="product-name"> <img src="/jacket/s/9780852599785.jpg" alt="jacket,Stamps of the World 2017" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Stamps-of-the-World-2017-by-Hugh-Jefferies/9780852599785" class="product-name">Stamps of the World 2017</a></h4> 
+           <p itemprop="author" class="product-author">Hugh Jefferies</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £74.01</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £275.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £200.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780852599785, $event )" data-isbn="9780852599785" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780852599785"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£9.30</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Hidden-Gems-by-Sarah-Hue-Williams-Raymond-Sancroft-Baker/9781910065990" class="product-name"> <img src="/jacket/s/9781910065990.jpg" alt="jacket,Hidden Gems" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Hidden-Gems-by-Sarah-Hue-Williams-Raymond-Sancroft-Baker/9781910065990" class="product-name">Hidden Gems</a></h4> 
+           <p itemprop="author" class="product-author">Sarah Hue-William...</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £9.30</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £35.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £25.70 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781910065990, $event )" data-isbn="9781910065990" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781910065990"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£4.00</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Field-Guide-to-Classic-Farm-Tractors-by-Robert-N-Pripps/9780760350126" class="product-name"> <img src="/jacket/s/9780760350126.jpg" alt="jacket,Field Guide to Classic Farm Tractors" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Field-Guide-to-Classic-Farm-Tractors-by-Robert-N-Pripps/9780760350126" class="product-name">Field Guide to Classic Farm...</a></h4> 
+           <p itemprop="author" class="product-author">Robert N. Pripps</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £4.00</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £16.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £12.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780760350126, $event )" data-isbn="9780760350126" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780760350126"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£3.44</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Antique-Trader-Antiques--Collectibles-Price-Guide-2017-by-Bradley-Eric-EDT/9781440246975" class="product-name"> <img src="/jacket/s/9781440246975.jpg" alt="jacket,Antique Trader Antiques &amp; Collectibles Price Guide 2017" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Antique-Trader-Antiques--Collectibles-Price-Guide-2017-by-Bradley-Eric-EDT/9781440246975" class="product-name">Antique Trader Antiques &amp; C...</a></h4> 
+           <p itemprop="author" class="product-author">Bradley, Eric (EDT)</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £3.44</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £16.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £13.55 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781440246975, $event )" data-isbn="9781440246975" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781440246975"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£2.41</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Dragon-Age-Inquisition-The-Poster-Collection-by-Bioware/9781506701172" class="product-name"> <img src="/jacket/s/9781506701172.jpg" alt="jacket,Dragon Age: Inquisition - The Poster Collection" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Dragon-Age-Inquisition-The-Poster-Collection-by-Bioware/9781506701172" class="product-name">Dragon Age: Inquisition - T...</a></h4> 
+           <p itemprop="author" class="product-author">Bioware</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £2.41</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £20.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £18.58 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781506701172, $event )" data-isbn="9781506701172" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781506701172"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£0.47</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Coin-Yearbook-2017-by/9781908828309" class="product-name"> <img src="/jacket/s/9781908828309.jpg" alt="jacket,Coin Yearbook 2017" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Coin-Yearbook-2017-by/9781908828309" class="product-name">Coin Yearbook 2017</a></h4> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £0.47</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £9.95
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £9.48 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781908828309, $event )" data-isbn="9781908828309" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781908828309"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£3.44</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/2017-North-American-Coins--Prices-by-Harper-David-C-EDT/9781440247095" class="product-name"> <img src="/jacket/s/9781440247095.jpg" alt="jacket,2017 North American Coins &amp; Prices" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/2017-North-American-Coins--Prices-by-Harper-David-C-EDT/9781440247095" class="product-name">2017 North American Coins &amp;...</a></h4> 
+           <p itemprop="author" class="product-author">Harper, David C. ...</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £3.44</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £16.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £13.55 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781440247095, $event )" data-isbn="9781440247095" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781440247095"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£4.61</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/2016-Canada--Provinces-Catalogue-by-Hugh-Jefferies/9780852599761" class="product-name"> <img src="/jacket/s/9780852599761.jpg" alt="jacket,2016 Canada &amp; Provinces Catalogue" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/2016-Canada--Provinces-Catalogue-by-Hugh-Jefferies/9780852599761" class="product-name">2016 Canada &amp; Provinces Cat...</a></h4> 
+           <p itemprop="author" class="product-author">Hugh Jefferies</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £4.61</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £25.95
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £21.34 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780852599761, $event )" data-isbn="9780852599761" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780852599761"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£2.00</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/British-Stamp-Market-Values-2017-by/9780995524903" class="product-name"> <img src="/jacket/s/9780995524903.jpg" alt="jacket,British Stamp Market Values 2017" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/British-Stamp-Market-Values-2017-by/9780995524903" class="product-name">British Stamp Market Values...</a></h4> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £2.00</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £12.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £10.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780995524903, $event )" data-isbn="9780995524903" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780995524903"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£8.27</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/After-the-Final-Curtain-by-Matt-Lambros/9782361951641" class="product-name"> <img src="/jacket/s/9782361951641.jpg" alt="jacket,After the Final Curtain" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/After-the-Final-Curtain-by-Matt-Lambros/9782361951641" class="product-name">After the Final Curtain</a></h4> 
+           <p itemprop="author" class="product-author">Matt Lambros</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £8.27</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £29.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £21.72 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9782361951641, $event )" data-isbn="9782361951641" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9782361951641"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£5.79</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Coins-of-England--the-United-Kingdom-2017-by/9781907427978" class="product-name"> <img src="/jacket/s/9781907427978.jpg" alt="jacket,Coins of England &amp; the United Kingdom 2017" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Coins-of-England--the-United-Kingdom-2017-by/9781907427978" class="product-name">Coins of England &amp; the Unit...</a></h4> 
+           <p class="product-format" itemprop="bookFormat">Multimedia Item</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £5.79</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £30.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £24.21 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781907427978, $event )" data-isbn="9781907427978" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781907427978"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Decorated-Papers-Journal-by-P-J-M-Marks/9780500420539" class="product-name"> <img src="/jacket/s/9780500420539.jpg" alt="jacket,Decorated Papers: Journal" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Decorated-Papers-Journal-by-P-J-M-Marks/9780500420539" class="product-name">Decorated Papers: Journal</a></h4> 
+           <p itemprop="author" class="product-author">P. J. M. Marks</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £8.95 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780500420539, $event )" data-isbn="9780500420539" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780500420539"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£0.50</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Coffee-Tea-and-Chocolate-by-Yao-Fen-You/9780300222500" class="product-name"> <img src="/jacket/s/9780300222500.jpg" alt="jacket,Coffee, Tea, and Chocolate" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Coffee-Tea-and-Chocolate-by-Yao-Fen-You/9780300222500" class="product-name">Coffee, Tea, and Chocolate</a></h4> 
+           <p itemprop="author" class="product-author">Yao-Fen You</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £0.50</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £16.99
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £16.49 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780300222500, $event )" data-isbn="9780300222500" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780300222500"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£5.01</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/20th-Century-Jewelry--the-Icons-of-Style-by-Stefano-Papi-Alexandra-Rhodes/9780500519004" class="product-name"> <img src="/jacket/s/9780500519004.jpg" alt="jacket,20th Century Jewelry &amp; the Icons of Style" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/20th-Century-Jewelry--the-Icons-of-Style-by-Stefano-Papi-Alexandra-Rhodes/9780500519004" class="product-name">20th Century Jewelry &amp; the ...</a></h4> 
+           <p itemprop="author" class="product-author">Stefano Papi, Ale...</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £5.01</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £28.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £22.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780500519004, $event )" data-isbn="9780500519004" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780500519004"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£5.65</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Silver-for-Entertaining-by-James-Rothwell/9781781300428" class="product-name"> <img src="/jacket/s/9781781300428.jpg" alt="jacket,Silver for Entertaining" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Silver-for-Entertaining-by-James-Rothwell/9781781300428" class="product-name">Silver for Entertaining</a></h4> 
+           <p itemprop="author" class="product-author">James Rothwell</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £5.65</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £50.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £44.35 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781781300428, $event )" data-isbn="9781781300428" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781781300428"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£8.27</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Living-with-the-Art-Deco-Style-by-Judith-Miller/9781784721060" class="product-name"> <img src="/jacket/s/9781784721060.jpg" alt="jacket,Living with the Art Deco Style" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Living-with-the-Art-Deco-Style-by-Judith-Miller/9781784721060" class="product-name">Living with the Art Deco St...</a></h4> 
+           <p itemprop="author" class="product-author">Judith Miller</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £8.27</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £30.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £21.73 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781784721060, $event )" data-isbn="9781784721060" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781784721060"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£9.47</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Fine-Jewelry-Couture-by-Olivier-Dupon/9780500518601" class="product-name"> <img src="/jacket/s/9780500518601.jpg" alt="jacket,Fine Jewelry Couture" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Fine-Jewelry-Couture-by-Olivier-Dupon/9780500518601" class="product-name">Fine Jewelry Couture</a></h4> 
+           <p itemprop="author" class="product-author">Olivier Dupon</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £9.47</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £39.95
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £30.48 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780500518601, $event )" data-isbn="9780500518601" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780500518601"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£3.96</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Flora-by-Evelyne-Posseme-Patrick-Mauries/9780500519424" class="product-name"> <img src="/jacket/s/9780500519424.jpg" alt="jacket,Flora" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Flora-by-Evelyne-Posseme-Patrick-Mauries/9780500519424" class="product-name">Flora</a></h4> 
+           <p itemprop="author" class="product-author">Evelyne Posseme, ...</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £3.96</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £16.95
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £12.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780500519424, $event )" data-isbn="9780500519424" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780500519424"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£9.01</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Joseph-de-Levis-and-Company-by-Charles-Avery/9781781300480" class="product-name"> <img src="/jacket/s/9781781300480.jpg" alt="jacket,Joseph de Levis and Company" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Joseph-de-Levis-and-Company-by-Charles-Avery/9781781300480" class="product-name">Joseph de Levis and Company</a></h4> 
+           <p itemprop="author" class="product-author">Charles Avery</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £9.01</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £40.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £30.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781781300480, $event )" data-isbn="9781781300480" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781781300480"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£14.01</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/The-Carpets-of-Afghanistan-by-Richard-D-Parsons/9781851497904" class="product-name"> <img src="/jacket/s/9781851497904.jpg" alt="jacket,The Carpets of Afghanistan" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/The-Carpets-of-Afghanistan-by-Richard-D-Parsons/9781851497904" class="product-name">The Carpets of Afghanistan</a></h4> 
+           <p itemprop="author" class="product-author">Richard D. Parsons</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £14.01</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £45.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £30.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781851497904, $event )" data-isbn="9781851497904" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781851497904"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Matchbox-Toys-by-Nick-Jones/9781784420383" class="product-name"> <img src="/jacket/s/9781784420383.jpg" alt="jacket,Matchbox Toys" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Matchbox-Toys-by-Nick-Jones/9781784420383" class="product-name">Matchbox Toys</a></h4> 
+           <p itemprop="author" class="product-author">Nick Jones</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £7.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781784420383, $event )" data-isbn="9781784420383" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781784420383"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£5.38</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/The-Lamps-of-Tiffany-Studios-by-Margaret-K-Hofer-Rebecca-Klassen/9780847849413" class="product-name"> <img src="/jacket/s/9780847849413.jpg" alt="jacket,The Lamps of Tiffany Studios" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/The-Lamps-of-Tiffany-Studios-by-Margaret-K-Hofer-Rebecca-Klassen/9780847849413" class="product-name">The Lamps of Tiffany Studios</a></h4> 
+           <p itemprop="author" class="product-author">Margaret K. Hofer...</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £5.38</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £19.95
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £14.57 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780847849413, $event )" data-isbn="9780847849413" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780847849413"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/I-D-by-i-D-Magazine/9781846148637" class="product-name"> <img src="/jacket/s/9781846148637.jpg" alt="jacket,I-D" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/I-D-by-i-D-Magazine/9781846148637" class="product-name">I-D</a></h4> 
+           <p itemprop="author" class="product-author">"i-D" Magazine</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £14.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781846148637, $event )" data-isbn="9781846148637" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781846148637"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£59.74</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Patek-Philippe-by-Nicholas-Foulkes/9781848094628" class="product-name"> <img src="/jacket/s/9781848094628.jpg" alt="jacket,Patek Philippe" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Patek-Philippe-by-Nicholas-Foulkes/9781848094628" class="product-name">Patek Philippe</a></h4> 
+           <p itemprop="author" class="product-author">Nicholas Foulkes</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £59.74</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £175.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £115.26 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781848094628, $event )" data-isbn="9781848094628" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781848094628"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Decorated-Papers-Gift-Wrapping-Paper-Book-by-P-J-M-Marks/9780500420522" class="product-name"> <img src="/jacket/s/9780500420522.jpg" alt="jacket,Decorated Papers: Gift Wrapping Paper Book" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Decorated-Papers-Gift-Wrapping-Paper-Book-by-P-J-M-Marks/9780500420522" class="product-name">Decorated Papers: Gift Wrap...</a></h4> 
+           <p itemprop="author" class="product-author">P. J. M. Marks</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £12.95 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780500420522, $event )" data-isbn="9780500420522" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780500420522"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£12.01</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Early-Carpets-and-Tapestries-on-the-Eastern-Silk-Road-by-Gloria-Granz-Gonick/9781851498109" class="product-name"> <img src="/jacket/s/9781851498109.jpg" alt="jacket,Early Carpets and Tapestries on the Eastern Silk Road" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Early-Carpets-and-Tapestries-on-the-Eastern-Silk-Road-by-Gloria-Granz-Gonick/9781851498109" class="product-name">Early Carpets and Tapestrie...</a></h4> 
+           <p itemprop="author" class="product-author">Gloria Granz Gonick</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £12.01</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £40.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £27.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781851498109, $event )" data-isbn="9781851498109" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781851498109"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£31.41</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Roman-Provincial-Coinage-by-Antony-Hostein/9780714118291" class="product-name"> <img src="/jacket/s/9780714118291.jpg" alt="jacket,Roman Provincial Coinage" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Roman-Provincial-Coinage-by-Antony-Hostein/9780714118291" class="product-name">Roman Provincial Coinage</a></h4> 
+           <p itemprop="author" class="product-author">Antony Hostein</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £31.41</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £160.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £128.59 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780714118291, $event )" data-isbn="9780714118291" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780714118291"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£0.01</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Isle-of-Skye-Waverley-Genuine-Tartan-Cloth-Commonplace-Notebook-9cm-x-14cm-by/9781849344180" class="product-name"> <img src="/jacket/s/9781849344180.jpg" alt="jacket,Isle of Skye: Waverley Genuine Tartan Cloth Commonplace Notebook (9cm x 14cm)" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Isle-of-Skye-Waverley-Genuine-Tartan-Cloth-Commonplace-Notebook-9cm-x-14cm-by/9781849344180" class="product-name">Isle of Skye: Waverley Genu...</a></h4> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £0.01</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £10.00
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £9.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781849344180, $event )" data-isbn="9781849344180" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781849344180"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Colt-Single-Action-Revolvers-by-Martin-Pegler/9781472810984" class="product-name"> <img src="/jacket/s/9781472810984.jpg" alt="jacket,Colt Single-Action Revolvers" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Colt-Single-Action-Revolvers-by-Martin-Pegler/9781472810984" class="product-name">Colt Single-Action Revolvers</a></h4> 
+           <p itemprop="author" class="product-author">Martin Pegler</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £12.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781472810984, $event )" data-isbn="9781472810984" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781472810984"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> <p class="promo-stamp"><span>£8.27</span><span>off</span></p> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/1000-Iconic-Watches-by-Vincent-Daveau/9783848010479" class="product-name"> <img src="/jacket/s/9783848010479.jpg" alt="jacket,1000 Iconic Watches" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/1000-Iconic-Watches-by-Vincent-Daveau/9783848010479" class="product-name">1000 Iconic Watches</a></h4> 
+           <p itemprop="author" class="product-author">Vincent Daveau</p> 
+           <p class="product-format" itemprop="bookFormat">Hardback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <p class="product-price--discount u-mb-sans">Save £8.27</p> 
+            <ul class="list--inline"> 
+             <li class="product-price--old">
+              <strike>
+                £29.95
+              </strike></li> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £21.68 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9783848010479, $event )" data-isbn="9783848010479" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9783848010479"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/Patterns-of-India-Gift-Wrapping-Paper-Book-by-Henry-Wilson/9780500420560" class="product-name"> <img src="/jacket/s/9780500420560.jpg" alt="jacket,Patterns of India: Gift Wrapping Paper Book" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/Patterns-of-India-Gift-Wrapping-Paper-Book-by-Henry-Wilson/9780500420560" class="product-name">Patterns of India: Gift Wra...</a></h4> 
+           <p itemprop="author" class="product-author">Henry Wilson</p> 
+           <p class="product-format" itemprop="bookFormat">Looseleaf In Binder</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £12.95 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9780500420560, $event )" data-isbn="9780500420560" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780500420560"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+        <li class="search-result__item "> 
+         <div itemscope itemtype="http://schema.org/Book"> 
+          <link itemprop="additionalType" href="http://schema.org/Product"> 
+          <div class="product-picture"> 
+           <a href="/bookshop/product/The-Book-of-You-by-Nora-Rosendahl-Nelli-Lahteenmaki-Aleksi-Hoffman/9781405924139" class="product-name"> <img src="/jacket/s/9781405924139.jpg" alt="jacket,The Book of You" itemprop="image" width="125px" height="192px"> </a> 
+          </div> 
+          <div class="product-info" style="height: 190px;"> 
+           <h4 itemprop="name"><a href="/bookshop/product/The-Book-of-You-by-Nora-Rosendahl-Nelli-Lahteenmaki-Aleksi-Hoffman/9781405924139" class="product-name">The Book of You</a></h4> 
+           <p itemprop="author" class="product-author">Nora Rosendahl, N...</p> 
+           <p class="product-format" itemprop="bookFormat">Paperback</p> 
+           <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+            <ul class="list--inline"> 
+             <li class="product-price--current" itemprop="price"> 
+              <meta itemprop="priceCurrency" content="GBP"> £8.99 </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> <a class="btn btn--secondary js-add-to-basket" ng-click="addToBasket( 9781405924139, $event )" data-isbn="9781405924139" href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9781405924139"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> </li> 
+       </ul> 
+      </div> 
+      <nav class="search-result__pagination"> 
+       <ul class="navigation u-small u-cf js-scrollTo"> 
+        <li class="visuallyhidden"><a href="#search-result__page_1">1</a></li> 
+       </ul> 
+      </nav> 
+      <section class="container u-center"> 
+       <form action="/bookshop/category/-169272" method="POST" class="u-inline-block ng-pristine ng-valid"> 
+        <input name="offset" id="offset" value="48" type="hidden"> 
+        <input class="btn btn--secondary" value="Next" type="submit"> 
+       </form> 
+      </section> 
+     </section> 
+    </section> 
+   </main> 
+   <aside class="main-sign-up u-shadow-in"> 
+    <section class="container newsletter-sign-up"> 
+     <header> 
+      <h2 class="block__headline"><span>Sign up</span> to receive wonderful books and offers in your inbox</h2> 
+     </header> 
+     <section class="u-center"> 
+      <p> <label for="newsletter_email" class="visuallyhidden">Your email address:</label> <input name="newsletter_email" id="newsletter_email" placeholder="E-mail address" type="email"> </p> 
+      <p><button class="btn btn--secondary newsletter-btn js-signup">Sign me up</button></p> 
+     </section> 
+     <footer class="newsletter-sign-up__footer u-center">
+      <p>Unsubscribe at any time &amp; no spam.</p>
+     </footer> 
+    </section> 
+    <div class="modals__container"> 
+     <div class="modal"> 
+      <button class="modal__close-btn js-modal__close">X</button> 
+      <header> 
+       <h3 class="modal__title">Subscription sent</h3> 
+      </header> 
+      <section class="modal__content u-cf signupConfirmContent">
+        Thank you 
+      </section> 
+     </div> 
+    </div> 
+   </aside> 
+   <!-- include footers files --> 
+   <footer class="main-footer" role="contentinfo"> 
+    <div class="container u-mb-sans"> 
+     <div class="container container--25 secondary-navigation"> 
+      <nav class="container__content container__content--small"> 
+       <ul> 
+        <li><a href="/bookshop/editorial/services/job_index.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Careers at Blackwell's</a></li> 
+        <li><a href="http://affiliates.blackwells.co.uk/affiliates/index.php">Affiliates</a></li> 
+        <li><a href="http://bookshop.blackwell.co.uk/stores/cpi-services/corporate-professional-institutional-services/">Account</a></li> 
+        <li><a href="/bookshop/editorial/bursaries/landing.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?route=bursaries">University</a></li> 
+        <li><a href="/bookshop/editorial/students/students.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1?route=students">Student</a></li> 
+       </ul> 
+      </nav> 
+      <nav class="container__content container__content--small"> 
+       <ul> 
+        <li><a href="/bookshop/editorial/help_faq.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Help</a></li> 
+        <li><a href="/bookshop/editorial/help_faq.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Contact Us</a></li> 
+        <li><a href="/bookshop/delivery;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Delivery Information</a></li> 
+        <li><a href="https://blackwells.zendesk.com/hc/en-gb/sections/200302836-Reserve-Online-Collect-Instore-">Reserve &amp; Collect</a></li> 
+        <li><a href="/bookshop/shops;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Our Shops</a></li> 
+        <li><a href="/bookshop/editorial/SlaveryStatement.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Slavery Statement</a></li> 
+       </ul> 
+      </nav> 
+      <nav class="container__content container__content--small"> 
+       <ul> 
+        <li class="list__head">Follow us on:</li> 
+        <li><a href="https://www.facebook.com/blackwellbooks/" target="_blank"><i class="fa fa-facebook-square"></i><span>Facebook</span></a></li> 
+        <li><a href="https://twitter.com/blackwellbooks" target="_blank"><i class="fa fa-twitter-square"></i><span>Twitter</span></a></li> 
+        <li><a href="https://www.youtube.com/user/BlackwellOnline" target="_blank"><i class="fa fa-youtube-square"></i><span>YouTube</span></a></li> 
+        <li><a href="https://www.instagram.com/blackwellbooks/" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a></li> 
+       </ul> 
+      </nav> 
+      <nav class="container__content container__content--small"> 
+       <ul> 
+        <li class="list__head">Our other sites:</li> 
+        <li><a href="https://learn.blackwell.co.uk/">Blackwell's Learning</a></li> 
+        <li><a href="http://www.blackwell.co.uk/rarebooks">Rare Books</a></li> 
+        <li><a href="/bookshop/editorial/mapping/landing.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Mapping Service</a></li> 
+       </ul> 
+      </nav> 
+     </div> 
+     <div class="footer-copyright"> 
+      <p class="footer-separator"><img src="/resources/images/bw-footer.png" alt=""></p> 
+      <section class="footer-legal no-flex"> 
+       <p>©1879-2017 Blackwell’s Ltd</p> 
+       <ul class="navigation navigation--inline dot-separated"> 
+        <li><a href="/bookshop/editorial/help/security.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Cookies</a></li> 
+        <li><a href="/bookshop/editorial/help/terms.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1">Terms &amp; Conditions</a></li> 
+        <li><a href="/bookshop/editorial/help/terms.jsp;jsessionid=B04609C5245A29EB3CFA4872C5965C40.b5a1#privacy">Privacy</a></li> 
+       </ul> 
+      </section> 
+      <section class="footer-icon"> 
+       <div class="footer-payement"> 
+        <i class="icon icon__amex"></i> 
+        <i class="icon icon__visa"></i> 
+        <i class="icon icon__master-card"></i> 
+        <i class="icon icon__maestro"></i> 
+        <i class="icon icon__paypal"></i> 
+        <i class="icon icon__nbt"></i> 
+       </div> 
+       <div> 
+        <i class="icon icon__BA"></i> 
+        <i class="icon icon__library"></i> 
+       </div> 
+      </section> 
+     </div> 
+    </div> 
+   </footer> 
+  </div> 
+  <!-- javascript files --> 
+  <!-- Test Service Worker --> 
+  <script>
+            // if ('serviceWorker' in navigator) {
+            //     navigator.serviceWorker.register('/bookshop/service-worker.js')
+            //     .then(function(registration) {
+            //         // Registration was successful
+            //         console.log('ServiceWorker registration successful with scope: ',    registration.scope);
+            //     })
+            //     .catch(function(err) {
+            //         // registration failed :(
+            //         console.log('ServiceWorker registration failed: ', err);
+            //     });
+            // }
+        </script> 
+  <!-- third party libraries used accross the site --> 
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+  <script src="/resources/scripts/third/owl.carousel.min.js"></script> 
+  <script src="/resources/scripts/third/moment.min.js"></script> 
+  <script src="/resources/scripts/third/lightbox.min.js"></script> 
+  <!-- Allow adding specific scripts on specific pages --> 
+  <!-- Can be a specific third party library, used in main.js --> 
+  <!-- hence adding it before --> 
+  <script src="/resources/scripts/third/nouislider.min.js"></script> 
+  <script type="text/javascript">
+
+        var priceSlider = document.getElementById('priceRange');
+
+
+
+        // if filters set for prices
+        var priceMin = $('input[name="priceFrom"]').val();
+        var priceMax = $('input[name="priceTo"]').val();
+        console.log("priceMin = ", priceMin);
+        console.log("priceMax = ", priceMax);
+
+
+
+        noUiSlider.create(priceSlider, {
+          start: [priceMin, priceMax],
+          connect: true,
+          tooltips: [ true, true ],
+          range: {
+              'min': [   0 ],
+              '50%': [ 100 ],
+              '90%': [ 400 ],
+              'max': [ 500 ]
+          },
+          step: 1,
+          format: {
+            to: function ( value ) {
+              return '£' + value.toFixed(0);
+            },
+            from: function ( value ) {
+              return value.replace('£', '');
+            }
+          }
+        });
+
+        priceSlider.noUiSlider.on('change', function ( values, handle, unencoded, tap, positions ) {
+            // Need to add them to the request
+            // console.log("unencoded => ", unencoded);
+            var priceFrom = unencoded[0].toFixed(2);
+            var priceTo = unencoded[1].toFixed(2);
+            $("input[name='priceFrom']").val(priceFrom);
+            $("input[name='priceTo']").val(priceTo);
+
+        });
+
+
+
+
+        // Search API
+        $('.js-search').click( function(e){
+
+            var key = $(this).data("key");
+            var page = $(this).data("page");
+            console.log("key = ", key);
+            console.log("page = ", page);
+            getMoreResults(key, page);
+        });
+
+        function getMoreResults( key, page){
+
+            // var API_URL = "http://localhost:8181/search",
+            var API_URL = "/bookshop/api/search",
+                BASE_PAGE = 48;
+
+            var offset = page * BASE_PAGE;
+
+            var searchRequestURL = API_URL + "/" + key + "/" + BASE_PAGE + "/" + offset;
+
+            utils.getAjax(searchRequestURL)
+                .then(function(response) {
+                    console.log("response => ", JSON.parse(response));
+                    $('.js-search').data("page", page+1);
+                    return;
+                });
+        }
+
+        function refineSearch(){
+
+            var pubDateFrom,
+                pubDateTo,
+                priceFrom,
+                priceTo,
+                imagecolours,
+                format,
+                shopstock;
+        };
+
+
+
+
+        /**
+        * toggleFilter
+        *
+        *
+        * @desc: toggle filters visibility
+        *
+        */
+        var filterButton = $('.js-filter');
+        if( filterButton ){
+            var filtertext = $('.js-filter').find('span');
+            $('.js-filter').on('click', function(e){
+                $(filtertext).text() === 'Show filters' ? $(filtertext).text('Hide filters') : $(filtertext).text('Show filters');
+
+                toggleFilter();
+            });
+        }
+        var filterBox = $('.block-filter-layout');
+        function toggleFilter () {
+            filterBox.toggleClass('is-active u-separator-right');
+            return;
+        };
+    </script> 
+  <!-- include main.min.js and eventually some libraries -->
+  <!-- For every page --> 
+  <script src="/resources/scripts/main.js"></script>
+  <div id="jslghtbx" class="jslghtbx jslghtbx-nooverflow">
+   <div class="jslghtbx-contentwrapper" id="jslghtbx-contentwrapper"></div>
+   <div class=" jslghtbx-loading-animation">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+  </div> 
+  <!-- Allow adding specific scripts on specific pages --> 
+  <!-- Can relly on main.js --> 
+  <!-- hence adding it after --> 
+  <!-- PAP affiliate tracking code --> 
+  <script src="//blackwells.postaffiliatepro.com/scripts/h9x2dejo.js" id="pap_x2s6df8d"></script>
+  <script type="text/javascript" src="http://blackwells.postaffiliatepro.com/scripts/h9x2dero.js?accountId=default1&amp;url=H_bookshop.blackwell.co.uk%2Fbookshop%2Fcategory%2F-169272%2FANT%2FArt_and_Craft&amp;referrer=&amp;getParams=&amp;anchor=&amp;isInIframe=false&amp;cookies="></script> 
+  <script>
+            PostAffTracker.setAccountId('default1');
+            // console.dir(PostAffTracker);
+
+            try {
+                PostAffTracker.track();
+            } catch (err) {
+                console.err("PostAffTracker Error : ", err);
+            }
+        </script> 
+ </body>
+</html>

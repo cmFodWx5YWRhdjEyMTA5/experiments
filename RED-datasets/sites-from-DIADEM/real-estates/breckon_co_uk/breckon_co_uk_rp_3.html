@@ -1,0 +1,853 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head></head><body><div style="display:none;">host='waidev16.com', user='admin', pass='psU72!sll'</div>
+
+
+
+	<link rel="stylesheet" href="../css/master.css" type="text/css" />
+	<title>Breckon and Breckon Estate Agents - Sales Top Level Map</title>
+	<link href="../images/favicon.ico" rel="shortcut icon" />
+	<script src="../includes/flashobject.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://rocketmap.worldarcstudio.com/gmap_js/functions_bb.js"></script>
+<script src="../includes/open.js" type="text/javascript"></script>
+
+		
+
+
+
+
+
+<!--  
+Created By World Archipelago - (www.worldarchipelago.com)
+Designer: Nick Wood.
+Developers: Ed Weld, Marian Seffer.
+Project Manager: Jason Brooks.
+
+Created: 26th October 2006.
+HTML and CSS Tested to W3C standards.
+Copyright: Breckon and Breckon Estate Agents
+-->
+	
+		<meta content="world archipelago" name="author" />
+		<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+		<link href="../css/master.css" media="screen" type="text/css" rel="stylesheet" />
+				<script type="text/javascript">var page="sales";</script>
+		<link href="../images/favicon.ico" rel="shortcut icon" />
+		<script src="../includes/functions.js" type="text/javascript"></script>
+		
+	
+	
+	
+		<div align="center">
+			<div id="container">
+				<div id="content">
+					<div id="header"><img border="0" alt="breckon and breckon estate agents" src="../images/img_header.jpg" /></div>
+						<!--NAVIGATION START-->
+<div id="nav2"><div style="z-index:2;" id="home" class="nav">
+	<a id="linkhome" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/index.php"><img border="0" id="nav_home_off" alt="Home" src="../images/btn_home_off.gif" /></a></div>
+<div id="sales" class="nav">
+	<a href="http://www.breckon.co.uk/site/search/index.php?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;orderby=price+DESC&amp;ppp=25"><img border="0" class="nav_over_under" alt="Sales" src="../images/btn_sales_over.gif" /></a></div><a href="http://www.breckon.co.uk/site/search/index.php?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;orderby=price+DESC&amp;ppp=25"><img border="0" id="nav_sales_on" alt="Sales" src="../images/btn_sales_on.gif" /></a>
+<div style="z-index:4;" id="lettings" class="nav">
+	<a id="linklettings" onmouseout="mo(this)" onmouseover="mo(this)" href="http://www.breckon.co.uk/site/search/index.php?minbeds=0&amp;maxbeds=99&amp;minprice=0&amp;maxprice=3000000999&amp;houses=true&amp;flats=true&amp;a=main_search&amp;type=r&amp;from=tlm&amp;orderby=price+DESC&amp;ppp=25"><img border="0" id="nav_lettings_off" alt="Lettings" src="../images/btn_lets_off.gif" /></a></div>
+<div style="z-index:5;" id="about" class="nav">
+	<a id="linkabout" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/about_us.php"><img border="0" id="nav_about_off" alt="About Us" src="../images/btn_about_off.gif" /></a></div>
+<div style="z-index:6;" id="contact" class="nav">
+	<a id="linkcontact" onmouseout="mo(this)" onmouseover="mo(this)" href="../forms/insert.php?form=contact_general"><img border="0" id="nav_contact_off" alt="Contact Us" src="../images/btn_contact_off.gif" /></a></div>
+<div style="z-index:7;" id="register" class="nav">
+	<a id="linkregister" onmouseout="mo(this)" onmouseover="mo(this)" href="../forms/insert.php?form=register"><img border="0" id="nav_register_off" alt="Register" src="../images/btn_register_off.gif" /></a></div>
+<div style="z-index:8;" id="useful_contacts" class="nav">
+	<a id="linkuseful_contacts" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/useful_contacts.php"><img border="0" id="nav_useful_contacts_off" alt="Useful Contacts" src="../images/btn_useful_contacts_off.gif" /></a></div>
+</div><!--NAVIGATION END-->
+<!--HEADER GRAPHIC-->
+	<div id="hdr_sales" class="hdr_style"><div style="text-align:left;margin-right:10px;margin-top:7px;float:right;"><a href="/site/pages/"><b>&lt; back to home page</b></a></div>	</div>
+	
+<!--END HEADER GRAPHIC-->
+		<!--<div style="margin-bottom:10px;"><a href='/site/pages/'>back to home page</a></div>-->
+				<div style="width:300px;float:left;display:inline;height:50px;margin-left:15px;"><b>
+		231 properties found matching your criteria		</b></div>
+		<div style="float:right;display:inline;width:300px;height:50px;text-align:right;margin-right:15px;">
+
+<!--ORDER BY FORM-->
+			<form id="orderbyform" action="index.php">
+				<input type="hidden" value="main_search" name="a" /><input type="hidden" value="home" name="from" /><input type="hidden" value="" name="ptype" /><input type="hidden" value="" name="added" /><input type="hidden" value="" name="office" /><input type="hidden" value="b" name="type" /><input type="hidden" value="0" name="minbeds" /><input type="hidden" value="0" name="minprice" /><input type="hidden" value="99999999999" name="maxprice" /><input type="hidden" value="4" name="p" />
+				order properties by: 
+					<select onchange="document.forms.orderbyform.submit()" id="qs_select" name="orderby">
+						<option selected="selected" value="price ASC">lowest price first</option>
+						<option value="price DESC">highest price first</option>
+					</select>
+				<div style="padding:5 0 0 0">properties per page: 
+					<select onchange="document.forms.orderbyform.submit()" id="qs_select2" name="ppp"> 
+						<option selected="selected" value="10000">all on one page</option>
+						<option value="10">10</option>
+						<option selected="selected" value="25">25</option>
+						<option value="50">50</option>
+					</select>
+				</div>
+			</form>
+<!--ENDS-->
+					<script type="text/javascript">
+		
+		if(top.document.getElementById('gmap')) top.document.getElementById('gmap').style.display='none';
+		if(top.document.getElementById('rmlist')) top.document.getElementById('rmlist').style.display='block';
+		if(top.document.getElementById('viewmylist')) top.document.getElementById('viewmylist').style.display='block';
+		
+		function ShowMap()
+		{
+			top.document.getElementById('gmap').style.display='block';
+			top.document.getElementById('rmlist').style.display='none';		
+			top.document.getElementById('viewmylist').style.display='none';		
+		}
+		
+		var url='/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=4';
+		function $(el){
+			return document.getElementById(el);
+		}
+			function ammend(opt){
+			
+				if(opt.name=="minprice"){
+					//if(url.match(/minprice\=[0-9]/)){ alert("ok");}
+					url=url.replace(/minprice\=[0-9]+/,"minprice="+opt.value);
+					
+				}	
+				if(opt.name=="maxprice"){
+					url=url.replace(/maxprice\=[0-9]+/,"maxprice="+opt.value);
+				}
+				//if(url.match(/minbeds\=[0-9]/)){ alert("ok");}
+				if(opt.name=="minbeds"){
+					
+					url=url.replace(/minbeds\=[0-9]/,"minbeds="+opt.value);
+				}				
+				window.location=url;
+			}
+		
+		</script>
+		
+			</div>
+			<div style="clear:both;"></div>
+			<div style="display:inline;float:left;margin-left:15px;">
+			<strong>Refine Your Search</strong><br />
+			<form name="ammendresults" method="get" action="index.php">
+			Bedrooms:
+			<select onchange="ammend(this)" style="margin-top:3px;" id="minbeds" name="minbeds">
+				<option selected="selected" value="0">All Bedrooms</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4+</option>
+			</select> 
+			
+			
+						  From: 
+			<select style="margin-top:3px;" onchange="ammend(this)" id="minprice" name="minprice">
+				<option value="1">Minimum</option>
+				<option value="100000">£100,000</option>
+				<option value="200000">£200,000</option>
+				<option value="250000">£250,000</option>
+				<option value="300000">£300,000</option>
+				<option value="400000">£400,000</option>
+				<option value="500000">£500,000</option>
+				<option value="600000">£600,000</option>
+				<option value="750000">£750,000</option>
+				<option value="1000000">£1,000,000</option>
+				<option value="2000000">£2,000,000</option>
+				<option value="3000000">£3,000,000+</option>
+			</select> 
+			  To: 
+			<select style="margin-top:3px;" onchange="ammend(this)" id="maxprice" name="maxprice">
+				<option value="99999999999">Maximum</option>
+				<option value="100000">£100,000</option>
+				<option value="200000">£200,000</option>
+				<option value="250000">£250,000</option>
+				<option value="300000">£300,000</option>
+				<option value="400000">£400,000</option>
+				<option value="500000">£500,000</option>
+				<option value="600000">£600,000</option>
+				<option value="750000">£750,000</option>
+				<option value="1000000">£1,000,000</option>
+				<option value="2000000">£2,000,000</option>
+				<option value="30000000000">£3,000,000+</option>
+			</select>
+					</form>
+			</div>
+			
+			<div style="text-align:right;margin-bottom:20px;margin-right:15px;margin-top:10px;">
+<!--				<a href='#reu' class='l_red bold'><img src='../images/env.gif' border='0' hspace='10' alt="">Register search to receive e-mail updates ></a>-->
+			</div>							
+				<div style="clear:both;"></div>
+<!-- PAGE LINKS -->
+<!--
+	
+TOTAL_PROPERTIES
+PAGES
+PAGE
+NEXT_PAGE
+PREVIOUS_PAGE
+
+-->
+
+<!--PAGINATION START-->
+			<div style="border:1px solid #d7d7d7;width:800px;height:20px;">
+				<div style="display:inline; float:left;width:100px;height:17px;border-right:1px solid #d7d7d7;margin-top:3px;text-align:center;"><a class="h1" href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=3">&lt;&lt;</a></div>
+
+				<div style="display:inline;float:left;width:590px;height:17px;word-spacing:1.2em;margin-top:3px;text-align:center;"><a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=1">1</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=2">2</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=3">3</a>  <b>4</b> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=5">5</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=6">6</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=7">7</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=8">8</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=9">9</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=10">10</a> </div>
+
+				<div style="display:inline; float:left;width:100px;height:17px;border-left:1px solid #d7d7d7;margin-top:3px;text-align:center;"><a class="h1" href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=5">&gt;&gt;</a></div>
+
+			</div>
+			<div style="clear:left;"></div>
+<!--ENDS-->	<div>	
+
+<!-- 
+PROPERTY SUMMARY 1 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140199&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Woodford Mill, Mill Street, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140199_31.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140199&amp;type=b&amp;from=results" target="_self">Woodford Mill, Mill Street, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> £340,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Positioned on a gated development close to the heart of the town this super five bedroom family home is set over three floors.  A fabulous kitchen/breakfast/family room sits to the rear with opening doors to a delightful decked terrace that overlooks the Windrush.  This pretty outside space affords privacy and is ideal for alfresco dining.  The first floor sitting room is filled with natural light from windows and a large opening door to a Juliette balcony.  This spacious room has ample space for sofas, chairs and dressers and the fireplace is ...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140199&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140199','b','Woodford%20Mill%2C%20Mill%20Street%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140199_31.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4868825&amp;lat=51.7906761&amp;zoom=1&amp;from=results&amp;id=WIT140199&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 1 
+-->
+
+<!-- 
+PROPERTY SUMMARY 2 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WST130236&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Brook Hill, Woodstock, Oxfordshire, OX20 " src="../utils/image_resize_ed.php?i=WST130236_18.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WST130236&amp;type=b&amp;from=results" target="_self">Brook Hill, Woodstock, Oxfordshire, OX20 </a><br /><font class="blue bold"> Guide Price £350,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A beautifully presented late Victorian mid terrace cottage, located in a no through road close to the town centre, approached via steps leading up to a paved courtyard with seating area. The current owner has refurbished the property to a very high standard of presentation and both the main and extension roofs have been renewed, along with the damp proof course. It comprises a sitting room with an open fireplace incorporating a gas fire, extended kitchen/dining room with skylight roof,...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WST130236&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WST130236','b','Brook%20Hill%2C%20Woodstock%2C%20Oxfordshire%2C%20OX20%20',true,'WST130236_18.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.3567347&amp;lat=51.8490549&amp;zoom=1&amp;from=results&amp;id=WST130236&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 2 
+-->
+
+<!-- 
+PROPERTY SUMMARY 3 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT130069&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Schofield Avenue, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT130069_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT130069&amp;type=b&amp;from=results" target="_self">Schofield Avenue, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £350,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Positioned in a residential cul-de-sac of similar properties on the northern edge of Witney this link-detached family home is offered in very good decorative order throughout.  The kitchen has a wide range of matching base and eye level units including an electric double oven and five ring gas hob with Wok burner which is set into a central island.  The separate dining area has ample space for table and chairs and leads through to the sitting room which enjoys views over the garden through double opening patio doors.  The useful study/landing p...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT130069&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT130069','b','Schofield%20Avenue%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT130069_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4878121&amp;lat=51.7982058&amp;zoom=1&amp;from=results&amp;id=WIT130069&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 3 
+-->
+
+<!-- 
+PROPERTY SUMMARY 4 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=OXF140073&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Vicarage Lane, New Hinksey, Oxford, OX1 " src="../utils/image_resize_ed.php?i=OXF140073_26.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=OXF140073&amp;type=b&amp;from=results" target="_self">Vicarage Lane, New Hinksey, Oxford, OX1 </a><br /><font class="blue bold"> £350,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Charming and well-presented 3 bedroom Victorian end of terrace.
+
+The property has been extended and updated by the current owners to provide a lovely spacious sitting room with oak floor, and a 21ft kitchen/dining room with quarry tiled floor.  On the first floor there are two bedrooms, the family bathroom, and a third bedroom on the top floor.
+
+Outside the owner purchased an additional piece of land at the bottom of the garden which provides rear access out onto the cycle path int...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=OXF140073&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','OXF140073','b','Vicarage%20Lane%2C%20New%20Hinksey%2C%20Oxford%2C%20OX1%20',true,'OXF140073_26.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2561351&amp;lat=51.7383265&amp;zoom=1&amp;from=results&amp;id=OXF140073&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 4 
+-->
+
+<!-- 
+PROPERTY SUMMARY 5 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=HDN140071&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Gladstone Road, Headington, Oxford, Oxfordshire, OX3 " src="../utils/image_resize_ed.php?i=HDN140071_02.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=HDN140071&amp;type=b&amp;from=results" target="_self">Gladstone Road, Headington, Oxford, Oxfordshire, OX3 </a><br /><font class="blue bold"> Guide Price £350,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Located in the ever popular area of Headington Quarry, this deceptively spacious and beautifully presented three bedroom home, offers light and airy accommodation throughout with the benefit of recently replaced double glazed windows and French doors.
+
+The ground floor comprises; entrance hall with cloakroom; a smart fitted kitchen, a generous sitting/dining room with French doors to the rear garden and stairs rising to the first floor.
+
+Upstairs, the main bedroom has double built ...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=HDN140071&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','HDN140071','b','Gladstone%20Road%2C%20Headington%2C%20Oxford%2C%20Oxfordshire%2C%20OX3%20',true,'HDN140071_02.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2006096&amp;lat=51.7604765&amp;zoom=1&amp;from=results&amp;id=HDN140071&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 5 
+-->
+
+<!-- 
+PROPERTY SUMMARY 6 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140143&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Greenfield Road, Stonesfield, Witney, Oxfordshire, OX29 " src="../utils/image_resize_ed.php?i=WIT140143_21.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140143&amp;type=b&amp;from=results" target="_self">Greenfield Road, Stonesfield, Witney, Oxfordshire, OX29 </a><br /><font class="blue bold"> Guide Price £350,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Recently reduced to stimulate additional activity and now offered at exceptional value for money.  Having been in the same ownership for many years this super detached house provides spacious accommodation across two floors with plenty of opportunity for extension (subject to regulations); perfect for a growing family!  The dual aspect sitting/dining room has a working fireplace with log burning stove and the dining area has ample space for table and chairs with a serving hatch to the kitchen.  Doors from the dining area open through to the gar...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140143&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140143','b','Greenfield%20Road%2C%20Stonesfield%2C%20Witney%2C%20Oxfordshire%2C%20OX29%20',true,'WIT140143_21.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4270048&amp;lat=51.8533204&amp;zoom=1&amp;from=results&amp;id=WIT140143&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 6 
+-->
+
+<!-- 
+PROPERTY SUMMARY 7 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WST140140&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Grove Road, Bladon, Woodstock, Oxfordshire, OX20 " src="../utils/image_resize_ed.php?i=WST140140_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WST140140&amp;type=b&amp;from=results" target="_self">Grove Road, Bladon, Woodstock, Oxfordshire, OX20 </a><br /><font class="blue bold"> Guide Price £350,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A rare opportunity to acquire a semi-detached house set back from the road in this sought after and well placed village adjacent to Woodstock. The property currently offers three bedroom accommodation on a larger than average plot, now requires modernisation and updating and would also benefit from extension, subject to the usual consents. No onward chain.
+
+Bladon is perhaps best known as the burial place of Sir Winston Churchill (St Martin's Church).   The entrance to Blenheim Park ...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WST140140&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WST140140','b','Grove%20Road%2C%20Bladon%2C%20Woodstock%2C%20Oxfordshire%2C%20OX20%20',true,'WST140140_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.3491375&amp;lat=51.8322444&amp;zoom=1&amp;from=results&amp;id=WST140140&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 7 
+-->
+
+<!-- 
+PROPERTY SUMMARY 8 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140189&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Fairspear Road, Leafield, Witney, Oxfordshire, OX29 " src="../utils/image_resize_ed.php?i=WIT140189_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140189&amp;type=b&amp;from=results" target="_self">Fairspear Road, Leafield, Witney, Oxfordshire, OX29 </a><br /><font class="blue bold"> Guide Price £350,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A beautifully presented three bedroom semi-detached home close to the centre of the popular village of Leafield. Starting at the front, there is off street parking for a couple of vehicles on a gravelled drive which leads to the front door. Once through the front door there is a lovely feeling of space as you look through the entrance hall into the open plan living kitchen dining area. The kitchen area is contemporary with a number of integrated appliances and currently houses a six seater dining table. To the first floor there are three double...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140189&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140189','b','Fairspear%20Road%2C%20Leafield%2C%20Witney%2C%20Oxfordshire%2C%20OX29%20',true,'WIT140189_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.5463054&amp;lat=51.8362991&amp;zoom=1&amp;from=results&amp;id=WIT140189&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 8 
+-->
+
+<!-- 
+PROPERTY SUMMARY 9 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT130220&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Westcote Close, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT130220_19.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT130220&amp;type=b&amp;from=results" target="_self">Westcote Close, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £350,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Tucked away in a quiet corner on the very popular Deer Park development a spacious family home with four bedrooms and two bathrooms to the first floor and two large reception rooms plus kitchen/breakfast to the ground floor.  The property has been well maintained by the owners and is offered in immaculate decorative order throughout.  The replacement kitchen has high gloss door furniture and integrated appliances include, dishwasher, double electric oven and five ring gas hob with cent...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT130220&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT130220','b','Westcote%20Close%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT130220_19.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.5117168&amp;lat=51.7828515&amp;zoom=1&amp;from=results&amp;id=WIT130220&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 9 
+-->
+
+<!-- 
+PROPERTY SUMMARY 10 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=OXF140043&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Sidney Street, Oxford, OX4 " src="../utils/image_resize_ed.php?i=OXF140043_04.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=OXF140043&amp;type=b&amp;from=results" target="_self">Sidney Street, Oxford, OX4 </a><br /><font class="blue bold"> £360,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>This attractive 2 bedroom Victorian home is full of charm and period features.
+
+Entrance hall, 24ft. sitting/dining room, re-fitted kitchen, bathroom, 2 double bedrooms.  Outbuilding plumbed for washing machine and housing combi boiler.
+ 
+The present owner has maintained the house to a high standard.
+
+Well stocked 42ft. south-west facing garden with open aspect to rear.
+
+Sidney Street is a popular side road between Percy Street and Magdalen Road, within easy access of all the amenities...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=OXF140043&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','OXF140043','b','Sidney%20Street%2C%20Oxford%2C%20OX4%20',true,'OXF140043_04.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2347014&amp;lat=51.7417405&amp;zoom=1&amp;from=results&amp;id=OXF140043&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 10 
+-->
+
+<!-- 
+PROPERTY SUMMARY 11 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT130060&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Burford Road, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT130060_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT130060&amp;type=b&amp;from=results" target="_self">Burford Road, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £360,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>As you alight from your car on the gravel drive you are immediately taken by the stunning views across the Windrush Valley to one side and the attractive front elevation of the property to the other.  Crossing the threshold takes you into this fine family home where you are greeted by delight after delight.  The light and airy sitting room to the front has a square bay window with inset seating and storage under and a magnificent cast iron fireplace.  A second reception room to the cen...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT130060&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT130060','b','Burford%20Road%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT130060_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4991408&amp;lat=51.7900726&amp;zoom=1&amp;from=results&amp;id=WIT130060&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 11 
+-->
+
+<!-- 
+PROPERTY SUMMARY 12 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=OXF130104&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Percy Street, Oxford, OX4 " src="../utils/image_resize_ed.php?i=OXF130104_19.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=OXF130104&amp;type=b&amp;from=results" target="_self">Percy Street, Oxford, OX4 </a><br /><font class="blue bold"> £360,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Situated in this sought after East Oxford side road 1.5 miles from the City Centre, this attractive period house offers a wealth of charm and character.
+
+An interesting feature of this Percy Street home is that the current owner and two of the previous owners have been inspired to write books from the property.  An insulated shed in the rear garden provides a useful study area.
+
+The accommodation provides a 22ft open plan living/dining/kitchen room, ground floor bathroom, 2 first f...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=OXF130104&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','OXF130104','b','Percy%20Street%2C%20Oxford%2C%20OX4%20',true,'OXF130104_19.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2342438&amp;lat=51.7413958&amp;zoom=1&amp;from=results&amp;id=OXF130104&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 12 
+-->
+
+<!-- 
+PROPERTY SUMMARY 13 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=HDN140079&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Southend, Garsington, Oxford, Oxfordshire, OX44 " src="../utils/image_resize_ed.php?i=HDN140079_04.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=HDN140079&amp;type=b&amp;from=results" target="_self">Southend, Garsington, Oxford, Oxfordshire, OX44 </a><br /><font class="blue bold"> Guide Price £365,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>This semi-detached home sits in an elevated position, set back from the road in the highly regarded village of Garsington. Originally built in the early 20th century as accommodation for local farm workers, the property now requires updating and offers ample scope to create a lovely family home.
+
+The ground floor comprises; an entrance hall with stairs to the first floor, a sitting room with fireplace and open fire and views over fields to the front. The kitchen/diner is at the rear ...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=HDN140079&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','HDN140079','b','Southend%2C%20Garsington%2C%20Oxford%2C%20Oxfordshire%2C%20OX44%20',true,'HDN140079_04.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.1550294&amp;lat=51.7090230&amp;zoom=1&amp;from=results&amp;id=HDN140079&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 13 
+-->
+
+<!-- 
+PROPERTY SUMMARY 14 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=HDN140138&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Beaumont Road, Headington, Oxford, Oxfordshire, OX3 " src="../utils/image_resize_ed.php?i=HDN140138_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=HDN140138&amp;type=b&amp;from=results" target="_self">Beaumont Road, Headington, Oxford, Oxfordshire, OX3 </a><br /><font class="blue bold"> Guide Price £365,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A beautifully presented three bedroom staggered terrace situated in the ever popular area of Headington Quarry in a quiet location within Beaumont Alley. The property is light and airy  with well proportioned accommodation throughout and offered to the market with NO CHAIN. 
+
+The ground floor comprises; entrance hall with  storage cupboard, access to the spacious lounge with parquet flooring. Leading from the lounge is the dining area opening onto the well equipped kitchen with usefu...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=HDN140138&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','HDN140138','b','Beaumont%20Road%2C%20Headington%2C%20Oxford%2C%20Oxfordshire%2C%20OX3%20',true,'HDN140138_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.1969473&amp;lat=51.7594625&amp;zoom=1&amp;from=results&amp;id=HDN140138&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 14 
+-->
+
+<!-- 
+PROPERTY SUMMARY 15 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140233&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Burford Road, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140233_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140233&amp;type=b&amp;from=results" target="_self">Burford Road, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> £365,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Homes like this are hard to find with delightful views over countryside yet within a short walk of the town and all amenities.  The airy ground floor accommodation offers two receptions, an eat-in kitchen, separate utility, ground floor shower room and bespoke conservatory.  The conservatory opens directly to the absolutely magnificent garden beyond.  As you pass the traditional end line of the house, the adjoining garden was acquired some years ago creating a fabulous additional area of outside space. A Pergola with grape vine and paved area m...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140233&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140233','b','Burford%20Road%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140233_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4991408&amp;lat=51.7900726&amp;zoom=1&amp;from=results&amp;id=WIT140233&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 15 
+-->
+
+<!-- 
+PROPERTY SUMMARY 16 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=HDN140082&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="New High Street, Headington, Oxford, Oxfordshire, OX3 " src="../utils/image_resize_ed.php?i=HDN140082_05.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=HDN140082&amp;type=b&amp;from=results" target="_self">New High Street, Headington, Oxford, Oxfordshire, OX3 </a><br /><font class="blue bold"> £375,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A quaint, picturesque terraced cottage situated in the heart of Headington with excellent transport links into the centre of town and London. On the ground floor the property comprises entrance hall with kitchen leading off facing the front of the property. The spacious living/dining room is to the rear of the house and has patio doors leading out into the low maintenance south facing garden. 
+
+Upstairs are two good sized double bedrooms  filled with light (one with built in storage)...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=HDN140082&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','HDN140082','b','New%20High%20Street%2C%20Headington%2C%20Oxford%2C%20Oxfordshire%2C%20OX3%20',true,'HDN140082_05.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2123321&amp;lat=51.7562847&amp;zoom=1&amp;from=results&amp;id=HDN140082&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 16 
+-->
+
+<!-- 
+PROPERTY SUMMARY 17 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=SUM140172&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Bridge Street, Oxford, OX2 " src="../utils/image_resize_ed.php?i=SUM140172_05.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=SUM140172&amp;type=b&amp;from=results" target="_self">Bridge Street, Oxford, OX2 </a><br /><font class="blue bold"> £375,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A stunning apartment with its own private entrance located in a superb location which is just a 5 minute walk from Oxford train station and the city centre. 
+This ground floor property with an incredibly 'homely' feel benefits from a private courtyard garden and a further communal garden to the rear of the property. 
+The apartment also benefits from a private, gated car parking which is located within the communal garden area. 
+The accommodation which is presented immaculately throughout comprises an excellent living and dining area with dou...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=SUM140172&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','SUM140172','b','Bridge%20Street%2C%20Oxford%2C%20OX2%20',true,'SUM140172_05.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2736131&amp;lat=51.7520129&amp;zoom=1&amp;from=results&amp;id=SUM140172&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 17 
+-->
+
+<!-- 
+PROPERTY SUMMARY 18 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=SUM140151&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="St. Georges Manor, Mandelbrote Drive, Littlemore, Oxford, OX4 " src="../utils/image_resize_ed.php?i=SUM140151_07.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=SUM140151&amp;type=b&amp;from=results" target="_self">St. Georges Manor, Mandelbrote Drive, Littlemore, Oxford, OX4 </a><br /><font class="blue bold"> £375,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>St. Georges Manor is a private, gated development set in approximately 12 acres of attractive mature, landscaped grounds. This capacious ground floor apartment is within the Grade II listed building and comprises a stunning triple aspect living room with study area, master bedroom with en-suite shower room, a second double bedroom, bathroom and kitchen with utility room leading off. The apartment has typical Victorian features including high ceilings and sash windows. There is one allocated parking space and a separate visitors parking area...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=SUM140151&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','SUM140151','b','St.%20Georges%20Manor%2C%20Mandelbrote%20Drive%2C%20Littlemore%2C%20Oxford%2C%20OX4%20',true,'SUM140151_07.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2262087&amp;lat=51.7174618&amp;zoom=1&amp;from=results&amp;id=SUM140151&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 18 
+-->
+
+<!-- 
+PROPERTY SUMMARY 19 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=OXF120031&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Oswestry Road, Oxford, OX1 " src="../utils/image_resize_ed.php?i=OXF120031_05.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=OXF120031&amp;type=b&amp;from=results" target="_self">Oswestry Road, Oxford, OX1 </a><br /><font class="blue bold"> £375,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A beautifully presented 3 bedroom home with off-road parking at the rear and situated just 1.5 miles south of the City Centre.
+
+The property has been refurbished by the present owners to provide modern, light-filled living space with wooden floors, double glazed windows, extended kitchen/breakfast room and  re-fitted bathroom.
+
+70ft. south facing rear garden with decking and sun terrace.  Rear access and potential for a double  garage (subject to consents) or more parking if requir...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=OXF120031&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','OXF120031','b','Oswestry%20Road%2C%20Oxford%2C%20OX1%20',true,'OXF120031_05.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2514346&amp;lat=51.7344393&amp;zoom=1&amp;from=results&amp;id=OXF120031&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 19 
+-->
+
+<!-- 
+PROPERTY SUMMARY 20 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=WIT140142&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Viner Close, Witney, Oxfordshire, OX28 " src="../utils/image_resize_ed.php?i=WIT140142_07.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=WIT140142&amp;type=b&amp;from=results" target="_self">Viner Close, Witney, Oxfordshire, OX28 </a><br /><font class="blue bold"> Guide Price £375,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>If you are looking for a home with development potential then this one could be for you.  The location itself is probably one of the most popular in Witney and the position of this home on a corner plot brings with it a larger than average rear and side garden that offers high levels of seclusion and privacy.  Additionally there is plenty of scope to extend, subject of course to the usual consents whilst still retaining a good deal of outside space.  Currently the spacious property benefits from a dual aspect sitting room, separate dining room ...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=WIT140142&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','WIT140142','b','Viner%20Close%2C%20Witney%2C%20Oxfordshire%2C%20OX28%20',true,'WIT140142_07.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.4726477&amp;lat=51.7953695&amp;zoom=1&amp;from=results&amp;id=WIT140142&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 20 
+-->
+
+<!-- 
+PROPERTY SUMMARY 21 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=HDN140119&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Quarry High Street, Headington, Oxford, Oxfordshire, OX3 " src="../utils/image_resize_ed.php?i=HDN140119_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=HDN140119&amp;type=b&amp;from=results" target="_self">Quarry High Street, Headington, Oxford, Oxfordshire, OX3 </a><br /><font class="blue bold"> Guide Price £375,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Located within the popular area of Headington Quarry, is this beautifully presented three bedroom home, with re-fitted bathroom and attractive external space.
+
+The ground floor comprises: entrance hall with cloakroom , well equipped kitchen/breakfast room,  a spacious lounge/dining room with French doors to the rear garden and stairs rising to the first floor.
+
+Upstairs there are three well proportioned bedrooms with built in storage to two of the rooms. Finally a lovely attractive...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=HDN140119&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','HDN140119','b','Quarry%20High%20Street%2C%20Headington%2C%20Oxford%2C%20Oxfordshire%2C%20OX3%20',true,'HDN140119_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.1985492&amp;lat=51.7598241&amp;zoom=1&amp;from=results&amp;id=HDN140119&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 21 
+-->
+
+<!-- 
+PROPERTY SUMMARY 22 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=HDN140147&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Quarry High Street, Headington, Oxford, Oxfordshire, OX3 " src="../utils/image_resize_ed.php?i=HDN140147_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=HDN140147&amp;type=b&amp;from=results" target="_self">Quarry High Street, Headington, Oxford, Oxfordshire, OX3 </a><br /><font class="blue bold"> Guide Price £375,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>Enjoying a corner plot position, situated within the highly desirable location Headington Quarry is this extended three bedroom end of terrace home.
+The accommodation on the ground floor comprises of welcoming entrance hall, two separate receptions rooms, cloakroom and well equipped kitchen which was added in the 1980's. 
+Upstairs there are three bedrooms, with a separate staircase rising to the loft area which offers a substantial storage cupboard. Complementing the bedrooms is a family bathroom with white suite. 
+Externally the property be...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=HDN140147&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','HDN140147','b','Quarry%20High%20Street%2C%20Headington%2C%20Oxford%2C%20Oxfordshire%2C%20OX3%20',true,'HDN140147_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.1995789&amp;lat=51.7589500&amp;zoom=1&amp;from=results&amp;id=HDN140147&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 22 
+-->
+
+<!-- 
+PROPERTY SUMMARY 23 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=SUM130277&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="The Old Almshouses, Middle Street, Islip, Kidlington, OX5 " src="../utils/image_resize_ed.php?i=SUM130277_03.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=SUM130277&amp;type=b&amp;from=results" target="_self">The Old Almshouses, Middle Street, Islip, Kidlington, OX5 </a><br /><font class="blue bold"> £375,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>The Old Almshouses are located on Middle Street, in the heart of the beautiful village of Islip. 
+
+Coming to the market in excellent condition, this three bedroom house has masses of character coupled with practicality.
+
+On the ground floor there is a lovely kitchen complete with belfast sink and a gas fired Aga, and a sitting room with doors leading out into the garden.
+
+On the first floor there are two double bedrooms, a single bedroom and a family bathroom. 
+
+To the rear of the property is a private courtyard garden. To the front of ...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=SUM130277&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','SUM130277','b','The%20Old%20Almshouses%2C%20Middle%20Street%2C%20Islip%2C%20Kidlington%2C%20OX5%20',true,'SUM130277_03.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2355435&amp;lat=51.8231002&amp;zoom=1&amp;from=results&amp;id=SUM130277&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 23 
+-->
+
+<!-- 
+PROPERTY SUMMARY 24 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=OXF110402&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Spring Lane, Littlemore, Oxford, OX4 " src="../utils/image_resize_ed.php?i=OXF110402_70.JPG&amp;w=200&amp;h=153&amp;type=b&amp;&amp;extra=../mapping/icons/sold_trans.gif&amp;state=soldSTC&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=OXF110402&amp;type=b&amp;from=results" target="_self">Spring Lane, Littlemore, Oxford, OX4 </a><br /><font class="blue bold"> £385,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A detached family house on a plot of just under 1/4 acre with a delightful 200' x 40' rear garden, a conservatory extension and off road parking, situated in a well-placed no through road.
+
+Principle accommodation comprises two separate reception rooms,  three double bedrooms, large bathroom and a sizeable 15'4" x 11'5" conservatory opening onto the rear garden. The garden, a beautiful feature,  has been landscaped into a number of different areas of lawn, flower, fruit and shrub beds,...</p><p style="margin-top:11px;" class="red">This property is under offer although contracts are yet to be exchanged. You are still able to register an interest in case there are problems with the sale. Please contact the relevant office.</p><p></p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=OXF110402&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','OXF110402','b','Spring%20Lane%2C%20Littlemore%2C%20Oxford%2C%20OX4%20',true,'OXF110402_70.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2108852&amp;lat=51.7220894&amp;zoom=1&amp;from=results&amp;id=OXF110402&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 24 
+-->
+
+<!-- 
+PROPERTY SUMMARY 25 
+-->
+				<div style="border:1px solid #d7d7d7;width:800px;margin-top:7px; position:relative;">
+					<div style="display:inline;float:left;margin-left:10px;width:210px;margin-top:10px;"><a href="../php/property.php?id=HDN140081&amp;type=b&amp;from=results" target="_self"><img border="0" alt="property image" longdesc="Barton Road, Headington, Oxford, Oxfordshire, OX3 " src="../utils/image_resize_ed.php?i=HDN140081_01.JPG&amp;w=200&amp;h=153&amp;type=b&amp;bgColor=255_255_255" /></a></div>
+					
+					<div style="width:510px;text-align:left;display:inline;float:left;margin-left:10px;margin-top:10px;">
+						<div><a class="h1 red bold" href="../php/property.php?id=HDN140081&amp;type=b&amp;from=results" target="_self">Barton Road, Headington, Oxford, Oxfordshire, OX3 </a><br /><font class="blue bold"> £385,000</font></div>
+					
+						<div style="text-align:justify;margin-bottom:30px;"><p>A unique and well thought out detached bungalow on a particularly generous plot with spacious accommodation and beautifully maintained gardens at the front and rear. Subject to the necessary planning consents there may also be scope to convert the extensive loft space to create a particularly good sized property. Outside there is a great deal of off-street parking to the front of the property, a double garage and a useful workshop. The property would make an ideal family home, in a great location, with a lot of potential for a new owner to make...</p></div>
+						<div style="width:430px;bottom:10px;position:absolute;">
+							[ <a href="../php/property.php?id=HDN140081&amp;type=b&amp;from=results" target="_self">More Details</a> ]
+ [ <a href="javascript:void(addpropertylist('add','HDN140081','b','Barton%20Road%2C%20Headington%2C%20Oxford%2C%20Oxfordshire%2C%20OX3%20',true,'HDN140081_01.JPG'))">Add to list</a> ]
+ [ <a href="../mapping/street_level_map.php?type=b&amp;lng=-1.2023974&amp;lat=51.7650923&amp;zoom=1&amp;from=results&amp;id=HDN140081&amp;ofrom=home">Location Map</a> ]
+</div></div>
+
+<div style="clear:left"></div></div>
+<!-- 
+END PROPERTY SUMMARY 25 
+-->
+				</div>
+<div style="border:1px solid #d7d7d7;width:800px;height:35px;margin-top:7px;"><div style="display:inline; float:left;width:100px;height:32px;border-right:1px solid #d7d7d7;margin-top:3px;text-align:center;"><a class="h1" href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=3">&lt;&lt;</a></div>
+<div style="display:inline;float:left;width:590px;height:32px;word-spacing:1.2em;margin-top:3px;text-align:center;"><a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=1">1</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=2">2</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=3">3</a>  <b>4</b> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=5">5</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=6">6</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=7">7</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=8">8</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=9">9</a> <a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=10">10</a> <br />[ <a style="word-spacing:0em" href="#top">Top of page</a> ]</div>
+<div style="display:inline; float:left;width:100px;height:32px;border-left:1px solid #d7d7d7;margin-top:3px;text-align:center;"><a class="h1" href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=5">&gt;&gt;</a></div></div><!--EMAIL UPDATES-->
+<!--<div id="reu"></div>
+				<h4><b> &nbsp;Register here to receive email updates</b></h4>
+				<script type='text/javascript'>
+	function checkemailform()
+	{
+		var myform = document.forms.emailupdateform;
+		var msg = '';
+
+		if (myform.email.value=='')
+		msg+='<br>- your email address';
+
+		if (myform.name.value=='' || myform.name.value=="[my search]")
+		msg+='<br>- a meaningful name for your email update';
+
+		if (msg)
+		{
+			msg = '<table cellpadding=4><tr><td><b>Please complete the following:</b>' + msg + '</td></tr></table>';
+			document.getElementById('feedback').innerHTML=msg;
+			return false;
+		}
+		return true;
+
+	}
+	</script>
+	<div id='feedback'></div>
+	<form action='../forms/email_update_register.php' name='emailupdateform' onsubmit='return checkemailform()' method='post'>
+	<table cellpadding=5>
+	<input type=hidden name=type value="b">
+	<input type=hidden name=office value="">
+	<input type=hidden name=country value="">
+	<input type=hidden name=area value="">
+	<input type=hidden name=minbeds value="0">
+	<input type=hidden name=minprice value="0">
+	<input type=hidden name=maxprice value="99999999999">
+	<input type=hidden name=searchtext value="">
+	<input type=hidden name=x1 value="">
+	<input type=hidden name=y1 value="">
+	<input type=hidden name=x2 value="">
+	<input type=hidden name=version value="reapit10">
+	<input type=hidden name=y2 value="">
+	<input type=hidden name=ptype value="">
+	<input type=hidden name=action value="main_search">
+	<tr><td width=120>Email:</td><td><input type=text name=email></td></tr>
+	<tr><td>Meaningful Name:</td><td><input type=text name=name onclick='this.value=""' onfocus='this.value=""' value='[my search]'></td></tr>
+	<tr><td>Format:</td><td>HTML <input type=radio checked name='format' value='html'> Text <input type=radio name='format' value='text'></td></tr>
+	<tr><td>Frequency:</td><td>Daily <input type=radio checked name='frequency' value='daily'> Weekly <input type=radio name='frequency' value='weekly'></td></tr>
+	<tr><td colspan=2>
+	You can cancel your email updates at any time by following the link at the bottom of your updates email. Each update is valid for 90 days and can be renewed at any time.<br>&nbsp;<br>
+	<input type=image src='../images/btn_save.gif'>
+	</td></tr>
+	</table>
+	</form>-->
+<!--ENDS-->
+<!--FOOTER START-->
+
+				</div>
+			<div id="footer"><div><iframe width="365" scrolling="no" height="25" frameborder="0" title="properties added to your list" src="../panes/pane_property_list.php" name="viewmylist" id="viewmylist"></iframe></div><a target="_blank" title="visit the world archipelago website" href="http://www.worldarchipelago.com"><img border="0" align="right" alt="created by world archipelago" src="../images/img_worldarch_logo.gif" /></a>
+			<div style="float:left;display:inline;width:400px;margin-top:12px;border:0px solid #FFFFFF;">© Breckon and Breckon Estate Agents  <a class="footer" href="../pages/terms__conditions.php">Terms and Conditions</a> | <a class="footer" href="../forms/insert.php?form=contact_general">Contact Us</a></div>
+			
+			</div>
+			<div class="basebox"></div>
+		</div>
+	</div>
+	<div style="height:120px;"></div>
+	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12939940-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+	
+
+</body></html>

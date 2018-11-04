@@ -1,0 +1,833 @@
+<html ng-app="BWApp" class="ng-scope" lang="en">
+ <head>
+  <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style> 
+  <script type="text/javascript" async src="http://www.google-analytics.com/analytics.js" style=""></script>
+  <script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PNVBV9S"></script>
+  <script>
+    	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    	})(window,document,'script','dataLayer','GTM-PNVBV9S');
+    	</script> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Web Application Manifest --> 
+  <!-- This page took 996 milliseconds to load --> 
+  <!-- Server: b6a2 --> 
+  <!-- Site: LIVE --> 
+  <!-- Apple favicons --> 
+  <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/favicons/apple-touch-icon-57x57.png"> 
+  <link rel="apple-touch-icon" sizes="60x60" href="/resources/images/favicons/apple-touch-icon-60x60.png"> 
+  <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/favicons/apple-touch-icon-72x72.png"> 
+  <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/favicons/apple-touch-icon-76x76.png"> 
+  <link rel="apple-touch-icon" sizes="114x114" href="/resources/images/favicons/apple-touch-icon-114x114.png"> 
+  <link rel="apple-touch-icon" sizes="120x120" href="/resources/images/favicons/apple-touch-icon-120x120.png"> 
+  <link rel="apple-touch-icon" sizes="144x144" href="/resources/images/favicons/apple-touch-icon-144x144.png"> 
+  <link rel="apple-touch-icon" sizes="152x152" href="/resources/images/favicons/apple-touch-icon-152x152.png"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/favicons/apple-touch-icon-180x180.png"> 
+  <!-- Browser favicons --> 
+  <link rel="icon" type="image/png" href="/resources/images/favicons/favicon-32x32.png" sizes="32x32"> 
+  <link rel="icon" type="image/png" href="/resources/images/favicons/favicon-194x194.png" sizes="194x194"> 
+  <link rel="icon" type="image/png" href="/resources/images/favicons/favicon-96x96.png" sizes="96x96"> 
+  <link rel="icon" type="image/png" href="/resources/images/favicons/android-chrome-192x192.png" sizes="192x192"> 
+  <link rel="icon" type="image/png" href="/resources/images/favicons/favicon-16x16.png" sizes="16x16"> 
+  <!-- Desktop pin favicons/tiles --> 
+  <meta name="apple-mobile-web-app-title" content="Blackwell's"> 
+  <meta name="application-name" content="Blackwell's"> 
+  <meta name="msapplication-TileColor" content="#002d62"> 
+  <meta name="msapplication-TileImage" content="/resources/images/favicons/mstile-144x144.png"> 
+  <!-- Chrome specific, nav bar color on mobile --> 
+  <meta name="theme-color" content="#002d62"> 
+  <title>Coin Yearbook 2017 Blackwell's</title> 
+  <link rel="canonical" href="bookshop.blackwell.co.uk/bookshop/product/Coin-Yearbook-2017-by/9781908828309"> 
+  <!-- FontAwesome CDN --> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/2580631367.css"> 
+  <meta name="description" content="Coin Yearbook 2017, available from Blackwell's with fast dispatch and worldwide delivery."> 
+  <meta name="keywords" content="Coin Yearbook 2017, , 9781908828309 "> 
+  <meta name="Revisit-After" content="30 days"> 
+  <!-- Facebook share open graph tags --> 
+  <meta property="og:url" content="bookshop.blackwell.co.uk/bookshop/product/Coin-Yearbook-2017-by/9781908828309"> 
+  <meta property="og:type" content="books.book"> 
+  <meta property="og:title" content="Coin Yearbook 2017"> 
+  <meta property="og:description" content=""> 
+  <meta property="og:image" content="bookshop.blackwell.co.uk/jacket/s/9781908828309.jpg"> 
+  <meta property="books:isbn" content="9781908828309"> 
+  <meta property="books:author" content=""> 
+  <meta property="books:rating:value" content="0.0"> 
+  <!-- Implement localStorage font for BW fonts --> 
+  <link rel="stylesheet" href="/resources/styles/styles.min.css"> 
+  <!--[if IE 8]>
+        <script src="/resources/scripts/third/respond.min.js"></script>
+        <![endif]--> 
+  <!-- Carousel css --> 
+  <link rel="stylesheet" href="/resources/styles/owl.carousel.css"> 
+  <!-- Angular for basket sync accross pages --> 
+  <script src="/resources/scripts/third/angular.min.js"></script> 
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-route.js"></script> 
+  <style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/12/common.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/12/util.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/12/stats.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fbookshop.blackwell.co.uk%2Fbookshop%2Fproduct%2FCoin-Yearbook-2017-by%2F9781908828309&amp;4sAIzaSyD7QBDGP5-kOgr4fbAJP6DlbxVL14TdJnI&amp;callback=_xdc_._51zgth&amp;token=6226"></script>
+ </head>
+ <body ng-controller="BasketCtrl" class="ng-scope"> 
+  <!-- Google Tag Manager (noscript) --> 
+  <noscript> 
+   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNVBV9S" height="0" width="0" style="display:none;visibility:hidden"> </iframe> 
+  </noscript> 
+  <!-- End Google Tag Manager (noscript) --> 
+  <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '558101757733701',
+                xfbml      : true,
+                version    : 'v2.8'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script> 
+  <div id="site-wrapper"> 
+   <header class="main-header"> 
+    <div class="container u-m"> 
+     <div class="container--25 u-cf hide-small"> 
+      <div class="container__content container__content--large"> 
+       <a href="#primary-navigation" class="visuallyhidden">Skip your Account's links</a> 
+       <nav class="top-links"> 
+        <ul class="navigation navigation--inline u-small dot-separated"> 
+         <li class="greeting"><span>Hello</span></li> 
+         <li><a href="/bookshop/login" class="mobile-icon-account">Login</a></li> 
+         <li><a href="http://bookshop.blackwell.co.uk/bookshop/editorial/help_faq.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Help</a></li> 
+        </ul> 
+       </nav> 
+      </div> 
+      <div class="container__content container__content--small"> 
+      </div> 
+     </div> 
+     <div class="container--333 u-cf"> 
+      <!-- logo --> 
+      <figure class="logo-holder container__content"> 
+       <div class="logo-holder__ie8 hide-small"> 
+        <a href="/bookshop/"><img src="/resources/images/logo.png" alt="Blackwells logo"></a> 
+       </div> 
+       <div class="hide-large hide-med logo-holder__ie8"> 
+        <a href="/bookshop/"><img src="/resources/images/favicons/favicon-48x48.png" alt="Blackwells Logo, Is a Capital white B over a dark blue background" width="42px" height="42px"></a> 
+       </div> 
+      </figure> 
+      <!-- search form --> 
+      <div class="container__content search-bar-container"> 
+       <!-- Original form HTML element--> 
+       <form action="/bookshop/search/" method="GET" class="search-form ng-pristine ng-valid"> 
+        <p> <label for="query" class="visuallyhidden">Search</label> <input name="keyword" value="" placeholder="Search" id="keyword" type="search"> <span class="submit-wrapper"> <input class="btn btn--secondary" value="" type="submit"> <i class="icon__search fa fa-search"></i><span class="visuallyhidden">Search</span> </span> </p> 
+       </form> 
+       <p class="u-right u-small advance-search"><a href="/bookshop/search/">Advanced search options</a></p> 
+       <!-- JS based search (no submit button)--> 
+      </div> 
+      <div class="container__content basket-container"> 
+       <div class="mini-basket"> 
+        <div class="mini-basket__summary"> 
+         <a href="/bookshop/basket"> <p class="icon icon__mini-basket" basketitems="0"></p> <p class="qty hide-small">0 items</p> <p class="total hide-small">£0.00</p> </a> 
+        </div> 
+        <ul class="mini-basket__list"> 
+         <li class="mini-basket__heading">Your basket</li> 
+         <li ng-show="bm.getBasket().length" class="js-add-after ng-hide"> <p><a href="/bookshop/basket" class="btn btn--primary mini-basket__top-btn">View basket</a></p> </li> 
+         <li class="mini-basket__message mini-basket__message--empty">Your basket is empty</li> 
+         <li class="mini-basket__message"> <p><i class="fa fa-truck"></i> Spend just <span class="delivery-free-value">£10</span> more to get <span class="color-emphasis">FREE UK delivery</span> on your order!</p> </li> 
+         <li class="mini-basket__value"> <p class="mini-basket__sub-total mini-basket__sum"> <span>Sub-total 0 items:</span> <span class="u-right">£0.00</span> </p> <p class="mini-basket__delivery mini-basket__sum"> <span>UK Delivery:</span> <span class="u-right">FREE</span> </p> <p><a href="/bookshop/basket" class="btn btn--primary">View basket</a></p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </header> 
+   <div class="main-navigation"> 
+    <a href="#main-content" class="visuallyhidden">Skip Navigation and go to main content</a> 
+    <nav class="container hide-small u-mb-sans" id="primary-navigation"> 
+     <ul class="navigation navigation--inline primary-navigation"> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="/bookshop/wellcomeshop/;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Wellcome Shop</a> </li> 
+      <li class="primary-navigation__item"> 
+       <div class="primary-navigation__head js-categories-trigger"> 
+        <a href="/bookshop/category/-169269">Books</a> 
+       </div> 
+       <div class="primary-navigation__body"> 
+        <div class="primary-navigation__sub-items-generiq"> 
+         <div class="promo"> 
+          <figure> 
+           <a href="/bookshop/product/Hillbilly-Elegy-by-J-D-Vance/9780008221096"><img src="/jacket/100x150/9780008221096.jpg" alt="Multiple Choice jacket"></a> 
+           <figcaption> 
+            <p> <span class="color-emphasis">We love!</span> <span class="promo__book-title">Hillbilly Elegy</span> <span class="promo__book-author">by J. D. Vance</span> </p> 
+            <p><a href="/bookshop/shopping_cart.jsp?action=add&amp;prodid=9780008221096" class="btn btn--secondary btn--small js-add-to-basket" data-isbn="9780008221096" ng-click="addToBasket( 9780008221096, $event )">Buy now</a></p> 
+           </figcaption> 
+          </figure> 
+         </div> 
+        </div> 
+        <ul class="primary-navigation__sub-items primary-navigation__sub-items--categories"> 
+         <li class="primary-navigation__heading">Browse by category</li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169272/ANT/Art_and_Craft;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Art and Craft</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169273/BUS/Business_and_Economics;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Business and Economics</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169274/JNF/Childrens;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Children's</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169275/CAH/Classics_and_Ancient_History;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Classics and Ancient History</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169276/COM/Computing;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Computing</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169277/EDU/Education;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Education</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169278/CGN/Fiction;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Fiction</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169279/BIO/General_Books;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">General Books</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169280/HIS/History;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">History</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169281/FOR/Languages_and_Reference;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Languages and Reference</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169282/GPS/Law_and_Official_Publications;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Law and Official Publications</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169283/NAT/Life_Sciences;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Life Sciences</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169284/DRA/Literature;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Literature</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169285/TRV/Maps_and_Travel;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Maps and Travel</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169286/HEA/Medicine_and_Health;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Medicine and Health</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169287/OCC/Mind_Body_and_Spirit;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Mind, Body and Spirit</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169288/MUS/Music_Books;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Music Books</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169289/PHI/Philosophy;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Philosophy</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169290/CUR/Politics_and_Current_Affairs;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Politics and Current Affairs</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169291/PSY/Psychology;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Psychology</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169292/REL/Religion;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Religion</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169293/MAT/Science_and_Technical;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Science and Technical</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-169294/PER/Society_and_Culture;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Society and Culture</a> </li> 
+         <li class="primary-navigation__sub-item"> <a href="/bookshop/category/-170299/NON000000/Stationery__Gifts;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Stationery &amp; Gifts</a> </li> 
+        </ul> 
+       </div> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="http://www.blackwell.co.uk/rarebooks">Rare Books</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="/bookshop/category/-143966">Music</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="/bookshop/category/-143964">Films &amp; TV</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/laptops-tablets-and-electronics.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?route=browse">Technology</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/puzzles_games.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?route=browse">Games</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/category/-170299/NON000000/Stationery__Gifts;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Stationery</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/christmas.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Gifts</a> </li> 
+      <li class="primary-navigation__item"> 
+       <!-- primary-navigation__item--is-active --> <a href="/bookshop/events/;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2" class="mobile-icon-event">Events</a> </li> 
+     </ul> 
+    </nav> 
+    <nav class="container u-mb-sans hide-med hide-large mobile-nav-wrapper"> 
+     <ul class="navigation navigation--inline primary-navigation mobile-navigation"> 
+      <li class="primary-navigation__item"> <label for="toggle-browse">Browse</label> <input id="toggle-browse" type="checkbox"> 
+       <div class="mobile--open"> 
+        <ul> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="/bookshop/wellcomeshop/;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Wellcome Shop</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="/bookshop/category/-169269">Books</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="http://www.blackwell.co.uk/rarebooks">Rare Books</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="/bookshop/category/-143966">Music</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="/bookshop/category/-143964">Films &amp; TV</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/laptops-tablets-and-electronics.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?route=browse">Technology</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/puzzles_games.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?route=browse">Games</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/category/-170299/NON000000/Stationery__Gifts;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Stationery</a> </li> 
+         <li class="primary-navigation__item"> 
+          <!-- primary-navigation__item--is-active --> <a href="http://bookshop.blackwell.co.uk/bookshop/editorial/browse/christmas.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Gifts</a> </li> 
+        </ul> 
+       </div> </li> 
+      <li class="primary-navigation__item"><a class="mobile-icon-shop" href="/bookshop/shops">Shops</a></li> 
+      <li class="primary-navigation__item"><a class="mobile-icon-event" href="/bookshop/events/">Events</a></li> 
+      <li class="primary-navigation__item"><a class="mobile-icon-account" href="/bookshop/login">Login</a></li> 
+      <li class="primary-navigation__item"><a class="mobile-icon-contact" href="/bookshop/contact.jsp">Contact</a></li> 
+     </ul> 
+    </nav> 
+   </div> 
+   <div class="page-banner delivery-free-banner"> 
+    <p> <i class="fa fa-truck"></i> <span>Free uk delivery on orders over £10</span> <span class="hide-small">&nbsp;|&nbsp;</span> <span class="hide-small">Free reserve &amp; collect in our bookshops</span> <i class="fa fa-book hide-small"></i> <i class="fa fa-truck hide-med hide-large"></i> </p> 
+   </div> 
+   <main id="main-content" role="main"> 
+    <div class="container container--25 u-mb-sans"> 
+     <div class="container__content container__content--large"> 
+      <nav> 
+       <ul class="breadcrumb"> 
+        <li><a href="http://bookshop.blackwell.co.uk/bookshop/home;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Home</a></li> 
+        <li><a href="http://bookshop.blackwell.co.uk/bookshop/category.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?catOID=-169269/">Books</a></li> 
+        <li><a href="http://bookshop.blackwell.co.uk/bookshop/category.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?catOID=-169272/ANT">Art and Craft</a></li> 
+        <li><a href="http://bookshop.blackwell.co.uk/bookshop/category.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?catOID=-169295/ANT000000">Decorative Art and Antiques</a></li> 
+        <li><a href="http://bookshop.blackwell.co.uk/bookshop/category.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?catOID=-169306/ANT011000">Coins, Currency and Medals</a></li> 
+        <li><a href="http://bookshop.blackwell.co.uk/bookshop/category.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?catOID=-169281/FOR">Languages and Reference</a></li> 
+        <li><a href="http://bookshop.blackwell.co.uk/bookshop/category.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?catOID=-170641/LAN025000">Reference</a></li> 
+        <li><a href="http://bookshop.blackwell.co.uk/bookshop/category.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?catOID=-170667/REF027000">Yearbooks and Annuals</a></li> 
+       </ul> 
+      </nav> 
+     </div> 
+     <div class="container__content container__content--small"> 
+      <div class="print-action"> 
+       <a href="http://bookshop.blackwell.co.uk/bookshop/print_product_info.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?isbn=9781908828309"> <i class="fa fa-print"></i> <span class="visuallyhidden">Print this page</span> </a> 
+      </div> 
+      <!-- <ul class="list--inline share-bar">
+    <span>Share this :</span>
+    <li><a href="#" class="fb-share-button" data-href="http://blackwell.co.uk/bookshop/product/9781908828309"><i class="fa fa-facebook-square"></i><span class="visuallyhidden">Share on facebook</span></a></li>
+
+    <li><a href="https://twitter.com/share" data-url="http://blackwells.co.uk/bookshop/product/9781908828309" data-via="blackwellbooks" data-hashtags="blackwells" data-text="Next book to read"><i class="fa fa-twitter-square"></i><span class="visuallyhidden">Share on twitter</span></a></li>
+
+    <li><a data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=http://blackwells.co.uk/bookshop/product/9781908828309&media=/jacket/l/9781908828309.jpg&description=" data-pin-shape="round"><i class="fa fa-pinterest-square"></i><span class="visuallyhidden">Share on pinterest</span></a></li>
+    
+    <li><a href="https://plus.google.com/share?url=http://blackwells.co.uk/bookshop/product/9781908828309" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus-square"></i><span class="visuallyhidden">Share on google plus</span></a></li>
+</ul>
+ --> 
+     </div> 
+    </div> 
+    <div class="container container--50"> 
+     <div class="container__content"> 
+      <!--
+<div class="content produtct__picture">
+    <figure>
+        <img src="http://catmantest1.blackwell.co.uk/cm/jacket/m/9788866136453_1.jpg" alt="jacket, Coin Yearbook 2017" data-jslghtbx="http://catmantest1.blackwell.co.uk/cm/jacket/l/9788866136453_1.jpg" data-jslghtbx-group="product" itemprop="image"/>
+    </figure>
+
+    <ul class="produtct__thumbnails">
+        <li class="thumbnail__item"><a href="#"><img src='http://catmantest1.blackwell.co.uk/cm/jacket/s/9788866136453_2.jpg' data-jslghtbx="http://catmantest1.blackwell.co.uk/cm/jacket/l/9788866136453_2.jpg" data-jslghtbx-group="product" /></a></li>
+        <li class="thumbnail__item"><a href="#"><img src='http://catmantest1.blackwell.co.uk/cm/jacket/s/9788866136453_3.jpg' data-jslghtbx="http://catmantest1.blackwell.co.uk/cm/jacket/l/9788866136453_3.jpg" data-jslghtbx-group="product" /></a></li>
+    </ul>
+</div>
+--> 
+      <div class="content product__picture thumbnail__wrapper "> 
+       <figure class="picture-wrapper"> 
+        <img src="/jacket/l/9781908828309.jpg" alt="jacket, Coin Yearbook 2017" data-jslghtbx="/jacket/l/9781908828309.jpg" data-jslghtbx-group="product" itemprop="image" data-jslghtbx-index="0"> 
+       </figure> 
+      </div> 
+     </div> 
+     <div class="container__content"> 
+      <div class="content product__info"> 
+       <!-- product__meta --> 
+       <h1 class="product__name"> Coin Yearbook 2017 <small> </small> </h1> 
+       <p class="product__edition"> </p> 
+       <p class="product__author"> </p> 
+       <!-- product__format --> 
+       <p class="product__format"> <span itemprop="bookFormat">Paperback (01 Oct 2016)</span> </p> 
+       <!-- product__price --> 
+       <div class="product__price"> 
+        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+         <p class="product-price--discount u-mb-sans">Save £0.47</p> 
+         <ul class="list--inline"> 
+          <li class="product-price--old">
+           <strike>
+             £9.95
+           </strike></li> 
+          <li class="product-price--current" itemprop="price"> 
+           <meta itemprop="priceCurrency" content="GBP"> £9.48 </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <!-- action__basket --> 
+       <a class="btn btn--primary product__primary-action js-add-to-basket" ng-click="addToBasket( 9781908828309, $event )" data-isbn="9781908828309" href="/bookshop/shopping_cart.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?action=add&amp;prodid=9781908828309"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> 
+       <!-- action__whishlist --> 
+       <!-- TODO in phase 2 --> 
+       <!-- dispatch__options --> 
+       <!-- delivery__status --> 
+       <div class="product__delivery"> 
+        <p> <i class="fa fa-truck"></i> <span>£2.50 Delivery <small>(<strong>FREE</strong> on orders over £10)</small></span> </p> 
+        <p itemscope itemtype="http://schema.org/Offer"> <span class="is-hidden" itemprop="availability">In Stock</span> <i class="fa fa-check"></i> <span>10+ copies available</span><span> - Usually dispatched within 24 hours</span> </p> 
+       </div> 
+       <!-- pickup__status --> 
+       <div class="product__pickup"> 
+       </div> 
+       <!-- 		<a href="http://bookshop.blackwell.co.uk/bookshop/new_and_used.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?isbn=9781908828309">6 used titles from 7.57 </a> --> 
+       <div class="product__formats-other"> 
+        <h3>Used from other sellers</h3> 
+        <ul class="product__formats-list"> 
+         <li> <p class="u-mb-sans"> <a href="http://bookshop.blackwell.co.uk/bookshop/new_and_used.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?isbn=9781908828309" class="u-block"> <span itemprop="bookFormat">6</span> <small>used titles</small> <span class="u-right u-small">from £7.57</span> </a> </p> </li> 
+        </ul> 
+       </div> 
+       <div class="modals__container"> 
+        <div class="modal"> 
+         <button class="modal__close-btn js-modal__close">X</button> 
+         <header> 
+          <h3 class="modal__title">Check stock</h3> 
+         </header> 
+         <section class="modal__content u-cf reserveInStoreContent"> 
+          <ul class="reserveList"></ul>
+          <div id="shop__map"></div> 
+         </section> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="container"> 
+     <div class="carousel"> 
+      <div class="carousel__wrapper"> 
+       <header class="carousel__header u-center"> 
+        <h2 class="u-line-through carousel__title"> <span>We recommend</span> </h2> 
+       </header> 
+       <div class="carousel__list carousel__wrapper owl-theme owl-loaded"> 
+        <div class="owl-stage-outer">
+         <ul class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1218px;">
+          <li class="carousel__item active" style="width: 174px; margin-right: 0px;">
+           <div class=""> 
+            <div itemscope itemtype="http://schema.org/Book"> 
+             <link itemprop="additionalType" href="http://schema.org/Product"> 
+             <div class="product-picture"> 
+              <a href="/bookshop/product/Roman-Coinage-in-Britain-by-P-J-Casey/9780747802310" class="product-name"> <img src="/jacket/s/9780747802310.jpg" alt="jacket,Roman Coinage in Britain" itemprop="image" width="125px" height="192px"> </a> 
+             </div> 
+             <div class="product-info" style="height: 152px;"> 
+              <h4 itemprop="name"><a href="/bookshop/product/Roman-Coinage-in-Britain-by-P-J-Casey/9780747802310" class="product-name">Roman Coinage in Britain</a></h4> 
+              <p itemprop="author" class="product-author">P. J. Casey</p> 
+              <p class="product-format" itemprop="bookFormat">Paperback</p> 
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+               <ul class="list--inline"> 
+                <li class="product-price--current" itemprop="price"> 
+                 <meta itemprop="priceCurrency" content="GBP"> £6.99 </li> 
+               </ul> 
+              </div> 
+             </div> 
+            </div> 
+            <a href="/bookshop/shopping_cart.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?action=add&amp;prodid=9780747802310" class="btn btn--secondary js-add-to-basket" data-isbn="9780747802310" ng-click="addToBasket( 9780747802310, $event )"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> 
+           </div></li>
+          <li class="carousel__item active" style="width: 174px; margin-right: 0px;">
+           <div class=""> 
+            <div itemscope itemtype="http://schema.org/Book"> 
+             <link itemprop="additionalType" href="http://schema.org/Product"> 
+             <div class="product-picture"> 
+              <a href="/bookshop/product/Coin-Finds-in-Britain-by-Michael-Cuddeford/9780747812449" class="product-name"> <img src="/jacket/s/9780747812449.jpg" alt="jacket,Coin Finds in Britain" itemprop="image" width="125px" height="192px"> </a> 
+             </div> 
+             <div class="product-info" style="height: 152px;"> 
+              <h4 itemprop="name"><a href="/bookshop/product/Coin-Finds-in-Britain-by-Michael-Cuddeford/9780747812449" class="product-name">Coin Finds in Britain</a></h4> 
+              <p itemprop="author" class="product-author">Michael Cuddeford</p> 
+              <p class="product-format" itemprop="bookFormat">Paperback</p> 
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+               <ul class="list--inline"> 
+                <li class="product-price--current" itemprop="price"> 
+                 <meta itemprop="priceCurrency" content="GBP"> £7.99 </li> 
+               </ul> 
+              </div> 
+             </div> 
+            </div> 
+            <a href="/bookshop/shopping_cart.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?action=add&amp;prodid=9780747812449" class="btn btn--secondary js-add-to-basket" data-isbn="9780747812449" ng-click="addToBasket( 9780747812449, $event )"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> 
+           </div></li>
+          <li class="carousel__item active" style="width: 174px; margin-right: 0px;">
+           <div class=""> 
+            <div itemscope itemtype="http://schema.org/Book"> 
+             <link itemprop="additionalType" href="http://schema.org/Product"> 
+             <div class="product-picture"> 
+              <a href="/bookshop/product/Medals-by-William-Spencer/9781905615353" class="product-name"> <img src="/jacket/s/9781905615353.jpg" alt="jacket,Medals" itemprop="image" width="125px" height="192px"> </a> 
+             </div> 
+             <div class="product-info" style="height: 152px;"> 
+              <h4 itemprop="name"><a href="/bookshop/product/Medals-by-William-Spencer/9781905615353" class="product-name">Medals</a></h4> 
+              <p itemprop="author" class="product-author">William Spencer</p> 
+              <p class="product-format" itemprop="bookFormat">Paperback</p> 
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+               <ul class="list--inline"> 
+                <li class="product-price--current" itemprop="price"> 
+                 <meta itemprop="priceCurrency" content="GBP"> £9.99 </li> 
+               </ul> 
+              </div> 
+             </div> 
+            </div> 
+            <a href="/bookshop/shopping_cart.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?action=add&amp;prodid=9781905615353" class="btn btn--secondary js-add-to-basket" data-isbn="9781905615353" ng-click="addToBasket( 9781905615353, $event )"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> 
+           </div></li>
+          <li class="carousel__item active" style="width: 174px; margin-right: 0px;">
+           <div class="has-promo-sticker "> 
+            <p class="promo-stamp"><span>£2.00</span><span>off</span></p> 
+            <div itemscope itemtype="http://schema.org/Book"> 
+             <link itemprop="additionalType" href="http://schema.org/Product"> 
+             <div class="product-picture"> 
+              <a href="/bookshop/product/The-Hellenistic-World-by-Peter-Thonemann/9781107451759" class="product-name"> <img src="/jacket/s/9781107451759.jpg" alt="jacket,The Hellenistic World" itemprop="image" width="125px" height="192px"> </a> 
+             </div> 
+             <div class="product-info" style="height: 152px;"> 
+              <h4 itemprop="name"><a href="/bookshop/product/The-Hellenistic-World-by-Peter-Thonemann/9781107451759" class="product-name">The Hellenistic World</a></h4> 
+              <p itemprop="author" class="product-author">Peter Thonemann</p> 
+              <p class="product-format" itemprop="bookFormat">Paperback</p> 
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+               <p class="product-price--discount u-mb-sans">Save £2.00</p> 
+               <ul class="list--inline"> 
+                <li class="product-price--old">
+                 <strike>
+                   £20.99
+                 </strike></li> 
+                <li class="product-price--current" itemprop="price"> 
+                 <meta itemprop="priceCurrency" content="GBP"> £18.99 </li> 
+               </ul> 
+              </div> 
+             </div> 
+            </div> 
+            <a href="/bookshop/shopping_cart.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?action=add&amp;prodid=9781107451759" class="btn btn--secondary js-add-to-basket" data-isbn="9781107451759" ng-click="addToBasket( 9781107451759, $event )"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> 
+           </div></li>
+          <li class="carousel__item active" style="width: 174px; margin-right: 0px;">
+           <div class=""> 
+            <div itemscope itemtype="http://schema.org/Book"> 
+             <link itemprop="additionalType" href="http://schema.org/Product"> 
+             <div class="product-picture"> 
+              <a href="/bookshop/product/Ancient-Celtic-Coin-Art-by-Simon-Lilly/9781904263654" class="product-name"> <img src="/jacket/s/9781904263654.jpg" alt="jacket,Ancient Celtic Coin Art" itemprop="image" width="125px" height="192px"> </a> 
+             </div> 
+             <div class="product-info" style="height: 152px;"> 
+              <h4 itemprop="name"><a href="/bookshop/product/Ancient-Celtic-Coin-Art-by-Simon-Lilly/9781904263654" class="product-name">Ancient Celtic Coin Art</a></h4> 
+              <p itemprop="author" class="product-author">Simon Lilly</p> 
+              <p class="product-format" itemprop="bookFormat">Paperback</p> 
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+               <ul class="list--inline"> 
+                <li class="product-price--current" itemprop="price"> 
+                 <meta itemprop="priceCurrency" content="GBP"> £5.99 </li> 
+               </ul> 
+              </div> 
+             </div> 
+            </div> 
+            <a href="/bookshop/shopping_cart.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?action=add&amp;prodid=9781904263654" class="btn btn--secondary js-add-to-basket" data-isbn="9781904263654" ng-click="addToBasket( 9781904263654, $event )"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> 
+           </div></li>
+          <li class="carousel__item" style="width: 174px; margin-right: 0px;">
+           <div class="has-promo-sticker "> 
+            <p class="promo-stamp"><span>£2.65</span><span>off</span></p> 
+            <div itemscope itemtype="http://schema.org/Book"> 
+             <link itemprop="additionalType" href="http://schema.org/Product"> 
+             <div class="product-picture"> 
+              <a href="/bookshop/product/Money-and-Power-in-Anglo-Saxon-England-by-Rory-Naismith/9781107669697" class="product-name"> <img src="/jacket/s/9781107669697.jpg" alt="jacket,Money and Power in Anglo-Saxon England" itemprop="image" width="125px" height="192px"> </a> 
+             </div> 
+             <div class="product-info" style="height: 152px;"> 
+              <h4 itemprop="name"><a href="/bookshop/product/Money-and-Power-in-Anglo-Saxon-England-by-Rory-Naismith/9781107669697" class="product-name">Money and Power in Anglo-Sa...</a></h4> 
+              <p itemprop="author" class="product-author">Rory Naismith</p> 
+              <p class="product-format" itemprop="bookFormat">Paperback</p> 
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+               <p class="product-price--discount u-mb-sans">Save £2.65</p> 
+               <ul class="list--inline"> 
+                <li class="product-price--old">
+                 <strike>
+                   £22.99
+                 </strike></li> 
+                <li class="product-price--current" itemprop="price"> 
+                 <meta itemprop="priceCurrency" content="GBP"> £20.34 </li> 
+               </ul> 
+              </div> 
+             </div> 
+            </div> 
+            <a href="/bookshop/shopping_cart.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?action=add&amp;prodid=9781107669697" class="btn btn--secondary js-add-to-basket" data-isbn="9781107669697" ng-click="addToBasket( 9781107669697, $event )"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> 
+           </div></li>
+          <li class="carousel__item" style="width: 174px; margin-right: 0px;">
+           <div class="has-promo-sticker "> 
+            <p class="promo-stamp"><span>£6.00</span><span>off</span></p> 
+            <div itemscope itemtype="http://schema.org/Book"> 
+             <link itemprop="additionalType" href="http://schema.org/Product"> 
+             <div class="product-picture"> 
+              <a href="/bookshop/product/Roman-History-from-Coins-by-Michael-Grant/9780521095495" class="product-name"> <img src="/jacket/s/9780521095495.jpg" alt="jacket,Roman History from Coins" itemprop="image" width="125px" height="192px"> </a> 
+             </div> 
+             <div class="product-info" style="height: 152px;"> 
+              <h4 itemprop="name"><a href="/bookshop/product/Roman-History-from-Coins-by-Michael-Grant/9780521095495" class="product-name">Roman History from Coins</a></h4> 
+              <p itemprop="author" class="product-author">Michael Grant</p> 
+              <p class="product-format" itemprop="bookFormat">Paperback</p> 
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+               <p class="product-price--discount u-mb-sans">Save £6.00</p> 
+               <ul class="list--inline"> 
+                <li class="product-price--old">
+                 <strike>
+                   £30.99
+                 </strike></li> 
+                <li class="product-price--current" itemprop="price"> 
+                 <meta itemprop="priceCurrency" content="GBP"> £24.99 </li> 
+               </ul> 
+              </div> 
+             </div> 
+            </div> 
+            <a href="/bookshop/shopping_cart.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?action=add&amp;prodid=9780521095495" class="btn btn--secondary js-add-to-basket" data-isbn="9780521095495" ng-click="addToBasket( 9780521095495, $event )"> <span>Add to basket</span> <i class="fa fa-spinner fa-pulse is-hidden"></i> </a> 
+           </div></li>
+         </ul>
+        </div>
+        <div class="owl-controls">
+         <div class="owl-nav">
+          <div class="owl-prev" style="display: none;">
+           prev
+          </div>
+          <div class="owl-next" style="display: none;">
+           next
+          </div>
+         </div>
+         <div style="display: none;" class="owl-dots"></div>
+        </div>
+       </div> 
+       <ul class="carousel-controls"> 
+        <li class="carousel-prev js-carousel-move" data-dir="prev"><a href="#" class="visuallyhidden">Prev</a></li> 
+        <li class="carousel-next js-carousel-move" data-dir="next"><a href="#" class="visuallyhidden">Next</a></li> 
+       </ul> 
+      </div> 
+     </div>
+    </div> 
+    <div class="container container--50 u-separator-bottom"> 
+     <div class="container__content u-separator-right"> 
+     </div> 
+     <div class="container__content"> 
+     </div> 
+    </div> 
+    <div class="container container--333 u-separator-bottom"> 
+     <div class="container__content"> 
+      <section class="product-detail"> 
+       <header> 
+        <h2 class="headline">Book information</h2> 
+       </header> 
+       <table itemscope itemtype="http://schema.org/Book" class="u-separator-right"> 
+        <tbody>
+         <tr> 
+          <td>ISBN: </td> 
+          <td itemprop="isbn">9781908828309</td> 
+         </tr> 
+         <tr> 
+          <td>Publisher:</td> 
+          <td itemprop="publisher"> <a href="/bookshop/search/publisher/Token Publishing Ltd">Token Publishing Ltd</a> </td> 
+         </tr> 
+         <tr> 
+          <td>Imprint:</td> 
+          <td> <a href="/bookshop/search/publisher/Token Publishing Ltd">Token Publishing Ltd</a> </td> 
+         </tr> 
+         <tr> 
+          <td>Pub date:</td> 
+          <td itemprop="datePublished" content="01 Oct 2016">01 Oct 2016</td> 
+         </tr> 
+         <tr> 
+          <td>DEWEY:</td> 
+          <td>737.4941</td> 
+         </tr> 
+         <tr> 
+          <td>DEWEY edition:</td> 
+          <td>DC23</td> 
+         </tr> 
+         <tr> 
+          <td>Sales rank:</td> 
+          <td>63762</td> 
+         </tr> 
+         <tr> 
+          <td>Number of pages:</td> 
+          <td itemprop="numberOfPages">364</td> 
+         </tr> 
+         <tr> 
+          <td>Weight:</td> 
+          <td itemprop="weight">682g</td> 
+         </tr> 
+         <tr> 
+          <td>Height:</td> 
+          <td>210mm</td> 
+         </tr> 
+         <tr> 
+          <td>Width:</td> 
+          <td>145mm</td> 
+         </tr> 
+         <tr> 
+          <td>Spine width:</td> 
+          <td>20mm</td> 
+         </tr> 
+        </tbody>
+       </table> 
+      </section> 
+     </div> 
+     <div class="container__content"> 
+     </div> 
+     <div class="container__content"> 
+     </div> 
+    </div> 
+   </main> 
+   <aside class="main-sign-up u-shadow-in"> 
+    <section class="container newsletter-sign-up"> 
+     <header> 
+      <h2 class="block__headline"><span>Sign up</span> to receive wonderful books and offers in your inbox</h2> 
+     </header> 
+     <section class="u-center"> 
+      <p> <label for="newsletter_email" class="visuallyhidden">Your email address:</label> <input name="newsletter_email" id="newsletter_email" placeholder="E-mail address" type="email"> </p> 
+      <p><button class="btn btn--secondary newsletter-btn js-signup">Sign me up</button></p> 
+     </section> 
+     <footer class="newsletter-sign-up__footer u-center">
+      <p>Unsubscribe at any time &amp; no spam.</p>
+     </footer> 
+    </section> 
+    <div class="modals__container"> 
+     <div class="modal"> 
+      <button class="modal__close-btn js-modal__close">X</button> 
+      <header> 
+       <h3 class="modal__title">Subscription sent</h3> 
+      </header> 
+      <section class="modal__content u-cf signupConfirmContent">
+        Thank you 
+      </section> 
+     </div> 
+    </div> 
+   </aside> 
+   <!-- include footers files --> 
+   <footer class="main-footer" role="contentinfo"> 
+    <div class="container u-mb-sans"> 
+     <div class="container container--25 secondary-navigation"> 
+      <nav class="container__content container__content--small"> 
+       <ul> 
+        <li><a href="/bookshop/editorial/services/job_index.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Careers at Blackwell's</a></li> 
+        <li><a href="http://affiliates.blackwells.co.uk/affiliates/index.php">Affiliates</a></li> 
+        <li><a href="http://bookshop.blackwell.co.uk/stores/cpi-services/corporate-professional-institutional-services/">Account</a></li> 
+        <li><a href="/bookshop/editorial/bursaries/landing.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?route=bursaries">University</a></li> 
+        <li><a href="/bookshop/editorial/students/students.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2?route=students">Student</a></li> 
+       </ul> 
+      </nav> 
+      <nav class="container__content container__content--small"> 
+       <ul> 
+        <li><a href="/bookshop/editorial/help_faq.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Help</a></li> 
+        <li><a href="/bookshop/editorial/help_faq.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Contact Us</a></li> 
+        <li><a href="/bookshop/delivery;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Delivery Information</a></li> 
+        <li><a href="https://blackwells.zendesk.com/hc/en-gb/sections/200302836-Reserve-Online-Collect-Instore-">Reserve &amp; Collect</a></li> 
+        <li><a href="/bookshop/shops;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Our Shops</a></li> 
+        <li><a href="/bookshop/editorial/SlaveryStatement.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Slavery Statement</a></li> 
+       </ul> 
+      </nav> 
+      <nav class="container__content container__content--small"> 
+       <ul> 
+        <li class="list__head">Follow us on:</li> 
+        <li><a href="https://www.facebook.com/blackwellbooks/" target="_blank"><i class="fa fa-facebook-square"></i><span>Facebook</span></a></li> 
+        <li><a href="https://twitter.com/blackwellbooks" target="_blank"><i class="fa fa-twitter-square"></i><span>Twitter</span></a></li> 
+        <li><a href="https://www.youtube.com/user/BlackwellOnline" target="_blank"><i class="fa fa-youtube-square"></i><span>YouTube</span></a></li> 
+        <li><a href="https://www.instagram.com/blackwellbooks/" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a></li> 
+       </ul> 
+      </nav> 
+      <nav class="container__content container__content--small"> 
+       <ul> 
+        <li class="list__head">Our other sites:</li> 
+        <li><a href="https://learn.blackwell.co.uk/">Blackwell's Learning</a></li> 
+        <li><a href="http://www.blackwell.co.uk/rarebooks">Rare Books</a></li> 
+        <li><a href="/bookshop/editorial/mapping/landing.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Mapping Service</a></li> 
+       </ul> 
+      </nav> 
+     </div> 
+     <div class="footer-copyright"> 
+      <p class="footer-separator"><img src="/resources/images/bw-footer.png" alt=""></p> 
+      <section class="footer-legal no-flex"> 
+       <p>©1879-2017 Blackwell’s Ltd</p> 
+       <ul class="navigation navigation--inline dot-separated"> 
+        <li><a href="/bookshop/editorial/help/security.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Cookies</a></li> 
+        <li><a href="/bookshop/editorial/help/terms.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2">Terms &amp; Conditions</a></li> 
+        <li><a href="/bookshop/editorial/help/terms.jsp;jsessionid=5AEB02CC77D580E38C9859EADA491CDC.b6a2#privacy">Privacy</a></li> 
+       </ul> 
+      </section> 
+      <section class="footer-icon"> 
+       <div class="footer-payement"> 
+        <i class="icon icon__amex"></i> 
+        <i class="icon icon__visa"></i> 
+        <i class="icon icon__master-card"></i> 
+        <i class="icon icon__maestro"></i> 
+        <i class="icon icon__paypal"></i> 
+        <i class="icon icon__nbt"></i> 
+       </div> 
+       <div> 
+        <i class="icon icon__BA"></i> 
+        <i class="icon icon__library"></i> 
+       </div> 
+      </section> 
+     </div> 
+    </div> 
+   </footer> 
+  </div> 
+  <!-- javascript files --> 
+  <!-- Test Service Worker --> 
+  <script>
+            // if ('serviceWorker' in navigator) {
+            //     navigator.serviceWorker.register('/bookshop/service-worker.js')
+            //     .then(function(registration) {
+            //         // Registration was successful
+            //         console.log('ServiceWorker registration successful with scope: ',    registration.scope);
+            //     })
+            //     .catch(function(err) {
+            //         // registration failed :(
+            //         console.log('ServiceWorker registration failed: ', err);
+            //     });
+            // }
+        </script> 
+  <!-- third party libraries used accross the site --> 
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+  <script src="/resources/scripts/third/owl.carousel.min.js"></script> 
+  <script src="/resources/scripts/third/moment.min.js"></script> 
+  <script src="/resources/scripts/third/lightbox.min.js"></script> 
+  <!-- Allow adding specific scripts on specific pages --> 
+  <!-- Can be a specific third party library, used in main.js --> 
+  <!-- hence adding it before --> 
+  <!-- include main.min.js and eventually some libraries -->
+  <!-- For every page --> 
+  <script src="/resources/scripts/main.js"></script>
+  <div id="jslghtbx" class="jslghtbx jslghtbx-nooverflow">
+   <div class="jslghtbx-contentwrapper" id="jslghtbx-contentwrapper"></div>
+   <div class=" jslghtbx-loading-animation">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+  </div> 
+  <!-- Allow adding specific scripts on specific pages --> 
+  <!-- Can relly on main.js --> 
+  <!-- hence adding it after --> 
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7QBDGP5-kOgr4fbAJP6DlbxVL14TdJnI&amp;callback=initFirstShopinList"></script> 
+  <script type="text/javascript">
+    var map, marker;
+
+    // FIX display of the map on open
+    $('.js-reserve-in-store-popup').on('click', function(e){
+        setTimeout(initFirstShopinList, 600);
+    });
+
+    function initFirstShopinList() {
+
+        var firstShop = document.querySelector('.reserveList__item:first-child label');
+        if ( firstShop === "undefined"){
+            //  no reserve in store on the page
+            return;
+        }
+        var fGeocode = $(firstShop).data("geocode").split(',');
+
+        $('.reserveList__item:first-of-type input[type="radio"]').prop("checked", true);
+        initMap( parseFloat(fGeocode[0]), parseFloat(fGeocode[1]) );
+    }
+
+
+
+
+
+    function initMap( slat, slng ) {
+
+        var o = {lat: slat, lng: slng};
+
+        map = new google.maps.Map(document.getElementById('shop__map'), {
+          center: o,
+          zoom: 15
+        });
+
+        marker = new google.maps.Marker({
+          position: o,
+          map: map
+        });
+    }
+</script> 
+  <!-- PAP affiliate tracking code --> 
+  <script src="//blackwells.postaffiliatepro.com/scripts/h9x2dejo.js" id="pap_x2s6df8d"></script>
+  <script type="text/javascript" src="http://blackwells.postaffiliatepro.com/scripts/h9x2dero.js?accountId=default1&amp;url=H_bookshop.blackwell.co.uk%2Fbookshop%2Fproduct%2FCoin-Yearbook-2017-by%2F9781908828309&amp;referrer=&amp;getParams=&amp;anchor=&amp;isInIframe=false&amp;cookies="></script> 
+  <script>
+            PostAffTracker.setAccountId('default1');
+            // console.dir(PostAffTracker);
+
+            try {
+                PostAffTracker.track();
+            } catch (err) {
+                console.err("PostAffTracker Error : ", err);
+            }
+        </script> 
+  <div id="fb-root" class=" fb_reset">
+   <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+    <div>
+     <iframe name="fb_xdm_frame_http" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="http://staticxx.facebook.com/connect/xd_arbiter/r/Sh-3BhStODe.js?version=42#channel=f2b6bb41038189c&amp;origin=http%3A%2F%2Fbookshop.blackwell.co.uk" frameborder="0"></iframe>
+     <iframe name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="https://staticxx.facebook.com/connect/xd_arbiter/r/Sh-3BhStODe.js?version=42#channel=f2b6bb41038189c&amp;origin=http%3A%2F%2Fbookshop.blackwell.co.uk" frameborder="0"></iframe>
+    </div>
+   </div>
+   <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+    <div></div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link type="image/vnd.microsoft.icon" href="favicon.ico" rel="shortcut icon" />
+<link type="image/vnd.microsoft.icon" href="favicon.ico" rel="icon" />
+<link href="pw2_gallery_view/style.css" type="text/css" rel="stylesheet" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta content="index, follow" name="robots" />
+  <meta content="Property, Estate Agents, Banbury property, Oxfordshire." name="keywords" />
+  <meta content="Stanbra Powell Estate Agents of Banbury" name="title" />
+  <meta content="Administrator" name="author" />
+  <meta content="Stanbra Powell Estate Agents of Banbury, Oxfordshire." name="description" />
+<title>Stanbra Powell Estate Agents.</title>
+
+
+
+<script src="getDetails.js" type="text/javascript"></script>
+
+
+<!-- flash slide show -->
+<script src="jquery-1.2.6.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+/***
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 2500 );
+});
+
+</script>
+
+<style type="text/css">
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:310px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+</style>
+
+
+<!-- ends here -->
+
+<!-- property details page toggle -->
+<script src="jquery.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript">$(document).ready(function(){
+$(".msg_body").hide();
+ $(".msg_head").click(function()  {    $(this).next(".msg_body").slideToggle(600);  });});
+ </script>
+ <!--ends here-->
+ <!--font replacements with perputea -->
+ <script src="typeface.js" language="javascript" type="text/javascript"></script>
+<script src="perpetua_regular.typeface.js" language="javascript" type="text/javascript"></script>
+<!--ends here -->
+<!--propertydetails page arrow in toggle-->
+<script type="text/javascript">
+var useRand = 1;
+
+images = new Array;
+images[1] = new Image();
+images[1].src = "images/h.png";
+images[2] = new Image();
+images[2].src = "images/s.png";
+
+function swapPic() {
+var imgnum = images.length - 1;
+do {
+var randnum = Math.random();
+rand1 = Math.round((imgnum - 1) * randnum) + 1;
+} while (rand1 == useRand);
+useRand = rand1;
+document.randimg.src = images[useRand].src;
+}</script>
+<!-- ends here -->
+
+<link type="text/css" rel="stylesheet" href="pw2.css" />
+<script src="pw2_plugins/plugin/jq_featured_vert_3_v1/jquery-1.7.1.js" type="text/javascript"></script>
+<link href="pw2_jq_featured_vert_3_v1/style.css" type="text/css" rel="stylesheet" />
+<link href="cookies_v1/clPopup.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body onload="swapPic(); startMap()">
+             <div id="clWrap">
+            <table cellspacing="0" cellpadding="3" border="0">
+               <tbody><tr>
+                   <td>
+                     This website requires cookies to improve your experience. 
+                     <!--<a class="clPolicy" href="BusWeb_Privacy_Policy.php">Read privacy policy</a>-->
+                   </td>
+                   <td width="10"> </td>
+                	 <td>
+                     <a href="pw2_plugins/plugin/cookies_v1/cookies/cookies.php?addCookie=true" class="clAccept">I accept cookies</a>
+                  </td>
+               </tr>
+            </tbody></table>
+         </div>
+
+
+    <div id="header">
+        <div class="content_container">
+            <!-- Logo continer -->
+            <div id="header-left">
+                <img style="height: 130px;" alt="Stanbra Powel Estate Agents Logo" src="images/logo.png" />
+            </div>
+
+            <div id="header-right">
+
+                <div id="contactdet">
+                    <!--<div style="float:right; font-size:1em;">
+                        <a href="mailto:post@stanbra-powell.co.uk">|&nbsp;Email us</a>
+                    </div>-->
+                    <div style="float:right;">
+                        <span style=" font-size:1em;">
+                            <span style="color:#ffffff;">T:</span>
+                            01295 221100 
+                        </span>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+                <div style="float: right; width: 100%;">
+                    Established 1985<br />
+					<a href="https://www.facebook.com/pages/Stanbra-Powell/1381303712159140"><img width="25" border="0" alt="FB" src="images/fb.png" /></a>
+					<a href="https://twitter.com/stanbrapowell"><img width="25" border="0" alt="TW" src="images/tw.png" /></a>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    <div class="nav_header">
+        <div class="content_container">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li> | </li>
+                    <li><a href="selling.php">Selling</a></li>
+                    <li> | </li>
+                    <li><a href="letting.php">Letting</a></li>
+                    <li> | </li>
+                    <li><a href="results.php?exeSearch=true&amp;searchSaleRent[]=Sales&amp;searchTypes[]=&amp;searchBeds=&amp;searchMinPrice=&amp;searchMaxPrice=&amp;searchAreas[]=&amp;Submit=Search">property for sale</a></li>
+                    <li> | </li>
+                    <li><a href="results.php?exeSearch=true&amp;searchSaleRent[]=Lettings&amp;searchTypes[]=&amp;searchBeds=&amp;searchMinPrice=&amp;searchMaxPrice=&amp;searchAreas[]=&amp;Submit=Search">Property to Let</a></li>
+                    <li> | </li>
+                    <li><a href="register.php">Register/Login</a></li>
+                </ul>
+
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="content">
+            <div id="left">
+<div id="content-res">
+<div id="det_heading">
+<table><tbody><tr><td width="488">
+BANBURY</td>
+<td width="456" align="right">Available at £107,500</td>
+</tr></tbody></table>
+</div>
+		<div id="imageWrap">
+		<div id="mainimageWrap">
+        		 <ul id="gallery_view" style="display: none;">
+    	<li>
+							<h3 style="visibility: visible;"></h3>
+							<span>getImg.php?id=32379262&amp;h=400</span>
+							<p><a href="javascript:slideshow.play_pause(1);"><span id="gallery_view_play_pause1" style="float:left;">Status</span></a> <strong style="float:right">1 of 8</strong></p>
+							<a href="getImg.php?id=32379262"></a>
+						</li><li>
+							<h3 style="visibility: visible;"></h3>
+							<span>getImg.php?id=32379263&amp;h=400</span>
+							<p><a href="javascript:slideshow.play_pause(2);"><span id="gallery_view_play_pause2" style="float:left;">Status</span></a> <strong style="float:right">2 of 8</strong></p>
+							<a href="getImg.php?id=32379263"></a>
+						</li><li>
+							<h3 style="visibility: visible;"></h3>
+							<span>getImg.php?id=32379264&amp;h=400</span>
+							<p><a href="javascript:slideshow.play_pause(3);"><span id="gallery_view_play_pause3" style="float:left;">Status</span></a> <strong style="float:right">3 of 8</strong></p>
+							<a href="getImg.php?id=32379264"></a>
+						</li><li>
+							<h3 style="visibility: visible;"></h3>
+							<span>getImg.php?id=32379265&amp;h=400</span>
+							<p><a href="javascript:slideshow.play_pause(4);"><span id="gallery_view_play_pause4" style="float:left;">Status</span></a> <strong style="float:right">4 of 8</strong></p>
+							<a href="getImg.php?id=32379265"></a>
+						</li><li>
+							<h3 style="visibility: visible;"></h3>
+							<span>getImg.php?id=32379266&amp;h=400</span>
+							<p><a href="javascript:slideshow.play_pause(5);"><span id="gallery_view_play_pause5" style="float:left;">Status</span></a> <strong style="float:right">5 of 8</strong></p>
+							<a href="getImg.php?id=32379266"></a>
+						</li><li>
+							<h3 style="visibility: visible;"></h3>
+							<span>getImg.php?id=32379267&amp;h=400</span>
+							<p><a href="javascript:slideshow.play_pause(6);"><span id="gallery_view_play_pause6" style="float:left;">Status</span></a> <strong style="float:right">6 of 8</strong></p>
+							<a href="getImg.php?id=32379267"></a>
+						</li><li>
+							<h3 style="visibility: visible;"></h3>
+							<span>getImg.php?id=32379268&amp;h=400</span>
+							<p><a href="javascript:slideshow.play_pause(7);"><span id="gallery_view_play_pause7" style="float:left;">Status</span></a> <strong style="float:right">7 of 8</strong></p>
+							<a href="getImg.php?id=32379268"></a>
+						</li><li>
+							<h3 style="visibility: visible;"></h3>
+							<span>getImg.php?id=32379269&amp;h=400</span>
+							<p><a href="javascript:slideshow.play_pause(8);"><span id="gallery_view_play_pause8" style="float:left;">Status</span></a> <strong style="float:right">8 of 8</strong></p>
+							<a href="getImg.php?id=32379269"></a>
+						</li>	
+		
+	</ul>
+	<div id="gallery_view_wrapper" style="display: block;">
+    <div id="gallery_view_status">Pause Slideshow</div>
+		<div id="gallery_view_fullsize">
+			<div title="Previous Image" class="gallery_view_imgnav" id="gallery_view_imgprev" style="opacity: 0.25;"></div>
+			<div title="Next Image" class="gallery_view_imgnav" id="gallery_view_imgnext" style="opacity: 0.25;"></div>
+			<div id="gallery_view_image"></div>
+			<div id="gallery_view_information" style="height: 1px;">
+				<h3 style="visibility: visible;"></h3>
+				<p id="playStatus"></p>
+			</div>
+		</div>
+		<div id="gallery_view_thumbnails">
+			<div title="Slide Left" id="gallery_view_slideleft"></div>
+			<div id="gallery_view_slidearea">
+				<div id="gallery_view_slider" style="width: 749px;"><img alt="Property Image" src="getImg.php?id=32379262&amp;h=75" style="margin-right: 5px; opacity: 0.7; border-color: rgb(51, 51, 102);" /><img alt="Property Image" src="getImg.php?id=32379263&amp;h=75" style="margin-right: 5px; opacity: 0.7;" /><img alt="Property Image" src="getImg.php?id=32379264&amp;h=75" style="margin-right: 5px; opacity: 0.7;" /><img alt="Property Image" src="getImg.php?id=32379265&amp;h=75" style="margin-right: 5px; opacity: 0.7;" /><img alt="Property Image" src="getImg.php?id=32379266&amp;h=75" style="margin-right: 5px; opacity: 0.7;" /><img alt="Property Image" src="getImg.php?id=32379267&amp;h=75" style="margin-right: 5px; opacity: 0.7;" /><img alt="Property Image" src="getImg.php?id=32379268&amp;h=75" style="margin-right: 5px; opacity: 0.7;" /><img alt="Property Image" src="getImg.php?id=32379269&amp;h=75" style="opacity: 0.7;" /></div>
+			</div>
+			<div title="Slide Right" id="gallery_view_slideright"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var TINY={};
+	
+	function $(i){return document.getElementById(i)}
+	function $$(e,p){p=p||document; return p.getElementsByTagName(e)}
+	
+	TINY.slideshow=function(n){
+		this.infoSpeed=this.imgSpeed=this.speed=10;
+		this.thumbOpacity=this.navHover=70;
+		this.navOpacity=25;
+		this.scrollSpeed=5;
+		this.letterbox='#EBEBEB';
+		this.n=n;
+		this.c=0;
+		this.a=[]
+	};
+	
+	TINY.slideshow.prototype={
+		init:function(s,z,b,f,q){
+			s=$(s);
+			var m=$$('li',s), i=0, w=0;
+			this.l=m.length;
+			this.q=$(q);
+			this.f=$(z);
+			this.r=$(this.info);
+			this.o=parseInt(TINY.style.val(z,'width'));
+			if(this.thumbs){
+				var u=$(this.left), r=$(this.right);
+				u.onmouseover=new Function('TINY.scroll.init("'+this.thumbs+'",-1,'+this.scrollSpeed+')');
+				u.onmouseout=r.onmouseout=new Function('TINY.scroll.cl("'+this.thumbs+'")');
+				r.onmouseover=new Function('TINY.scroll.init("'+this.thumbs+'",1,'+this.scrollSpeed+')');
+				this.p=$(this.thumbs)
+			}
+			for(i;i&lt;this.l;i++){
+				this.a[i]={};
+				var h=m[i], a=this.a[i];
+				a.t=$$('h3',h)[0].innerHTML;
+				a.d=$$('p',h)[0].innerHTML;
+				a.l=$$('a',h)[0]?$$('a',h)[0].href:'';
+				a.p=$$('span',h)[0].innerHTML + "&amp;h=400";
+				if(this.thumbs){
+					var g=$$('img',h)[0];
+					this.p.appendChild(g);
+					w+=parseInt(g.offsetWidth);
+					if(i!=this.l-1){
+						g.style.marginRight=this.spacing+'px';
+						w+=this.spacing
+					}
+					this.p.style.width=w+'px';
+					g.style.opacity=this.thumbOpacity/100;
+					g.style.filter='alpha(opacity='+this.thumbOpacity+')';
+					g.onmouseover=new Function('TINY.alpha.set(this,100,5)');
+					g.onmouseout=new Function('TINY.alpha.set(this,'+this.thumbOpacity+',5)');
+					g.onclick=new Function(this.n+'.pr('+i+',1)')
+				}
+			}
+			if(b&amp;&amp;f){
+				b=$(b);
+				f=$(f);
+				b.style.opacity=f.style.opacity=this.navOpacity/100;
+				b.style.filter=f.style.filter='alpha(opacity='+this.navOpacity+')';
+				b.onmouseover=f.onmouseover=new Function('TINY.alpha.set(this,'+this.navHover+',5)');
+				b.onmouseout=f.onmouseout=new Function('TINY.alpha.set(this,'+this.navOpacity+',5)');
+				b.onclick=new Function(this.n+'.mv(-1,1)');
+				f.onclick=new Function(this.n+'.mv(1,1)')
+			}
+			this.auto?this.is(0,0):this.is(0,1);
+			this.auto?document.getElementById('gallery_view_status').innerHTML = 'Pause Slideshow':document.getElementById('gallery_view_status').innerHTML = 'Play Slideshow'
+		},
+		mv:function(d,c){
+			c?document.getElementById('gallery_view_status').innerHTML = 'Play Slideshow':document.getElementById('gallery_view_status').innerHTML = 'Pause Slideshow'
+			var t=this.c+d;
+			this.c=t=t&lt;0?this.l-1:t&gt;this.l-1?0:t;
+			this.pr(t,c)
+		},
+		play_pause:function(number)
+		{
+			var statusText = document.getElementById('gallery_view_status').innerHTML;
+	
+			if(statusText == 'Play Slideshow') {
+				document.getElementById('gallery_view_play_pause'+number).innerHTML = 'Pause Slideshow';
+				this.mv(1,0);
+				document.getElementById('playStatus').innerHTML = dup;
+				document.getElementById('gallery_view_status').innerHTML = 'Pause Slideshow';
+			} else {
+				document.getElementById('gallery_view_play_pause'+number).innerHTML = 'Play Slideshow';
+				this.mv(0,1);
+				document.getElementById('gallery_view_status').innerHTML = 'Play Slideshow';
+			}
+			
+			document.recalc(true);
+		},
+		pr:function(t,c){
+			c?document.getElementById('gallery_view_status').innerHTML = 'Play Slideshow':document.getElementById('gallery_view_status').innerHTML = 'Pause Slideshow'
+			clearTimeout(this.lt);
+			if(c){
+				clearTimeout(this.at)
+			}
+			this.c=t;
+			this.is(t,c)
+		},
+		is:function(s,c){
+			if(this.info){
+				TINY.height.set(this.r,1,this.infoSpeed/2,-1)
+			}
+			var i=new Image();
+			i.style.opacity=0;
+			i.style.filter='alpha(opacity=0)';
+			this.i=i;
+			i.onload=new Function(this.n+'.le('+s+','+c+')');
+			i.src=this.a[s].p;
+			if(this.thumbs){
+				var a=$$('img',this.p), l=a.length, x=0;
+				for(x;x&lt;l;x++){
+					a[x].style.borderColor=x!=s?'':this.active
+				}
+			}
+		},
+		le:function(s,c){
+			this.f.appendChild(this.i);
+			if(this.f.childNodes.length &gt;= 3)
+			{
+				this.f.removeChild(this.f.firstChild);
+			}
+			var w=this.o-parseInt(this.i.offsetWidth);
+			if(w&gt;0){
+				var l=Math.floor(w/2);
+				this.i.style.borderLeft=l+'px solid '+this.letterbox;
+				this.i.style.borderRight=(w-l)+'px solid '+this.letterbox
+			}
+         // Sets image transparancy off
+			TINY.alpha.set(this.i,100,this.imgSpeed);
+			var n=new Function(this.n+'.nf('+s+')');
+			this.lt=setTimeout(n,this.imgSpeed*100);
+			if(!c){
+				this.at=setTimeout(new Function(this.n+'.mv(1,0)'),this.speed*1000)
+			}
+			var m=$$('img',this.f);
+         // --------------------------------------------------------- //
+         // Changed 2013 02 15                                    S.R
+         // Problem with EPC graph size for Peter Joy
+         // EPC displayed, as is the previous slideshow image
+         // Changing m.length&gt;2 to m.length&gt;1 removes the previous
+         // image from the slideshow.
+         // --------------------------------------------------------- //
+			if(m.length&gt;1){
+				this.f.removeChild(m[0])
+			}
+         // --------------------------------------------------------- //
+		},
+		nf:function(s){
+			if(this.info){
+				s=this.a[s];
+				$$('h3',this.r)[0].innerHTML=s.t;
+				//$$('p',this.r)[0].innerHTML=s.d;
+				var statusText = document.getElementById('gallery_view_status').innerHTML;
+				var pText = s.d.replace("Status", statusText);
+				$$('p',this.r)[0].innerHTML=pText;
+				this.r.style.height='auto';
+				var h=parseInt(this.r.offsetHeight);
+				this.r.style.height=0;
+				TINY.height.set(this.r,h,this.infoSpeed,0)
+			}
+		}
+	};
+	
+	TINY.scroll=function(){
+		return{
+			init:function(e,d,s){
+				e=typeof e=='object'?e:$(e); var p=e.style.left||TINY.style.val(e,'left'); e.style.left=p;
+				var l=d==1?parseInt(e.offsetWidth)-parseInt(e.parentNode.offsetWidth):0; e.si=setInterval(function(){TINY.scroll.mv(e,l,d,s)},20)
+			},
+			mv:function(e,l,d,s){
+				var c=parseInt(e.style.left); if(c==l){TINY.scroll.cl(e)}else{var i=Math.abs(l+c); i=i&lt;s?i:s; var n=c-i*d; e.style.left=n+'px'}
+			},
+			cl:function(e){e=typeof e=='object'?e:$(e); clearInterval(e.si)}
+		}
+	}();
+	
+	TINY.height=function(){
+		return{
+			set:function(e,h,s,d){
+				e=typeof e=='object'?e:$(e); var oh=e.offsetHeight, ho=e.style.height||TINY.style.val(e,'height');
+				ho=oh-parseInt(ho); var hd=oh-ho&gt;h?-1:1; clearInterval(e.si); e.si=setInterval(function(){TINY.height.tw(e,h,ho,hd,s)},20)
+			},
+			tw:function(e,h,ho,hd,s){
+				var oh=e.offsetHeight-ho;
+				if(oh==h){clearInterval(e.si)}else{if(oh!=h){e.style.height=oh+(Math.ceil(Math.abs(h-oh)/s)*hd)+'px'}}
+			}
+		}
+	}();
+	
+	TINY.alpha=function(){
+		return{
+			set:function(e,a,s){
+				e=typeof e=='object'?e:$(e); var o=e.style.opacity||TINY.style.val(e,'opacity'),
+				d=a&gt;o*100?1:-1; e.style.opacity=o; clearInterval(e.ai); e.ai=setInterval(function(){TINY.alpha.tw(e,a,d,s)},20)
+			},
+			tw:function(e,a,d,s){
+				var o=Math.round(e.style.opacity*100);
+				if(o==a){clearInterval(e.ai)}else{var n=o+Math.ceil(Math.abs(a-o)/s)*d; e.style.opacity=n/100; e.style.filter='alpha(opacity='+n+')'}
+			}
+		}
+	}();
+	
+	TINY.style=function(){return{val:function(e,p){e=typeof e=='object'?e:$(e); return e.currentStyle?e.currentStyle[p]:document.defaultView.getComputedStyle(e,null).getPropertyValue(p)}}}();
+    </script>
+    <script type="text/javascript">
+        $('gallery_view').style.display='none';
+        $('gallery_view_wrapper').style.display='block';
+        var slideshow=new TINY.slideshow("slideshow");
+        window.onload=function(){
+						//Gallery View Settings
+			slideshow.auto=true;
+            slideshow.speed=6;
+            slideshow.link="gallery_view_linkhover";
+            slideshow.info="gallery_view_information";
+            slideshow.thumbs="gallery_view_slider";
+            slideshow.left="gallery_view_slideleft";
+            slideshow.right="gallery_view_slideright";
+            slideshow.scrollSpeed=5;
+            slideshow.spacing=5;
+            slideshow.active="#333366";
+            slideshow.init("gallery_view","gallery_view_image","gallery_view_imgprev","gallery_view_imgnext","gallery_view_imglink");
+        }
+    </script>
+		</div>
+
+				</div>
+
+        
+
+			   <div id="feat-des">
+		<div id="fullDetails">
+
+			<h2 style="visibility: visible;">A 1 bedroom Flat located in BANBURY</h2>
+
+
+<div id="pdWrap">
+    <div id="pdDetails">
+        <p>BUILT AROUND 1900 AND HAVING BEEN SYMPATHETICALLY RENOVATED IN RECENT YEARS, AN INDIVIDUAL ONE BEDROOM  FIRST FLOOR OPEN PLAN APARTMENT, OFFERING A WEALTH OF CHARACTER AND ORIGINAL FEATURUES. NO UPWARD CHAIN. <br /><br /></p>
+    </div>
+</div>
+
+
+		 	</div>
+
+		</div>
+
+		 <div id="info">
+
+			  <table>
+			 <!-- <tr><td class="infobutton"><a class="search" target="_blank" href="map.php?pid=">Map</a></td></tr>-->
+             <tbody><tr><td class="infobutton"><a target="_blank" href="http://maps.google.co.uk/maps?q=OX16+5AR" class="search">Map</a></td></tr>
+
+			
+			<tr><td class="infobutton"><a target="_blank" href="getFile.php?id=32379006" class="search">PDF Details</a></td></tr>
+
+			<tr><td class="infobutton"><a target="_blank" href="getFile.php?id=32019704" class="search">EPC Graph</a></td></tr>
+
+			<tr><td class="infobutton"><a target="_blank" href="getFile.php?id=32003031" class="search">Floor Plan 1</a></td></tr></tbody></table>
+
+
+			   </div>
+
+		 <div class="msg_list">
+		  <div class="msg_head">Full Details</div>
+		   <div class="msg_body">THE ACCOMMODATION COMPRISES
+<br />
+<br />Ground floor:
+<br />Communal entrance hall:  Stairs rising to communal landing.
+<br />Communal landing:
+<br />Entrance lobby:  Wood flooring.
+<br />Lounge / Kitchen:  Part vaulted open-plan room.  Feature stone mullioned window with leaded inserts. Wood flooring.  Electric heater.  
+<br />Kitchen:  Inset sink unit.  Range of light wood fronted base units.  Tiling to splashback areas.  Work surface.  Free space and  plumbing for washing machine.  Free space for fridge / freezer.  Integrated four ring            electric hob with electric oven under and              extractor over.  Port-hole style window to side aspect. Exposed timbers and beams.                Exposed brickwork.
+<br />Bedroom:  Port-hole style window to side   aspect.  Exposed timbers and beams.  Wood flooring.  Electric heater.  Door to shower room.
+<br />
+<br />Shower room:  Exposed timbers and beams.  Port-hole style window to side aspect.  Wash handbasin with free space under.  Range of base units.  Low level WC.  Fully tiled shower cubicle with thermostatic shower unit.  Tiled flooring.  Tiling to splashback areas.  
+<br /></div>
+		  </div>
+		<div class="backto">
+	<a href="results.php" class="det_back">Back to Results</a><br />
+		</div>
+	</div>
+
+</div>
+<div id="right">
+        <div style="clear:both;"></div>
+    <div id="featured">
+        </div>
+</div>
+<img alt="Accreditiations" src="images/logo_credits.png" />
+</div>
+</div>
+<div id="footer">
+    <div id="foot">
+        <div id="left-footer">
+            <span>
+                © 2014 Stanbra Powell | Tel:01295 221100<br />
+            </span>
+            <br />
+            Stanbra Powell, 5/6A Horsefair, Banbury, Oxon, OX16 0AA
+        </div>
+        <div id="right-footer">
+            <div id="menu-footer">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li> | </li>
+                    <li><a href="selling.php">Selling</a></li>
+                    <li> | </li>
+                    <li><a href="letting.php">Letting</a></li>
+                    <li> | </li>
+                    <li><a href="results.php?exeSearch=true&amp;searchSaleRent[]=Sales&amp;searchTypes[]=&amp;searchBeds=&amp;searchMinPrice=&amp;searchMaxPrice=&amp;searchAreas[]=&amp;Submit=Search">property for sale</a></li>
+                    <li> | </li>
+                    <li><a href="results.php?exeSearch=true&amp;searchSaleRent[]=Lettings&amp;searchTypes[]=&amp;searchBeds=&amp;searchMinPrice=&amp;searchMaxPrice=&amp;searchAreas[]=&amp;Submit=Search">Property to Let</a></li>
+                    <li> | </li>
+                    <li><a href="register.php">Register/Login</a></li>
+                </ul>
+            </div>
+            <!--<a href="terms.php">Terms & Conditions</a> |
+            <a href="privacypolicy.php">Privacy Policy</a>-->
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>
+
+
+
+
+
+
+</body></html>
+<!-- PW2[2.001] (c)Businesswebsite.com Ltd 2008 -->
+<!-- Bender: Qml0ZSBteSBnbG9yaW91cyBnb2xkZW4gYXNzIQ== -->
+<!--Time Taken: 0.005441-->

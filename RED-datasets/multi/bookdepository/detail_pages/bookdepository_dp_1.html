@@ -1,0 +1,1382 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <script type="text/javascript">var ue_t0=ue_t0||+new Date();</script> 
+  <script type="text/javascript">
+var ue_csm = window,
+    ue_hob = +new Date();
+(function(d){var e=d.ue=d.ue||{},f=Date.now||function(){return+new Date};e.d=function(b){return f()-(b?0:d.ue_t0)};e.stub=function(b,a){if(!b[a]){var c=[];b[a]=function(){c.push([c.slice.call(arguments),e.d(),d.ue_id])};b[a].replay=function(b){for(var a;a=c.shift();)b(a[0],a[1],a[2])};b[a].isStub=1}};e.exec=function(b,a){return function(){if(1==window.ueinit)try{return b.apply(this,arguments)}catch(c){ueLogError(c,{attribution:a||"undefined",logLevel:"WARN"})}}}})(ue_csm);
+
+
+    var ue_err_chan = 'jserr-rw';
+(function(c,d){function e(f,b){if(!(a.ec>a.mxe)&&f){a.ec++;a.ter.push(f);b=b||{};var c=f.logLevel||b.logLevel;c&&c!=k||a.ecf++;b.pageURL=""+(d.location?d.location.href:"");b.logLevel=c;b.attribution=f.attribution||b.attribution;a.erl.push({ex:f,info:b})}}function h(a,b,d,e,g){c.ueLogError({m:a,f:b,l:d,c:""+e,err:g,fromOnError:1,args:arguments},g?{attribution:g.attribution,logLevel:g.logLevel}:void 0);return!1}var k="FATAL",a={ec:0,ecf:0,pec:0,ts:0,erl:[],ter:[],mxe:50,startTimer:function(){a.ts++;
+setInterval(function(){c.ue&&a.pec<a.ec&&c.uex("at");a.pec=a.ec},1E4)}};h.skipTrace=1;e.skipTrace=1;e.isStub=1;c.ueLogError=e;c.ue_err=a;d.onerror=h})(ue_csm,window);
+
+
+var ue_id = '0S0M8FQMGEB0A3KPW5YR',
+    ue_url = '/csmpb',
+    ue_navtiming = 1,
+    ue_mid = 'AYXWW5ND5JOM8',
+    ue_sid = '000-0000000-0000000',
+    ue_sn = 'www.bookdepository.com',
+    ue_furl = 'fls-eu.amazon.co.uk',
+    ue_fcsn = 1,
+    ue_urt = 3,
+    ue_rpl_ns = 'cel-rpl',
+    ue_fpf = '//fls-eu.amazon.co.uk/1/batch/1/OP/AYXWW5ND5JOM8:000-0000000-0000000:0S0M8FQMGEB0A3KPW5YR$uedata=s:',
+
+    ue_swi = 1;
+function ue_viz(){(function(c,e,a){function k(b){if(c.ue.viz.length<p&&!l){var a=b.type;b=b.originalEvent;/^focus./.test(a)&&b&&(b.toElement||b.fromElement||b.relatedTarget)||(a=e[m]||("blur"==a||"focusout"==a?"hidden":"visible"),c.ue.viz.push(a+":"+(+new Date-c.ue.t0)),"visible"==a&&(ue.isl&&uex("at"),l=1))}}for(var l=0,f,g,m,n=["","webkit","o","ms","moz"],d=0,p=20,h=0;h<n.length&&!d;h++)if(a=n[h],f=(a?a+"H":"h")+"idden",d="boolean"==typeof e[f])g=a+"visibilitychange",m=(a?a+"V":"v")+"isibilityState";
+k({});d&&e.addEventListener(g,k,0);c.ue&&d&&(c.ue.pageViz={event:g,propHid:f})})(ue_csm,document,window)};
+
+(function(a,g){function x(a){return a&&a.replace&&a.replace(/^\s+|\s+$/g,"")}function p(a){return"undefined"===typeof a}function s(d,c,e,h){var g=h||+new Date,m;a.ueam&&a.ueam(c,d,h);if(c||p(e)){if(d)for(m in h=c?f("t",c)||f("t",c,{}):a.ue.t,h[d]=g,e)e.hasOwnProperty(m)&&f(m,c,e[m]);return g}}function f(d,c,e){var f=a.ue,g=c&&c!=f.id?f.sc[c]:f;g||(g=f.sc[c]={});"id"==d&&e&&(f.cfa2=1,a.ue_ran&&(a.ue_cel&&a.ue_cel.reset(e),a.ue.log.reset&&a.ue.log.reset()));return g[d]=e||g[d]}function t(d,c,e,f,g){e=
+"on"+e;var m=c[e];"function"===typeof m?d&&(a.ue.h[d]=m):m=function(){};c[e]=g?function(a){f(a);m(a)}:function(a){m(a);f(a)};c[e]&&(c[e].isUeh=1)}function y(d,c,e){function h(c,e){var b=[c],E=0,g={},m,h;e?(b.push("m=1"),g[e]=1):g=a.ue.sc;for(h in g)if(g.hasOwnProperty(h)){var k=f("wb",h),l=f("t",h)||{},q=f("t0",h)||a.ue.t0,n;if(e||2==k){k=k?E++:"";b.push("sc"+k+"="+h);for(n in l)3>=n.length&&!p(l[n])&&null!==l[n]&&b.push(n+k+"="+(l[n]-q));b.push("t"+k+"="+l[d]);if(f("ctb",h)||f("wb",h))m=1}}!z&&m&&
+b.push("ctb=1");return b.join("&")}function B(c,b,e,d){if(c){var f=a.ue_err,h;d&&a.ue.log||(h=new Image,a.ue.iel.push(h),h.src=c);F?a.ue_fpf&&g.encodeURIComponent&&c&&(d=new Image,c=""+a.ue_fpf+g.encodeURIComponent(c)+":"+(+new Date-a.ue_t0),a.ue.iel.push(d),d.src=c):a.ue.log&&(h=g.chrome&&"ul"==b,a.ue.log(c,"uedata",a.ue_svi?{n:1,img:!d&&h?1:0}:{n:1}),a.ue.ielf.push(c));f&&!f.ts&&f.startTimer();a.ue.b&&(f=a.ue.b,a.ue.b="",B(f,b,e,1))}}function m(c){if(!ue.collected){var b=c.timing,e=c.navigation,
+d=ue.t;b&&(d.na_=b.navigationStart,d.ul_=b.unloadEventStart,d._ul=b.unloadEventEnd,d.rd_=b.redirectStart,d._rd=b.redirectEnd,d.fe_=b.fetchStart,d.lk_=b.domainLookupStart,d._lk=b.domainLookupEnd,d.co_=b.connectStart,d._co=b.connectEnd,d.sc_=b.secureConnectionStart,d.rq_=b.requestStart,d.rs_=b.responseStart,d._rs=b.responseEnd,d.dl_=b.domLoading,d.di_=b.domInteractive,d.de_=b.domContentLoadedEventStart,d._de=b.domContentLoadedEventEnd,d._dc=b.domComplete,d.ld_=b.loadEventStart,d._ld=b.loadEventEnd,
+b=d.na_,c="function"!==typeof c.now||p(b)?0:new Date(b+c.now())-new Date,d.ntd=c+a.ue.t0);e&&(d.ty=e.type+a.ue.t0,d.rc=e.redirectCount+a.ue.t0);ue.collected=1}}function t(b){var c=n&&n.navigation?n.navigation.type:A,d=c&&2!=c,e=a.ue.bfini;a.ue.cfa2||(e&&1<e&&(b+="&bfform=1",d||(a.ue.isBFT=e-1)),2==c&&(b+="&bfnt=1",a.ue.isBFT=a.ue.isBFT||1),a.ue.ssw&&a.ue.isBFT&&(p(a.ue.isNRBF)&&(c=a.ue.ssw(a.ue.oid),c.e||p(c.val)||(a.ue.isNRBF=1<c.val?0:1)),p(a.ue.isNRBF)||(b+="&nrbf="+a.ue.isNRBF)),a.ue.isBFT&&!a.ue.isNRBF&&
+(b+="&bft="+a.ue.isBFT));return b}function w(){a.ue.isl&&y("eod")}if(c||p(e)){for(var q in e)e.hasOwnProperty(q)&&f(q,c,e[q]);s("pc",c,e);q=f("id",c)||a.ue.id;var b=a.ue.url+"?"+d+"&v="+a.ue.v+"&id="+q,z=f("ctb",c)||f("wb",c),n=g.performance||g.webkitPerformance,k,l;z&&(b+="&ctb="+z);1<a.ueinit&&(b+="&ic="+a.ueinit);!a.ue._fi||"at"!=d||c&&c!=q||(b+=a.ue._fi());if(!("ld"!=d&&"ul"!=d||c&&c!=q)){if("ld"==d){try{g.onbeforeunload&&g.onbeforeunload.isUeh&&(g.onbeforeunload=null)}catch(D){}if(g.chrome)for(l=
+0;l<ue.ulh.length;l++)C("beforeunload",ue.ulh[l]);(l=document.ue_backdetect)&&l.ue_back&&l.ue_back.value++;a._uess&&(k=a._uess());a.ue.isl=1;a.ue_sdbbc&&v("beforeunload",w)}ue._bf&&(b+="&bf="+ue._bf());a.ue_navtiming&&n&&n.timing&&(f("ctb",q,"1"),1==a.ue_navtiming&&s("tc",A,A,n.timing.navigationStart));n&&m(n);a.ue.t.hob=a.ue_hob;a.ue.t.hoe=a.ue_hoe;a.ue.ifr&&(b+="&ifr=1")}s(d,c,e);e="ld"==d&&c&&f("wb",c);var u;1!==ue_csm.ue_fma||e||q==a.ue.oid||G((f("t",c)||{}).tc||+f("t0",c),+f("t0",c));a.ue_mbl&&
+a.ue_mbl.cnt&&!e&&(b+=a.ue_mbl.cnt());e?f("wb",c,2):"ld"==d&&(r.lid=x(q));for(u in a.ue.sc)if(1==f("wb",u))break;if(e){if(a.ue.s)return;b=h(b,null)}else l=h(b,null),l!=b&&(l=t(l),a.ue.b=l),k&&(b+=k),b=h(b,c||a.ue.id);b=t(b);if(a.ue.b||e)for(u in a.ue.sc)2==f("wb",u)&&delete a.ue.sc[u];k=0;ue._rt&&(b+="&rt="+ue._rt());e||(a.ue.s=0,(k=a.ue_err)&&0<k.ec&&k.pec<k.ec&&(k.pec=k.ec,b+="&ec="+k.ec+"&ecf="+k.ecf),k=f("ctb",c),f("t",c,{}));b&&a.ue.tag&&0<a.ue.tag().length&&(b+="&csmtags="+a.ue.tag().join("|"),
+a.ue.tag=a.ue.tagC());b&&a.ue.viz&&0<a.ue.viz.length&&(b+="&viz="+a.ue.viz.join("|"),a.ue.viz=[]);b&&!p(a.ue_pty)&&(b+="&pty="+a.ue_pty+"&spty="+a.ue_spty+"&pti="+a.ue_pti);b&&a.ue.tabid&&(b+="&tid="+a.ue.tabid);b&&a.ue.aftb&&(b+="&aftb=1");b&&a.ue.sbf&&(b+="&sbf=1");!a.ue._ui||c&&c!=q||(b+=a.ue._ui());a.ue.a=b;B(b,d,k,e)}}function v(a,c,e){e=e||g;e.addEventListener?e.addEventListener(a,c,!1):e.attachEvent&&e.attachEvent("on"+a,c)}function C(a,c,e){e=e||g;e.removeEventListener?e.removeEventListener(a,
+c,!1):e.detachEvent&&e.detachEvent("on"+a,c)}function w(){function d(){a.onUl()}function c(a){return function(){e[a]||(e[a]=1,y(a))}}var e=a.ue.r,f,p;a.onLd=c("ld");a.onLdEnd=c("ld");a.onUl=c("ul");f={stop:c("os")};g.chrome?(v("beforeunload",d),ue.ulh.push(d)):f[D]=a.onUl;for(p in f)f.hasOwnProperty(p)&&t(0,g,p,f[p]);a.ue_viz&&ue_viz();v("load",a.onLd);s("ue")}function G(d,c){a.ue_mbl&&a.ue_mbl.ajax&&a.ue_mbl.ajax(d,c);a.ue.tag("ajax-transition")}a.ueinit=(a.ueinit||0)+1;var r={t0:g.aPageStart||a.ue_t0,
+id:a.ue_id,url:a.ue_url,rid:a.ue_id,a:"",b:"",h:{},r:{ld:0,oe:0,ul:0},s:1,t:{},sc:{},iel:[],ielf:[],fc_idx:{},viz:[],v:"0.528.57",d:a.ue&&a.ue.d,log:a.ue&&a.ue.log,clog:a.ue&&a.ue.clog,onflush:a.ue&&a.ue.onflush,onunload:a.ue&&a.ue.onunload,stub:a.ue&&a.ue.stub,lr:a.ue&&a.ue.lr,exec:a.ue&&a.ue.exec,ulh:[],cfa2:0},F=a.ue_fpf?1:0,D="beforeunload",A;r.oid=x(r.id);r.lid=x(r.id);a.ue=r;a.ue._t0=a.ue.t0;a.ue.tagC=function(){var a={};return function(c){c&&(a[c]=1);c=[];for(var e in a)a.hasOwnProperty(e)&&
+c.push(e);return c}};a.ue.tag=a.ue.tagC();a.ue.ifr=g.top!==g.self||g.frameElement?1:0;ue.attach=v;ue.detach=C;ue.reset=function(d,c){d&&(a.ue_cel&&a.ue_cel.reset(),a.ue.t0=+new Date,a.ue.rid=d,a.ue.id=d,a.ue.fc_idx={},a.ue.viz=[])};a.uei=w;a.ueh=t;a.ues=f;a.uet=s;a.uex=y;w()})(ue_csm,window);
+
+
+ue.stub(ue,"log");ue.stub(ue,"onunload");ue.stub(ue,"onflush");
+(function(g){var a=g.ue;a.cv={};a.cv.scopes={};a.count=function(b,e,c){var d={},f=a.cv;d.counter=b;d.value=e;d.t=a.d();c&&c.scope&&(f=a.cv.scopes[c.scope]=a.cv.scopes[c.scope]||{},d.scope=c.scope);if(void 0===e)return f[b];f[b]=e;b=0;c&&c.bf&&(b=1);a.clog&&0===b?a.clog(d,"csmcount",{bf:b}):a.log&&a.log(d,"csmcount",{c:1,bf:b})};a.count("baselineCounter2",1)})(ue_csm);
+
+
+<!-- 9g -->
+var ue_hoe = +new Date();
+</script>
+  <meta name="copyright" content="©2015 Book Depository Ltd."> 
+  <meta name="author" content="Book Depository"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> 
+  <meta name="google-site-verification" content=""> 
+  <meta name="msvalidate.01" content=""> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta http-equiv="content-language" content="en"> 
+  <meta http-equiv="pragma" content="no-cache"> 
+  <meta http-equiv="cache-control" content="no-cache"> 
+  <meta http-equiv="cache-control" content="must-revalidate"> 
+  <meta http-equiv="cache-control" content="max-age=0"> 
+  <meta http-equiv="expires" content="Sat, 17 Mar 1990 00:00:01 GMT"> 
+  <link rel="shortcut icon" type="image/ico" href="http://d3ogvdx946i4sr.cloudfront.net/favicon.ico"> 
+  <link rel="apple-touch-icon-precomposed" href="http://d3ogvdx946i4sr.cloudfront.net/apple-touch-icon.png"> 
+  <link href="https://plus.google.com/+bookdepository/" rel="publisher"> 
+  <meta name="description" content="The Great Gatsby by F. Scott Fitzgerald, 9781853260414, available at Book Depository with free delivery worldwide."> 
+  <meta name="keywords" content="F. Scott Fitzgerald, Guy Reynolds, Dr. Keith Carabine"> 
+  <meta name="Revisit-After" content="30 days"> 
+  <link rel="canonical" href="https://www.bookdepository.com/Great-Gatsby-F-Scott-Fitzgerald/9781853260414"> 
+  <title>
+	The Great Gatsby : F. Scott Fitzgerald : 9781853260414</title> 
+  <link rel="preload" href="http://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/fonts/bdicons.woff" as="font" type="font/woff2" crossorigin> 
+  <link rel="stylesheet" href="http://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/css/common.css"> 
+  <!--[if lte IE 9]>
+<link rel="stylesheet" href="http://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/css/ie/common.css">
+<![endif]-->
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    window.ga('create', 'UA-41807899-1', 'www.bookdepository.com', {'allowLinker': true});
+    window.ga('send', 'pageview');
+</script> 
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function()
+    {n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}
+    ;if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '760768887362598');
+    fbq('track', "PageView");
+</script> 
+  <noscript>
+   &lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=760768887362598&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;
+  </noscript>
+  <script type="text/javascript">
+(function(c,b){function g(a){e.push(a)}function f(a){if(a){var b=c.head||c.getElementsByTagName("head")[0]||c.documentElement,d=c.createElement("script");d.async="async";d.src=a;d.setAttribute("crossorigin","anonymous");b.insertBefore(d,b.firstChild)}}function h(){ue.uels=f;for(var a=0;a<e.length;a++)f(e[a]);ue.deffered=1}var e=[];b.ue&&(ue.uels=g,b.ue.attach&&b.ue.attach("load",h))})(document,window);
+(function(a){var b=a.alert;window.alert=function(){a.ueLogError&&a.ueLogError({message:"[CSM] Alert invocation detected with argument: "+arguments[0],logLevel:"WARN"});Function.prototype.apply.apply(b,[a,arguments||[]])}})(window);
+(function(k,l,g){function m(a){c||(c=b[a.type].id,"undefined"===typeof a.clientX?(e=a.pageX,f=a.pageY):(e=a.clientX,f=a.clientY),2!=c||h&&(h!=e||n!=f)?(r(),d.isl&&l.setTimeout(function(){p("at",d.id)},0)):(h=e,n=f,c=0))}function r(){for(var a in b)b.hasOwnProperty(a)&&d.detach(a,m,b[a].parent)}function s(){for(var a in b)b.hasOwnProperty(a)&&d.attach(a,m,b[a].parent)}function t(){var a="";!q&&c&&(q=1,a+="&ui="+c);return a}var d=k.ue,p=k.uex,q=0,c=0,h,n,e,f,b={click:{id:1,parent:g},mousemove:{id:2,
+parent:g},scroll:{id:3,parent:l},keydown:{id:4,parent:g}};d&&p&&(s(),d._ui=t)})(ue_csm,window,document);
+
+
+
+    if (window.ue && window.ue.uels) {
+            ue.uels("http://z-ecx.images-amazon.com/images/G/01/AUIClients/ClientSideMetricsAUIJavascript-98443f8ae1bfc9acc6ccb5e4d3f52c453eaaba78._V2_.js");
+    }
+
+(function(k,c){function l(a,b){return a.filter(function(a){return a.initiatorType==b})}function f(a,c){if(b.t[a]){var g=b.t[a]-b._t0,e=c.filter(function(a){return 0!==a.responseEnd&&m(a)<g}),f=l(e,"script"),h=l(e,"link"),k=l(e,"img"),n=e.map(function(a){return a.name.split("/")[2]}).filter(function(a,b,c){return a&&c.lastIndexOf(a)==b}),q=e.filter(function(a){return a.duration<p}),s=g-Math.max.apply(null,e.map(m))<r|0;"af"==a&&(b._afjs=f.length);return a+":"+[e[d],f[d],h[d],k[d],n[d],q[d],s].join("-")}}
+function m(a){return a.responseEnd-(b._t0-c.timing.navigationStart)}function n(){var a=c[h]("resource"),d=f("cf",a),g=f("af",a),a=f("ld",a);delete b._rt;b._ld=b.t.ld-b._t0;b._art&&b._art();return[d,g,a].join("_")}var p=20,r=50,d="length",b=k.ue,h="getEntriesByType";b._rre=m;b._rt=c&&c.timing&&c[h]&&n})(ue_csm,window.performance);
+
+(function(h,d){function e(c){c="";var b=a.isBFT?"b":"s",e=""+a.oid,d=""+a.lid,f=e;e!=d&&20==d.length&&(b+="a",f+="-"+d);a.tabid&&(c=a.tabid+"+");c+=b+"-"+f;c!=g&&100>c.length&&(g=c,document.cookie="csm-hit="+c+("|"+ +new Date)+l+"; path=/")}function m(){g=0}function k(b){!0===d[a.pageViz.propHid]?g=0:!1===d[a.pageViz.propHid]&&e({type:"visible"})}var l="; expires="+(new Date(+new Date+6048E5)).toGMTString(),g,b=h.ue_tbpv,a=h.ue||{},f=b&&a.pageViz&&a.pageViz.event&&a.pageViz.propHid;a.attach&&(a.attach("click",
+e),a.attach("keyup",e),f&&4!=b&&5!=b||(a.attach("focus",e),a.attach("blur",m)),f&&a.attach(a.pageViz.event,k,d),!f||3!=b&&5!=b||k({}));a.aftb=1})(ue_csm,document);
+
+
+ue_csm.ue.stub(ue,"impression");
+
+
+
+if(window.ue&&uet) { uet('bb'); }
+</script>
+ </head> 
+ <body> 
+  <img height="1" width="1" style="display:none;visibility:hidden;" src="//fls-eu.amazon.co.uk/1/batch/1/OP/AYXWW5ND5JOM8:000-0000000-0000000:0S0M8FQMGEB0A3KPW5YR$uedata=s:%2Fcsmpb%3Fstaticb%26id%3D0S0M8FQMGEB0A3KPW5YR:0" alt=""> 
+  <div class="header-wrap "> 
+   <header class="header"> 
+    <div class="user-nav-wrap"> 
+     <ul class="left-nav nav mobile-nav-content" data-order="1"> 
+      <li><a href="/" class="home-icon-link"><i class="icon-home"></i></a></li> 
+      <li><a href="https://www.bookdepository.com/contactus">Contact Us</a></li> 
+      <li><a rel="nofollow" href="http://www.bookdepository.com/help">Help</a></li> 
+     </ul> 
+     <ul class="right-nav mobile-nav-content" data-order="3"> 
+      <li><a rel="nofollow" href="https://www.bookdepository.com/track">Order Status</a></li> 
+      <li><a rel="nofollow" href="https://www.bookdepository.com/account/wishlist">Wishlist</a></li> 
+      <li><a rel="nofollow" href="https://www.bookdepository.com/account/login/to/account">Sign in/Join</a></li> 
+     </ul> 
+    </div> 
+    <div class="primary-wrap"> 
+     <button class="mobile-trigger"><i class="icon-menu"></i></button> 
+     <div class="brand-wrap"> 
+      <a href="/" class="brand-link"> <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/img/logo.png" alt="Bookdepository.com"> </a> 
+     </div> 
+     <div class="mobile-basket-wrap basket"> 
+      <div class="free-delivery"> 
+       <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/img/free-delivery-mobile.png" alt="Free delivery"> 
+      </div> 
+      <a href="https://www.bookdepository.com/basket" class="mobile-basket-btn basket-wrap"> <span class="item-count"> 0</span> <i class="icon-cart"></i> </a> 
+     </div> 
+     <div class="search-wrap" data-url="//suggestions.bookdepository.com/suggestions"> 
+      <form id="book-search-form" action="http://www.bookdepository.com/search"> 
+       <div class="el-wrap header-search-el-wrap"> 
+        <input id="book-search" type="text" placeholder="Search for books by keyword / title / author / ISBN" name="searchTerm" class="text-input" value=""> 
+        <input type="hidden" name="search" value="Find book"> 
+        <button class="header-search-btn" type="submit"><span class="text">Search</span></button> 
+       </div> 
+      </form> 
+      <a rel="nofollow" href="http://www.bookdepository.com/search/advanced" class="advanced-search">Advanced Search</a> 
+     </div> 
+     <div class="free-delivery-wrap"> 
+      <a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/3/Which-countries-do-you-deliver-to" title="Free delivery worldwide"> <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/img/free-delivery.png"> </a> 
+     </div> 
+    </div> 
+   </header> 
+  </div> 
+  <div class="secondary-header-wrap "> 
+   <div class="secondary-header"> 
+    <div class="secondary-header-content"> 
+     <ul class="page-links mobile-nav-content" data-order="2"> 
+      <li class="show-only-mobile"><a href="http://www.bookdepository.com/#browse-by-category">Browse by category</a></li> 
+      <li><a href="http://www.bookdepository.com/bestsellers">Bestsellers</a></li> 
+      <li><a href="http://www.bookdepository.com/comingsoon">Coming Soon</a></li> 
+      <li><a href="http://www.bookdepository.com/highlights">Highlights</a></li> 
+      <li><a href="http://www.bookdepository.com/bargain-shop">Bargain Shop</a></li> 
+     </ul> 
+     <div class="right-section"> 
+      <div class="currency-selector-wrap mobile-nav-content" data-order="4"> 
+       <form method="post" action="http://www.bookdepository.com/The-Great-Gatsby-F-Scott-Fitzgerald-Guy-Reynolds-Dr-Keith-Carabine/9781853260414?ref=grid-view"> 
+        <div class="currency-selector" title="British Pound"> 
+         <select name="selectCurrency" id="selectCurrency" onchange="this.form.submit()"> <option value="AUD"> $&nbsp;Australian Dollar</option> <option value="EUR"> €&nbsp;Euro</option> <option value="USD"> $&nbsp;US Dollar</option> <option value="GBP" selected> £&nbsp;British Pound</option> <option value="NZD"> $&nbsp;New Zealand Dollar</option> <option value="SGD"> $&nbsp;Singapore Dollar</option> <option value="HKD"> $&nbsp;Hong Kong Dollar</option> <option value="CAD"> $&nbsp;Canadian Dollar</option> <option value="CZK"> Kč&nbsp;Czech Koruna</option> <option value="ILS"> ₪&nbsp;Israeli Shekel</option> <option value="JPY"> ￥&nbsp;Japanese Yen</option> <option value="NOK"> Kr&nbsp;Norwegian Krone</option> <option value="PLN"> zł&nbsp;Polish Zloty</option> <option value="SEK"> Kr&nbsp;Swedish Krona</option> <option value="CHF"> CHF&nbsp;Swiss Franc</option> <option value="THB"> ฿&nbsp;Thai Baht</option> <option value="DKK"> Kr&nbsp;Danish Krone</option> <option value="HUF"> Ft&nbsp;Hungarian Forint</option> <option value="TWD"> $&nbsp;Taiwan New Dollar</option> <option value="ZAR"> R&nbsp;South African Rand</option> <option value="MXN"> $&nbsp;Mexican Peso</option> <option value="ARS"> $&nbsp;Argentine Peso</option> <option value="CLP"> $&nbsp;Chilean Peso</option> <option value="MYR"> RM&nbsp;Malaysian Ringgit</option> <option value="KRW"> ￦&nbsp;South Korean Won</option> <option value="IDR"> Rp&nbsp;Indonesian Rupiah</option> </select> 
+        </div> 
+       </form>
+      </div> 
+      <div class="basket-wrap"> 
+       <span class="total">£0.00</span> 
+       <a rel="nofollow" href="https://www.bookdepository.com/basket" class="basket-btn"> <span class="item-count"> 0</span> <span class="item-text"> items </span> <i class="icon-cart"></i> </a> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div>
+  <div class="content-wrap"> 
+   <script>
+        window.ga('send', 'pageview', {nonInteraction: true, dimension1: '9781853260414', dimension2: 'product', dimension3: '2.49'});
+    </script> 
+   <div class="main-content no-borders book-page full-width"> 
+    <ol class="breadcrumb"> 
+     <li> <a href="http://www.bookdepository.com/category/335/Classics" class="active"> Classics</a> </li> 
+    </ol> 
+    <div itemscope itemtype="http://schema.org/Book"> 
+     <div class="item-block"> 
+      <meta itemprop="url" content="http://www.bookdepository.com/Great-Gatsby-F-Scott-Fitzgerald/9781853260414"> 
+      <meta itemprop="author" content="F. Scott Fitzgerald"> 
+      <meta itemprop="publisher" content="Wordsworth Editions Ltd"> 
+      <span itemprop="offers" itemscope itemtype="http://schema.org/Offer"> 
+       <meta itemprop="name" content="The Great Gatsby"> 
+       <meta itemprop="availability" content="http://schema.org/InStock"> 
+       <meta itemprop="itemCondition" content="http://schema.org/NewCondition"> 
+       <meta itemprop="image" content="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/large/9781/8532/9781853260414.jpg"> </span> 
+      <div class="item-img"> 
+       <img src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/large/9781/8532/9781853260414.jpg" alt="The Great Gatsby" class="book-img" itemprop="image"> 
+      </div> 
+      <div class="item-info"> 
+       <h1 itemprop="name">The Great Gatsby</h1> 
+       <ul class="meta-info"> 
+        <li>Paperback</li> 
+        <li> <a href="/search/advanced?seriesId=205699">Wordsworth Classics</a></li> 
+        <li> <a href="/search/advanced?searchLang=123" itemprop="inLanguage">English</a></li> 
+        <li itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"> <a href="#item-review" class="rating rating-4" itemprop="ratingValue" content="3.9"></a> </li> 
+       </ul> 
+       <div class="author-info">
+         By (author)
+        <a href="http://www.bookdepository.com/author/F-Scott-Fitzgerald" itemprop="author"> F. Scott Fitzgerald</a> , Introduction and notes by
+        <a href="http://www.bookdepository.com/author/Guy-Reynolds" itemprop="author"> Guy Reynolds</a> , Series edited by
+        <a href="http://www.bookdepository.com/author/Dr-Keith-Carabine" itemprop="author"> Dr. Keith Carabine</a> 
+       </div> 
+       <ul class="social-wrap hidden-md"> 
+        <li>Share</li> 
+        <li><a href="mailto:?body=Hi,%0D%0A%0D%0AI saw this at BookDepository.com and thought you might like it!%0D%0A%0D%0Ahttp-www-bookdepository-com-Great-Gatsby-F-Scott-Fitzgerald-9781853260414"><i class="icon-em"></i></a></li> 
+        <li><a href="http://www.bookdepository.com/share/book?id=14390141&amp;service=facebook&amp;mess=book"><i class="icon-fb"></i></a></li> 
+        <li><a href="http://www.bookdepository.com/share/book?id=14390141&amp;service=twitter&amp;mess=book"><i class="icon-tw"></i></a></li> 
+        <li> <a href="http://pinterest.com/pin/create/button/?url=http-www-bookdepository-com-Great-Gatsby-F-Scott-Fitzgerald-9781853260414&amp;media=http-d1w7fb2mkkr3kw-cloudfront-net-assets-images-book-large-9781-8532-9781853260414-jpg&amp;description=A-summary-of-the-roaring-twenties-and-a-expose-of-the-Jazz-Age-this-book-through-the-narration-of-Nick-Carraway-takes-the-reader-into-the-world-of-the-mansions-which-lined-the-Long-Island-shore-in-the-1920s-to-encounter-Nicks-cousin-Daisy-her-brash-but-wealthy-husband-Tom-Buchanan-Jay-Gatsby-and-the-mystery-that-surrounds-him"><i class="icon-pi"></i></a> </li> 
+       </ul> 
+       <ul class="formats-wrap hidden-md"> 
+        <li>Also available in</li> 
+        <li> <a href="http://www.bookdepository.com/Great-Gatsby/9780141194059" class="format-item"> Hardback<span class="price"> £13.48</span> </a> </li> 
+        <li> <a href="http://www.bookdepository.com/Great-Gatsby/9789626340516" class="format-item"> CD-Audio<span class="price"> £11.22</span> </a> </li> 
+       </ul> 
+      </div> 
+      <div class="item-tools"> 
+       <div class="checkout-tools"> 
+        <div class="price-info-wrap"> 
+         <div class="item-info-wrap"> 
+          <p class="price"> £2.49</p> 
+          <p class="purple-text free-delivery-text bold">Free delivery worldwide</p> 
+          <p class="green-text"> <span> Available<br> Dispatched from the UK in 1 business day</span> </p>
+          <p><a target="_blank" href="http://www.bookdepository.com/help/topic/HelpId/2/When-will-my-order-arrive" class="purple-text small u">When will my order arrive?</a></p> 
+          <p></p> 
+         </div> 
+        </div> 
+        <div class="btn-wrap"> 
+         <a href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853260414" class="btn btn-primary add-to-basket" data-isbn="9781853260414" data-price="2.49" data-show-related="true">Add to basket</a> 
+         <a rel="nofollow" href="https://www.bookdepository.com/account/wishlistItemUpdate?mainAction=add&amp;isbn13=9781853260414" data-isbn="9781853260414" class="btn btn-dark-grey add-to-wishlist">Add to wishlist</a> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="biblio-wrap"> 
+      <h2 class="visible-md resume-title">Description</h2> 
+      <div class="item-excerpt trunc" data-height="150"> 
+       <p itemprop="description"> Generally considered to be F. Scott Fitzgerald's finest novel, The Great Gatsby is a consummate summary of the "roaring twenties", and a devastating expose of the "Jazz Age". Through the narration of Nick Carraway, the reader is taken into the superficially glittering world of the mansions which lined the Long Island shore in the 1920s, to encounter Nick's cousin Daisy, her brash but wealthy husband Tom Buchanan, Jay Gatsby and the mystery that surrounds him.</p> 
+       <a class="read-more">show more</a> 
+      </div> 
+      <div class="biblio-info-wrap"> 
+       <h2 class="biblio-title">Product details</h2> 
+       <ul class="biblio-info"> 
+        <li> <label>Format</label> <span> Paperback | <span itemprop="numberOfPages">144 pages</span> </span> </li> 
+        <li> <label>Dimensions</label> <span> 126 x 192 x 8mm | 180g </span> </li> 
+        <li> <label>Publication date</label> <span itemprop="datePublished">01 Dec 1999</span> </li> 
+        <li> <label>Publisher</label> <span> <a href="http://www.bookdepository.com/publishers/Wordsworth-Editions-Ltd" itemprop="publisher"> Wordsworth Editions Ltd</a> </span> </li> 
+        <li> <label>Publication City/Country</label> <span> Herts, United Kingdom</span> </li> 
+        <li> <label>Language</label> <span> English</span> </li> 
+        <li> <label>Edition</label> <span> New edition</span> </li> 
+        <li> <label>Edition statement</label> <span>New edition</span> </li> 
+        <li> <label>ISBN10</label> <span>185326041X</span> </li> 
+        <li> <label>ISBN13</label> <span itemprop="isbn">9781853260414</span> </li> 
+        <li> <label>Sales rank</label> <span>4</span> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="detail-page-carousel-wrap"> 
+     <div class="block-wrap isbn-recommendation-carousel"> 
+      <div class="block-header"> 
+       <h2>People who bought this also bought</h2> 
+      </div> 
+      <div class="block"> 
+       <div class="tab-wrap module type-book carousel tab-p13 tab-active"> 
+        <div class="tab"> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Little-Prince-Antoine-de-Saint-Exupery/9781853261589?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/8532/9781853261589.jpg" alt="The Little Prince"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853261589"> 
+          <meta itemprop="name" content="The Little Prince"> 
+          <meta itemprop="contributor" content="Antoine de Saint-Exupery"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Little-Prince-Antoine-de-Saint-Exupery/9781853261589?ref=bd_recs_1"> The Little Prince</a> </h3> 
+           <p class="author"> <a href="/author/Antoine-de-Saint-Exupery" itemprop="author">Antoine de Saint-Exupery</a> </p> 
+           <p class="published" itemprop="datePublished">05 Mar 1999</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853261589" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9781853261589" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Kill-Mockingbird-Harper-Lee/9780446310789?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/medium/9780/4463/9780446310789.jpg" alt="To Kill a Mockingbird"> </a> 
+           <div class="savings-splat">
+            18%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780446310789"> 
+          <meta itemprop="name" content="To Kill a Mockingbird"> 
+          <meta itemprop="contributor" content="Harper Lee"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Kill-Mockingbird-Harper-Lee/9780446310789?ref=bd_recs_1"> To Kill a Mockingbird</a> </h3> 
+           <p class="author"> <a href="/author/Harper-Lee" itemprop="author">Harper Lee</a> </p> 
+           <p class="published" itemprop="datePublished">05 May 2010</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £6.48 &nbsp;<span class="rrp">£7.99</span> </p> 
+           <p class="price-save"> Save £1.51</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780446310789" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9780446310789" data-price="6.48">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Perks-of-Being-Wallflower-Stephen-Chbosky/9781847394071?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/medium/9781/8473/9781847394071.jpg" alt="The Perks of Being a Wallflower"> </a> 
+           <div class="savings-splat">
+            30%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9781847394071"> 
+          <meta itemprop="name" content="The Perks of Being a Wallflower"> 
+          <meta itemprop="contributor" content="Stephen Chbosky"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Perks-of-Being-Wallflower-Stephen-Chbosky/9781847394071?ref=bd_recs_1"> The Perks of Being a Wallflower</a> </h3> 
+           <p class="author"> <a href="/author/Stephen-Chbosky" itemprop="author">Stephen Chbosky</a> </p> 
+           <p class="published" itemprop="datePublished">18 Mar 2015</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £5.59 &nbsp;<span class="rrp">£7.99</span> </p> 
+           <p class="price-save"> Save £2.40</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781847394071" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9781847394071" data-price="5.59">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Ann-Karenin-Leo-Tolstoy-Aylmer-Maude-Louise-Maude-E-B-Greenwood-Dr-Keith-Carabine/9781853262715?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d39ttiideeq0ys.cloudfront.net/assets/images/book/medium/9781/8532/9781853262715.jpg" alt="Anna Karenina"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853262715"> 
+          <meta itemprop="name" content="Anna Karenina"> 
+          <meta itemprop="contributor" content="Leo Tolstoy"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Ann-Karenin-Leo-Tolstoy-Aylmer-Maude-Louise-Maude-E-B-Greenwood-Dr-Keith-Carabine/9781853262715?ref=bd_recs_1"> Anna Karenina</a> </h3> 
+           <p class="author"> <a href="/author/Leo-Tolstoy" itemprop="author">Leo Tolstoy</a> </p> 
+           <p class="published" itemprop="datePublished">01 Aug 1997</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853262715" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9781853262715" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Picture-of-Dorian-Gray-Oscar-Wilde-John-M-L-Drew-Dr-Keith-Carabine/9781853260155?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d39ttiideeq0ys.cloudfront.net/assets/images/book/medium/9781/8532/9781853260155.jpg" alt="The Picture of Dorian Gray"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853260155"> 
+          <meta itemprop="name" content="The Picture of Dorian Gray"> 
+          <meta itemprop="contributor" content="Oscar Wilde"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Picture-of-Dorian-Gray-Oscar-Wilde-John-M-L-Drew-Dr-Keith-Carabine/9781853260155?ref=bd_recs_1"> The Picture of Dorian Gray</a> </h3> 
+           <p class="author"> <a href="/author/Oscar-Wilde" itemprop="author">Oscar Wilde</a> </p> 
+           <p class="published" itemprop="datePublished">01 Aug 1997</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853260155" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9781853260155" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Great-Gatsby-F-Scott-Fitzgerald-Tony-Tanner/9780141182636?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d4rri9bdfuube.cloudfront.net/assets/images/book/medium/9780/1411/9780141182636.jpg" alt="The Great Gatsby"> </a> 
+           <div class="savings-splat">
+            21%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780141182636"> 
+          <meta itemprop="name" content="The Great Gatsby"> 
+          <meta itemprop="contributor" content="F. Scott Fitzgerald"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Great-Gatsby-F-Scott-Fitzgerald-Tony-Tanner/9780141182636?ref=bd_recs_1"> The Great Gatsby</a> </h3> 
+           <p class="author"> <a href="/author/F-Scott-Fitzgerald" itemprop="author">F. Scott Fitzgerald</a> </p> 
+           <p class="published" itemprop="datePublished">08 Feb 2008</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £5.49 &nbsp;<span class="rrp">£6.99</span> </p> 
+           <p class="price-save"> Save £1.50</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780141182636" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9780141182636" data-price="5.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Tender-is-the-Night-F-Scott-Fitzgerald/9780007449484?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9780/0074/9780007449484.jpg" alt="Tender is the Night"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9780007449484"> 
+          <meta itemprop="name" content="Tender is the Night"> 
+          <meta itemprop="contributor" content="F. Scott Fitzgerald"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Tender-is-the-Night-F-Scott-Fitzgerald/9780007449484?ref=bd_recs_1"> Tender is the Night</a> </h3> 
+           <p class="author"> <a href="/author/F-Scott-Fitzgerald" itemprop="author">F. Scott Fitzgerald</a> </p> 
+           <p class="published" itemprop="datePublished">01 Feb 2012</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.50</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780007449484" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9780007449484" data-price="2.5">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Great-Gatsby-F-Scott-Fitzgerald-Tony-Tanner/9780141194059?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/medium/9780/1411/9780141194059.jpg" alt="The Great Gatsby"> </a> 
+           <div class="savings-splat">
+            10%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780141194059"> 
+          <meta itemprop="name" content="The Great Gatsby"> 
+          <meta itemprop="contributor" content="F. Scott Fitzgerald"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Great-Gatsby-F-Scott-Fitzgerald-Tony-Tanner/9780141194059?ref=bd_recs_1"> The Great Gatsby</a> </h3> 
+           <p class="author"> <a href="/author/F-Scott-Fitzgerald" itemprop="author">F. Scott Fitzgerald</a> </p> 
+           <p class="published" itemprop="datePublished">04 Nov 2010</p> 
+           <p class="format">Hardback</p> 
+           <p class="price"> £13.48 &nbsp;<span class="rrp">£14.99</span> </p> 
+           <p class="price-save"> Save £1.51</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780141194059" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9780141194059" data-price="13.48">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Great-Gatsby-F-Scott-Fitzgerald/9780141389936?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d39ttiideeq0ys.cloudfront.net/assets/images/book/medium/9780/1413/9780141389936.jpg" alt="The Great Gatsby"> </a> 
+           <div class="savings-splat">
+            18%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780141389936"> 
+          <meta itemprop="name" content="The Great Gatsby"> 
+          <meta itemprop="contributor" content="F. Scott Fitzgerald"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Great-Gatsby-F-Scott-Fitzgerald/9780141389936?ref=bd_recs_1"> The Great Gatsby</a> </h3> 
+           <p class="author"> <a href="/author/F-Scott-Fitzgerald" itemprop="author">F. Scott Fitzgerald</a> </p> 
+           <p class="published" itemprop="datePublished">20 Nov 2014</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £4.07 &nbsp;<span class="rrp">£5.00</span> </p> 
+           <p class="price-save"> Save £0.93</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780141389936" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9780141389936" data-price="4.07">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Tender-is-the-Night-F-Scott-Fitzgerald-Goldman-Arnold/9780141194066?ref=bd_recs_1"> <img class="lazy" data-lazy="https://d4rri9bdfuube.cloudfront.net/assets/images/book/medium/9780/1411/9780141194066.jpg" alt="Tender is the Night"> </a> 
+           <div class="savings-splat">
+            10%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780141194066"> 
+          <meta itemprop="name" content="Tender is the Night"> 
+          <meta itemprop="contributor" content="F. Scott Fitzgerald"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Tender-is-the-Night-F-Scott-Fitzgerald-Goldman-Arnold/9780141194066?ref=bd_recs_1"> Tender is the Night</a> </h3> 
+           <p class="author"> <a href="/author/F-Scott-Fitzgerald" itemprop="author">F. Scott Fitzgerald</a> </p> 
+           <p class="published" itemprop="datePublished">04 Nov 2010</p> 
+           <p class="format">Hardback</p> 
+           <p class="price"> £13.48 &nbsp;<span class="rrp">£14.99</span> </p> 
+           <p class="price-save"> Save £1.51</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780141194066" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_recs_1" data-isbn="9780141194066" data-price="13.48">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="block-wrap category-recommendation-carousel"> 
+      <div class="block-header"> 
+       <h2>Other books in Classics</h2> 
+      </div> 
+      <div class="block"> 
+       <div class="tab-wrap module type-book carousel tab-p13 tab-active"> 
+        <div class="tab"> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Kill-Mockingbird-Harper-Lee/9780446310789?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/medium/9780/4463/9780446310789.jpg" alt="To Kill a Mockingbird"> </a> 
+           <div class="savings-splat">
+            18%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780446310789"> 
+          <meta itemprop="name" content="To Kill a Mockingbird"> 
+          <meta itemprop="contributor" content="Harper Lee"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Kill-Mockingbird-Harper-Lee/9780446310789?ref=bd_cat_1"> To Kill a Mockingbird</a> </h3> 
+           <p class="author"> <a href="/author/Harper-Lee" itemprop="author">Harper Lee</a> </p> 
+           <p class="published" itemprop="datePublished">05 May 2010</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £6.48 &nbsp;<span class="rrp">£7.99</span> </p> 
+           <p class="price-save"> Save £1.51</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780446310789" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9780446310789" data-price="6.48">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Kill-Mockingbird-Harper-Lee/9780099549482?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9780/0995/9780099549482.jpg" alt="To Kill a Mockingbird"> </a> 
+           <div class="savings-splat">
+            30%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780099549482"> 
+          <meta itemprop="name" content="To Kill a Mockingbird"> 
+          <meta itemprop="contributor" content="Harper Lee"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Kill-Mockingbird-Harper-Lee/9780099549482?ref=bd_cat_1"> To Kill a Mockingbird</a> </h3> 
+           <p class="author"> <a href="/author/Harper-Lee" itemprop="author">Harper Lee</a> </p> 
+           <p class="published" itemprop="datePublished">17 Jun 2015</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £4.89 &nbsp;<span class="rrp">£6.99</span> </p> 
+           <p class="price-save"> Save £2.10</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780099549482" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9780099549482" data-price="4.89">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Animal-Farm-George-Orwell/9780141036137?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9780/1410/9780141036137.jpg" alt="Animal Farm"> </a> 
+           <div class="savings-splat">
+            40%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780141036137"> 
+          <meta itemprop="name" content="Animal Farm"> 
+          <meta itemprop="contributor" content="George Orwell"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Animal-Farm-George-Orwell/9780141036137?ref=bd_cat_1"> Animal Farm</a> </h3> 
+           <p class="author"> <a href="/author/George-Orwell" itemprop="author">George Orwell</a> </p> 
+           <p class="published" itemprop="datePublished">01 Oct 2008</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £5.33 &nbsp;<span class="rrp">£8.99</span> </p> 
+           <p class="price-save"> Save £3.66</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780141036137" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9780141036137" data-price="5.33">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Catcher-in-the-Rye-J-D-Salinger/9780316769488?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9780/3167/9780316769488.jpg" alt="The Catcher in the Rye"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9780316769488"> 
+          <meta itemprop="name" content="The Catcher in the Rye"> 
+          <meta itemprop="contributor" content="J. D. Salinger"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Catcher-in-the-Rye-J-D-Salinger/9780316769488?ref=bd_cat_1"> The Catcher in the Rye</a> </h3> 
+           <p class="author"> <a href="/author/J-D-Salinger" itemprop="author">J. D. Salinger</a> </p> 
+           <p class="published" itemprop="datePublished">18 Mar 2005</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £5.17</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780316769488" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9780316769488" data-price="5.17">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Go-Set-Watchman-UK-Edition-Harper-Lee/9781785150289?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d39ttiideeq0ys.cloudfront.net/assets/images/book/medium/9781/7851/9781785150289.jpg" alt="Go Set A Watchman (UK Edition)"> </a> 
+           <div class="savings-splat">
+            52%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9781785150289"> 
+          <meta itemprop="name" content="Go Set A Watchman (UK Edition)"> 
+          <meta itemprop="contributor" content="Harper Lee"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Go-Set-Watchman-UK-Edition-Harper-Lee/9781785150289?ref=bd_cat_1"> Go Set A Watchman (UK Edition)</a> </h3> 
+           <p class="author"> <a href="/author/Harper-Lee" itemprop="author">Harper Lee</a> </p> 
+           <p class="published" itemprop="datePublished">14 Jul 2015</p> 
+           <p class="format">Hardback</p> 
+           <p class="price"> £9.00 &nbsp;<span class="rrp">£18.99</span> </p> 
+           <p class="price-save"> Save £9.99</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781785150289" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9781785150289" data-price="9.0">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Lord-of-the-Flies-William-Golding/9780399501487?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9780/3995/9780399501487.jpg" alt="Lord of the Flies"> </a> 
+           <div class="savings-splat">
+            6%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780399501487"> 
+          <meta itemprop="name" content="Lord of the Flies"> 
+          <meta itemprop="contributor" content="William Golding"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Lord-of-the-Flies-William-Golding/9780399501487?ref=bd_cat_1"> Lord of the Flies</a> </h3> 
+           <p class="author"> <a href="/author/William-Golding" itemprop="author">William Golding</a> </p> 
+           <p class="published" itemprop="datePublished">22 Jul 2011</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £5.61 &nbsp;<span class="rrp">£5.99</span> </p> 
+           <p class="price-save"> Save £0.38</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780399501487" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9780399501487" data-price="5.61">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Ulysses-James-Joyce-Prof-Cedric-Watts-Dr-Keith-Carabine/9781840226355?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d4rri9bdfuube.cloudfront.net/assets/images/book/medium/9781/8402/9781840226355.jpg" alt="Ulysses"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781840226355"> 
+          <meta itemprop="name" content="Ulysses"> 
+          <meta itemprop="contributor" content="James Joyce"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Ulysses-James-Joyce-Prof-Cedric-Watts-Dr-Keith-Carabine/9781840226355?ref=bd_cat_1"> Ulysses</a> </h3> 
+           <p class="author"> <a href="/author/James-Joyce" itemprop="author">James Joyce</a> </p> 
+           <p class="published" itemprop="datePublished">05 Jan 2010</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781840226355" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9781840226355" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Ann-Karenin-Leo-Tolstoy-Aylmer-Maude-Louise-Maude-E-B-Greenwood-Dr-Keith-Carabine/9781853262715?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d39ttiideeq0ys.cloudfront.net/assets/images/book/medium/9781/8532/9781853262715.jpg" alt="Anna Karenina"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853262715"> 
+          <meta itemprop="name" content="Anna Karenina"> 
+          <meta itemprop="contributor" content="Leo Tolstoy"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Ann-Karenin-Leo-Tolstoy-Aylmer-Maude-Louise-Maude-E-B-Greenwood-Dr-Keith-Carabine/9781853262715?ref=bd_cat_1"> Anna Karenina</a> </h3> 
+           <p class="author"> <a href="/author/Leo-Tolstoy" itemprop="author">Leo Tolstoy</a> </p> 
+           <p class="published" itemprop="datePublished">01 Aug 1997</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853262715" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9781853262715" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Great-Gatsby-F-Scott-Fitzgerald/9780007368655?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9780/0073/9780007368655.jpg" alt="The Great Gatsby"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9780007368655"> 
+          <meta itemprop="name" content="The Great Gatsby"> 
+          <meta itemprop="contributor" content="F. Scott Fitzgerald"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Great-Gatsby-F-Scott-Fitzgerald/9780007368655?ref=bd_cat_1"> The Great Gatsby</a> </h3> 
+           <p class="author"> <a href="/author/F-Scott-Fitzgerald" itemprop="author">F. Scott Fitzgerald</a> </p> 
+           <p class="published" itemprop="datePublished">02 Jul 2013</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.50</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780007368655" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9780007368655" data-price="2.5">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Kill-Mockingbird-Harper-Lee/9780099419785?ref=bd_cat_1"> <img class="lazy" data-lazy="https://d4rri9bdfuube.cloudfront.net/assets/images/book/medium/9780/0994/9780099419785.jpg" alt="To Kill a Mockingbird"> </a> 
+           <div class="savings-splat">
+            21%
+            <br>off
+           </div> 
+          </div> 
+          <meta itemprop="isbn" content="9780099419785"> 
+          <meta itemprop="name" content="To Kill a Mockingbird"> 
+          <meta itemprop="contributor" content="Harper Lee"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Kill-Mockingbird-Harper-Lee/9780099419785?ref=bd_cat_1"> To Kill a Mockingbird</a> </h3> 
+           <p class="author"> <a href="/author/Harper-Lee" itemprop="author">Harper Lee</a> </p> 
+           <p class="published" itemprop="datePublished">30 Jun 2008</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £5.49 &nbsp;<span class="rrp">£6.99</span> </p> 
+           <p class="price-save"> Save £1.50</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9780099419785" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_cat_1" data-isbn="9780099419785" data-price="5.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="block-wrap series-recommendation-carousel"> 
+      <div class="block-header"> 
+       <h2>Other books in this series</h2> 
+      </div> 
+      <div class="block"> 
+       <div class="tab-wrap module type-book carousel tab-p13 tab-active"> 
+        <div class="tab"> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Great-Gatsby-F-Scott-Fitzgerald-Guy-Reynolds-Dr-Keith-Carabine/9781853260414?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/8532/9781853260414.jpg" alt="The Great Gatsby"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853260414"> 
+          <meta itemprop="name" content="The Great Gatsby"> 
+          <meta itemprop="contributor" content="F. Scott Fitzgerald"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Great-Gatsby-F-Scott-Fitzgerald-Guy-Reynolds-Dr-Keith-Carabine/9781853260414?ref=bd_ser_1"> The Great Gatsby</a> </h3> 
+           <p class="author"> <a href="/author/F-Scott-Fitzgerald" itemprop="author">F. Scott Fitzgerald</a> </p> 
+           <p class="published" itemprop="datePublished">01 Dec 1999</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853260414" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853260414" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Ulysses-James-Joyce-Prof-Cedric-Watts-Dr-Keith-Carabine/9781840226355?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d4rri9bdfuube.cloudfront.net/assets/images/book/medium/9781/8402/9781840226355.jpg" alt="Ulysses"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781840226355"> 
+          <meta itemprop="name" content="Ulysses"> 
+          <meta itemprop="contributor" content="James Joyce"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Ulysses-James-Joyce-Prof-Cedric-Watts-Dr-Keith-Carabine/9781840226355?ref=bd_ser_1"> Ulysses</a> </h3> 
+           <p class="author"> <a href="/author/James-Joyce" itemprop="author">James Joyce</a> </p> 
+           <p class="published" itemprop="datePublished">05 Jan 2010</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781840226355" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781840226355" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Mrs-Dalloway-Virgini-Woolf-Merry-M-Pawlowski-Dr-Keith-Carabine/9781853261916?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d4rri9bdfuube.cloudfront.net/assets/images/book/medium/9781/8532/9781853261916.jpg" alt="Mrs. Dalloway"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853261916"> 
+          <meta itemprop="name" content="Mrs. Dalloway"> 
+          <meta itemprop="contributor" content="Virginia Woolf"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Mrs-Dalloway-Virgini-Woolf-Merry-M-Pawlowski-Dr-Keith-Carabine/9781853261916?ref=bd_ser_1"> Mrs. Dalloway</a> </h3> 
+           <p class="author"> <a href="/author/Virginia-Woolf" itemprop="author">Virginia Woolf</a> </p> 
+           <p class="published" itemprop="datePublished">05 Dec 1999</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853261916" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853261916" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/the-Lighthouse-Virgini-Woolf-Dr-Nicol-Bradbury-Dr-Keith-Carabine/9781853260919?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/medium/9781/8532/9781853260919.jpg" alt="To the Lighthouse"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853260919"> 
+          <meta itemprop="name" content="To the Lighthouse"> 
+          <meta itemprop="contributor" content="Virginia Woolf"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/the-Lighthouse-Virgini-Woolf-Dr-Nicol-Bradbury-Dr-Keith-Carabine/9781853260919?ref=bd_ser_1"> To the Lighthouse</a> </h3> 
+           <p class="author"> <a href="/author/Virginia-Woolf" itemprop="author">Virginia Woolf</a> </p> 
+           <p class="published" itemprop="datePublished">05 Dec 1999</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853260919" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853260919" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Great-Expectations-Charles-Dickens-John-Bowen-Marcus-Stone-Dr-Keith-Carabine/9781853260049?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/8532/9781853260049.jpg" alt="Great Expectations"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853260049"> 
+          <meta itemprop="name" content="Great Expectations"> 
+          <meta itemprop="contributor" content="Charles Dickens"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Great-Expectations-Charles-Dickens-John-Bowen-Marcus-Stone-Dr-Keith-Carabine/9781853260049?ref=bd_ser_1"> Great Expectations</a> </h3> 
+           <p class="author"> <a href="/author/Charles-Dickens" itemprop="author">Charles Dickens</a> </p> 
+           <p class="published" itemprop="datePublished">01 Aug 1997</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853260049" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853260049" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Secret-Garden-Frances-Hodgson-Burnett/9781853261046?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d4rri9bdfuube.cloudfront.net/assets/images/book/medium/9781/8532/9781853261046.jpg" alt="The Secret Garden"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853261046"> 
+          <meta itemprop="name" content="The Secret Garden"> 
+          <meta itemprop="contributor" content="Frances Hodgson Burnett"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Secret-Garden-Frances-Hodgson-Burnett/9781853261046?ref=bd_ser_1"> The Secret Garden</a> </h3> 
+           <p class="author"> <a href="/author/Frances-Hodgson-Burnett" itemprop="author">Frances Hodgson Burnett</a> </p> 
+           <p class="published" itemprop="datePublished">01 Jan 1998</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853261046" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853261046" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Count-of-Monte-Cris-Alexandre-Dumas-Keith-Wren-Dr-Keith-Carabine/9781853267338?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/8532/9781853267338.jpg" alt="The Count of Monte Cristo"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853267338"> 
+          <meta itemprop="name" content="The Count of Monte Cristo"> 
+          <meta itemprop="contributor" content="Alexandre Dumas"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Count-of-Monte-Cris-Alexandre-Dumas-Keith-Wren-Dr-Keith-Carabine/9781853267338?ref=bd_ser_1"> The Count of Monte Cristo</a> </h3> 
+           <p class="author"> <a href="/author/Alexandre-Dumas" itemprop="author">Alexandre Dumas</a> </p> 
+           <p class="published" itemprop="datePublished">01 Apr 1998</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853267338" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853267338" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Crime-and-Punishment-Fyodor-Dostoyevsky-Constance-Garnett-Dr-Keith-Carabine/9781840224306?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/8402/9781840224306.jpg" alt="Crime and Punishment"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781840224306"> 
+          <meta itemprop="name" content="Crime and Punishment"> 
+          <meta itemprop="contributor" content="Fyodor Dostoyevsky"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Crime-and-Punishment-Fyodor-Dostoyevsky-Constance-Garnett-Dr-Keith-Carabine/9781840224306?ref=bd_ser_1"> Crime and Punishment</a> </h3> 
+           <p class="author"> <a href="/author/Fyodor-Dostoyevsky" itemprop="author">Fyodor Dostoyevsky</a> </p> 
+           <p class="published" itemprop="datePublished">05 May 2000</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781840224306" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781840224306" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Alices-Adventures-in-Wonderland-Lewis-Carroll-Sir-John-Tenniel-Michael-Irwin-Dr-Keith-Carabine/9781853260025?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/medium/9781/8532/9781853260025.jpg" alt="Alice's Adventures in Wonderland"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853260025"> 
+          <meta itemprop="name" content="Alice's Adventures in Wonderland"> 
+          <meta itemprop="contributor" content="Lewis Carroll"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Alices-Adventures-in-Wonderland-Lewis-Carroll-Sir-John-Tenniel-Michael-Irwin-Dr-Keith-Carabine/9781853260025?ref=bd_ser_1"> Alice's Adventures in Wonderland</a> </h3> 
+           <p class="author"> <a href="/author/Lewis-Carroll" itemprop="author">Lewis Carroll</a> </p> 
+           <p class="published" itemprop="datePublished">26 May 2009</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853260025" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853260025" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Don-Quixote-Miguel-de-Cervantes-P--Motteaux-Stephen-Boyd-Dr-Keith-Carabine/9781853260360?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9781/8532/9781853260360.jpg" alt="Don Quixote"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853260360"> 
+          <meta itemprop="name" content="Don Quixote"> 
+          <meta itemprop="contributor" content="Miguel de Cervantes"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Don-Quixote-Miguel-de-Cervantes-P--Motteaux-Stephen-Boyd-Dr-Keith-Carabine/9781853260360?ref=bd_ser_1"> Don Quixote</a> </h3> 
+           <p class="author"> <a href="/author/Miguel-de-Cervantes" itemprop="author">Miguel de Cervantes</a> </p> 
+           <p class="published" itemprop="datePublished">05 May 1992</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853260360" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853260360" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Middlemarch-George-Eliot-Doreen-Roberts-Dr-Keith-Carabine/9781853262371?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d4rri9bdfuube.cloudfront.net/assets/images/book/medium/9781/8532/9781853262371.jpg" alt="Middlemarch"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853262371"> 
+          <meta itemprop="name" content="Middlemarch"> 
+          <meta itemprop="contributor" content="George Eliot"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Middlemarch-George-Eliot-Doreen-Roberts-Dr-Keith-Carabine/9781853262371?ref=bd_ser_1"> Middlemarch</a> </h3> 
+           <p class="author"> <a href="/author/George-Eliot" itemprop="author">George Eliot</a> </p> 
+           <p class="published" itemprop="datePublished">01 Jan 1998</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853262371" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853262371" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Journey-the-Centre-of-the-Earth-Jules-Verne-Dr-Keith-Carabine-David-Stuart-Davies/9781853262876?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9781/8532/9781853262876.jpg" alt="Journey to the Centre of the Earth"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853262876"> 
+          <meta itemprop="name" content="Journey to the Centre of the Earth"> 
+          <meta itemprop="contributor" content="Jules Verne"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Journey-the-Centre-of-the-Earth-Jules-Verne-Dr-Keith-Carabine-David-Stuart-Davies/9781853262876?ref=bd_ser_1"> Journey to the Centre of the Earth</a> </h3> 
+           <p class="author"> <a href="/author/Jules-Verne" itemprop="author">Jules Verne</a> </p> 
+           <p class="published" itemprop="datePublished">01 Jan 1998</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853262876" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853262876" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Odyssey-Homer-George-Chapman-Adam-C-Roberts-Dr-Keith-Carabine/9781853260254?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/8532/9781853260254.jpg" alt="The Odyssey"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853260254"> 
+          <meta itemprop="name" content="The Odyssey"> 
+          <meta itemprop="contributor" content="Homer"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Odyssey-Homer-George-Chapman-Adam-C-Roberts-Dr-Keith-Carabine/9781853260254?ref=bd_ser_1"> The Odyssey</a> </h3> 
+           <p class="author"> <a href="/author/Homer" itemprop="author">Homer</a> </p> 
+           <p class="published" itemprop="datePublished">01 Jan 1998</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853260254" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853260254" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Idiot-Fyodor-Dostoyevsky-Constance-Garnett-Agnes-Cardinal-Dr-Keith-Carabine/9781853261756?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d39ttiideeq0ys.cloudfront.net/assets/images/book/medium/9781/8532/9781853261756.jpg" alt="The Idiot"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853261756"> 
+          <meta itemprop="name" content="The Idiot"> 
+          <meta itemprop="contributor" content="Fyodor Dostoyevsky"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Idiot-Fyodor-Dostoyevsky-Constance-Garnett-Agnes-Cardinal-Dr-Keith-Carabine/9781853261756?ref=bd_ser_1"> The Idiot</a> </h3> 
+           <p class="author"> <a href="/author/Fyodor-Dostoyevsky" itemprop="author">Fyodor Dostoyevsky</a> </p> 
+           <p class="published" itemprop="datePublished">01 Jan 1998</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853261756" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853261756" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Karamazov-Brothers-Fyodor-Dostoyevsky-Constance-Garnett--D-P-Briggs-Dr-Keith-Carabine/9781840221862?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/8402/9781840221862.jpg" alt="The Karamazov Brothers"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781840221862"> 
+          <meta itemprop="name" content="The Karamazov Brothers"> 
+          <meta itemprop="contributor" content="Fyodor Dostoyevsky"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Karamazov-Brothers-Fyodor-Dostoyevsky-Constance-Garnett--D-P-Briggs-Dr-Keith-Carabine/9781840221862?ref=bd_ser_1"> The Karamazov Brothers</a> </h3> 
+           <p class="author"> <a href="/author/Fyodor-Dostoyevsky" itemprop="author">Fyodor Dostoyevsky</a> </p> 
+           <p class="published" itemprop="datePublished">05 Jan 2010</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781840221862" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781840221862" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Orlando-Virgini-Woolf-Merry-M-Pawlowski-Dr-Keith-Carabine/9781853262395?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/8532/9781853262395.jpg" alt="Orlando"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853262395"> 
+          <meta itemprop="name" content="Orlando"> 
+          <meta itemprop="contributor" content="Virginia Woolf"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Orlando-Virgini-Woolf-Merry-M-Pawlowski-Dr-Keith-Carabine/9781853262395?ref=bd_ser_1"> Orlando</a> </h3> 
+           <p class="author"> <a href="/author/Virginia-Woolf" itemprop="author">Virginia Woolf</a> </p> 
+           <p class="published" itemprop="datePublished">13 Jul 2005</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853262395" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853262395" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Lady-Chatterleys-Lover-D-H-Lawrence-David-Ellis-Dr-Keith-Carabine/9781840224887?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9781/8402/9781840224887.jpg" alt="Lady Chatterley's Lover"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781840224887"> 
+          <meta itemprop="name" content="Lady Chatterley's Lover"> 
+          <meta itemprop="contributor" content="D. H. Lawrence"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Lady-Chatterleys-Lover-D-H-Lawrence-David-Ellis-Dr-Keith-Carabine/9781840224887?ref=bd_ser_1"> Lady Chatterley's Lover</a> </h3> 
+           <p class="author"> <a href="/author/D-H-Lawrence" itemprop="author">D. H. Lawrence</a> </p> 
+           <p class="published" itemprop="datePublished">11 Aug 2011</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781840224887" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781840224887" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Heart-of-Darkness-Joseph-Conrad-Gene-M-Moore-Dr-Keith-Carabine/9781853262401?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9781/8532/9781853262401.jpg" alt="Heart of Darkness"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853262401"> 
+          <meta itemprop="name" content="Heart of Darkness"> 
+          <meta itemprop="contributor" content="Joseph Conrad"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Heart-of-Darkness-Joseph-Conrad-Gene-M-Moore-Dr-Keith-Carabine/9781853262401?ref=bd_ser_1"> Heart of Darkness</a> </h3> 
+           <p class="author"> <a href="/author/Joseph-Conrad" itemprop="author">Joseph Conrad</a> </p> 
+           <p class="published" itemprop="datePublished">28 Jul 2005</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853262401" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853262401" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/Madame-Bovary-Gustave-Flaubert-Eleanor-Marx-Aveling-Roger-Clark-Dr-Keith-Carabine/9781853260780?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d20eq91zdmkqd.cloudfront.net/assets/images/book/medium/9781/8532/9781853260780.jpg" alt="Madame Bovary"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853260780"> 
+          <meta itemprop="name" content="Madame Bovary"> 
+          <meta itemprop="contributor" content="Gustave Flaubert"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/Madame-Bovary-Gustave-Flaubert-Eleanor-Marx-Aveling-Roger-Clark-Dr-Keith-Carabine/9781853260780?ref=bd_ser_1"> Madame Bovary</a> </h3> 
+           <p class="author"> <a href="/author/Gustave-Flaubert" itemprop="author">Gustave Flaubert</a> </p> 
+           <p class="published" itemprop="datePublished">01 Jan 1998</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853260780" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853260780" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="book-item" itemscope itemtype="http://schema.org/Book"> 
+          <div class="item-img"> 
+           <a href="http://www.bookdepository.com/The-Wind-in-the-Willows-Kenneth-Grahame/9781853261220?ref=bd_ser_1"> <img class="lazy" data-lazy="https://d3by36x8sj6cra.cloudfront.net/assets/images/book/medium/9781/8532/9781853261220.jpg" alt="The Wind in the Willows"> </a> 
+          </div> 
+          <meta itemprop="isbn" content="9781853261220"> 
+          <meta itemprop="name" content="The Wind in the Willows"> 
+          <meta itemprop="contributor" content="Kenneth Grahame"> 
+          <div class="item-info"> 
+           <h3 class="title"> <a href="http://www.bookdepository.com/The-Wind-in-the-Willows-Kenneth-Grahame/9781853261220?ref=bd_ser_1"> The Wind in the Willows</a> </h3> 
+           <p class="author"> <a href="/author/Kenneth-Grahame" itemprop="author">Kenneth Grahame</a> </p> 
+           <p class="published" itemprop="datePublished">05 Mar 2003</p> 
+           <p class="format">Paperback</p> 
+           <p class="price"> £2.49</p> 
+          </div> 
+          <div class="item-actions"> 
+           <div class="btn-wrap"> 
+            <a rel="nofollow" href="http://www.bookdepository.com/basket/addisbn/isbn13/9781853261220" class="btn btn-sm btn-primary add-to-basket" data-ref="bd_ser_1" data-isbn="9781853261220" data-price="2.49">Add to basket</a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div>
+    <ol class="breadcrumb category-footer"> 
+     <li class="title">Categories</li> 
+     <li class="active"> <a href="http://www.bookdepository.com/category/335/Classics"> Classics</a> </li> 
+    </ol> 
+    <div class="blocks-wrap" id="item-review"> 
+     <h2>Customer reviews</h2> 
+     <div class="review-wrap"> 
+      <div class="review"> 
+       <div class="trunc">
+         Hellow, So after some years hearing about this novel, I decided that was about time to give this classic a chance, being the movie out now , all the stores had copies all over the place, and I got this WordsWorth edition for a couple of euros. I must say this was not such a great experience for me, don't get me wrong, it wasn't bad, it was just not awesome, like I was expecting it to be. I think the main point that made me felt so disconnected with this book was the world building, after all this is an American novel, and you can feel it at every page, Fitzgerald includes lots of places names on the book, and doesn't bother to describe them, so most of the time I was imagining the characters on a almost blank setting, I just couldn't picture it, since I don't know them. This is a book about moral and relationships and most important of all the initial "American Dream" richness, wealth, being famous, being known, being Somebody. This is when it gets personal, after all since I don't share this dreams with the characters and find them mostly boring and shallow , I just didn't get fascinated by them. At the beginning I though it was a matter of age, and by that I mean, that I prefer other time periods of history, but than I understand that it was not a matter of subject but the way it was written, not only I had problem with the world building , but most of the times I felt quite confused, because the point of view or the subject changes from chapter to chapter with no introduction or soft passage, so its quite a demanding read. The author is really good and descriptive when it comes to characters, but once more, I didn't seem to connect with none of them, after all, we are quite different and their "qualities" are what I perceive as defects. Other than that , Nick the main character claims that he's not a night person and still this is all he does or talks about, you can see that the book as a lot of gaps when it comes to his life, this narrator seems to be only alive when he is with the other characters and talks about nothing more that them. I have to say that although I appreciated F. Scott Fitzgerald writing and I can see why a lot of people love him it was not my cup of tea, so this will be one of that times, that my rating as more to do with my personal taste than the quality of the book Regards Yours sincerely, Skeleton Orchid
+        <a class="read-more">show more</a> 
+       </div> 
+       <cite class="author"> <span class="rating rating-3"></span> by Conor Crowley</cite> 
+      </div> 
+      <div class="review"> 
+       <div class="trunc">
+         Although I have only read very few classics myself, I thought that this book lived up to its genre. The Great Gatsby isn't particularly thought provoking, actually, it can even be very confusing at times. This book is similar to The Catcher in the Rye, in the sense that there is no plot per se, it is more about observing the way that people behave, and their motives to do so. The Great Gatsby paints a vivid picture of life in the 1920's and brings the era to life. In terms of character, personally I believed that they weren't likeable, however they were realistic. Perhaps it was due to the mere size of this book, but I felt that there was a severe lack in character development. Overall, I would recommend The Great Gatsby if you enjoy books such as The Catcher in the Rye and The Perks of Being a Wallflower. If you also enjoy the 1920's setting, this book may also be for you. I hope you enjoy it, provided you choose to read it.
+        <a class="read-more">show more</a> 
+       </div> 
+       <cite class="author"> <span class="rating rating-3"></span> by jacqueline egan</cite> 
+      </div> 
+      <div class="review"> 
+       <div class="trunc">
+         The first time you read it the first chapter or so it doesn't really pull you in, but after that it gets very good. When you re-read it for a second time, you start to see all this depth and dimension in everything that is said and described. Full of motifs, symbolism and great writing, it's quite an easy read and it's a great portrayal of how materialistic the world was after the first war and before the great depression. It's so so good!
+        <a class="read-more">show more</a> 
+       </div> 
+       <cite class="author"> <span class="rating rating-4"></span> by Adi</cite> 
+      </div> 
+      <div class="review"> 
+       <div class="trunc">
+         The tight prose expected from Fitzgerald and a story mirroring his own life and marriage. Observant readers will realise their broken romance is something Gatsby sees as divine, machinations of society and status and failures of self keeping them apart both then and now. If you like your books to be full of "excitement" get a cheap airport thriller; the pacing is deliberately slow, the prose at times attempting to transcend its medium and become poetry.
+        <a class="read-more">show more</a> 
+       </div> 
+       <cite class="author"> <span class="rating rating-5"></span> by Moschops</cite> 
+      </div> 
+      <div class="review"> 
+       <div class="trunc">
+         So much hype, so little excitement. I may have lost something in translation but now just hanging to see the movie to see if it makes up for it.
+        <a class="read-more">show more</a> 
+       </div> 
+       <cite class="author"> <span class="rating rating-1"></span> by Laura Chin-Lenn</cite> 
+      </div> 
+      <div class="review"> 
+       <div class="trunc">
+         A easy book to read. the ultimate theme of the book is you can't live in the past. What's gone before is gone for good.
+        <a class="read-more">show more</a> 
+       </div> 
+       <cite class="author"> <span class="rating rating-5"></span> by Laura</cite> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="footer-wrap"> 
+   <footer class="footer"> 
+    <div class="footer-left-content hide-on-mobile"> 
+     <section class="footer-links"> 
+      <h4>Explore</h4> 
+      <ul> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/35/About-us#helpContent">About us</a></li> 
+       <li><a href="http://www.bookdepository.com/sitemap">Sitemap</a></li> 
+       <li><a href="http://www.bookdepository.com/bookmarks">Bookmarks</a></li> 
+       <li><a href="https://www.bookdepository.com/account/login/to/account">Sign in/Join</a></li> 
+      </ul> 
+     </section> 
+     <section class="footer-links"> 
+      <h4>How can we help?</h4> 
+      <ul> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help">Help</a></li> 
+       <li><a href="https://www.bookdepository.com/contactus">Contact us</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/2/When-will-my-order-arrive">Where's my stuff?</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/3/Which-countries-do-you-deliver-to">Where do you deliver?</a></li> 
+      </ul> 
+     </section> 
+     <section class="footer-links"> 
+      <h4>Join us</h4> 
+      <ul> 
+       <li><a href="http://affiliates.bookdepository.com/affiliates">Affiliates</a></li> 
+       <li><a href="http://www.bookdepository.com/jobs">Jobs</a></li> 
+      </ul> 
+     </section> 
+     <section class="footer-links"> 
+      <h4>Important stuff</h4> 
+      <ul> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/53/How-we-use-cookies">Cookies</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/20/Our-privacy-policy">Privacy policy</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/19/Terms-and-Conditions">Terms &amp; Conditions</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/17/Website-security">Secure shopping</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/11/Accessibility-guide">Accessibility</a></li> 
+      </ul> 
+     </section> 
+    </div> 
+    <div class="footer-left-content show-only-mobile"> 
+     <section class="footer-links"> 
+      <ul> 
+       <li><a rel="nofollow" href="https://www.bookdepository.com/account/login/to/account">Sign in/Join</a></li> 
+       <li><a href="https://www.bookdepository.com/track">Order Status</a></li> 
+       <li><a href="https://www.bookdepository.com/contactus">Contact us</a></li> 
+       <li><a href="http://www.bookdepository.com/help">Help</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/35/About-us#helpContent">About us</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/19/Terms-and-Conditions">Terms &amp; Conditions</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/20/Our-privacy-policy">Privacy policy</a></li> 
+       <li><a rel="nofollow" href="http://www.bookdepository.com/help/topic/HelpId/53/How-we-use-cookies">Cookies</a></li> 
+      </ul> 
+     </section> 
+    </div> 
+    <div class="footer-right-content"> 
+     <div class="payment-methods"> 
+      <p>We accept these payment methods</p> 
+      <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/img/payment-options.png" alt="Payment methods" class="method-img"> 
+     </div> 
+     <div class="small-print"> 
+      <i class="icon-bd"></i> 
+      <div id="copyright" class="text" title="BdiMetadata{webserver='seville', requestTime='0.05 sec', userSessionCurrencyCode='GBP', userSessionCountry='GB', userIp='192.76.8.20', cacheParams=BdiCacheMetadata{cacheCountry='null', cacheCurrency='null', controllerName='null', actionName='null', moduleName='null', serverScheme='null', cacheNamespace='null', cacheKey='null', generatedOn=Fri Aug 26 06:43:13 UTC 2016, cacheEnabled=true}}">
+        © 2016 The Book Depository Ltd.
+       <br> UK. Registered company number: 5124926 
+      </div> 
+     </div> 
+    </div> 
+   </footer> 
+  </div> 
+  <script async src="http://d3ogvdx946i4sr.cloudfront.net/assets/v1.7.31/js/app.js"></script> 
+  <script type="text/javascript">document.body.className += " js";</script>
+  <script type="text/javascript">
+        window.google_remarketing_data = {
+            google_custom_params: {
+                prodid: '',
+                pagetype: '',
+                value: '',
+                pname: '',
+                pcat: ''
+            },
+            google_conversion_id: 997479781,
+            google_conversion_label: "jTANCIOb5wQQ5arR2wM"
+        };
+    </script> 
+  <noscript> 
+   <div style="display:inline;"> 
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/997479781/?value=0&amp;label=jTANCIOb5wQQ5arR2wM&amp;guid=ON&amp;script=0"> 
+   </div> 
+  </noscript> 
+  <script type="text/javascript">
+var ggoals_account ='bookdepository';
+</script> 
+  <script async type="text/javascript" src="//conversions.genieventures.co.uk/gt.js"></script> 
+  <!-- The first Confirmation flag is only present on order confirmation page --> 
+  <div id="be" style="display:none;visibility:hidden;">
+   <form name="ue_backdetect" action="get">
+    <input type="hidden" name="ue_back" value="1">
+   </form> 
+   <script type="text/javascript">
+var ue_mbl=ue_csm.ue.exec(function(e,a){function k(f){b=f||{};a.AMZNPerformance=b;b.transition=b.transition||{};b.timing=b.timing||{};if((f=a.webclient&&"function"===typeof webclient.getRealClickTime?a.cordova&&a.cordova.platformId&&"ios"==cordova.platformId?!1:!0:!1)&&b.tags instanceof Array){var c;c=-1!=b.tags.indexOf("usesAppStartTime")||b.transition.type?!b.transition.type&&-1<b.tags.indexOf("usesAppStartTime")?"warm-start":void 0:"view-transition";c&&(b.transition.type=c)}if(1===e.ue_ios_ip||
+f)"reload"===d._nt&&e.ue_orct||"intrapage-transition"===d._nt?a.performance&&performance.timing&&performance.timing.navigationStart?b.timing.transitionStart=a.performance.timing.navigationStart:delete b.timing.transitionStart:"undefined"===typeof d._nt&&a.performance&&performance.timing&&performance.timing.navigationStart&&a.history&&"function"===typeof a.History&&"object"===typeof a.history&&history.length&&1!=history.length&&(b.timing.transitionStart=a.performance.timing.navigationStart);f=b.transition;
+c=d._nt?d._nt:void 0;f.subType=c;a.ue&&a.ue.tag&&a.ue.tag("has-AMZNPerformance");d.isl&&a.uex&&uex("at","csm-timing");l()}function m(b){a.ue&&a.ue.count&&a.ue.count("csm-cordova-plugin-failed",1)}function l(){try{P.register("AMZNPerformance",function(){return b})}catch(a){}}function g(){if(!b)return"";ue_mbl.cnt=null;var a=b.transition,c;c=b.timing.transitionStart;c="undefined"!==typeof c&&"undefined"!==typeof h?c-h:void 0;a=["mts",c,"mtt",a.type,"mtst",a.subType,"mtlt",a.launchType];c="";for(var d=
+0;d<a.length;d+=2){var e=a[d],g=a[d+1];"undefined"!==typeof g&&(c+="&"+e+"="+g)}return c}function n(a,c){b&&(h=c,b.timing.transitionStart=a,b.transition.type="view-transition",b.transition.subType="ajax-transition",b.transition.launchType="normal",ue_mbl.cnt=g)}var d=e.ue||{},h=e.ue_t0,b;if(a.P&&a.P.when&&a.P.register)return a.P.when("CSMPlugin").execute(function(a){a.buildAMZNPerformance&&a.buildAMZNPerformance({successCallback:k,failCallback:m})}),{cnt:g,ajax:n}},"mobile-timing")(ue_csm,window);
+
+(function(d){d._uess=function(){var a="";screen&&screen.width&&screen.height&&(a+="&sw="+screen.width+"&sh="+screen.height);var b=function(a){var b=document.documentElement["client"+a];return"CSS1Compat"===document.compatMode&&b||document.body["client"+a]||b},c=b("Width"),b=b("Height");c&&b&&(a+="&vw="+c+"&vh="+b);return a}})(ue_csm);
+
+(function(a){var b=document.ue_backdetect;b&&b.ue_back&&a.ue&&(a.ue.bfini=b.ue_back.value);a.uet&&a.uet("be");a.onLdEnd&&(window.addEventListener?window.addEventListener("load",a.onLdEnd,!1):window.attachEvent&&window.attachEvent("onload",a.onLdEnd));a.ueh&&a.ueh(0,window,"load",a.onLd,1);a.ue&&a.ue.tag&&(a.ue_furl&&a.ue_furl.split?(b=a.ue_furl.split("."))&&b[0]&&a.ue.tag(b[0]):a.ue.tag("nofls"))})(ue_csm);
+(function(g,h){function d(a,d){var b={};if(!e||!f)try{var c=h.sessionStorage;c?a&&("undefined"!==typeof d?c.setItem(a,d):b.val=c.getItem(a)):f=1}catch(g){e=1}e&&(b.e=1);return b}var b=g.ue||{},a="",f,e,c,a=d("csmtid");f?a="NA":a.e?a="ET":(a=a.val,a||(a=b.oid||"NI",d("csmtid",a)),c=d(b.oid),c.e||(c.val=c.val||0,d(b.oid,c.val+1)),b.ssw=d);b.tabid=a})(ue_csm,window);
+
+
+(function(b,c){var a=c.images;a&&a.length&&b.ue.count("totalImages",a.length)})(ue_csm,document);
+
+
+ue_csm.ue._rtn = 1;
+(function(e,f){function h(a){a=a.split("?")[0]||a;a=a.replace("http://","").replace("https://","").replace("resource://","").replace("res://","").replace("undefined://","").replace("chrome://","").replace(/\*/g,"").replace(/!/g,"").replace(/~/g,"");var b=a.split("/");a=a.substr(a.lastIndexOf("/")+1);b.splice(-1);b=b.map(function(a){c[a]||(c[a]=(k++).toString(36));return c[a]});b.push(a);return b.join("!")}function l(){return f.getEntriesByType("resource").filter(function(a){return d._rre(a)<d._ld}).sort(function(a,
+b){return a.responseEnd-b.responseEnd}).splice(0,m).map(function(a){var b=[],c;for(c in a)g[c]&&a[c]&&b.push(g[c]+Math.max(a[c]|0,-1).toString(36));b.push("i"+a.initiatorType);(1==d._rtn&&d._afjs>n||2==d._rtn)&&b.push("n"+h(a.name));return b.join("_")}).join("*")}function p(){var a="pm",b;for(b in c)c.hasOwnProperty(b)&&(a+="*"+c[b]+"_"+b);return a}function q(){d.log({k:"rtiming",value:l()+"~"+p()},"csm")}if(f&&f.getEntriesByType&&Array.prototype.map&&Array.prototype.filter&&e.ue&&e.ue.log){var g=
+{connectStart:"c",connectEnd:"C",domainLookupStart:"d",domainLookupEnd:"D",duration:"z",fetchStart:"f",redirectStart:"r",redirectEnd:"R",requestStart:"q",responseStart:"s",responseEnd:"S",startTime:"a"},d=e.ue,c={},k=1,n=20,m=200;d&&d._rre&&(d._art=function(){d._ld&&window.setTimeout(q,0)})}})(ue_csm||{},window.performance);
+
+
+(function(c,d){var b=c.ue,a=d.navigator;b&&b.tag&&a&&(a=a.connection||a.mozConnection||a.webkitConnection)&&a.type&&b.tag("netInfo:"+a.type)})(ue_csm,window);
+
+
+(function(c,d){function g(a,b){for(var c=[],d=0;d<a.length;d++){var f=a[d],e=b.encode(f);if(f[h]){var k=b.metaSep,f=f[h],l=b.metaPairSep,g=[],m=void 0;for(m in f)f.hasOwnProperty(m)&&g.push(m+"="+f[m]);f=g.join(l);e+=k+f}c.push(e)}return c.join(b.resourceSep)}function n(a){var b=a[h]=a[h]||{};b[t]||(b[t]=c.ue_mid);b[u]||(b[u]=c.ue_sid);b[k]||(b[k]=c.ue_id);b.csm=1;a="//"+c.ue_furl+"/1/"+a[v]+"/1/OP/"+a[w]+"/"+a[x]+"/"+g([a],y);if(p)try{p.call(d[q],a)}catch(e){c.ue.sbf=1,(new Image).src=a}else(new Image).src=
+a}function r(){l&&l.isStub&&l.replay(function(a,b,c){a=a[0];b=a[h]=a[h]||{};b[k]=b[k]||c;n(a)});e.impression=n;l=null}if(!(1<c.ueinit)){var h="metadata",x="impressionType",v="foresterChannel",w="programGroup",t="marketplaceId",u="session",k="requestId",q="navigator",e=c.ue||{},p=d[q]&&d[q].sendBeacon,s=function(a,b,c,d){return{encode:d,resourceSep:a,metaSep:b,metaPairSep:c}},y=s("","?","&",function(a){return g(a.impressionData,z)}),z=s("/",":",",",function(a){return a.featureName+":"+g(a.resources,
+A)}),A=s(",","@","|",function(a){return a.id}),l=e.impression;(e.impression||n)({programGroup:"csm",impressionType:"action",impressionData:[{featureName:"csm-features",resources:[{id:"impression-tracking"}]}],foresterChannel:"action-impressions"});p?r():(e.attach("load",r),e.attach("beforeunload",r));d.P&&d.P.register&&d.P.register("impression-client",function(){})}})(ue_csm,window);
+
+
+if (window.ue_wurl) {
+(function(b,a,c){function d(){c.glog.flush({mid:a.ue_mid,sid:a.ue_sid,mkt:a.ue_mkt,sn:a.ue_sn,furl:"https://"+a.ue_furl+"/1/batch/1/OE/",async:!0})}if(b.URL&&b.Worker){b=URL.createObjectURL(new Blob(["(",function(a){importScripts(a)}.toString(),")('",a.ue_wurl,"')"],{type:"application/javascript"}));var f=new Worker(b),e=!1;c.glog=function(a,b,d){f.postMessage({m:"log",l:a,n:b,o:d});e||c.log();e=!0};c.glog.flush=function(a){f.postMessage({m:"flush",o:a});e=!1};c.onunload(d);c.onflush(d)}})(window,
+ue_csm,ue);
+
+}
+
+var ue_pty = "tbd";
+
+var ue_spty = "test";
+
+var ue_pti = "9781853260414";
+
+</script> 
+  </div> 
+  <noscript> 
+   <img height="1" width="1" style="display:none;visibility:hidden;" src="//fls-eu.amazon.co.uk/1/batch/1/OP/AYXWW5ND5JOM8:000-0000000-0000000:0S0M8FQMGEB0A3KPW5YR$uedata=s:%2Fcsmpb%3Fnoscript%26id%3D0S0M8FQMGEB0A3KPW5YR:0" alt=""> 
+  </noscript>  
+  <!-- RequestDurationMillis: 84 -->  
+ </body>
+</html>

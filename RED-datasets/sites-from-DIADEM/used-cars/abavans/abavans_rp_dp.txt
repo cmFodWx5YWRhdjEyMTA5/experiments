@@ -1,0 +1,6 @@
+datasets/abavans/abavans_rp_0.html	datasets/abavans/detail_pages/abavans_dp_0.html	http://www.abavans.co.uk/used-cars.htm	http://www.abavans.co.uk/used_car_lotus_exige_coupe_816.htm
+datasets/abavans/abavans_rp_0.html	datasets/abavans/detail_pages/abavans_dp_1.html	http://www.abavans.co.uk/used-cars.htm	http://www.abavans.co.uk/used_car_jaguar_xkr_convertible_794.htm
+datasets/abavans/abavans_rp_0.html	datasets/abavans/detail_pages/abavans_dp_2.html	http://www.abavans.co.uk/used-cars.htm	http://www.abavans.co.uk/used_car_volkswagen_transporter_motorhome_835.htm
+datasets/abavans/abavans_rp_0.html	datasets/abavans/detail_pages/abavans_dp_3.html	http://www.abavans.co.uk/used-cars.htm	http://www.abavans.co.uk/used_car_bmw_3_series_saloon_820.htm
+datasets/abavans/abavans_rp_0.html	datasets/abavans/detail_pages/abavans_dp_4.html	http://www.abavans.co.uk/used-cars.htm	http://www.abavans.co.uk/used_car_ford_ranger_pick-up_838.htm
+datasets/abavans/abavans_rp_0.html	datasets/abavans/detail_pages/abavans_dp_5.html	http://www.abavans.co.uk/used-cars.htm	http://www.abavans.co.uk/used_car_nissan_qashqai_hatchback_813.htm

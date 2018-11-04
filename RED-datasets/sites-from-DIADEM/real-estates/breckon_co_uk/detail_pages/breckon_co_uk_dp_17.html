@@ -1,0 +1,211 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head></head><body style="margin:0px"><div style="display:none;">host='waidev16.com', user='admin', pass='psU72!sll'</div>
+
+
+
+<!--  
+Created By World Archipelago - (www.worldarchipelago.com)
+Designer: Nick Wood.
+Developers: Ed Weld, Marian Seffer.
+Project Manager: Jason Brooks.
+
+Created: 26th October 2006.
+HTML and CSS Tested to W3C standards.
+Copyright: Breckon and Breckon Estate Agents
+-->
+	<link href="../images/favicon.ico" rel="shortcut icon" />
+	<link href="../css/master.css" media="screen" type="text/css" rel="stylesheet" />
+	<title>Breckon and Breckon Estate Agents - Property Details</title>
+	<script src="../includes/flashobject.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://rocketmap.worldarcstudio.com/gmap_js/functions_bb.js"></script>
+<script src="../includes/open.js" type="text/javascript"></script>
+
+	
+<style type="text/css">	
+/* Styles for gliding layers  */ 
+#slide_1  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_2  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_3  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_4  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_5  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_6  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_7  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}#slide_8  {position:absolute;  display:none;	left:0px; top:0px; z-index:5; 	width:525px; height:370px;	filter:Alpha(opacity=0);	}
+</style>	
+<script type="text/javascript">
+var divElement= new Array();
+var inView='';
+var inThumb='';
+//the default div to be displayed when all others arent!
+var defaultDiv='slide_1'; 
+var defaultThumb='thumb_1';
+  divElement[0]='1';
+divElement[1]='2';
+divElement[2]='3';
+divElement[3]='4';
+divElement[4]='5';
+divElement[5]='6';
+divElement[6]='7';
+divElement[7]='8';
+
+</script>
+<script src="../includes/tween.js" type="text/javascript"></script>
+<script src="../includes/opacitytween.js" type="text/javascript"></script>
+<script src="../includes/functions.js" type="text/javascript"></script>
+
+
+
+
+<!--  
+Created By World Archipelago - (www.worldarchipelago.com)
+Designer: Nick Wood.
+Developers: Ed Weld, Marian Seffer.
+Project Manager: Jason Brooks.
+
+Created: 26th October 2006.
+HTML and CSS Tested to W3C standards.
+Copyright: Breckon and Breckon Estate Agents
+-->
+	
+		<meta content="world archipelago" name="author" />
+		<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+		<link href="../css/master.css" media="screen" type="text/css" rel="stylesheet" />
+				<script type="text/javascript">var page="sales";</script>
+		<link href="../images/favicon.ico" rel="shortcut icon" />
+		<script src="../includes/functions.js" type="text/javascript"></script>
+		
+	
+	
+	
+		<div align="center">
+			<div id="container">
+				<div id="content">
+					<div id="header"><img border="0" alt="breckon and breckon estate agents" src="../images/img_header.jpg" /></div>
+						<!--NAVIGATION START-->
+<div id="nav2"><div style="z-index:2;" id="home" class="nav">
+	<a id="linkhome" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/index.php"><img border="0" id="nav_home_off" alt="Home" src="../images/btn_home_off.gif" /></a></div>
+<div id="sales" class="nav">
+	<a href="http://www.breckon.co.uk/site/search/index.php?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;orderby=price+DESC&amp;ppp=25"><img border="0" class="nav_over_under" alt="Sales" src="../images/btn_sales_over.gif" /></a></div><a href="http://www.breckon.co.uk/site/search/index.php?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;orderby=price+DESC&amp;ppp=25"><img border="0" id="nav_sales_on" alt="Sales" src="../images/btn_sales_on.gif" /></a>
+<div style="z-index:4;" id="lettings" class="nav">
+	<a id="linklettings" onmouseout="mo(this)" onmouseover="mo(this)" href="http://www.breckon.co.uk/site/search/index.php?minbeds=0&amp;maxbeds=99&amp;minprice=0&amp;maxprice=3000000999&amp;houses=true&amp;flats=true&amp;a=main_search&amp;type=r&amp;from=tlm&amp;orderby=price+DESC&amp;ppp=25"><img border="0" id="nav_lettings_off" alt="Lettings" src="../images/btn_lets_off.gif" /></a></div>
+<div style="z-index:5;" id="about" class="nav">
+	<a id="linkabout" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/about_us.php"><img border="0" id="nav_about_off" alt="About Us" src="../images/btn_about_off.gif" /></a></div>
+<div style="z-index:6;" id="contact" class="nav">
+	<a id="linkcontact" onmouseout="mo(this)" onmouseover="mo(this)" href="../forms/insert.php?form=contact_general"><img border="0" id="nav_contact_off" alt="Contact Us" src="../images/btn_contact_off.gif" /></a></div>
+<div style="z-index:7;" id="register" class="nav">
+	<a id="linkregister" onmouseout="mo(this)" onmouseover="mo(this)" href="../forms/insert.php?form=register"><img border="0" id="nav_register_off" alt="Register" src="../images/btn_register_off.gif" /></a></div>
+<div style="z-index:8;" id="useful_contacts" class="nav">
+	<a id="linkuseful_contacts" onmouseout="mo(this)" onmouseover="mo(this)" href="../pages/useful_contacts.php"><img border="0" id="nav_useful_contacts_off" alt="Useful Contacts" src="../images/btn_useful_contacts_off.gif" /></a></div>
+</div><!--NAVIGATION END-->
+<!--HEADER GRAPHIC-->
+	<div id="hdr_full_details" class="hdr_style"><div style="text-align:left;margin-right:10px;margin-top:7px;float:right;"><a href="/site/search/?a=main_search&amp;from=home&amp;ptype=&amp;added=&amp;office=&amp;type=b&amp;minbeds=0&amp;minprice=0&amp;maxprice=99999999999&amp;p=1"><b>&lt; back to search results list</b></a></div>	</div>
+	
+<!--END HEADER GRAPHIC-->
+	
+<!--SLIDESHOW-->
+		<div class="slideshow">
+		<div id="menu1"><div class="property-thumb_off" id="thumb_1"><a onmouseover='javascript:void(rotateDiv("1",true))' href="#1"><img border="0" src="../utils/image_resize_ed.php?i=SUM140182_07.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_2"><a onmouseover='javascript:void(rotateDiv("2",true))' href="#2"><img border="0" src="../utils/image_resize_ed.php?i=SUM140182_01.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_3"><a onmouseover='javascript:void(rotateDiv("3",true))' href="#3"><img border="0" src="../utils/image_resize_ed.php?i=SUM140182_05.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_4"><a onmouseover='javascript:void(rotateDiv("4",true))' href="#4"><img border="0" src="../utils/image_resize_ed.php?i=SUM140182_03.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_5"><a onmouseover='javascript:void(rotateDiv("5",true))' href="#5"><img border="0" src="../utils/image_resize_ed.php?i=SUM140182_06.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> </div><div id="menu2"><div class="property-thumb_off" id="thumb_6"><a onmouseover='javascript:void(rotateDiv("6",true))' href="#6"><img border="0" src="../utils/image_resize_ed.php?i=SUM140182_04.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_7"><a onmouseover='javascript:void(rotateDiv("7",true))' href="#7"><img border="0" src="../utils/image_resize_ed.php?i=SUM140182_02.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> <div class="property-thumb_off" id="thumb_8"><a onmouseover='javascript:void(rotateDiv("8",true))' href="#8"><img border="0" src="../utils/image_resize_ed.php?i=SUM140182_08.JPG&amp;w=82&amp;h=62&amp;type=b&amp;bgColor=149_26_47" /></a></div> </div>		<div class="slide" id="slide_1" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=SUM140182_07.JPG&amp;w=525&amp;h=370&amp;type=b" /></div>
+<div class="slide" id="slide_2" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=SUM140182_01.JPG&amp;w=525&amp;h=370&amp;type=b" /></div>
+<div class="slide" id="slide_3" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=SUM140182_05.JPG&amp;w=525&amp;h=370&amp;type=b" /></div>
+<div class="slide" id="slide_4" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=SUM140182_03.JPG&amp;w=525&amp;h=370&amp;type=b" /></div>
+<div class="slide" id="slide_5" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=SUM140182_06.JPG&amp;w=525&amp;h=370&amp;type=b" /></div>
+<div class="slide" id="slide_6" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=SUM140182_04.JPG&amp;w=525&amp;h=370&amp;type=b" /></div>
+<div class="slide" id="slide_7" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=SUM140182_02.JPG&amp;w=525&amp;h=370&amp;type=b" /></div>
+<div class="slide" id="slide_8" style="opacity: 0; display: block;"><img class="property_lrg" src="../utils/image_resize_ed.php?i=SUM140182_08.JPG&amp;w=525&amp;h=370&amp;type=b" /></div>
+<a href="javascript: void(menuB2())"><img border="0" class="property-t-mbtn" src="../images/btn_more_grey.gif" /></a><a href="javascript: void(menuB2())"><img border="0" class="property-t-lbtn" src="../images/btn_less_grey.gif" /></a>		<script type="text/javascript">setTimeout("initSlideShow()",300);</script>
+				</div>
+<!-- /  SLIDESHOW-->
+								
+<!--RNAV-->
+		<div class="rnav">
+<div class="navright">
+<!-- HIDDEN FORM -->
+
+
+<div class="navLinkBox"><img alt="printable details" src="../images/pn_printDetails.gif" /><div><a class="navLink bold" target="_blank" href="http://breckon.reapit.com/pdf.php?path=content/&amp;vars=propertypdf-sales-babrps-SUM140182">Property Brochure</a></div></div><div class="navLinkBox"><img alt="print details" src="../images/pn_floorPlans.gif" /><div><a class="navLink bold" target="_blank" href="../php/floorplans.php?zoom=&amp;from=results&amp;id=SUM140182&amp;type=b">Floorplans</a></div></div><div class="navLinkBox"><img alt="EPC graph" src="../images/pn_epc.gif" /><div><a class="navLink bold" target="_blank" href="../php/epc.php?epc=SUM140182_11.PNG">EPC Graph</a></div></div><div class="navLinkBox"><img alt="virtual tours" src="../images/pn_arialImageMap.gif" /><div><a class="navLink bold" href='javascript:void(window.open("popup_mmap.php?ptype=&amp;lng=-1.2945616&amp;lat=51.7463949&amp;address=Larch Close, Oxford, Oxfordshire, OX2 ","mmap","height=550,width=500"))'>Aerial Image/Map</a></div></div><div style="height:30px;font-size:0px;">   </div><div class="navLinkBox"><img alt="arrange a viewing" src="../images/pn_arrangeViewing.gif" /><div><a class="navLink bold" href="../forms/insert.php?form=viewing&amp;type=b&amp;id=SUM140182&amp;oemail=post@oxfordapartments.co.uk">Arrange a Viewing</a></div></div><div class="navLinkBox"><img alt="email us" src="../images/pn_emailUs.gif" /><div><a class="navLink bold" href="../forms/insert.php?form=contact_property&amp;type=b&amp;id=SUM140182&amp;oemail=post@oxfordapartments.co.uk">Email Us</a></div></div><div class="navLinkBox"><img alt="add to list" src="../images/pn_addToList.gif" /><div><a class="navLink bold" href="javascript:void(addpropertylist('add','SUM140182','b','Larch%20Close%2C%20Oxford%2C%20Oxfordshire%2C%20OX2%20',true,'SUM140182_07.JPG'))">Save to Property list</a></div></div>
+	<div style="margin-left:27px;margin-top:10px;"><iframe width="125" scrolling="no" height="65" frameborder="0" title="properties added to your list" src="../panes/fd_%20pane_property_list.php" name="viewmylist" id="viewmylist"></iframe></div>
+
+</div>
+<p><span class="blue"><b>Previous Property:</b></span><br /><a href="property.php?from=results&amp;id=SUM140181&amp;type=b">Larch Close,  Oxford</a></p><p><span class="blue"><b>Next Property:</b></span><br /><a href="property.php?from=results&amp;id=OXF120520&amp;type=b">Leafield Road,  Temple Cowley</a></p>					
+		</div>
+<!-- / RNAV-->
+		<div style="clear:both;"></div>
+<!--PROPERTY DETAILS-->
+		<div class="propdetails">
+			<div>
+				<div style="display:inline;width:130px;vertical-align:top;text-align:right;float:right;margin-right:5px;" class="red">
+					Ref No.<br />SUM140182				</div>
+				<div style="display:inline;width:360px;height:20px;text-align:left;float:left;margin-left:20px;">
+					<b class="red h1">
+Larch Close, Oxford, Oxfordshire, OX2   9EW					</b><br />
+					<font class="blue bold">£219,950</font>
+				</div>
+				
+			</div>
+					
+					
+			<div class="proptable">
+<table width="250" cellpadding="0" border="0" style="margin-left:20px"><tbody><tr><td height="15" class="black">Bedrooms: </td><td class="black">2</td></tr><tr><td height="15" class="black">Bathroom: </td><td class="black">1</td></tr><tr><td height="15" class="black">Reception room: </td><td class="black">1</td></tr><tr><td height="10"></td></tr></tbody></table>
+			<br /><br />
+				<p align="justify">
+</p><p>A ground floor apartment with its own private entrance located to the west of Oxford city centre.
+<br />The apartment comprises two bedrooms, shower room, and a living room with a kitchen leading off. The property also benefits from one allocated parking space.
+<br />Larch Close is ideally positioned for easy access to the A34 and Oxford city centre. There is a local shop nearby along with public transport links.</p><p></p>				<p></p>
+				<p>
+					<b>MISREPRESENTATION ACT - PROPERTY MISDESCRIPTIONS ACT</b><br />
+					
+
+
+The information in these property details is believed to be accurate, but Breckon &amp; Breckon does not give, nor does any Partner or employee have authority to give, any warranty as to the accuracy of any statement, written, verbal or visual. You should not rely on any information contained herein.				</p>
+				<br /><br />
+				<span class="red">[ <a href="#top">Top of page</a> ]</span>
+				<br /><br />
+			</div>
+		</div>
+<!--END PROPERTY DETAILS-->
+			<div class="rextra">
+				<div>
+					<p>
+					<span class="red"><strong>Other properties of interest:</strong></span>
+<br />- <a href="../search/?zoom=&amp;from=results&amp;id=SUM140182&amp;minbeds=0&amp;minprice=0&amp;maxprice=1000000&amp;searchtext=OX2%20&amp;type=b&amp;a=main_search">within the postcode OX2 </a><br />- <a href="../search/?zoom=&amp;from=results&amp;id=SUM140182&amp;minbeds=0&amp;minprice=0&amp;maxprice=1000000&amp;searchtext=Oxford&amp;type=b&amp;a=main_search">in Oxford</a><br />- <a href="../search/?zoom=&amp;from=results&amp;id=SUM140182&amp;minbeds=0&amp;minprice=0&amp;maxprice=1000000&amp;searchtext=Oxfordshire&amp;type=b&amp;a=main_search">in Oxfordshire</a><br />- <a href="../search/?zoom=&amp;from=results&amp;id=SUM140182&amp;minbeds=0&amp;minprice=0&amp;maxprice=1000000&amp;office=OXA&amp;type=b&amp;a=main_search">for this office</a>					</p>
+				</div>
+<!--LOCATION MAP-->
+				<div class="content-to-right no-margin">
+					<script type="text/javascript" language="JavaScript" src="../mapping/localjs/setup.js"></script>
+					<script type="text/javascript" language="JavaScript">
+						var smallMap = true;
+					</script>
+					<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAjNte1MXPrJ7i-hq88AlyhRTH7p-YeGE6hggTOPz8PhQFfwBf6hQP2NiBfXtbiYsAeO6cR2vihVdceQ"></script><script type="text/javascript" src="http://maps.gstatic.com/cat_js/mapfiles/api-3/17/9/%7Bmain,adsense,geometry,zombie%7D.js"></script>
+					<script type="text/javascript" src="http://rocketmap.worldarcstudio.com/gmap_js2/functions.js"></script><div style="height:1px; width:1px; top:0px; left:0px; position:absolute" id="recordstat"><img width="1" height="1" src="http://rocketmap.worldarcstudio.com/gmap_js2/stats.php?action=init&amp;url=http://www.breckon.co.uk/site/php/property.php?id=SUM140182&amp;type=b&amp;from=results" /></div>
+					<script language="Javascript" type="text/javascript">
+						googleMapInsertSmall(253,270,'51.7463949','-1.2945616',3,"flat");
+					</script><div style="width:253px; font: arial; height:270px" id="map"><br />   please wait... map loading</div>
+</div>
+<!--END LOCATION MAP-->		
+		<div><!--OFFICE DETAILS START-->
+<p>
+<b>Oxford Apartments Office</b><br />274 Banbury Road<br />Oxford<br />Oxfordshire<br />OX2   7DY<br /> <br />
+<b>Telephone:</b> 01865 558999<br />
+[<a href="mailto:post@oxfordapartments.co.uk"><b>Email Office</b></a>]<br />  <br />
+<a href="../mapping/street_level_map.php?zoom=&amp;type=b&amp;lng=-1.2647458&amp;lat=51.7779699&amp;zoom=1&amp;from=pdetails&amp;id=SUM140182">View Office Location</a>
+</p>
+<!--END OFFICE DETAILS--></div>
+			</div>
+				<div style="clear:both;"></div>
+
+
+		<!--FOOTER START-->
+
+				</div>
+			<div id="footer"><div></div><a target="_blank" title="visit the world archipelago website" href="http://www.worldarchipelago.com"><img border="0" align="right" alt="created by world archipelago" src="../images/img_worldarch_logo.gif" /></a>
+			<div style="float:left;display:inline;width:400px;margin-top:12px;border:0px solid #FFFFFF;">© Breckon and Breckon Estate Agents  <a class="footer" href="../pages/terms__conditions.php">Terms and Conditions</a> | <a class="footer" href="../forms/insert.php?form=contact_general">Contact Us</a></div>
+			
+			</div>
+			<div class="basebox"></div>
+		</div>
+	</div>
+	<div style="height:120px;"></div>
+	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12939940-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+	
+
+</body></html>
